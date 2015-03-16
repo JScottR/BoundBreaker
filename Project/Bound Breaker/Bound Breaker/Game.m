@@ -25,9 +25,9 @@
 }
 
 -(void)ObstaclesMoving{
-    ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y - 1);
-    ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y - 1);
-    ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y - 1);
+    ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y + 1);
+    ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y + 1);
+    ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y + 1);
     
     if(ObstacleSingle1.center.y > 670) {
         [self PlaceObstacles];
@@ -35,14 +35,14 @@
 }
 
 -(void)PlaceObstacles{
-    RandomObstacleSingle1Placement = arc4random() %150;
-    RandomObstacleSingle1Placement = RandomObstacleSingle1Placement + 150;
-    RandomObstacleSingle2Placement = RandomObstacleSingle1Placement - 150;
+    RandomObstacleSingle1Placement = arc4random() %135;
+    RandomObstacleSingle1Placement = RandomObstacleSingle1Placement + 135;
+    RandomObstacleSingle2Placement = RandomObstacleSingle1Placement - 135;
     RandomObstacleSingle3Placement = RandomObstacleSingle2Placement - 70;
     
-    ObstacleSingle1.center = CGPointMake(RandomObstacleSingle1Placement, -50);
-    ObstacleSingle2.center = CGPointMake(RandomObstacleSingle2Placement, -50);
-    ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, -50);
+    ObstacleSingle1.center = CGPointMake(RandomObstacleSingle1Placement, 0);
+    ObstacleSingle2.center = CGPointMake(RandomObstacleSingle2Placement, 0);
+    ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, 0);
 }
 
 - (void)viewDidLoad {
