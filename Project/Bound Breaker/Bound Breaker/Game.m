@@ -32,6 +32,16 @@
     if(ObstacleSingle1.center.y > 670) {
         [self PlaceObstacles];
     }
+    
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle1.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle2.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle3.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
 }
 
 -(void)PlaceObstacles{
