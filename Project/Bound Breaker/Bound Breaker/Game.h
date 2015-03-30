@@ -17,8 +17,6 @@ int RandomObstacleSingle3Placement;
     IBOutlet UIImageView *Ball;
     IBOutlet UIButton *StartGame;
     IBOutlet UIButton *GameOver;
-    IBOutlet UIImageView *ObstacleLeft;
-    IBOutlet UIImageView *ObstacleRight;
     IBOutlet UIImageView *ObstacleSingle1;
     IBOutlet UIImageView *ObstacleSingle2;
     IBOutlet UIImageView *ObstacleSingle3;

@@ -25,9 +25,9 @@
 }
 
 -(void)ObstaclesMoving{
-    ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y - 1);
-    ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y - 1);
-    ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y - 1);
+    ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y + 1);
+    ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y + 1);
+    ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y + 1);
     
     if(ObstacleSingle1.center.y > 670) {
         [self PlaceObstacles];
@@ -43,7 +43,18 @@
     ObstacleSingle1.center = CGPointMake(RandomObstacleSingle1Placement, -50);
     ObstacleSingle2.center = CGPointMake(RandomObstacleSingle2Placement, -50);
     ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, -50);
+    
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle1.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle2.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle3.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
 }
+
 
 - (void)viewDidLoad {
     GameOver.hidden = TRUE;
