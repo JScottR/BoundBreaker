@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Main Menu-->
@@ -195,6 +195,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="u9D-Fa-aBX">
                                 <rect key="frame" x="270" y="20" width="50" height="25"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D86-lc-DAe">
+                                <rect key="frame" x="118" y="13" width="186" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -205,6 +211,7 @@
                         <outlet property="ObstacleSingle1" destination="EUg-Bm-Rm4" id="WzR-NJ-KKw"/>
                         <outlet property="ObstacleSingle2" destination="u9D-Fa-aBX" id="BIb-rT-AEM"/>
                         <outlet property="ObstacleSingle3" destination="i1Q-lt-TnE" id="kij-ui-PUs"/>
+                        <outlet property="ScoreLabel" destination="D86-lc-DAe" id="Mx1-3k-5Dq"/>
                         <outlet property="StartGame" destination="v1P-J6-sIU" id="Kf0-dX-1lk"/>
                     </connections>
                 </viewController>

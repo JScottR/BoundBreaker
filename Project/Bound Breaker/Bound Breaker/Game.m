@@ -14,6 +14,10 @@
 
 @implementation Game
 
+-(void)GameOver{
+    GameOver.hidden = FALSE;
+}
+
 -(IBAction)StartGame:(id)sender{
     StartGame.hidden = TRUE;
     ObstacleSingle1.hidden = FALSE;
@@ -32,6 +36,23 @@
     if(ObstacleSingle1.center.y > 670) {
         [self PlaceObstacles];
     }
+    
+    ScoreNumber = ScoreNumber + 1;
+    ScoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber];
+    
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle1.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle2.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle3.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    
+    if(Ball.center.y > 670) {
+        [self GameOver];
+    }
 }
 
 -(void)PlaceObstacles{
@@ -43,25 +64,19 @@
     ObstacleSingle1.center = CGPointMake(RandomObstacleSingle1Placement, -50);
     ObstacleSingle2.center = CGPointMake(RandomObstacleSingle2Placement, -50);
     ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, -50);
-    
-    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle1.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
-    }
-    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle2.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
-    }
-    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle3.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
-    }
 }
 
 
 - (void)viewDidLoad {
     GameOver.hidden = TRUE;
     StartGame.hidden = FALSE;
+    
     ObstacleSingle1.hidden = TRUE;
     ObstacleSingle2.hidden = TRUE;
     ObstacleSingle3.hidden = TRUE;
+    
+    ScoreNumber = 0;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
