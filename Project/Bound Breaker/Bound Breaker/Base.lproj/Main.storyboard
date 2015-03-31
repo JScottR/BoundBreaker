@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -174,9 +174,6 @@
                                     <segue destination="5QL-NH-Nx0" kind="showDetail" id="31I-vX-73p"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-O6-i2K">
-                                <rect key="frame" x="135" y="388" width="50" height="50"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="EUg-Bm-Rm4">
                                 <rect key="frame" x="227" y="227" width="50" height="25"/>
                             </imageView>
@@ -193,7 +190,39 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="u9D-Fa-aBX">
-                                <rect key="frame" x="270" y="20" width="50" height="25"/>
+                                <rect key="frame" x="162" y="227" width="50" height="25"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QM-3z-FLb">
+                                <rect key="frame" x="162" y="0.0" width="158" height="480"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="RightLiftInside:" destination="dnN-of-sJq" eventType="touchUpInside" id="Yud-He-1vc"/>
+                                    <action selector="RightLiftOutside:" destination="dnN-of-sJq" eventType="touchUpOutside" id="sjO-Si-q86"/>
+                                    <action selector="RightPress:" destination="dnN-of-sJq" eventType="touchDown" id="7AA-rd-18g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGp-Js-Mey">
+                                <rect key="frame" x="0.0" y="0.0" width="154" height="480"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LeftLiftInside:" destination="dnN-of-sJq" eventType="touchUpInside" id="07n-Mx-b4h"/>
+                                    <action selector="LeftLiftOutside:" destination="dnN-of-sJq" eventType="touchUpOutside" id="0fe-Gd-wlU"/>
+                                    <action selector="LeftPress:" destination="dnN-of-sJq" eventType="touchDown" id="gKJ-UX-NZM"/>
+                                    <action selector="TapLeft:" destination="dnN-of-sJq" eventType="touchDownRepeat" id="AGS-SV-HUz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc1-G1-AIN">
+                                <rect key="frame" x="35" y="28" width="242" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-O6-i2K">
+                                <rect key="frame" x="135" y="383" width="50" height="50"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -205,7 +234,11 @@
                         <outlet property="ObstacleSingle1" destination="EUg-Bm-Rm4" id="WzR-NJ-KKw"/>
                         <outlet property="ObstacleSingle2" destination="u9D-Fa-aBX" id="BIb-rT-AEM"/>
                         <outlet property="ObstacleSingle3" destination="i1Q-lt-TnE" id="kij-ui-PUs"/>
+                        <outlet property="ScoreLabel" destination="Vc1-G1-AIN" id="fZu-ZE-BBP"/>
                         <outlet property="StartGame" destination="v1P-J6-sIU" id="Kf0-dX-1lk"/>
+                        <outlet property="TapLeft" destination="fGp-Js-Mey" id="rI2-UI-hEQ"/>
+                        <outlet property="TapRight" destination="2QM-3z-FLb" id="kw4-qh-Lv0"/>
+                        <outlet property="WelcomeLabel" destination="GEF-yZ-TZ4" id="0LY-7f-zty"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT9-Rz-WRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
