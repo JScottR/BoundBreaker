@@ -24,9 +24,7 @@
     ObstacleSingle2.hidden = FALSE;
     ObstacleSingle3.hidden = FALSE;
     WelcomeLabel.hidden = TRUE;
-    
-    MoveRightTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(MoveRight) userInfo:nil repeats:TRUE];
-     MoveLeftTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(MoveLeft) userInfo:nil repeats:TRUE];
+    ScoreNumber = 0;
                       
     [self PlaceObstacles];
     ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstaclesMoving) userInfo:nil repeats:TRUE];
@@ -54,30 +52,21 @@
     Left = FALSE;
 }
 
--(void)MoveRight{
+
+
+-(void)ObstaclesMoving{
     if(Right == TRUE){
         Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
     }
-}
-
--(void)MoveLeft{
     if(Left == TRUE){
         Ball.center = CGPointMake(Ball.center.x - 1, Ball.center.y);
     }
-}
-
-
--(void)IncreaseScore{
-    ScoreNumber = ScoreNumber + 1;
-    ScoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber];
-}
-
--(void)ObstaclesMoving{
+    
     ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y + 1);
     ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y + 1);
     ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y + 1);
     
-    if(ObstacleSingle1.center.y > 670) {
+    if(ObstacleSingle1.center.y > 475) {
         [self PlaceObstacles];
     }
     
@@ -108,6 +97,8 @@
 }
 
 -(void)GameOver{
+    [ObstacleMovement invalidate];
+    
     GameOver.hidden = FALSE;
     Ball.hidden = TRUE;
     ObstacleSingle1.hidden = TRUE;
@@ -126,6 +117,7 @@
     ObstacleSingle2.hidden = TRUE;
     ObstacleSingle3.hidden = TRUE;
     WelcomeLabel.hidden = FALSE;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

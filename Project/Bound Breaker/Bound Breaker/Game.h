@@ -32,14 +32,10 @@ int ScoreNumber;
     IBOutlet UILabel *WelcomeLabel;
     IBOutlet UILabel *ScoreLabel;
     
-    NSTimer *MoveRightTimer;
-    NSTimer *MoveLeftTimer;
     NSTimer *ObstacleMovement;
 }
 
 -(IBAction)StartGame:(id)sender;
--(void)MoveRight;
--(void)MoveLeft;
 -(IBAction)RightPress:(id)sender;
 -(IBAction)RightLiftInside:(id)sender;
 -(IBAction)RightLiftOutside:(id)sender;
@@ -49,6 +45,5 @@ int ScoreNumber;
 -(void)ObstaclesMoving;
 -(void)PlaceObstacles;
 -(void)GameOver;
--(void)IncreaseScore;
 
 @end
