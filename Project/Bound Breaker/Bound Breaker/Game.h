@@ -23,7 +23,7 @@ int ScoreNumber;
     IBOutlet UIButton *TapRight;
     IBOutlet UIButton *TapLeft;
     IBOutlet UIButton *StartGame;
-    IBOutlet UIButton *GameOver;
+    IBOutlet UIButton *MainMenu;
     
     IBOutlet UIImageView *ObstacleSingle1;
     IBOutlet UIImageView *ObstacleSingle2;

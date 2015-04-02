@@ -112,7 +112,9 @@
 -(void)GameOver{
     [ObstacleMovement invalidate];
     
-    GameOver.hidden = FALSE;
+    MainMenu.hidden = FALSE;
+    TapRight.hidden = TRUE;
+    TapLeft.hidden = TRUE;
     Ball.hidden = TRUE;
     ObstacleSingle1.hidden = TRUE;
     ObstacleSingle2.hidden = TRUE;
@@ -122,7 +124,7 @@
 
 // Execute upon view load
 - (void)viewDidLoad {
-    GameOver.hidden = TRUE;
+    MainMenu.hidden = TRUE;
     StartGame.hidden = FALSE;
     TapRight.hidden = TRUE;
     TapLeft.hidden = TRUE;
