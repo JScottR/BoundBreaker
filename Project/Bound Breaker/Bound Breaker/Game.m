@@ -16,6 +16,7 @@
 
 -(IBAction)StartGame:(id)sender{
     StartGame.hidden = TRUE;
+    ScoreLabel.hidden = FALSE;
     TapRight.hidden = FALSE;
     TapLeft.hidden = FALSE;
     Right = FALSE;
@@ -112,7 +113,7 @@
 -(void)GameOver{
     [ObstacleMovement invalidate];
     
-    MainMenu.hidden = FALSE;
+    GameOver.hidden = FALSE;
     TapRight.hidden = TRUE;
     TapLeft.hidden = TRUE;
     Ball.hidden = TRUE;
@@ -124,8 +125,9 @@
 
 // Execute upon view load
 - (void)viewDidLoad {
-    MainMenu.hidden = TRUE;
+    GameOver.hidden = TRUE;
     StartGame.hidden = FALSE;
+    ScoreLabel.hidden = TRUE;
     TapRight.hidden = TRUE;
     TapLeft.hidden = TRUE;
     Right = FALSE;
