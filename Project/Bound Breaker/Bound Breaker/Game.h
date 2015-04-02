@@ -32,6 +32,7 @@ int ScoreNumber;
     IBOutlet UILabel *WelcomeLabel;
     IBOutlet UILabel *ScoreLabel;
     
+    NSTimer *BallMovement;
     NSTimer *ObstacleMovement;
 }
 

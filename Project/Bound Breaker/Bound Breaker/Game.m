@@ -25,13 +25,22 @@
     ObstacleSingle3.hidden = FALSE;
     WelcomeLabel.hidden = TRUE;
     ScoreNumber = 0;
-                      
+    
     [self PlaceObstacles];
     ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstaclesMoving) userInfo:nil repeats:TRUE];
 }
 
 
 // Movement response from user input (touch down, release inside, and release outside)
+-(void)BallMoving{
+    while(Right == TRUE){
+        Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
+    }
+    while(Left == TRUE){
+        Ball.center = CGPointMake(Ball.center.x - 1, Ball.center.y);
+    }
+}
+
 -(IBAction)RightPress:(id)sender{
     Right = TRUE;
 }
