@@ -31,7 +31,7 @@
 }
 
 
-
+// Movement response from user input (touch down, release inside, and release outside)
 -(IBAction)RightPress:(id)sender{
     Right = TRUE;
 }
@@ -53,7 +53,7 @@
 }
 
 
-
+// Obstacle movement method
 -(void)ObstaclesMoving{
     if(Right == TRUE){
         Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
@@ -85,6 +85,8 @@
     }
 }
 
+
+// Method for the random placement of obstacles
 -(void)PlaceObstacles{
     RandomObstacleSingle1Placement = arc4random() %135;
     RandomObstacleSingle1Placement = RandomObstacleSingle1Placement + 135;
@@ -96,6 +98,8 @@
     ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, 0);
 }
 
+
+// Game Over method
 -(void)GameOver{
     [ObstacleMovement invalidate];
     
@@ -106,6 +110,8 @@
     ObstacleSingle3.hidden = TRUE;
 }
 
+
+// Execute upon view load
 - (void)viewDidLoad {
     GameOver.hidden = TRUE;
     StartGame.hidden = FALSE;
