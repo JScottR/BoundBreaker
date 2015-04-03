@@ -14,6 +14,7 @@
 
 @implementation Game
 
+//Execute once button "Start!" is pressed
 -(IBAction)StartGame:(id)sender{
     StartGame.hidden = TRUE;
     ScoreLabel.hidden = FALSE;
@@ -25,23 +26,18 @@
     ObstacleSingle2.hidden = FALSE;
     ObstacleSingle3.hidden = FALSE;
     WelcomeLabel.hidden = TRUE;
-    ScoreNumber = 0;
     
     [self PlaceObstacles];
     ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstaclesMoving) userInfo:nil repeats:TRUE];
 }
 
-
-// Movement response from user input (touch down, release inside, and release outside)
--(void)BallMoving{
-    while(Right == TRUE){
-        Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
-    }
-    while(Left == TRUE){
-        Ball.center = CGPointMake(Ball.center.x - 1, Ball.center.y);
-    }
+//Score method
+-(void)Score{
+    ScoreNumber = ScoreNumber + 1;
+    //ScoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber];
 }
 
+//Movement button action
 -(IBAction)RightPress:(id)sender{
     Right = TRUE;
 }
@@ -66,10 +62,14 @@
 // Obstacle movement method
 -(void)ObstaclesMoving{
     if(Right == TRUE){
-        Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
+        if(Ball.center.x < 300){
+            Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
+        }
     }
     if(Left == TRUE){
-        Ball.center = CGPointMake(Ball.center.x - 1, Ball.center.y);
+        if(Ball.center.x > 19){
+            Ball.center = CGPointMake(Ball.center.x - 1, Ball.center.y);
+        }
     }
     
     ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y + 1);
@@ -88,6 +88,10 @@
     }
     if(CGRectIntersectsRect(Ball.frame, ObstacleSingle3.frame)){
         Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+    }
+    
+    if(ObstacleSingle1.center.y == Ball.center.y){
+        [self Score];
     }
     
     if(Ball.center.y > 475) {
@@ -113,6 +117,10 @@
 -(void)GameOver{
     [ObstacleMovement invalidate];
     
+    if(ScoreNumber > HighScoreNumber) {
+        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
+    }
+    
     GameOver.hidden = FALSE;
     TapRight.hidden = TRUE;
     TapLeft.hidden = TRUE;
@@ -136,6 +144,9 @@
     ObstacleSingle2.hidden = TRUE;
     ObstacleSingle3.hidden = TRUE;
     WelcomeLabel.hidden = FALSE;
+    
+    ScoreNumber = 0;
+    HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

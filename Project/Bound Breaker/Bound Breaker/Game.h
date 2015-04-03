@@ -16,6 +16,7 @@ int RandomObstacleSingle2Placement;
 int RandomObstacleSingle3Placement;
 
 int ScoreNumber;
+NSInteger HighScoreNumber;
 
 @interface Game : UIViewController
 {
@@ -32,7 +33,6 @@ int ScoreNumber;
     IBOutlet UILabel *WelcomeLabel;
     IBOutlet UILabel *ScoreLabel;
     
-    NSTimer *BallMovement;
     NSTimer *ObstacleMovement;
 }
 
@@ -45,6 +45,7 @@ int ScoreNumber;
 -(IBAction)LeftLiftOutside:(id)sender;
 -(void)ObstaclesMoving;
 -(void)PlaceObstacles;
+-(void)Score;
 -(void)GameOver;
 
 @end

@@ -210,19 +210,18 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc1-G1-AIN">
                                 <rect key="frame" x="51" y="28" width="216" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-O6-i2K">
-                                <rect key="frame" x="135" y="383" width="50" height="50"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to BoundBreaker!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEF-yZ-TZ4">
                                 <rect key="frame" x="55" y="107" width="211" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-O6-i2K">
+                                <rect key="frame" x="134" y="376" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -233,7 +232,7 @@
                         <outlet property="ObstacleSingle1" destination="EUg-Bm-Rm4" id="WzR-NJ-KKw"/>
                         <outlet property="ObstacleSingle2" destination="u9D-Fa-aBX" id="BIb-rT-AEM"/>
                         <outlet property="ObstacleSingle3" destination="i1Q-lt-TnE" id="kij-ui-PUs"/>
-                        <outlet property="ScoreLabel" destination="Vc1-G1-AIN" id="fZu-ZE-BBP"/>
+                        <outlet property="ScoreLabel" destination="Vc1-G1-AIN" id="0kb-8K-YzO"/>
                         <outlet property="StartGame" destination="v1P-J6-sIU" id="Kf0-dX-1lk"/>
                         <outlet property="TapLeft" destination="fGp-Js-Mey" id="rI2-UI-hEQ"/>
                         <outlet property="TapRight" destination="2QM-3z-FLb" id="kw4-qh-Lv0"/>
@@ -340,9 +339,9 @@
         <image name="player_03.png" width="114" height="106"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="gVN-t0-hl1"/>
         <segue reference="Q1V-wT-0Lh"/>
-        <segue reference="UgU-8N-3Qy"/>
-        <segue reference="cpq-5j-jOa"/>
-        <segue reference="rF9-3m-Cb0"/>
+        <segue reference="EQ6-9s-rbL"/>
+        <segue reference="n9M-tb-ToV"/>
     </inferredMetricsTieBreakers>
 </document>
