@@ -24,7 +24,6 @@ NSInteger HighScoreNumber;
     IBOutlet UIImageView *Ball;
     IBOutlet UIButton *TapRight;
     IBOutlet UIButton *TapLeft;
-    IBOutlet UIButton *StartGame;
     IBOutlet UIButton *GameOver;
     IBOutlet UIButton *EasyDifficultyButton;
     IBOutlet UIButton *MediumDifficultyButton;

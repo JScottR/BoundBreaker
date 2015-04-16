@@ -19,24 +19,33 @@ int screenBottom = 617;
 int screenRight = 325;
 int screenLeft = 0;
 
+int ballSpeed = 2;
 int obstacleSpeed = 1;
 int singleObstacleWidth = 50;
-int singleObstacleGap = 120;
+int singleObstacleGap = 125;
 
 //Difficulty based on user choice
 -(IBAction)EasyDifficulty:(id)sender{
-    
+    obstacleSpeed = 1;
+    EasyDifficultyButton.hidden = TRUE;
+    MediumDifficultyButton.hidden = TRUE;
+    HardDifficultyButton.hidden = TRUE;
 }
 -(IBAction)MediumDifficulty:(id)sender{
-    
+    obstacleSpeed = 2;
+    EasyDifficultyButton.hidden = TRUE;
+    MediumDifficultyButton.hidden = TRUE;
+    HardDifficultyButton.hidden = TRUE;
 }
 -(IBAction)HardDifficulty:(id)sender{
-    
+    obstacleSpeed = 3;
+    EasyDifficultyButton.hidden = TRUE;
+    MediumDifficultyButton.hidden = TRUE;
+    HardDifficultyButton.hidden = TRUE;
 }
 
 //Execute once button "Start!" is pressed
 -(IBAction)StartGame:(id)sender{
-    StartGame.hidden = TRUE;
     ScoreLabel.hidden = FALSE;
     TapRight.hidden = FALSE;
     TapLeft.hidden = FALSE;
@@ -84,12 +93,12 @@ int singleObstacleGap = 120;
 -(void)ObstaclesMoving{
     if(Right == TRUE){
         if(Ball.center.x < screenRight){
-            Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
+            Ball.center = CGPointMake(Ball.center.x + ballSpeed, Ball.center.y);
         }
     }
     if(Left == TRUE){
         if(Ball.center.x > screenLeft){
-            Ball.center = CGPointMake(Ball.center.x - 1, Ball.center.y);
+            Ball.center = CGPointMake(Ball.center.x - ballSpeed, Ball.center.y);
         }
     }
     
@@ -159,8 +168,10 @@ int singleObstacleGap = 120;
 
 // Execute upon view load
 - (void)viewDidLoad {
+    EasyDifficultyButton.hidden = FALSE;
+    MediumDifficultyButton.hidden = FALSE;
+    HardDifficultyButton.hidden = FALSE;
     GameOver.hidden = TRUE;
-    StartGame.hidden = FALSE;
     ScoreLabel.hidden = TRUE;
     TapRight.hidden = TRUE;
     TapLeft.hidden = TRUE;

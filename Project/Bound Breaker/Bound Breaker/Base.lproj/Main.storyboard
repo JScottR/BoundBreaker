@@ -266,13 +266,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Bound Breaker!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEF-yZ-TZ4">
-                                <rect key="frame" x="40" y="82" width="295" height="71"/>
+                                <rect key="frame" x="40" y="64" width="295" height="71"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="014-hJ-34K">
-                                <rect key="frame" x="123" y="176" width="129" height="57"/>
+                                <rect key="frame" x="123" y="125" width="129" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Game Over">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -281,6 +281,9 @@
                                     <segue destination="5QL-NH-Nx0" kind="showDetail" id="31I-vX-73p"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dtk-kg-BOQ">
+                                <rect key="frame" x="99" y="312" width="50" height="25"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-OU-aay">
                                 <rect key="frame" x="257" y="312" width="50" height="25"/>
                             </imageView>
@@ -293,16 +296,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="47h-On-P41">
                                 <rect key="frame" x="162" y="526" width="50" height="50"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jys-Hb-LLt">
-                                <rect key="frame" x="121" y="396" width="133" height="66"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Start!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="o0u-Rn-Jcg"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWl-mH-pgx">
                                 <rect key="frame" x="239" y="9" width="118" height="91"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
@@ -328,9 +321,39 @@
                                     <action selector="LeftPress:" destination="dnN-of-sJq" eventType="touchDown" id="bCw-ug-oqq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dtk-kg-BOQ">
-                                <rect key="frame" x="99" y="312" width="50" height="25"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOJ-Wp-fCq">
+                                <rect key="frame" x="124" y="264" width="133" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MediumDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="bMF-lG-LVi"/>
+                                    <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="uaA-xR-QEU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-WY-MX5">
+                                <rect key="frame" x="121" y="190" width="133" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="EasyDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="xsz-nt-9fJ"/>
+                                    <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="EWa-WO-ugX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4E-gk-07F">
+                                <rect key="frame" x="121" y="332" width="133" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="HardDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="cac-YE-NWO"/>
+                                    <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="tTr-GR-WoY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -338,13 +361,15 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="Ball" destination="47h-On-P41" id="Xvg-GY-64T"/>
+                        <outlet property="EasyDifficultyButton" destination="Ryk-WY-MX5" id="Qm5-vq-fLS"/>
                         <outlet property="GameOver" destination="014-hJ-34K" id="LfY-9F-sBk"/>
+                        <outlet property="HardDifficultyButton" destination="v4E-gk-07F" id="4qU-nB-oqd"/>
+                        <outlet property="MediumDifficultyButton" destination="nOJ-Wp-fCq" id="Z1w-0j-Y69"/>
                         <outlet property="ObstacleSingle1" destination="9oa-Gu-gjP" id="0XN-ml-nl7"/>
                         <outlet property="ObstacleSingle2" destination="Dtk-kg-BOQ" id="Et0-nO-F3g"/>
                         <outlet property="ObstacleSingle3" destination="g4f-OU-aay" id="KAU-0c-J0E"/>
                         <outlet property="ObstacleSingle4" destination="z8j-fg-hca" id="3Pe-w4-4rm"/>
                         <outlet property="ScoreLabel" destination="JWl-mH-pgx" id="ASy-Fb-yir"/>
-                        <outlet property="StartGame" destination="jys-Hb-LLt" id="0Xa-hf-Y03"/>
                         <outlet property="TapLeft" destination="HBg-b9-X59" id="md7-35-P1M"/>
                         <outlet property="TapRight" destination="Lj5-yi-JRP" id="Rgd-ou-3Mf"/>
                         <outlet property="WelcomeLabel" destination="GEF-yZ-TZ4" id="iA9-7x-t2Y"/>
