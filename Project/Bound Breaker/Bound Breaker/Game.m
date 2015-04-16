@@ -13,6 +13,26 @@
 @end
 
 @implementation Game
+//Game settings
+int screenTop = 0;
+int screenBottom = 617;
+int screenRight = 325;
+int screenLeft = 0;
+
+int obstacleSpeed = 1;
+int singleObstacleWidth = 50;
+int singleObstacleGap = 120;
+
+//Difficulty based on user choice
+-(IBAction)EasyDifficulty:(id)sender{
+    
+}
+-(IBAction)MediumDifficulty:(id)sender{
+    
+}
+-(IBAction)HardDifficulty:(id)sender{
+    
+}
 
 //Execute once button "Start!" is pressed
 -(IBAction)StartGame:(id)sender{
@@ -25,6 +45,7 @@
     ObstacleSingle1.hidden = FALSE;
     ObstacleSingle2.hidden = FALSE;
     ObstacleSingle3.hidden = FALSE;
+    ObstacleSingle4.hidden = FALSE;
     WelcomeLabel.hidden = TRUE;
     
     [self PlaceObstacles];
@@ -62,39 +83,43 @@
 // Obstacle movement method
 -(void)ObstaclesMoving{
     if(Right == TRUE){
-        if(Ball.center.x < 300){
+        if(Ball.center.x < screenRight){
             Ball.center = CGPointMake(Ball.center.x + 1, Ball.center.y);
         }
     }
     if(Left == TRUE){
-        if(Ball.center.x > 19){
+        if(Ball.center.x > screenLeft){
             Ball.center = CGPointMake(Ball.center.x - 1, Ball.center.y);
         }
     }
     
-    ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y + 1);
-    ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y + 1);
-    ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y + 1);
+    ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y + obstacleSpeed);
+    ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y + obstacleSpeed);
+    ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y + obstacleSpeed);
+    ObstacleSingle4.center = CGPointMake(ObstacleSingle4.center.x, ObstacleSingle4.center.y + obstacleSpeed);
     
-    if(ObstacleSingle1.center.y > 475) {
+    if(ObstacleSingle1.center.y > screenBottom) {
         [self PlaceObstacles];
     }
     
     if(CGRectIntersectsRect(Ball.frame, ObstacleSingle1.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
     }
     if(CGRectIntersectsRect(Ball.frame, ObstacleSingle2.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
     }
     if(CGRectIntersectsRect(Ball.frame, ObstacleSingle3.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + 1);
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    }
+    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle4.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
     }
     
     if(ObstacleSingle1.center.y == Ball.center.y){
         [self Score];
     }
     
-    if(Ball.center.y > 475) {
+    if(Ball.center.y > screenBottom) {
         [self GameOver];
     }
 }
@@ -102,14 +127,15 @@
 
 // Method for the random placement of obstacles
 -(void)PlaceObstacles{
-    RandomObstacleSingle1Placement = arc4random() %135;
-    RandomObstacleSingle1Placement = RandomObstacleSingle1Placement + 135;
-    RandomObstacleSingle2Placement = RandomObstacleSingle1Placement - 135;
-    RandomObstacleSingle3Placement = RandomObstacleSingle2Placement - 70;
+    RandomObstacleSingle1Placement = arc4random() %(screenRight/2);
+    RandomObstacleSingle2Placement = RandomObstacleSingle1Placement + singleObstacleWidth;
+    RandomObstacleSingle3Placement = RandomObstacleSingle2Placement + singleObstacleGap;
+    RandomObstacleSingle4Placement = RandomObstacleSingle3Placement + singleObstacleWidth;
     
-    ObstacleSingle1.center = CGPointMake(RandomObstacleSingle1Placement, 0);
-    ObstacleSingle2.center = CGPointMake(RandomObstacleSingle2Placement, 0);
-    ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, 0);
+    ObstacleSingle1.center = CGPointMake(RandomObstacleSingle1Placement, screenTop);
+    ObstacleSingle2.center = CGPointMake(RandomObstacleSingle2Placement, screenTop);
+    ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, screenTop);
+    ObstacleSingle4.center = CGPointMake(RandomObstacleSingle4Placement, screenTop);
 }
 
 
@@ -143,6 +169,7 @@
     ObstacleSingle1.hidden = TRUE;
     ObstacleSingle2.hidden = TRUE;
     ObstacleSingle3.hidden = TRUE;
+    ObstacleSingle4.hidden = TRUE;
     WelcomeLabel.hidden = FALSE;
     
     ScoreNumber = 0;
