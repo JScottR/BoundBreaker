@@ -56,6 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.5" y="775.5"/>
         </scene>
         <!--Highscores-->
         <scene sceneID="BU5-mk-Liq">
@@ -100,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5q-H8-qfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="-281"/>
+            <point key="canvasLocation" x="-79.5" y="-39.5"/>
         </scene>
         <!--Settings-->
         <scene sceneID="CJf-ud-S50">
@@ -154,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imw-lM-zrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676.5" y="1508.5"/>
+            <point key="canvasLocation" x="-79.5" y="1593.5"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="PCV-u9-9mL">
@@ -249,42 +250,91 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dol-AQ-55H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350.5" y="2043.5"/>
+            <point key="canvasLocation" x="-811.5" y="1593.5"/>
         </scene>
         <!--Game-->
         <scene sceneID="fu0-lX-WXG">
             <objects>
-                <viewController title="Game" id="dnN-of-sJq" sceneMemberID="viewController">
+                <viewController title="Game" id="dnN-of-sJq" customClass="Game" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d8B-Gs-u6V"/>
                         <viewControllerLayoutGuide type="bottom" id="kqj-yS-dI1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nLE-zW-RNR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Awesome Game!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEF-yZ-TZ4">
-                                <rect key="frame" x="101" y="191" width="173" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Bound Breaker!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEF-yZ-TZ4">
+                                <rect key="frame" x="153" y="100" width="295" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="014-hJ-34K">
-                                <rect key="frame" x="171" y="271" width="32" height="30"/>
-                                <state key="normal" title="Next">
+                                <rect key="frame" x="236" y="239" width="129" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Game Over">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="5QL-NH-Nx0" kind="showDetail" id="31I-vX-73p"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dtk-kg-BOQ">
+                                <rect key="frame" x="337" y="312" width="50" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-OU-aay">
+                                <rect key="frame" x="416" y="312" width="50" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="9oa-Gu-gjP">
+                                <rect key="frame" x="147" y="312" width="50" height="25"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="47h-On-P41">
+                                <rect key="frame" x="275" y="496" width="50" height="50"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jys-Hb-LLt">
+                                <rect key="frame" x="234" y="373" width="133" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Start!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3I-r2-Etx">
+                                <rect key="frame" x="391" y="407" width="209" height="193"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-yi-JRP">
+                                <rect key="frame" x="0.0" y="407" width="209" height="193"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWl-mH-pgx">
+                                <rect key="frame" x="466" y="20" width="118" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Ball" destination="47h-On-P41" id="Xvg-GY-64T"/>
+                        <outlet property="GameOver" destination="014-hJ-34K" id="LfY-9F-sBk"/>
+                        <outlet property="ObstacleSingle1" destination="9oa-Gu-gjP" id="0XN-ml-nl7"/>
+                        <outlet property="ObstacleSingle2" destination="Dtk-kg-BOQ" id="Et0-nO-F3g"/>
+                        <outlet property="ObstacleSingle3" destination="g4f-OU-aay" id="KAU-0c-J0E"/>
+                        <outlet property="StartGame" destination="jys-Hb-LLt" id="0Xa-hf-Y03"/>
+                        <outlet property="TapLeft" destination="w3I-r2-Etx" id="xec-6R-bWw"/>
+                        <outlet property="TapRight" destination="Lj5-yi-JRP" id="Rgd-ou-3Mf"/>
+                        <outlet property="WelcomeLabel" destination="GEF-yZ-TZ4" id="iA9-7x-t2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT9-Rz-WRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1147" y="389"/>
+            <point key="canvasLocation" x="504" y="775"/>
         </scene>
         <!--Game Over-->
         <scene sceneID="tfl-tP-G2S">
@@ -295,7 +345,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lSi-DS-zZQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x1n-El-j7l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yay! you played the game! " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFZ-7m-r9M">
@@ -358,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEy-Xd-UrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="389"/>
+            <point key="canvasLocation" x="1210" y="775"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="bpX-JJ-OWf">
@@ -410,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWf-jf-7Op" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-503.5" y="-201.5"/>
+            <point key="canvasLocation" x="-811.5" y="-39.5"/>
         </scene>
         <!--Login-->
         <scene sceneID="Sgh-Y9-e7T">
@@ -485,10 +535,14 @@
             <point key="canvasLocation" x="-811.5" y="775.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="enemy1_07.png" width="173" height="75"/>
+        <image name="player_03.png" width="114" height="106"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Do2-WQ-9pp"/>
-        <segue reference="cpq-5j-jOa"/>
+        <segue reference="4Sy-f6-FW5"/>
         <segue reference="UgU-8N-3Qy"/>
-        <segue reference="PUX-fI-h25"/>
+        <segue reference="J4W-Zx-wdB"/>
     </inferredMetricsTieBreakers>
 </document>
