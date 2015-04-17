@@ -74,6 +74,7 @@
     newUser.username = _userNameField.text;
     newUser.email = _emailField.text;
     newUser.password = _passwordField.text;
+    newUser[@"highScore"] = @0;
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
             NSLog(@"Registration Complete");
