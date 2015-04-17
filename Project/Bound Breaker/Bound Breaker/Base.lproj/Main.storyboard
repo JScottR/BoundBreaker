@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21R-yj-sdx">
-                                <rect key="frame" x="279" y="76" width="44" height="21"/>
+                                <rect key="frame" x="165" y="72" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdB-Ck-qsx">
-                                <rect key="frame" x="279" y="190" width="46" height="30"/>
+                                <rect key="frame" x="138" y="181" width="98" height="68"/>
                                 <state key="normal" title="Play!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHk-xg-I0H">
-                                <rect key="frame" x="248" y="285" width="106" height="30"/>
+                                <rect key="frame" x="102" y="292" width="170" height="71"/>
                                 <state key="normal" title="Highscores">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKJ-bL-pM5">
-                                <rect key="frame" x="266" y="389" width="73" height="30"/>
+                                <rect key="frame" x="111" y="425" width="152" height="82"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -281,18 +281,6 @@
                                     <segue destination="5QL-NH-Nx0" kind="showDetail" id="31I-vX-73p"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dtk-kg-BOQ">
-                                <rect key="frame" x="99" y="312" width="50" height="25"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-OU-aay">
-                                <rect key="frame" x="257" y="312" width="50" height="25"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="z8j-fg-hca">
-                                <rect key="frame" x="315" y="312" width="50" height="25"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="9oa-Gu-gjP">
-                                <rect key="frame" x="33" y="312" width="50" height="25"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="47h-On-P41">
                                 <rect key="frame" x="162" y="526" width="50" height="50"/>
                             </imageView>
@@ -333,7 +321,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-WY-MX5">
-                                <rect key="frame" x="121" y="190" width="133" height="66"/>
+                                <rect key="frame" x="121" y="183" width="133" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Easy">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -344,7 +332,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4E-gk-07F">
-                                <rect key="frame" x="121" y="332" width="133" height="66"/>
+                                <rect key="frame" x="121" y="338" width="133" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Hard">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -354,6 +342,18 @@
                                     <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="tTr-GR-WoY"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy_long.png" translatesAutoresizingMaskIntoConstraints="NO" id="1cy-Ig-CKj">
+                                <rect key="frame" x="-48" y="329" width="290" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy_long.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dwm-WD-jAu">
+                                <rect key="frame" x="299" y="329" width="290" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy_long.png" translatesAutoresizingMaskIntoConstraints="NO" id="PAx-Hf-Q8B">
+                                <rect key="frame" x="-171" y="248" width="290" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy_long.png" translatesAutoresizingMaskIntoConstraints="NO" id="Is3-kg-hza">
+                                <rect key="frame" x="205" y="248" width="290" height="28"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -365,14 +365,14 @@
                         <outlet property="GameOver" destination="014-hJ-34K" id="LfY-9F-sBk"/>
                         <outlet property="HardDifficultyButton" destination="v4E-gk-07F" id="4qU-nB-oqd"/>
                         <outlet property="MediumDifficultyButton" destination="nOJ-Wp-fCq" id="Z1w-0j-Y69"/>
-                        <outlet property="ObstacleSingle1" destination="9oa-Gu-gjP" id="0XN-ml-nl7"/>
-                        <outlet property="ObstacleSingle2" destination="Dtk-kg-BOQ" id="Et0-nO-F3g"/>
-                        <outlet property="ObstacleSingle3" destination="g4f-OU-aay" id="KAU-0c-J0E"/>
-                        <outlet property="ObstacleSingle4" destination="z8j-fg-hca" id="3Pe-w4-4rm"/>
                         <outlet property="ScoreLabel" destination="JWl-mH-pgx" id="ASy-Fb-yir"/>
                         <outlet property="TapLeft" destination="HBg-b9-X59" id="md7-35-P1M"/>
                         <outlet property="TapRight" destination="Lj5-yi-JRP" id="Rgd-ou-3Mf"/>
                         <outlet property="WelcomeLabel" destination="GEF-yZ-TZ4" id="iA9-7x-t2Y"/>
+                        <outlet property="longObstacle1" destination="1cy-Ig-CKj" id="WyK-68-iD5"/>
+                        <outlet property="longObstacle2" destination="Dwm-WD-jAu" id="un5-at-6kX"/>
+                        <outlet property="longObstacle3" destination="PAx-Hf-Q8B" id="WCb-MO-gFw"/>
+                        <outlet property="longObstacle4" destination="Is3-kg-hza" id="1qh-SR-Spx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT9-Rz-WRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -591,13 +591,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="enemy1_07.png" width="173" height="75"/>
+        <image name="enemy_long.png" width="298" height="23"/>
         <image name="player_03.png" width="114" height="106"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Do2-WQ-9pp"/>
-        <segue reference="4Sy-f6-FW5"/>
-        <segue reference="UgU-8N-3Qy"/>
+        <segue reference="n9M-tb-ToV"/>
         <segue reference="J4W-Zx-wdB"/>
+        <segue reference="EQ6-9s-rbL"/>
+        <segue reference="gVN-t0-hl1"/>
     </inferredMetricsTieBreakers>
 </document>

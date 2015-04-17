@@ -10,11 +10,13 @@
 
 bool Right;
 bool Left;
+bool longObstacleGenerate1;
+bool longObstacleGenerate2;
 
-int RandomObstacleSingle1Placement;
-int RandomObstacleSingle2Placement;
-int RandomObstacleSingle3Placement;
-int RandomObstacleSingle4Placement;
+int randomLongObstacle1Placement;
+int randomLongObstacle2Placement;
+int randomLongObstacle3Placement;
+int randomLongObstacle4Placement;
 
 int ScoreNumber;
 NSInteger HighScoreNumber;
@@ -29,10 +31,10 @@ NSInteger HighScoreNumber;
     IBOutlet UIButton *MediumDifficultyButton;
     IBOutlet UIButton *HardDifficultyButton;
     
-    IBOutlet UIImageView *ObstacleSingle1;
-    IBOutlet UIImageView *ObstacleSingle2;
-    IBOutlet UIImageView *ObstacleSingle3;
-    IBOutlet UIImageView *ObstacleSingle4;
+    IBOutlet UIImageView *longObstacle1;
+    IBOutlet UIImageView *longObstacle2;
+    IBOutlet UIImageView *longObstacle3;
+    IBOutlet UIImageView *longObstacle4;
     
     IBOutlet UILabel *WelcomeLabel;
     IBOutlet UILabel *ScoreLabel;
@@ -51,7 +53,8 @@ NSInteger HighScoreNumber;
 -(IBAction)LeftLiftInside:(id)sender;
 -(IBAction)LeftLiftOutside:(id)sender;
 -(void)ObstaclesMoving;
--(void)PlaceObstacles;
+-(void)PlaceObstacles1;
+-(void)PlaceObstacles2;
 -(void)Score;
 -(void)GameOver;
 

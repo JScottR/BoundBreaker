@@ -16,13 +16,15 @@
 //Game settings
 int screenTop = 0;
 int screenBottom = 617;
-int screenRight = 325;
-int screenLeft = 0;
+int screenRight = 346;
+int screenLeft = 20;
 
 int ballSpeed = 2;
 int obstacleSpeed = 1;
-int singleObstacleWidth = 50;
-int singleObstacleGap = 125;
+int obstacleDistance = 300;
+int obstacleGap = 100;
+int longObstacleWidth = 290;
+int obstacleGeneratorBuffer = 10;
 
 //Difficulty based on user choice
 -(IBAction)EasyDifficulty:(id)sender{
@@ -51,13 +53,15 @@ int singleObstacleGap = 125;
     TapLeft.hidden = FALSE;
     Right = FALSE;
     Left = FALSE;
-    ObstacleSingle1.hidden = FALSE;
-    ObstacleSingle2.hidden = FALSE;
-    ObstacleSingle3.hidden = FALSE;
-    ObstacleSingle4.hidden = FALSE;
+    longObstacleGenerate1 = TRUE;
+    longObstacleGenerate2 = FALSE;
+    longObstacle1.hidden = FALSE;
+    longObstacle2.hidden = FALSE;
+    longObstacle3.hidden = TRUE;
+    longObstacle4.hidden = TRUE;
     WelcomeLabel.hidden = TRUE;
     
-    [self PlaceObstacles];
+    [self PlaceObstacles1];
     ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstaclesMoving) userInfo:nil repeats:TRUE];
 }
 
@@ -102,29 +106,35 @@ int singleObstacleGap = 125;
         }
     }
     
-    ObstacleSingle1.center = CGPointMake(ObstacleSingle1.center.x, ObstacleSingle1.center.y + obstacleSpeed);
-    ObstacleSingle2.center = CGPointMake(ObstacleSingle2.center.x, ObstacleSingle2.center.y + obstacleSpeed);
-    ObstacleSingle3.center = CGPointMake(ObstacleSingle3.center.x, ObstacleSingle3.center.y + obstacleSpeed);
-    ObstacleSingle4.center = CGPointMake(ObstacleSingle4.center.x, ObstacleSingle4.center.y + obstacleSpeed);
+    longObstacle1.center = CGPointMake(longObstacle1.center.x, longObstacle1.center.y + obstacleSpeed);
+    longObstacle2.center = CGPointMake(longObstacle2.center.x, longObstacle2.center.y + obstacleSpeed);
+    longObstacle3.center = CGPointMake(longObstacle3.center.x, longObstacle3.center.y + obstacleSpeed);
+    longObstacle4.center = CGPointMake(longObstacle4.center.x, longObstacle4.center.y + obstacleSpeed);
     
-    if(ObstacleSingle1.center.y > screenBottom) {
-        [self PlaceObstacles];
-    }
-    
-    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle1.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
-    }
-    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle2.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
-    }
-    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle3.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
-    }
-    if(CGRectIntersectsRect(Ball.frame, ObstacleSingle4.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    if(longObstacle1.center.y > abs(obstacleDistance-screenTop) & longObstacle1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
+        longObstacleGenerate2 = TRUE;
+        [self PlaceObstacles2];
     }
     
-    if(ObstacleSingle1.center.y == Ball.center.y){
+    if(longObstacle3.center.y > abs(obstacleDistance-screenTop) & longObstacle3.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
+        longObstacleGenerate1 = TRUE;
+        [self PlaceObstacles1];
+    }
+    
+    if((longObstacle1.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle1.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    }
+    if((longObstacle2.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle2.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    }
+    if((longObstacle3.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle3.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    }
+    if((longObstacle4.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle4.frame)){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    }
+    
+    if(longObstacle1.center.y == Ball.center.y || longObstacle3.center.y == Ball.center.y){
         [self Score];
     }
     
@@ -135,16 +145,32 @@ int singleObstacleGap = 125;
 
 
 // Method for the random placement of obstacles
--(void)PlaceObstacles{
-    RandomObstacleSingle1Placement = arc4random() %(screenRight/2);
-    RandomObstacleSingle2Placement = RandomObstacleSingle1Placement + singleObstacleWidth;
-    RandomObstacleSingle3Placement = RandomObstacleSingle2Placement + singleObstacleGap;
-    RandomObstacleSingle4Placement = RandomObstacleSingle3Placement + singleObstacleWidth;
+-(void)PlaceObstacles1{
+    if(longObstacleGenerate1 == TRUE){
+        randomLongObstacle1Placement = arc4random() %abs(screenRight-screenLeft);
+        randomLongObstacle2Placement = randomLongObstacle1Placement + longObstacleWidth + obstacleGap;
+
+        longObstacle1.center = CGPointMake(randomLongObstacle1Placement, screenTop);
+        longObstacle2.center = CGPointMake(randomLongObstacle2Placement, screenTop);
+        
+        longObstacle1.hidden = FALSE;
+        longObstacle2.hidden = FALSE;
+    }
+    longObstacleGenerate1 = FALSE;
+}
+
+-(void)PlaceObstacles2{
+    if(longObstacleGenerate2 == TRUE){
+        randomLongObstacle3Placement = arc4random() %abs(screenRight-screenLeft);
+        randomLongObstacle4Placement = randomLongObstacle3Placement + longObstacleWidth + obstacleGap;
     
-    ObstacleSingle1.center = CGPointMake(RandomObstacleSingle1Placement, screenTop);
-    ObstacleSingle2.center = CGPointMake(RandomObstacleSingle2Placement, screenTop);
-    ObstacleSingle3.center = CGPointMake(RandomObstacleSingle3Placement, screenTop);
-    ObstacleSingle4.center = CGPointMake(RandomObstacleSingle4Placement, screenTop);
+        longObstacle3.center = CGPointMake(randomLongObstacle3Placement, screenTop);
+        longObstacle4.center = CGPointMake(randomLongObstacle4Placement, screenTop);
+        
+        longObstacle3.hidden = FALSE;
+        longObstacle4.hidden = FALSE;
+    }
+    longObstacleGenerate2 = FALSE;
 }
 
 
@@ -160,9 +186,10 @@ int singleObstacleGap = 125;
     TapRight.hidden = TRUE;
     TapLeft.hidden = TRUE;
     Ball.hidden = TRUE;
-    ObstacleSingle1.hidden = TRUE;
-    ObstacleSingle2.hidden = TRUE;
-    ObstacleSingle3.hidden = TRUE;
+    longObstacle1.hidden = TRUE;
+    longObstacle2.hidden = TRUE;
+    longObstacle3.hidden = TRUE;
+    longObstacle4.hidden = TRUE;
 }
 
 
@@ -177,10 +204,12 @@ int singleObstacleGap = 125;
     TapLeft.hidden = TRUE;
     Right = FALSE;
     Left = FALSE;
-    ObstacleSingle1.hidden = TRUE;
-    ObstacleSingle2.hidden = TRUE;
-    ObstacleSingle3.hidden = TRUE;
-    ObstacleSingle4.hidden = TRUE;
+    longObstacleGenerate1 = FALSE;
+    longObstacleGenerate2 = FALSE;
+    longObstacle1.hidden = TRUE;
+    longObstacle2.hidden = TRUE;
+    longObstacle3.hidden = TRUE;
+    longObstacle4.hidden = TRUE;
     WelcomeLabel.hidden = FALSE;
     
     ScoreNumber = 0;

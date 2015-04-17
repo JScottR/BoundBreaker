@@ -39,6 +39,7 @@
 		A20B7F1A1AE0640300FE1250 /* enemy2_11.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F161AE0640300FE1250 /* enemy2_11.png */; };
 		A20B7F1B1AE0640300FE1250 /* player_03.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F171AE0640300FE1250 /* player_03.png */; };
 		A20B7F1C1AE0640300FE1250 /* Untitled-1_03.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F181AE0640300FE1250 /* Untitled-1_03.png */; };
+		A20B7F221AE089DA00FE1250 /* enemy_long.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F211AE089DA00FE1250 /* enemy_long.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		A20B7F161AE0640300FE1250 /* enemy2_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy2_11.png; sourceTree = "<group>"; };
 		A20B7F171AE0640300FE1250 /* player_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_03.png; sourceTree = "<group>"; };
 		A20B7F181AE0640300FE1250 /* Untitled-1_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled-1_03.png"; sourceTree = "<group>"; };
+		A20B7F211AE089DA00FE1250 /* enemy_long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_long.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		29CBC4E11AA149DF0067E2E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A20B7F211AE089DA00FE1250 /* enemy_long.png */,
 				A20B7F151AE0640300FE1250 /* enemy1_07.png */,
 				A20B7F161AE0640300FE1250 /* enemy2_11.png */,
 				A20B7F171AE0640300FE1250 /* player_03.png */,
@@ -308,6 +311,7 @@
 				29CBC4F21AA149DF0067E2E3 /* LaunchScreen.xib in Resources */,
 				A20B7F1B1AE0640300FE1250 /* player_03.png in Resources */,
 				29E802D91AA9307600D93542 /* background.gif in Resources */,
+				A20B7F221AE089DA00FE1250 /* enemy_long.png in Resources */,
 				A20B7F1A1AE0640300FE1250 /* enemy2_11.png in Resources */,
 				A20B7F1C1AE0640300FE1250 /* Untitled-1_03.png in Resources */,
 				A20B7F191AE0640300FE1250 /* enemy1_07.png in Resources */,
