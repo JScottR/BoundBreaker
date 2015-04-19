@@ -17,7 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    PFUser *user = [PFUser currentUser];
+    NSString *userName = user.username;
+    NSString *email = user.email;
+    int highScore = [user[@"highScore"] intValue];
+    _highScoreLabel.text = [NSString stringWithFormat:@"%i", highScore];
+    _userNameLabel.text = [NSString stringWithFormat:@"%@", userName];
+    _emailLabel.text = [NSString stringWithFormat:@"%@", email];
+    _userNameField.text = [NSString stringWithFormat:@"%@", userName];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -36,6 +45,26 @@
 
 - (IBAction)logoutButton:(id)sender {
     [PFUser logOut];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self performSegueWithIdentifier:@"logout" sender:self];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)deleteButton:(id)sender {
+    PFUser *user = [PFUser currentUser];
+    [user deleteInBackground];
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"logout" sender:self];
+}
+
+
+- (IBAction)saveChanges:(id)sender {
+    PFUser *user = [PFUser currentUser];
+    user.username = _userNameField.text;
+    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
+        if (!error) {
+            NSLog(@"Updated");
+        }
+    }];
+    
 }
 @end
