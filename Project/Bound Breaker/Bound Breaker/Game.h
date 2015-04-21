@@ -53,6 +53,8 @@ NSInteger HighScoreNumber;
 -(IBAction)LeftLiftInside:(id)sender;
 -(IBAction)LeftLiftOutside:(id)sender;
 -(void)ObstaclesMoving;
+-(void)ballTouchingObstacle;
+-(void)ballNotTouchingObstacle;
 -(void)PlaceObstacles1;
 -(void)PlaceObstacles2;
 -(void)Score;

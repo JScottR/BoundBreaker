@@ -13,14 +13,18 @@
 @end
 
 @implementation Game
-//Game settings
-int screenTop = 0;
-int screenBottom = 617;
+//Game settings - change to obtain correct obstacle placement, gameover mechanism, etc.
+int screenTop = -30;        //less than zero to place obstacles above the actual screen top
+int screenBottom = 645;
 int screenRight = 346;
 int screenLeft = 20;
 
-int ballSpeed = 2;
+int ballSpeed = 3;
 int obstacleSpeed = 1;
+int defaultBallYCoord = 525;
+int recoverySpeed = 1;
+
+int numberOfObstaclesOnScreen = 2;
 int obstacleDistance = 300;
 int obstacleGap = 100;
 int longObstacleWidth = 290;
@@ -93,8 +97,9 @@ int obstacleGeneratorBuffer = 10;
 }
 
 
-// Obstacle movement method
+//Obstacle movement method - executed by 'ObstacleMovement' timer
 -(void)ObstaclesMoving{
+    //Move ball if movement buttons are pressed
     if(Right == TRUE){
         if(Ball.center.x < screenRight){
             Ball.center = CGPointMake(Ball.center.x + ballSpeed, Ball.center.y);
@@ -106,11 +111,14 @@ int obstacleGeneratorBuffer = 10;
         }
     }
     
+    //Move obstacles towards bottom of screen
     longObstacle1.center = CGPointMake(longObstacle1.center.x, longObstacle1.center.y + obstacleSpeed);
     longObstacle2.center = CGPointMake(longObstacle2.center.x, longObstacle2.center.y + obstacleSpeed);
     longObstacle3.center = CGPointMake(longObstacle3.center.x, longObstacle3.center.y + obstacleSpeed);
     longObstacle4.center = CGPointMake(longObstacle4.center.x, longObstacle4.center.y + obstacleSpeed);
     
+    //Place obstacles based on postion of other obstacles
+    //Highly variable depending on number of obstacles and obtacle types
     if(longObstacle1.center.y > abs(obstacleDistance-screenTop) & longObstacle1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
         longObstacleGenerate2 = TRUE;
         [self PlaceObstacles2];
@@ -121,30 +129,40 @@ int obstacleGeneratorBuffer = 10;
         [self PlaceObstacles1];
     }
     
-    if((longObstacle1.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle1.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    //Move ball towards bottom of screen if touching non-hidden obstacles, otherwise move ball up
+    if(((longObstacle1.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle1.frame))
+       | ((longObstacle2.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle2.frame))
+       | ((longObstacle3.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle3.frame))
+       | ((longObstacle4.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle4.frame))) {
+        [self ballTouchingObstacle];
     }
-    if((longObstacle2.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle2.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
-    }
-    if((longObstacle3.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle3.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
-    }
-    if((longObstacle4.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle4.frame)){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    else{
+        [self ballNotTouchingObstacle];
     }
     
+    //Increase score when obstacles pass the ball's center
     if(longObstacle1.center.y == Ball.center.y || longObstacle3.center.y == Ball.center.y){
         [self Score];
     }
     
+    //Game over if ball touches bottom of screen
     if(Ball.center.y > screenBottom) {
         [self GameOver];
     }
 }
 
+//Move ball down if touching obstacles, otherwise move up towards default
+-(void)ballTouchingObstacle{
+    Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+}
+-(void)ballNotTouchingObstacle{
+    if(Ball.center.y > defaultBallYCoord){
+        Ball.center = CGPointMake(Ball.center.x, Ball.center.y - recoverySpeed);
+    }
+}
 
-// Method for the random placement of obstacles
+
+//Method for the random placement of obstacles
 -(void)PlaceObstacles1{
     if(longObstacleGenerate1 == TRUE){
         randomLongObstacle1Placement = arc4random() %abs(screenRight-screenLeft);
@@ -174,7 +192,7 @@ int obstacleGeneratorBuffer = 10;
 }
 
 
-// Game Over method
+//Executed once ball touches bottom of screen
 -(void)GameOver{
     [ObstacleMovement invalidate];
     
@@ -193,7 +211,7 @@ int obstacleGeneratorBuffer = 10;
 }
 
 
-// Execute upon view load
+//Execute upon view load
 - (void)viewDidLoad {
     EasyDifficultyButton.hidden = FALSE;
     MediumDifficultyButton.hidden = FALSE;
