@@ -378,7 +378,7 @@
                         <outlet property="GameOver" destination="014-hJ-34K" id="LfY-9F-sBk"/>
                         <outlet property="HardDifficultyButton" destination="v4E-gk-07F" id="4qU-nB-oqd"/>
                         <outlet property="MediumDifficultyButton" destination="nOJ-Wp-fCq" id="Z1w-0j-Y69"/>
-                        <outlet property="ScoreLabel" destination="JWl-mH-pgx" id="ASy-Fb-yir"/>
+                        <outlet property="ScoreLabel" destination="JWl-mH-pgx" id="LDx-6A-Nhu"/>
                         <outlet property="TapLeft" destination="HBg-b9-X59" id="md7-35-P1M"/>
                         <outlet property="TapRight" destination="Lj5-yi-JRP" id="Rgd-ou-3Mf"/>
                         <outlet property="WelcomeLabel" destination="GEF-yZ-TZ4" id="iA9-7x-t2Y"/>

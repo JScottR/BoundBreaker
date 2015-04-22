@@ -71,8 +71,9 @@ int obstacleGeneratorBuffer = 10;
 
 //Score method
 -(void)Score{
-    ScoreNumber = ScoreNumber + 1;
+    ScoreNumber++;
     //ScoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber];
+    NSLog(@"%d", ScoreNumber);
 }
 
 //Movement button action
@@ -208,6 +209,7 @@ int obstacleGeneratorBuffer = 10;
     longObstacle2.hidden = TRUE;
     longObstacle3.hidden = TRUE;
     longObstacle4.hidden = TRUE;
+    ScoreLabel.text = [NSString stringWithFormat:@"%d", ScoreNumber];
 }
 
 
