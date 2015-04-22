@@ -1,29 +1,26 @@
-//
-//  Game.h
-//  Bound Breaker
-//
-//  Created by Victor Manuel Palacios Rivera on 3/12/15.
-//
-//
+/*!
+ @header Game.h
+ 
+ @brief This is the header file for Game.m. It contains methods and variable declarations
+ 
+ @author Victor Palacios
+ @copyright 2015 Victor Palacios
+*/
 
 #import <UIKit/UIKit.h>
-
+/*! Variables */
 bool Right;
 bool Left;
-bool longObstacleGenerate1;
-bool longObstacleGenerate2;
-
 int randomLongObstacle1Placement;
 int randomLongObstacle2Placement;
 int randomLongObstacle3Placement;
 int randomLongObstacle4Placement;
-
 int ScoreNumber;
 NSInteger HighScoreNumber;
 
+/*! User interface elements */
 @interface Game : UIViewController
 {
-    IBOutlet UIImageView *Ball;
     IBOutlet UIButton *TapRight;
     IBOutlet UIButton *TapLeft;
     IBOutlet UIButton *GameOver;
@@ -31,6 +28,7 @@ NSInteger HighScoreNumber;
     IBOutlet UIButton *MediumDifficultyButton;
     IBOutlet UIButton *HardDifficultyButton;
     
+    IBOutlet UIImageView *Ball;
     IBOutlet UIImageView *longObstacle1;
     IBOutlet UIImageView *longObstacle2;
     IBOutlet UIImageView *longObstacle3;
@@ -42,6 +40,7 @@ NSInteger HighScoreNumber;
     NSTimer *ObstacleMovement;
 }
 
+/*! Actions and methods */
 -(IBAction)StartGame:(id)sender;
 -(IBAction)EasyDifficulty:(id)sender;
 -(IBAction)MediumDifficulty:(id)sender;
