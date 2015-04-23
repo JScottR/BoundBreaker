@@ -8,6 +8,7 @@
  */
 
 #import "Game.h"
+#import <Parse/Parse.h>
 
 @interface Game ()
 
@@ -68,6 +69,10 @@ int obstacleGeneratorBuffer = 10;
     longObstacle3.hidden = TRUE;
     longObstacle4.hidden = TRUE;
     WelcomeLabel.hidden = TRUE;
+    PFUser *user = [PFUser currentUser];
+    NSNumber *currentHighScore = user[@"highScore"];
+    HighScoreNumber = [currentHighScore intValue];
+   
     
     [self PlaceObstacles1];
     ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstaclesMoving) userInfo:nil repeats:TRUE];
@@ -207,6 +212,15 @@ int obstacleGeneratorBuffer = 10;
     
     if(ScoreNumber > HighScoreNumber) {
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
+        PFUser *user = [PFUser currentUser];
+        NSNumber *newHighScore = [NSNumber numberWithInt:ScoreNumber];
+        user[@"highScore"] = newHighScore;
+        NSLog(@"%@",newHighScore);
+        [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
+            if (!error) {
+                NSLog(@"Updated");
+            }
+        }];
     }
     
     GameOver.hidden = FALSE;
