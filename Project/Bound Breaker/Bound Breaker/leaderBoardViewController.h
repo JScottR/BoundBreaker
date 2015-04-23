@@ -1,5 +1,5 @@
 /*!
- @file leaderBoradViewController.h
+ @file leaderBoardViewController.h
  */
 
 #import <UIKit/UIKit.h>
