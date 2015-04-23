@@ -436,12 +436,6 @@
                                     <segue destination="5QL-NH-Nx0" kind="showDetail" id="31I-vX-73p"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWl-mH-pgx">
-                                <rect key="frame" x="239" y="9" width="118" height="91"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-yi-JRP">
                                 <rect key="frame" x="239" y="516" width="136" height="151"/>
                                 <state key="normal">
@@ -520,7 +514,6 @@
                         <outlet property="GameOver" destination="014-hJ-34K" id="LfY-9F-sBk"/>
                         <outlet property="HardDifficultyButton" destination="v4E-gk-07F" id="4qU-nB-oqd"/>
                         <outlet property="MediumDifficultyButton" destination="nOJ-Wp-fCq" id="Z1w-0j-Y69"/>
-                        <outlet property="ScoreLabel" destination="JWl-mH-pgx" id="LDx-6A-Nhu"/>
                         <outlet property="TapLeft" destination="HBg-b9-X59" id="md7-35-P1M"/>
                         <outlet property="TapRight" destination="Lj5-yi-JRP" id="Rgd-ou-3Mf"/>
                         <outlet property="WelcomeLabel" destination="GEF-yZ-TZ4" id="iA9-7x-t2Y"/>
@@ -537,7 +530,7 @@
         <!--Game Over-->
         <scene sceneID="tfl-tP-G2S">
             <objects>
-                <viewController title="Game Over" id="5QL-NH-Nx0" sceneMemberID="viewController">
+                <viewController title="Game Over" id="5QL-NH-Nx0" customClass="GameOver" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V2e-qJ-l12"/>
                         <viewControllerLayoutGuide type="bottom" id="lSi-DS-zZQ"/>
@@ -552,14 +545,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score: 2718" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjW-9n-p2j">
-                                <rect key="frame" x="121" y="416" width="132" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjW-9n-p2j">
+                                <rect key="frame" x="121" y="385" width="132" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Highscore: 3141" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-MG-qCH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-MG-qCH">
                                 <rect key="frame" x="105" y="460" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Highscore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDX-cv-3oz">
+                                <rect key="frame" x="105" y="431" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -600,11 +599,21 @@
                                     <segue destination="vXZ-lx-hvc" kind="showDetail" id="J4W-Zx-wdB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vet-tZ-y3V">
+                                <rect key="frame" x="121" y="356" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="iOx-MG-qCH" id="38p-s6-rCT"/>
+                        <outlet property="scoreLabel" destination="mjW-9n-p2j" id="a6l-A8-tVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEy-Xd-UrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -750,9 +759,9 @@
         <image name="player_03.png" width="114" height="106"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gVN-t0-hl1"/>
-        <segue reference="B6e-XW-DLa"/>
-        <segue reference="n9M-tb-ToV"/>
-        <segue reference="Yb3-MW-nvg"/>
+        <segue reference="Do2-WQ-9pp"/>
+        <segue reference="4Sy-f6-FW5"/>
+        <segue reference="UgU-8N-3Qy"/>
+        <segue reference="J4W-Zx-wdB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -35,7 +35,6 @@ NSInteger HighScoreNumber;
     IBOutlet UIImageView *longObstacle4;
     
     IBOutlet UILabel *WelcomeLabel;
-    IBOutlet UILabel *ScoreLabel;
     
     NSTimer *ObstacleMovement;
 }

@@ -42,6 +42,7 @@
 		A20B7F221AE089DA00FE1250 /* enemy_long.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F211AE089DA00FE1250 /* enemy_long.png */; };
 		A25FD9BF1AE96A3D007CE212 /* background.gif in Resources */ = {isa = PBXBuildFile; fileRef = A25FD9BD1AE96A3D007CE212 /* background.gif */; };
 		A25FD9C01AE96A3D007CE212 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A25FD9BE1AE96A3D007CE212 /* Background.png */; };
+		A25FD9D01AE9748B007CE212 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FD9CF1AE9748B007CE212 /* GameOver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		A20B7F211AE089DA00FE1250 /* enemy_long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_long.png; sourceTree = "<group>"; };
 		A25FD9BD1AE96A3D007CE212 /* background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = background.gif; sourceTree = "<group>"; };
 		A25FD9BE1AE96A3D007CE212 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		A25FD9CE1AE9748B007CE212 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
+		A25FD9CF1AE9748B007CE212 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				29CBC4E91AA149DF0067E2E3 /* ViewController.m */,
 				A20B7F121AE0629F00FE1250 /* Game.h */,
 				A20B7F131AE0629F00FE1250 /* Game.m */,
+				A25FD9CE1AE9748B007CE212 /* GameOver.h */,
+				A25FD9CF1AE9748B007CE212 /* GameOver.m */,
 				29E9D5721ACC981D00161D91 /* LoginViewController.h */,
 				29E9D5731ACC981D00161D91 /* LoginViewController.m */,
 				29CBC4EB1AA149DF0067E2E3 /* Main.storyboard */,
@@ -345,6 +350,7 @@
 				29E9D5741ACC981D00161D91 /* LoginViewController.m in Sources */,
 				29CBC4EA1AA149DF0067E2E3 /* ViewController.m in Sources */,
 				29CBC4E71AA149DF0067E2E3 /* AppDelegate.m in Sources */,
+				A25FD9D01AE9748B007CE212 /* GameOver.m in Sources */,
 				A20B7F141AE0629F00FE1250 /* Game.m in Sources */,
 				29CBC4E41AA149DF0067E2E3 /* main.m in Sources */,
 				29E9D5771ACCA71100161D91 /* ProfileViewController.m in Sources */,
