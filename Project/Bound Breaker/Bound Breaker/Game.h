@@ -1,5 +1,5 @@
 /*!
- @header Game.h
+ @file Game.h
  
  @brief This is the header file for Game.m. It contains methods and variable declarations
  

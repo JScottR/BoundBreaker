@@ -1,10 +1,6 @@
-//
-//  ProfileViewController.h
-//  Bound Breaker
-//
-//  Created by JScott Richards on 4/1/15.
-//
-//
+/*!
+ @file ProfileViewController.h
+ */
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>

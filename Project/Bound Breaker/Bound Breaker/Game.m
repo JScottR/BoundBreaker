@@ -1,5 +1,5 @@
 /*!
- @header Game.m
+ @file Game.m
  
  @brief Method file for the Game view. Implements game and player mechanisms
  
@@ -59,6 +59,7 @@ int obstacleGeneratorBuffer = 10;
 
 /*! @brief Action that begins the game */
 -(IBAction)StartGame:(id)sender{
+    /*! Hide/show elements */
     ScoreLabel.hidden = FALSE;
     TapRight.hidden = FALSE;
     TapLeft.hidden = FALSE;
@@ -69,16 +70,17 @@ int obstacleGeneratorBuffer = 10;
     longObstacle3.hidden = TRUE;
     longObstacle4.hidden = TRUE;
     WelcomeLabel.hidden = TRUE;
+    /*! Deal with user information */
     PFUser *user = [PFUser currentUser];
     NSNumber *currentHighScore = user[@"highScore"];
     HighScoreNumber = [currentHighScore intValue];
    
-    
+    /*! Start game by placing first obstacle */
     [self PlaceObstacles1];
     ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstaclesMoving) userInfo:nil repeats:TRUE];
 }
 
-/*! @brief Method to increase the score by 1, also logs the score number */
+/*! @brief Method that increases score and logs it */
 -(void)Score{
     ScoreNumber++;
     //ScoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber];
@@ -86,7 +88,7 @@ int obstacleGeneratorBuffer = 10;
 }
 
 /*! @brief Action that initializes ball right movement
- Triggered by rpressing the right movement button */
+ Triggered by pressing the right movement button */
 -(IBAction)RightPress:(id)sender{
     Right = TRUE;
 }
@@ -160,7 +162,7 @@ int obstacleGeneratorBuffer = 10;
         [self ballNotTouchingObstacle];
     }
     
-    /*! Increase score when obstacles pass the ball's center */
+    /*! Increase score when obstacles pass the ball */
     if(longObstacle1.center.y == Ball.center.y || longObstacle3.center.y == Ball.center.y){
         [self Score];
     }
@@ -171,10 +173,11 @@ int obstacleGeneratorBuffer = 10;
     }
 }
 
-/*! Move ball down if touching obstacles, otherwise move up towards default */
+/*! @brief Method that moves ball down if touching obstacles */
 -(void)ballTouchingObstacle{
     Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
 }
+/*! @brief Method that moves ball up towards default y coordinate */
 -(void)ballNotTouchingObstacle{
     if(Ball.center.y > defaultBallYCoord){
         Ball.center = CGPointMake(Ball.center.x, Ball.center.y - recoverySpeed);
@@ -182,7 +185,7 @@ int obstacleGeneratorBuffer = 10;
 }
 
 
-/*! Method for the random placement of obstacles */
+/*! @brief Method that regenerates longObstacle1 at the top with random x coordinate */
 -(void)PlaceObstacles1{
     randomLongObstacle1Placement = arc4random() %abs(screenRight-screenLeft);
     randomLongObstacle2Placement = randomLongObstacle1Placement + longObstacleWidth + obstacleGap;
@@ -193,7 +196,7 @@ int obstacleGeneratorBuffer = 10;
     longObstacle1.hidden = FALSE;
     longObstacle2.hidden = FALSE;
 }
-
+/*! @brief Method that regenerates longObstacle2 at the top with random x coordinate */
 -(void)PlaceObstacles2{
     randomLongObstacle3Placement = arc4random() %abs(screenRight-screenLeft);
     randomLongObstacle4Placement = randomLongObstacle3Placement + longObstacleWidth + obstacleGap;
@@ -206,10 +209,11 @@ int obstacleGeneratorBuffer = 10;
 }
 
 
-/*! Executed once ball touches bottom of screen */
+/*! @brief Method that executes once ball touches bottom of screen */
 -(void)GameOver{
+    /*! Stop timers */
     [ObstacleMovement invalidate];
-    
+    /*! Update highest score if needed */
     if(ScoreNumber > HighScoreNumber) {
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
         PFUser *user = [PFUser currentUser];
@@ -222,7 +226,7 @@ int obstacleGeneratorBuffer = 10;
             }
         }];
     }
-    
+    /*! Hide/show elements */
     GameOver.hidden = FALSE;
     TapRight.hidden = TRUE;
     TapLeft.hidden = TRUE;
@@ -231,12 +235,14 @@ int obstacleGeneratorBuffer = 10;
     longObstacle2.hidden = TRUE;
     longObstacle3.hidden = TRUE;
     longObstacle4.hidden = TRUE;
+    /*! Update score label */
     ScoreLabel.text = [NSString stringWithFormat:@"%d", ScoreNumber];
 }
 
 
-/*! Execute upon view load */
+/*! @brief Method that executes immediately upon loading */
 - (void)viewDidLoad {
+    /*! Hide/show elements */
     EasyDifficultyButton.hidden = FALSE;
     MediumDifficultyButton.hidden = FALSE;
     HardDifficultyButton.hidden = FALSE;
@@ -251,7 +257,7 @@ int obstacleGeneratorBuffer = 10;
     longObstacle3.hidden = TRUE;
     longObstacle4.hidden = TRUE;
     WelcomeLabel.hidden = FALSE;
-    
+    /*! Fetch highest score and set current score to zero */
     ScoreNumber = 0;
     HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     

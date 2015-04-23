@@ -1,10 +1,6 @@
-//
-//  AppDelegate.h
-//  Bound Breaker
-//
-//  Created by JScott Richards on 2/27/15.
-//
-//
+/*!
+ @file AppDelegate.h
+ */
 
 #import <UIKit/UIKit.h>
 

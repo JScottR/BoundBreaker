@@ -1,10 +1,6 @@
-//
-//  leaderBoardViewController.h
-//  Bound Breaker
-//
-//  Created by JScott Richards on 4/22/15.
-//
-//
+/*!
+ @file leaderBoradViewController.h
+ */
 
 #import <UIKit/UIKit.h>
 

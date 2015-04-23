@@ -1,10 +1,6 @@
-//
-//  AppDelegate.m
-//  Bound Breaker
-//
-//  Created by JScott Richards on 2/27/15.
-//
-//
+/*!
+ @file AppDelegate.m
+ */
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>

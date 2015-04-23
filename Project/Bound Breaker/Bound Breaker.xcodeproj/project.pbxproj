@@ -32,7 +32,6 @@
 		29CBC4EF1AA149DF0067E2E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CBC4EE1AA149DF0067E2E3 /* Images.xcassets */; };
 		29CBC4F21AA149DF0067E2E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CBC4F01AA149DF0067E2E3 /* LaunchScreen.xib */; };
 		29CBC4FE1AA149DF0067E2E3 /* Bound_BreakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CBC4FD1AA149DF0067E2E3 /* Bound_BreakerTests.m */; };
-		29E802D91AA9307600D93542 /* background.gif in Resources */ = {isa = PBXBuildFile; fileRef = 29E802D81AA9307600D93542 /* background.gif */; };
 		29E9D5741ACC981D00161D91 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9D5731ACC981D00161D91 /* LoginViewController.m */; };
 		29E9D5771ACCA71100161D91 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E9D5761ACCA71100161D91 /* ProfileViewController.m */; };
 		A20B7F141AE0629F00FE1250 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A20B7F131AE0629F00FE1250 /* Game.m */; };
@@ -41,6 +40,7 @@
 		A20B7F1B1AE0640300FE1250 /* player_03.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F171AE0640300FE1250 /* player_03.png */; };
 		A20B7F1C1AE0640300FE1250 /* Untitled-1_03.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F181AE0640300FE1250 /* Untitled-1_03.png */; };
 		A20B7F221AE089DA00FE1250 /* enemy_long.png in Resources */ = {isa = PBXBuildFile; fileRef = A20B7F211AE089DA00FE1250 /* enemy_long.png */; };
+		A25FD9BC1AE9678D007CE212 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A25FD9BB1AE9678D007CE212 /* Background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,6 @@
 		29CBC4F71AA149DF0067E2E3 /* Bound BreakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bound BreakerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CBC4FC1AA149DF0067E2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29CBC4FD1AA149DF0067E2E3 /* Bound_BreakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bound_BreakerTests.m; sourceTree = "<group>"; };
-		29E802D81AA9307600D93542 /* background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = background.gif; sourceTree = "<group>"; };
 		29E9D5721ACC981D00161D91 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		29E9D5731ACC981D00161D91 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		29E9D5751ACCA71100161D91 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		A20B7F171AE0640300FE1250 /* player_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_03.png; sourceTree = "<group>"; };
 		A20B7F181AE0640300FE1250 /* Untitled-1_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled-1_03.png"; sourceTree = "<group>"; };
 		A20B7F211AE089DA00FE1250 /* enemy_long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_long.png; sourceTree = "<group>"; };
+		A25FD9BB1AE9678D007CE212 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,12 +204,12 @@
 		29CBC4E11AA149DF0067E2E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A25FD9BB1AE9678D007CE212 /* Background.png */,
 				A20B7F211AE089DA00FE1250 /* enemy_long.png */,
 				A20B7F151AE0640300FE1250 /* enemy1_07.png */,
 				A20B7F161AE0640300FE1250 /* enemy2_11.png */,
 				A20B7F171AE0640300FE1250 /* player_03.png */,
 				A20B7F181AE0640300FE1250 /* Untitled-1_03.png */,
-				29E802D81AA9307600D93542 /* background.gif */,
 				29CBC4E21AA149DF0067E2E3 /* Info.plist */,
 				29CBC4E31AA149DF0067E2E3 /* main.m */,
 			);
@@ -315,10 +315,10 @@
 				29CBC4ED1AA149DF0067E2E3 /* Main.storyboard in Resources */,
 				29CBC4F21AA149DF0067E2E3 /* LaunchScreen.xib in Resources */,
 				A20B7F1B1AE0640300FE1250 /* player_03.png in Resources */,
-				29E802D91AA9307600D93542 /* background.gif in Resources */,
 				A20B7F221AE089DA00FE1250 /* enemy_long.png in Resources */,
 				A20B7F1A1AE0640300FE1250 /* enemy2_11.png in Resources */,
 				A20B7F1C1AE0640300FE1250 /* Untitled-1_03.png in Resources */,
+				A25FD9BC1AE9678D007CE212 /* Background.png in Resources */,
 				A20B7F191AE0640300FE1250 /* enemy1_07.png in Resources */,
 				29CBC4EF1AA149DF0067E2E3 /* Images.xcassets in Resources */,
 			);

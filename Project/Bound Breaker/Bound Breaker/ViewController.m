@@ -1,10 +1,6 @@
-//
-//  ViewController.m
-//  Bound Breaker
-//
-//  Created by JScott Richards on 2/27/15.
-//
-//
+/*!
+ @file ViewController.m
+ */
 
 #import "ViewController.h"
 

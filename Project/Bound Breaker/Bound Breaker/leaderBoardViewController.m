@@ -1,10 +1,6 @@
-//
-//  leaderBoardViewController.m
-//  Bound Breaker
-//
-//  Created by JScott Richards on 4/22/15.
-//
-//
+/*!
+ @file leaderBoardViewController.m
+ */
 
 #import "leaderBoardViewController.h"
 #import <Parse/Parse.h>
