@@ -1,0 +1,40 @@
+\hypertarget{_p_f_log_in_view_controller_8h}{}\section{/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse\+U\+I.framework/\+Headers/\+P\+F\+Log\+In\+View\+Controller.h File Reference}
+\label{_p_f_log_in_view_controller_8h}\index{/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse\+U\+I.\+framework/\+Headers/\+P\+F\+Log\+In\+View\+Controller.\+h@{/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse\+U\+I.\+framework/\+Headers/\+P\+F\+Log\+In\+View\+Controller.\+h}}
+{\ttfamily \#import $<$U\+I\+Kit/\+U\+I\+Kit.\+h$>$}\\*
+{\ttfamily \#import $<$Parse\+U\+I/\+Parse\+U\+I\+Constants.\+h$>$}\\*
+{\ttfamily \#import $<$Parse\+U\+I/\+P\+F\+Log\+In\+View.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_p_f_log_in_view_controller}{P\+F\+Log\+In\+View\+Controller}
+\item 
+protocol \hyperlink{protocol_p_f_log_in_view_controller_delegate-p}{$<$\+P\+F\+Log\+In\+View\+Controller\+Delegate$>$}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{Indent}{\bf Notifications}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$const \hyperlink{_p_f_log_in_view_controller_8h_a35145ae0df2ecfc5b323273cab04b6ab}{P\+F\+Log\+In\+Success\+Notification}
+\item 
+N\+S\+String $\ast$const \hyperlink{_p_f_log_in_view_controller_8h_affdee79043f05aa1bd1ee7cd2b42bc5e}{P\+F\+Log\+In\+Failure\+Notification}
+\item 
+N\+S\+String $\ast$const \hyperlink{_p_f_log_in_view_controller_8h_a6f6cc0ede5f0f902c36db336763ae6c3}{P\+F\+Log\+In\+Cancel\+Notification}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_p_f_log_in_view_controller_8h_a6f6cc0ede5f0f902c36db336763ae6c3}{}\index{P\+F\+Log\+In\+View\+Controller.\+h@{P\+F\+Log\+In\+View\+Controller.\+h}!P\+F\+Log\+In\+Cancel\+Notification@{P\+F\+Log\+In\+Cancel\+Notification}}
+\index{P\+F\+Log\+In\+Cancel\+Notification@{P\+F\+Log\+In\+Cancel\+Notification}!P\+F\+Log\+In\+View\+Controller.\+h@{P\+F\+Log\+In\+View\+Controller.\+h}}
+\subsubsection[{P\+F\+Log\+In\+Cancel\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+String$\ast$ const P\+F\+Log\+In\+Cancel\+Notification}\label{_p_f_log_in_view_controller_8h_a6f6cc0ede5f0f902c36db336763ae6c3}
+The notification is posted immediately after the log in is cancelled. \hypertarget{_p_f_log_in_view_controller_8h_affdee79043f05aa1bd1ee7cd2b42bc5e}{}\index{P\+F\+Log\+In\+View\+Controller.\+h@{P\+F\+Log\+In\+View\+Controller.\+h}!P\+F\+Log\+In\+Failure\+Notification@{P\+F\+Log\+In\+Failure\+Notification}}
+\index{P\+F\+Log\+In\+Failure\+Notification@{P\+F\+Log\+In\+Failure\+Notification}!P\+F\+Log\+In\+View\+Controller.\+h@{P\+F\+Log\+In\+View\+Controller.\+h}}
+\subsubsection[{P\+F\+Log\+In\+Failure\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+String$\ast$ const P\+F\+Log\+In\+Failure\+Notification}\label{_p_f_log_in_view_controller_8h_affdee79043f05aa1bd1ee7cd2b42bc5e}
+The notification is posted immediately after the log in fails.  If the delegate prevents the log in from starting, the notification is not sent. \hypertarget{_p_f_log_in_view_controller_8h_a35145ae0df2ecfc5b323273cab04b6ab}{}\index{P\+F\+Log\+In\+View\+Controller.\+h@{P\+F\+Log\+In\+View\+Controller.\+h}!P\+F\+Log\+In\+Success\+Notification@{P\+F\+Log\+In\+Success\+Notification}}
+\index{P\+F\+Log\+In\+Success\+Notification@{P\+F\+Log\+In\+Success\+Notification}!P\+F\+Log\+In\+View\+Controller.\+h@{P\+F\+Log\+In\+View\+Controller.\+h}}
+\subsubsection[{P\+F\+Log\+In\+Success\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+String$\ast$ const P\+F\+Log\+In\+Success\+Notification}\label{_p_f_log_in_view_controller_8h_a35145ae0df2ecfc5b323273cab04b6ab}
+The notification is posted immediately after the log in succeeds. 

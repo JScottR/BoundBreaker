@@ -1,0 +1,160 @@
+\hypertarget{interface_parse}{}\section{Parse Class Reference}
+\label{interface_parse}\index{Parse@{Parse}}
+
+
+{\ttfamily \#import $<$Parse.\+h$>$}
+
+Inheritance diagram for Parse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_parse}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Connecting to Parse}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_parse_a2ab9fb9897adfeef2f15d2a4d17eedc5}{set\+Application\+Id\+:client\+Key\+:}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_parse_a2518969bfaf490a9e978fce7114401e3}{get\+Application\+Id}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{interface_parse_aeb25afa48d8c8abc3bb1c7ffabeb7d9a}{get\+Client\+Key}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Enabling Local Datastore}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_parse_a8495b1c2805002a8bfa825df4018a8df}{enable\+Local\+Datastore}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_parse_a0d9fa2b2b00d0c9afe7017d2138dbe30}{is\+Local\+Datastore\+Enabled}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Logging}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_parse_a2d0d1535297de00a85c1160ee217fb96}{set\+Log\+Level\+:}
+\item 
+(P\+F\+Log\+Level) + \hyperlink{interface_parse_ae583f0c67f64ed4d0ee77a6b70c05406}{log\+Level}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_parse}{Parse}} class contains static functions that handle global configuration for the \hyperlink{interface_parse}{Parse} framework. 
+
+Definition at line 62 of file Parse.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_parse_a8495b1c2805002a8bfa825df4018a8df}{}\index{Parse@{Parse}!enable\+Local\+Datastore@{enable\+Local\+Datastore}}
+\index{enable\+Local\+Datastore@{enable\+Local\+Datastore}!Parse@{Parse}}
+\subsubsection[{enable\+Local\+Datastore}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) enable\+Local\+Datastore 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_a8495b1c2805002a8bfa825df4018a8df}
+Enable pinning in your application. This must be called before your application can use pinning. The recommended way is to call this method before {\ttfamily set\+Application\+Id\+:client\+Key\+:}. \hypertarget{interface_parse_a2518969bfaf490a9e978fce7114401e3}{}\index{Parse@{Parse}!get\+Application\+Id@{get\+Application\+Id}}
+\index{get\+Application\+Id@{get\+Application\+Id}!Parse@{Parse}}
+\subsubsection[{get\+Application\+Id}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) get\+Application\+Id 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_a2518969bfaf490a9e978fce7114401e3}
+The current application id that was used to configure \hyperlink{interface_parse}{Parse} framework. \hypertarget{interface_parse_aeb25afa48d8c8abc3bb1c7ffabeb7d9a}{}\index{Parse@{Parse}!get\+Client\+Key@{get\+Client\+Key}}
+\index{get\+Client\+Key@{get\+Client\+Key}!Parse@{Parse}}
+\subsubsection[{get\+Client\+Key}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) get\+Client\+Key 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_aeb25afa48d8c8abc3bb1c7ffabeb7d9a}
+The current client key that was used to configure \hyperlink{interface_parse}{Parse} framework. \hypertarget{interface_parse_a0d9fa2b2b00d0c9afe7017d2138dbe30}{}\index{Parse@{Parse}!is\+Local\+Datastore\+Enabled@{is\+Local\+Datastore\+Enabled}}
+\index{is\+Local\+Datastore\+Enabled@{is\+Local\+Datastore\+Enabled}!Parse@{Parse}}
+\subsubsection[{is\+Local\+Datastore\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) is\+Local\+Datastore\+Enabled 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_a0d9fa2b2b00d0c9afe7017d2138dbe30}
+Flag that indicates whether Local Datastore is enabled.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if Local Datastore is enabled, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_parse_ae583f0c67f64ed4d0ee77a6b70c05406}{}\index{Parse@{Parse}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!Parse@{Parse}}
+\subsubsection[{log\+Level}]{\setlength{\rightskip}{0pt plus 5cm}+ (P\+F\+Log\+Level) log\+Level 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_parse_ae583f0c67f64ed4d0ee77a6b70c05406}
+Log level that will be displayed.
+
+By default\+:
+\begin{DoxyItemize}
+\item If running inside an app that was downloaded from i\+O\+S App Store -\/ it is set to $<$\+P\+F\+Log\+Level\+None$>$
+\item All other cases -\/ it is set to $<$\+P\+F\+Log\+Level\+Warning$>$
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+A $<$\+P\+F\+Log\+Level$>$ value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+P\+F\+Log\+Level 
+\end{DoxySeeAlso}
+\hypertarget{interface_parse_a2ab9fb9897adfeef2f15d2a4d17eedc5}{}\index{Parse@{Parse}!set\+Application\+Id\+:client\+Key\+:@{set\+Application\+Id\+:client\+Key\+:}}
+\index{set\+Application\+Id\+:client\+Key\+:@{set\+Application\+Id\+:client\+Key\+:}!Parse@{Parse}}
+\subsubsection[{set\+Application\+Id\+:client\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Application\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{application\+Id}
+\item[{clientKey:(N\+S\+String $\ast$)}]{client\+Key}
+\end{DoxyParamCaption}
+}\label{interface_parse_a2ab9fb9897adfeef2f15d2a4d17eedc5}
+Sets the application\+Id and client\+Key of your application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em application\+Id} & The application id of your \hyperlink{interface_parse}{Parse} application. \\
+\hline
+{\em client\+Key} & The client key of your \hyperlink{interface_parse}{Parse} application. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_parse_a2d0d1535297de00a85c1160ee217fb96}{}\index{Parse@{Parse}!set\+Log\+Level\+:@{set\+Log\+Level\+:}}
+\index{set\+Log\+Level\+:@{set\+Log\+Level\+:}!Parse@{Parse}}
+\subsubsection[{set\+Log\+Level\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Log\+Level\+: 
+\begin{DoxyParamCaption}
+\item[{(P\+F\+Log\+Level)}]{log\+Level}
+\end{DoxyParamCaption}
+}\label{interface_parse_a2d0d1535297de00a85c1160ee217fb96}
+Sets the level of logging to display.
+
+By default\+:
+\begin{DoxyItemize}
+\item If running inside an app that was downloaded from i\+O\+S App Store -\/ it is set to $<$\+P\+F\+Log\+Level\+None$>$
+\item All other cases -\/ it is set to $<$\+P\+F\+Log\+Level\+Warning$>$
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Level} & Log level to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+P\+F\+Log\+Level 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_parse_8h}{Parse.\+h}\end{DoxyCompactItemize}

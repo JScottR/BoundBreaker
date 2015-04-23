@@ -1,0 +1,105 @@
+\hypertarget{interface_p_f_image_view}{}\section{P\+F\+Image\+View Class Reference}
+\label{interface_p_f_image_view}\index{P\+F\+Image\+View@{P\+F\+Image\+View}}
+
+
+{\ttfamily \#import $<$P\+F\+Image\+View.\+h$>$}
+
+Inheritance diagram for P\+F\+Image\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_image_view}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_image_view_a264b6a75e2742b810c2c82e486c9c48a}{load\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_image_view_ad8eda353465fd2060e42c89c030def95}{load\+In\+Background\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_image_view_a7162d155cdf1cc6e23c98cdbfba52091}{load\+In\+Background\+:progress\+Block\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_p_f_file}{P\+F\+File} $\ast$ \hyperlink{interface_p_f_image_view_a347d88561d776131905b46021a0aa07e}{file}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An image view that downloads and displays remote image stored on \hyperlink{interface_parse}{Parse}\textquotesingle{}s server. 
+
+Definition at line 36 of file P\+F\+Image\+View.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_image_view_a264b6a75e2742b810c2c82e486c9c48a}{}\index{P\+F\+Image\+View@{P\+F\+Image\+View}!load\+In\+Background@{load\+In\+Background}}
+\index{load\+In\+Background@{load\+In\+Background}!P\+F\+Image\+View@{P\+F\+Image\+View}}
+\subsubsection[{load\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) load\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_image_view_a264b6a75e2742b810c2c82e486c9c48a}
+Initiate downloading of the remote image.
+
+Once the download completes, the remote image will be displayed.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_image_view_ad8eda353465fd2060e42c89c030def95}{}\index{P\+F\+Image\+View@{P\+F\+Image\+View}!load\+In\+Background\+:@{load\+In\+Background\+:}}
+\index{load\+In\+Background\+:@{load\+In\+Background\+:}!P\+F\+Image\+View@{P\+F\+Image\+View}}
+\subsubsection[{load\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Image\+View\+Image\+Result\+Block})}]{completion}
+\end{DoxyParamCaption}
+}\label{interface_p_f_image_view_ad8eda353465fd2060e42c89c030def95}
+Initiate downloading of the remote image.
+
+Once the download completes, the remote image will be displayed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & the completion block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_image_view_a7162d155cdf1cc6e23c98cdbfba52091}{}\index{P\+F\+Image\+View@{P\+F\+Image\+View}!load\+In\+Background\+:progress\+Block\+:@{load\+In\+Background\+:progress\+Block\+:}}
+\index{load\+In\+Background\+:progress\+Block\+:@{load\+In\+Background\+:progress\+Block\+:}!P\+F\+Image\+View@{P\+F\+Image\+View}}
+\subsubsection[{load\+In\+Background\+:progress\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf load\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Image\+View\+Image\+Result\+Block})}]{completion}
+\item[{progressBlock:({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} void($^\wedge$)(int percent\+Done))}]{progress\+Block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_image_view_a7162d155cdf1cc6e23c98cdbfba52091}
+Initiate downloading of the remote image.
+
+Once the download completes, the remote image will be displayed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em completion} & the completion block. \\
+\hline
+{\em progress\+Block} & called with the download progress as the image is being downloaded. Will be called with a value of 100 before the completion block is called. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_image_view_a347d88561d776131905b46021a0aa07e}{}\index{P\+F\+Image\+View@{P\+F\+Image\+View}!file@{file}}
+\index{file@{file}!P\+F\+Image\+View@{P\+F\+Image\+View}}
+\subsubsection[{file}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+File}$\ast$) file\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_image_view_a347d88561d776131905b46021a0aa07e}
+The remote file on \hyperlink{interface_parse}{Parse}\textquotesingle{}s server that stores the image.
+
+\begin{DoxyWarning}{Warning}
+Note that the download does not start until $<$load\+In\+Background\+:$>$ is called. 
+\end{DoxyWarning}
+
+
+Definition at line 43 of file P\+F\+Image\+View.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse\+U\+I.\+framework/\+Headers/\hyperlink{_p_f_image_view_8h}{P\+F\+Image\+View.\+h}\end{DoxyCompactItemize}

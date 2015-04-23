@@ -1,0 +1,1092 @@
+\hypertarget{interface_p_f_facebook_utils}{}\section{P\+F\+Facebook\+Utils Class Reference}
+\label{interface_p_f_facebook_utils}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+
+
+{\ttfamily \#import $<$P\+F\+Facebook\+Utils.\+h$>$}
+
+Inheritance diagram for P\+F\+Facebook\+Utils\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_facebook_utils}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Interacting With Facebook}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} F\+B\+Session $\ast$) + \hyperlink{interface_p_f_facebook_utils_af2d526dc0c3de8f84c72e3a4ebf2d31b}{session}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a7e76ed1e5b7b1835ce142cab99bf013e}{initialize\+With\+Application\+Id\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a68a546a99724df3fb5b123cd30d5e996}{initialize\+With\+Application\+Id\+:url\+Scheme\+Suffix\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a8845c1ab50a3a743526dc19e23837375}{initialize\+Facebook}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a010ae5f00e0c3e8744c54f533a11191b}{initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_facebook_utils_ac97fda6c82c6682d992e21baf6f710ac}{is\+Linked\+With\+User\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a2b15c0d6c533cf1ee2f4a1ee2401ac5c}{initialize\+Facebook\+With\+Application\+Launch\+Options\+:}
+\item 
+(F\+B\+S\+D\+K\+Login\+Manager $\ast$) + \hyperlink{interface_p_f_facebook_utils_ac5dd2f3a6b1742934287d739ac89dfc6}{facebook\+Login\+Manager}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Customizing Login Behavior}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_aa3b62d054bbf132e6ad10bc42df39c96}{set\+Facebook\+Login\+Behavior\+:}
+\item 
+(F\+B\+Session\+Login\+Behavior) + \hyperlink{interface_p_f_facebook_utils_aab2d58b7ca031486f9a9a460448c5036}{facebook\+Login\+Behavior}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Logging In \& Creating Facebook-\/\+Linked Users}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_a36d9551e9b6620474af1d8243992baf2}{log\+In\+With\+Permissions\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a64ca6f3a519a43674f010fa8cc1d221f}{log\+In\+With\+Permissions\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_aff49d29f8d097ecce534e97ae699e68e}{log\+In\+With\+Permissions\+:target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_a61b86570e9e314e40a9ebf4c478944de}{log\+In\+With\+Facebook\+Id\+In\+Background\+:access\+Token\+:expiration\+Date\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a0100772e8a70f54ac869c3dc8a776f57}{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a13b2485753a4352daab1d99f2a34e0ae}{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Linking Users with Facebook}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_af6ad4b0eaccdeedc9742c7f5c7fa668b}{link\+User\+:permissions\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_ad354c92138180a52677dc43d12c8ed82}{link\+User\+In\+Background\+:permissions\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_ab4879808763f3518fcdc6c55cbf09e83}{link\+User\+:permissions\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a90c6b7b9a1a6a505d8f2a9511a177a7b}{link\+User\+:permissions\+:target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_a03112e2ce2837a4890fd8f070bd46e83}{link\+User\+In\+Background\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a54e7b9fdefbd2869d411ceed2b30e936}{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a6a94d851720ad5def7db93ae84d2e12f}{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Unlinking Users from Facebook}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_facebook_utils_a6726a3ef8cb945db59d60e410b6c562d}{unlink\+User\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_facebook_utils_a1ecc255c277054f6a5dcf34a53fbace8}{unlink\+User\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_a0fa5b2f0bae045b05cefd4636935a61f}{unlink\+User\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_aca714aba621d4257861deab47d1dabc9}{unlink\+User\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_ae2e3de3d5b10c5695e938e96408aba91}{unlink\+User\+In\+Background\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Obtaining New Permissions}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_ab593d5d5ade08e1f53569e44f52a377c}{reauthorize\+User\+In\+Background\+:with\+Publish\+Permissions\+:audience\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_af4f6bab0c066086a8d03bd727aa7420b}{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a64fdf4143c85349854616129376506f2}{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Delegating U\+R\+L Actions}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_facebook_utils_adbc30b3397cc07f57110eb843e79918e}{handle\+Open\+U\+R\+L\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Logging In}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_aef2e0ccf75c2b4f2ccd8ce7bd8aba564}{log\+In\+In\+Background\+With\+Read\+Permissions\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a28b28daee0c4d91b6f8bb6a707b00453}{log\+In\+In\+Background\+With\+Read\+Permissions\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_ac3eb73a12b63e52370d8e19196392aa2}{log\+In\+In\+Background\+With\+Publish\+Permissions\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a0d3534e5a1eb19447819742a85f21850}{log\+In\+In\+Background\+With\+Publish\+Permissions\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_abc3ba39fcb6381beea0748c80cba18a7}{log\+In\+In\+Background\+With\+Access\+Token\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a25c538d6c7c3891d541832229bd72e3e}{log\+In\+In\+Background\+With\+Access\+Token\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Linking Users}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_a24bcc40f6fc1036e72cf05db71357a04}{link\+User\+In\+Background\+:with\+Read\+Permissions\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a4a8dbfa80bf8092585be5ebc7dfbc95e}{link\+User\+In\+Background\+:with\+Read\+Permissions\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_ace8592dedd3af479304850492ba2d3f0}{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_a870e42c332ece2180955633c6d558722}{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_a755587d4e05f79e5a44b4e0bad7ec64c}{link\+User\+In\+Background\+:with\+Access\+Token\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_ac7178d97f7d80e00c42809ca7f2fa719}{link\+User\+In\+Background\+:with\+Access\+Token\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Unlinking Users}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_facebook_utils_a0fa5b2f0bae045b05cefd4636935a61f}{unlink\+User\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_facebook_utils_aca714aba621d4257861deab47d1dabc9}{unlink\+User\+In\+Background\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Getting Linked State}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_facebook_utils_ac97fda6c82c6682d992e21baf6f710ac}{is\+Linked\+With\+User\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_facebook_utils}{P\+F\+Facebook\+Utils}} class provides utility functions for working with Facebook in a \hyperlink{interface_parse}{Parse} application.
+
+This class is currently for i\+O\+S only.
+
+The {\ttfamily \hyperlink{interface_p_f_facebook_utils}{P\+F\+Facebook\+Utils}} class provides utility functions for using Facebook authentication with $<$\+P\+F\+User$>$s.
+
+\begin{DoxyWarning}{Warning}
+This class supports official Facebook i\+O\+S S\+D\+K v4.\+0+ and is available only on i\+O\+S. 
+\end{DoxyWarning}
+
+
+Definition at line 24 of file P\+F\+Facebook\+Utils.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_facebook_utils_aab2d58b7ca031486f9a9a460448c5036}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!facebook\+Login\+Behavior@{facebook\+Login\+Behavior}}
+\index{facebook\+Login\+Behavior@{facebook\+Login\+Behavior}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{facebook\+Login\+Behavior}]{\setlength{\rightskip}{0pt plus 5cm}+ (F\+B\+Session\+Login\+Behavior) facebook\+Login\+Behavior 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_aab2d58b7ca031486f9a9a460448c5036}
+Login behavior controls whether to allow, force or prohibit Facebook Login or Inline Facebook Login.
+
+Default is to allow Facebook Login, with fallback to Inline Facebook Login.
+
+\begin{DoxyReturn}{Returns}
+The login behavior currently set. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_ac5dd2f3a6b1742934287d739ac89dfc6}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!facebook\+Login\+Manager@{facebook\+Login\+Manager}}
+\index{facebook\+Login\+Manager@{facebook\+Login\+Manager}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{facebook\+Login\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ (F\+B\+S\+D\+K\+Login\+Manager $\ast$) facebook\+Login\+Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ac5dd2f3a6b1742934287d739ac89dfc6}
+{\ttfamily F\+B\+S\+D\+K\+Login\+Manager} provides methods for configuring login behavior, default audience and managing Facebook Access Token.
+
+\begin{DoxyReturn}{Returns}
+An instance of {\ttfamily F\+B\+S\+D\+K\+Login\+Manager} that is used by {\ttfamily \hyperlink{interface_p_f_facebook_utils}{P\+F\+Facebook\+Utils}}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_adbc30b3397cc07f57110eb843e79918e}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!handle\+Open\+U\+R\+L\+:@{handle\+Open\+U\+R\+L\+:}}
+\index{handle\+Open\+U\+R\+L\+:@{handle\+Open\+U\+R\+L\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{handle\+Open\+U\+R\+L\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) handle\+Open\+U\+R\+L\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Use  instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\mbox{[}\+F\+B\+App\+Call handle\+Open\+U\+R\+L\+:source\+Application\+:with\+Session\+:\mbox{]}}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_adbc30b3397cc07f57110eb843e79918e}
+Handles U\+R\+Ls being opened by your \hyperlink{interface_app_delegate}{App\+Delegate}. Invoke and return this from application\+:handle\+Open\+U\+R\+L\+: or application\+:open\+U\+R\+L\+:source\+Application\+:annotation in your \hyperlink{interface_app_delegate}{App\+Delegate}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L being opened by your application. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if Facebook will handle this U\+R\+L, otherwise {\ttfamily N\+O}.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000009}{Deprecated}]Please use `\mbox{[}F\+B\+App\+Call handle\+Open\+U\+R\+L\+:url source\+Application\+:source\+Application with\+Session\+:\mbox{[}\hyperlink{interface_p_f_facebook_utils}{P\+F\+Facebook\+Utils} session\mbox{]}\mbox{]};` instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_facebook_utils_a8845c1ab50a3a743526dc19e23837375}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!initialize\+Facebook@{initialize\+Facebook}}
+\index{initialize\+Facebook@{initialize\+Facebook}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{initialize\+Facebook}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) initialize\+Facebook 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a8845c1ab50a3a743526dc19e23837375}
+Initializes the Facebook singleton.
+
+You must provide your Facebook application I\+D as the value for Facebook\+App\+I\+D in your bundle\textquotesingle{}s plist file as described here\+: \href{https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/}{\tt https\+://developers.\+facebook.\+com/docs/getting-\/started/facebook-\/sdk-\/for-\/ios/}
+
+\begin{DoxyWarning}{Warning}
+You must invoke this in order to use the Facebook functionality in \hyperlink{interface_parse}{Parse}. 
+\end{DoxyWarning}
+\hypertarget{interface_p_f_facebook_utils_a2b15c0d6c533cf1ee2f4a1ee2401ac5c}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!initialize\+Facebook\+With\+Application\+Launch\+Options\+:@{initialize\+Facebook\+With\+Application\+Launch\+Options\+:}}
+\index{initialize\+Facebook\+With\+Application\+Launch\+Options\+:@{initialize\+Facebook\+With\+Application\+Launch\+Options\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{initialize\+Facebook\+With\+Application\+Launch\+Options\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) initialize\+Facebook\+With\+Application\+Launch\+Options\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{launch\+Options}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a2b15c0d6c533cf1ee2f4a1ee2401ac5c}
+Initializes \hyperlink{interface_parse}{Parse} Facebook Utils.
+
+You must provide your Facebook application I\+D as the value for Facebook\+App\+I\+D in your bundle\textquotesingle{}s plist file as described here\+: \href{https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/}{\tt https\+://developers.\+facebook.\+com/docs/getting-\/started/facebook-\/sdk-\/for-\/ios/}
+
+\begin{DoxyWarning}{Warning}
+You must invoke this in order to use the Facebook functionality in \hyperlink{interface_parse}{Parse}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em launch\+Options} & The launch\+Options as passed to \mbox{[}\hyperlink{class_u_i_application_delegate-p}{U\+I\+Application\+Delegate} application\+:did\+Finish\+Launching\+With\+Options\+:\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a010ae5f00e0c3e8744c54f533a11191b}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:@{initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:}}
+\index{initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:@{initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{url\+Scheme\+Suffix}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a010ae5f00e0c3e8744c54f533a11191b}
+Initializes the Facebook singleton.
+
+You must provide your Facebook application I\+D as the value for Facebook\+App\+I\+D in your bundle\textquotesingle{}s plist file as described here\+: \href{https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/}{\tt https\+://developers.\+facebook.\+com/docs/getting-\/started/facebook-\/sdk-\/for-\/ios/}
+
+\begin{DoxyWarning}{Warning}
+You must invoke this in order to use the Facebook functionality in \hyperlink{interface_parse}{Parse}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em url\+Scheme\+Suffix} & The U\+R\+L suffix for this application -\/ used when multiple applications with the same Facebook application I\+D may be on the same device. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a7e76ed1e5b7b1835ce142cab99bf013e}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!initialize\+With\+Application\+Id\+:@{initialize\+With\+Application\+Id\+:}}
+\index{initialize\+With\+Application\+Id\+:@{initialize\+With\+Application\+Id\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{initialize\+With\+Application\+Id\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) initialize\+With\+Application\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Use  instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\mbox{[}\+P\+F\+Facebook\+Utils initialize\+Facebook\mbox{]}}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a7e76ed1e5b7b1835ce142cab99bf013e}
+Initializes the Facebook singleton.
+
+\begin{DoxyWarning}{Warning}
+You must invoke this in order to use the Facebook functionality in \hyperlink{interface_parse}{Parse}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & The Facebook application id that you are using with your \hyperlink{interface_parse}{Parse} application.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000006}{Deprecated}]Please use {\ttfamily \mbox{[}\hyperlink{interface_p_f_facebook_utils}{P\+F\+Facebook\+Utils} initialize\+Facebook\mbox{]}} instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_facebook_utils_a68a546a99724df3fb5b123cd30d5e996}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!initialize\+With\+Application\+Id\+:url\+Scheme\+Suffix\+:@{initialize\+With\+Application\+Id\+:url\+Scheme\+Suffix\+:}}
+\index{initialize\+With\+Application\+Id\+:url\+Scheme\+Suffix\+:@{initialize\+With\+Application\+Id\+:url\+Scheme\+Suffix\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{initialize\+With\+Application\+Id\+:url\+Scheme\+Suffix\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf initialize\+With\+Application\+Id\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{app\+Id}
+\item[{urlSchemeSuffix:(\char`\"{}Use  instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\mbox{[}\+P\+F\+Facebook\+Utils initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:\mbox{]}}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a68a546a99724df3fb5b123cd30d5e996}
+Initializes the Facebook singleton.
+
+\begin{DoxyWarning}{Warning}
+You must invoke this in order to use the Facebook functionality in \hyperlink{interface_parse}{Parse}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & The Facebook application id that you are using with your \hyperlink{interface_parse}{Parse} application. \\
+\hline
+{\em url\+Scheme\+Suffix} & The U\+R\+L suffix for this application -\/ used when multiple applications with the same\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000007}{Deprecated}]Please use {\ttfamily \mbox{[}\hyperlink{interface_p_f_facebook_utils}{P\+F\+Facebook\+Utils} initialize\+Facebook\+With\+Url\+Sheme\+Suffix\+:\mbox{]}} instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_facebook_utils_ac97fda6c82c6682d992e21baf6f710ac}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}}
+\index{is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{is\+Linked\+With\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) is\+Linked\+With\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ac97fda6c82c6682d992e21baf6f710ac}
+Whether the user has their account linked to Facebook.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to check for a facebook link. The user must be logged in on this device.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if the user has their account linked to Facebook, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_ac97fda6c82c6682d992e21baf6f710ac}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}}
+\index{is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{is\+Linked\+With\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) is\+Linked\+With\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ac97fda6c82c6682d992e21baf6f710ac}
+Whether the user has their account linked to Facebook.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to check for a facebook link. The user must be logged in on this device.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if the user has their account linked to Facebook, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a54e7b9fdefbd2869d411ceed2b30e936}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:@{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}}
+\index{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:@{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{facebookId:(N\+S\+String $\ast$)}]{facebook\+Id}
+\item[{accessToken:(N\+S\+String $\ast$)}]{access\+Token}
+\item[{expirationDate:(N\+S\+Date $\ast$)}]{expiration\+Date}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a54e7b9fdefbd2869d411ceed2b30e936}
+Links Facebook to an existing $<$\+P\+F\+User$>$ {\itshape asynchronously}.
+
+Allows you to handle user login to Facebook, then provide authentication data to link the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em facebook\+Id} & The id of the Facebook user being linked \\
+\hline
+{\em access\+Token} & The access token for the user\textquotesingle{}s session \\
+\hline
+{\em expiration\+Date} & The expiration date for the access token \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L success, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a6a94d851720ad5def7db93ae84d2e12f}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:@{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}}
+\index{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:@{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{facebookId:(N\+S\+String $\ast$)}]{facebook\+Id}
+\item[{accessToken:(N\+S\+String $\ast$)}]{access\+Token}
+\item[{expirationDate:(N\+S\+Date $\ast$)}]{expiration\+Date}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a6a94d851720ad5def7db93ae84d2e12f}
+\hypertarget{interface_p_f_facebook_utils_af6ad4b0eaccdeedc9742c7f5c7fa668b}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+:permissions\+:@{link\+User\+:permissions\+:}}
+\index{link\+User\+:permissions\+:@{link\+User\+:permissions\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+:permissions\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{permissions:(\char`\"{}Please use `` instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\mbox{[}\+P\+F\+Facebook\+Utils link\+User\+In\+Background\+:permissions\+:\mbox{]}}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_af6ad4b0eaccdeedc9742c7f5c7fa668b}
+Links Facebook to an existing $<$\+P\+F\+User$>$ {\itshape asynchronously}.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em permissions} & The permissions required for Facebook log in. This passed to the authorize method on the Facebook instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000008}{Deprecated}]Please use {\ttfamily \mbox{[}\hyperlink{interface_p_f_facebook_utils}{P\+F\+Facebook\+Utils} link\+User\+In\+Background\+:permissions\+:\mbox{]}} instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_facebook_utils_ab4879808763f3518fcdc6c55cbf09e83}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+:permissions\+:block\+:@{link\+User\+:permissions\+:block\+:}}
+\index{link\+User\+:permissions\+:block\+:@{link\+User\+:permissions\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+:permissions\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{permissions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ab4879808763f3518fcdc6c55cbf09e83}
+Links Facebook to an existing $<$\+P\+F\+User$>$ {\itshape asynchronously}.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em permissions} & The permissions required for Facebook log in. This passed to the authorize method on the Facebook instance. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L $\ast$success, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a90c6b7b9a1a6a505d8f2a9511a177a7b}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+:permissions\+:target\+:selector\+:@{link\+User\+:permissions\+:target\+:selector\+:}}
+\index{link\+User\+:permissions\+:target\+:selector\+:@{link\+User\+:permissions\+:target\+:selector\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+:permissions\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{permissions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a90c6b7b9a1a6a505d8f2a9511a177a7b}
+\hypertarget{interface_p_f_facebook_utils_a03112e2ce2837a4890fd8f070bd46e83}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:@{link\+User\+In\+Background\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:}}
+\index{link\+User\+In\+Background\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:@{link\+User\+In\+Background\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:facebook\+Id\+:access\+Token\+:expiration\+Date\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{facebookId:(N\+S\+String $\ast$)}]{facebook\+Id}
+\item[{accessToken:(N\+S\+String $\ast$)}]{access\+Token}
+\item[{expirationDate:(N\+S\+Date $\ast$)}]{expiration\+Date}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a03112e2ce2837a4890fd8f070bd46e83}
+Links Facebook to an existing $<$\+P\+F\+User$>$ {\itshape asynchronously}.
+
+Allows you to handle user login to Facebook, then provide authentication data to link the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em facebook\+Id} & The id of the Facebook user being linked \\
+\hline
+{\em access\+Token} & The access token for the user\textquotesingle{}s session \\
+\hline
+{\em expiration\+Date} & The expiration date for the access token\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_ad354c92138180a52677dc43d12c8ed82}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:permissions\+:@{link\+User\+In\+Background\+:permissions\+:}}
+\index{link\+User\+In\+Background\+:permissions\+:@{link\+User\+In\+Background\+:permissions\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:permissions\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{permissions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ad354c92138180a52677dc43d12c8ed82}
+Links Facebook to an existing $<$\+P\+F\+User$>$ {\itshape asynchronously}.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em permissions} & The permissions required for Facebook log in. This passed to the authorize method on the Facebook instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a755587d4e05f79e5a44b4e0bad7ec64c}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:with\+Access\+Token\+:@{link\+User\+In\+Background\+:with\+Access\+Token\+:}}
+\index{link\+User\+In\+Background\+:with\+Access\+Token\+:@{link\+User\+In\+Background\+:with\+Access\+Token\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:with\+Access\+Token\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withAccessToken:(F\+B\+S\+D\+K\+Access\+Token $\ast$)}]{access\+Token}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a755587d4e05f79e5a44b4e0bad7ec64c}
+{\itshape Asynchronously} links Facebook Access Token to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$. It will also save any unsaved changes that were made to the {\ttfamily user}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em access\+Token} & An instance of {\ttfamily F\+B\+S\+D\+K\+Access\+Token} to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that will have a {\ttfamily result} set to {\ttfamily @Y\+E\+S} if operation succeeds. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_ac7178d97f7d80e00c42809ca7f2fa719}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:with\+Access\+Token\+:block\+:@{link\+User\+In\+Background\+:with\+Access\+Token\+:block\+:}}
+\index{link\+User\+In\+Background\+:with\+Access\+Token\+:block\+:@{link\+User\+In\+Background\+:with\+Access\+Token\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:with\+Access\+Token\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withAccessToken:(F\+B\+S\+D\+K\+Access\+Token $\ast$)}]{access\+Token}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ac7178d97f7d80e00c42809ca7f2fa719}
+{\itshape Asynchronously} links Facebook Access Token to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$. It will also save any unsaved changes that were made to the {\ttfamily user}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em access\+Token} & An instance of {\ttfamily F\+B\+S\+D\+K\+Access\+Token} to use. \\
+\hline
+{\em block} & The block to execute when the linking completes. It should have the following signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_ace8592dedd3af479304850492ba2d3f0}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:with\+Publish\+Permissions\+:@{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:}}
+\index{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:@{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withPublishPermissions:(N\+S\+Array $\ast$)}]{permissions}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ace8592dedd3af479304850492ba2d3f0}
+{\itshape Asynchronously} links Facebook with publish permissions to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$. It will also save any unsaved changes that were made to the {\ttfamily user}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em permissions} & Array of publish permissions to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that will have a {\ttfamily result} set to {\ttfamily @Y\+E\+S} if operation succeeds. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a870e42c332ece2180955633c6d558722}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:with\+Publish\+Permissions\+:block\+:@{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:block\+:}}
+\index{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:block\+:@{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:with\+Publish\+Permissions\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withPublishPermissions:(N\+S\+Array $\ast$)}]{permissions}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a870e42c332ece2180955633c6d558722}
+{\itshape Asynchronously} links Facebook with publish permissions to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$. It will also save any unsaved changes that were made to the {\ttfamily user}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em permissions} & Array of publish permissions to use. \\
+\hline
+{\em block} & The block to execute when the linking completes. It should have the following signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a24bcc40f6fc1036e72cf05db71357a04}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:with\+Read\+Permissions\+:@{link\+User\+In\+Background\+:with\+Read\+Permissions\+:}}
+\index{link\+User\+In\+Background\+:with\+Read\+Permissions\+:@{link\+User\+In\+Background\+:with\+Read\+Permissions\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:with\+Read\+Permissions\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withReadPermissions:(N\+S\+Array $\ast$)}]{permissions}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a24bcc40f6fc1036e72cf05db71357a04}
+{\itshape Asynchronously} links Facebook with read permissions to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$. It will also save any unsaved changes that were made to the {\ttfamily user}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em permissions} & Array of read permissions to use when logging in with Facebook.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that will have a {\ttfamily result} set to {\ttfamily @Y\+E\+S} if operation succeeds. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a4a8dbfa80bf8092585be5ebc7dfbc95e}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!link\+User\+In\+Background\+:with\+Read\+Permissions\+:block\+:@{link\+User\+In\+Background\+:with\+Read\+Permissions\+:block\+:}}
+\index{link\+User\+In\+Background\+:with\+Read\+Permissions\+:block\+:@{link\+User\+In\+Background\+:with\+Read\+Permissions\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:with\+Read\+Permissions\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withReadPermissions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a4a8dbfa80bf8092585be5ebc7dfbc95e}
+{\itshape Asynchronously} links Facebook with read permissions to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$. It will also save any unsaved changes that were made to the {\ttfamily user}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Facebook. \\
+\hline
+{\em permissions} & Array of read permissions to use. \\
+\hline
+{\em block} & The block to execute when the linking completes. It should have the following signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_abc3ba39fcb6381beea0748c80cba18a7}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+In\+Background\+With\+Access\+Token\+:@{log\+In\+In\+Background\+With\+Access\+Token\+:}}
+\index{log\+In\+In\+Background\+With\+Access\+Token\+:@{log\+In\+In\+Background\+With\+Access\+Token\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+In\+Background\+With\+Access\+Token\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+In\+Background\+With\+Access\+Token\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+B\+S\+D\+K\+Access\+Token $\ast$)}]{access\+Token}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_abc3ba39fcb6381beea0748c80cba18a7}
+{\itshape Asynchronously} logs in a user using given Facebook Acess Token.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & An instance of {\ttfamily F\+B\+S\+D\+K\+Access\+Token} to use when logging in.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that has will a have {\ttfamily result} set to $<$\+P\+F\+User$>$ if operation succeeds. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a25c538d6c7c3891d541832229bd72e3e}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+In\+Background\+With\+Access\+Token\+:block\+:@{log\+In\+In\+Background\+With\+Access\+Token\+:block\+:}}
+\index{log\+In\+In\+Background\+With\+Access\+Token\+:block\+:@{log\+In\+In\+Background\+With\+Access\+Token\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+In\+Background\+With\+Access\+Token\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf log\+In\+In\+Background\+With\+Access\+Token\+:} 
+\begin{DoxyParamCaption}
+\item[{(F\+B\+S\+D\+K\+Access\+Token $\ast$)}]{access\+Token}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a25c538d6c7c3891d541832229bd72e3e}
+{\itshape Asynchronously} logs in a user using given Facebook Acess Token.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & An instance of {\ttfamily F\+B\+S\+D\+K\+Access\+Token} to use when logging in. \\
+\hline
+{\em block} & The block to execute when the log in completes. It should have the following signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_ac3eb73a12b63e52370d8e19196392aa2}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+In\+Background\+With\+Publish\+Permissions\+:@{log\+In\+In\+Background\+With\+Publish\+Permissions\+:}}
+\index{log\+In\+In\+Background\+With\+Publish\+Permissions\+:@{log\+In\+In\+Background\+With\+Publish\+Permissions\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+In\+Background\+With\+Publish\+Permissions\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+In\+Background\+With\+Publish\+Permissions\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ac3eb73a12b63e52370d8e19196392aa2}
+{\itshape Asynchronously} logs in a user using Facebook with publish permissions.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em permissions} & Array of publish permissions to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that has will a have {\ttfamily result} set to $<$\+P\+F\+User$>$ if operation succeeds. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a0d3534e5a1eb19447819742a85f21850}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+In\+Background\+With\+Publish\+Permissions\+:block\+:@{log\+In\+In\+Background\+With\+Publish\+Permissions\+:block\+:}}
+\index{log\+In\+In\+Background\+With\+Publish\+Permissions\+:block\+:@{log\+In\+In\+Background\+With\+Publish\+Permissions\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+In\+Background\+With\+Publish\+Permissions\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf log\+In\+In\+Background\+With\+Publish\+Permissions\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a0d3534e5a1eb19447819742a85f21850}
+{\itshape Asynchronously} logs in a user using Facebook with publish permissions.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em permissions} & Array of publish permissions to use. \\
+\hline
+{\em block} & The block to execute when the log in completes. It should have the following signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_aef2e0ccf75c2b4f2ccd8ce7bd8aba564}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+In\+Background\+With\+Read\+Permissions\+:@{log\+In\+In\+Background\+With\+Read\+Permissions\+:}}
+\index{log\+In\+In\+Background\+With\+Read\+Permissions\+:@{log\+In\+In\+Background\+With\+Read\+Permissions\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+In\+Background\+With\+Read\+Permissions\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+In\+Background\+With\+Read\+Permissions\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_aef2e0ccf75c2b4f2ccd8ce7bd8aba564}
+{\itshape Asynchronously} logs in a user using Facebook with read permissions.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em permissions} & Array of read permissions to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that has will a have {\ttfamily result} set to $<$\+P\+F\+User$>$ if operation succeeds. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a28b28daee0c4d91b6f8bb6a707b00453}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+In\+Background\+With\+Read\+Permissions\+:block\+:@{log\+In\+In\+Background\+With\+Read\+Permissions\+:block\+:}}
+\index{log\+In\+In\+Background\+With\+Read\+Permissions\+:block\+:@{log\+In\+In\+Background\+With\+Read\+Permissions\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+In\+Background\+With\+Read\+Permissions\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf log\+In\+In\+Background\+With\+Read\+Permissions\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a28b28daee0c4d91b6f8bb6a707b00453}
+{\itshape Asynchronously} logs in a user using Facebook with read permissions.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em permissions} & Array of read permissions to use. \\
+\hline
+{\em block} & The block to execute when the log in completes. It should have the following signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a0100772e8a70f54ac869c3dc8a776f57}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:@{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}}
+\index{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:@{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Facebook\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{facebook\+Id}
+\item[{accessToken:(N\+S\+String $\ast$)}]{access\+Token}
+\item[{expirationDate:(N\+S\+Date $\ast$)}]{expiration\+Date}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a0100772e8a70f54ac869c3dc8a776f57}
+Logs in a user using Facebook {\itshape asynchronously}.
+
+Allows you to handle user login to Facebook, then provide authentication data to log in (or create, in the case where it is a new user) the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em facebook\+Id} & The id of the Facebook user being linked \\
+\hline
+{\em access\+Token} & The access token for the user\textquotesingle{}s session \\
+\hline
+{\em expiration\+Date} & The expiration date for the access token \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a13b2485753a4352daab1d99f2a34e0ae}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:@{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}}
+\index{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:@{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+With\+Facebook\+Id\+:access\+Token\+:expiration\+Date\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Facebook\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{facebook\+Id}
+\item[{accessToken:(N\+S\+String $\ast$)}]{access\+Token}
+\item[{expirationDate:(N\+S\+Date $\ast$)}]{expiration\+Date}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a13b2485753a4352daab1d99f2a34e0ae}
+\hypertarget{interface_p_f_facebook_utils_a61b86570e9e314e40a9ebf4c478944de}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+With\+Facebook\+Id\+In\+Background\+:access\+Token\+:expiration\+Date\+:@{log\+In\+With\+Facebook\+Id\+In\+Background\+:access\+Token\+:expiration\+Date\+:}}
+\index{log\+In\+With\+Facebook\+Id\+In\+Background\+:access\+Token\+:expiration\+Date\+:@{log\+In\+With\+Facebook\+Id\+In\+Background\+:access\+Token\+:expiration\+Date\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+With\+Facebook\+Id\+In\+Background\+:access\+Token\+:expiration\+Date\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+With\+Facebook\+Id\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{facebook\+Id}
+\item[{accessToken:(N\+S\+String $\ast$)}]{access\+Token}
+\item[{expirationDate:(N\+S\+Date $\ast$)}]{expiration\+Date}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a61b86570e9e314e40a9ebf4c478944de}
+Logs in a user using Facebook {\itshape asynchronously}.
+
+Allows you to handle user login to Facebook, then provide authentication data to log in (or create, in the case where it is a new user) the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em facebook\+Id} & The id of the Facebook user being linked \\
+\hline
+{\em access\+Token} & The access token for the user\textquotesingle{}s session \\
+\hline
+{\em expiration\+Date} & The expiration date for the access token\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a64ca6f3a519a43674f010fa8cc1d221f}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+With\+Permissions\+:block\+:@{log\+In\+With\+Permissions\+:block\+:}}
+\index{log\+In\+With\+Permissions\+:block\+:@{log\+In\+With\+Permissions\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+With\+Permissions\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Permissions\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a64ca6f3a519a43674f010fa8cc1d221f}
+Logs in a user using Facebook.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$. {\ttfamily user} is going to be non-\/nil if the authentication was succesful. {\ttfamily error} is set if there was an error. {\ttfamily user} and {\ttfamily error} are both nil -\/ if the user cancelled authentication by switching back to the application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em permissions} & The permissions required for Facebook log in. This passed to the authorize method on the Facebook instance. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_aff49d29f8d097ecce534e97ae699e68e}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+With\+Permissions\+:target\+:selector\+:@{log\+In\+With\+Permissions\+:target\+:selector\+:}}
+\index{log\+In\+With\+Permissions\+:target\+:selector\+:@{log\+In\+With\+Permissions\+:target\+:selector\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+With\+Permissions\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Permissions\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_aff49d29f8d097ecce534e97ae699e68e}
+\hypertarget{interface_p_f_facebook_utils_a36d9551e9b6620474af1d8243992baf2}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!log\+In\+With\+Permissions\+In\+Background\+:@{log\+In\+With\+Permissions\+In\+Background\+:}}
+\index{log\+In\+With\+Permissions\+In\+Background\+:@{log\+In\+With\+Permissions\+In\+Background\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{log\+In\+With\+Permissions\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+With\+Permissions\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a36d9551e9b6620474af1d8243992baf2}
+Logs in a user using Facebook {\itshape asynchronously}.
+
+This method delegates to the Facebook S\+D\+K to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em permissions} & The permissions required for Facebook log in. This passed to the authorize method on the Facebook instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_af4f6bab0c066086a8d03bd727aa7420b}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:block\+:@{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:block\+:}}
+\index{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:block\+:@{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) reauthorize\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withPublishPermissions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{audience:(F\+B\+Session\+Default\+Audience)}]{audience}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_af4f6bab0c066086a8d03bd727aa7420b}
+Requests new Facebook publish permissions for the given user {\itshape asynchronously}.
+
+The user will be saved as part of this operation.
+
+\begin{DoxyWarning}{Warning}
+This may prompt the user to reauthorize the application.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to request new permissions for. The user must be linked to Facebook. \\
+\hline
+{\em permissions} & The new publishing permissions to request. \\
+\hline
+{\em audience} & The default audience for publishing permissions to request. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a64fdf4143c85349854616129376506f2}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:target\+:selector\+:@{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:target\+:selector\+:}}
+\index{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:target\+:selector\+:@{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:target\+:selector\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{reauthorize\+User\+:with\+Publish\+Permissions\+:audience\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) reauthorize\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withPublishPermissions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{audience:(F\+B\+Session\+Default\+Audience)}]{audience}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a64fdf4143c85349854616129376506f2}
+\hypertarget{interface_p_f_facebook_utils_ab593d5d5ade08e1f53569e44f52a377c}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!reauthorize\+User\+In\+Background\+:with\+Publish\+Permissions\+:audience\+:@{reauthorize\+User\+In\+Background\+:with\+Publish\+Permissions\+:audience\+:}}
+\index{reauthorize\+User\+In\+Background\+:with\+Publish\+Permissions\+:audience\+:@{reauthorize\+User\+In\+Background\+:with\+Publish\+Permissions\+:audience\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{reauthorize\+User\+In\+Background\+:with\+Publish\+Permissions\+:audience\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) reauthorize\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{withPublishPermissions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{permissions}
+\item[{audience:(F\+B\+Session\+Default\+Audience)}]{audience}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ab593d5d5ade08e1f53569e44f52a377c}
+Requests new Facebook publish permissions for the given user {\itshape asynchronously}.
+
+The user will be saved as part of this operation.
+
+\begin{DoxyWarning}{Warning}
+This may prompt the user to reauthorize the application.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to request new permissions for. The user must be linked to Facebook. \\
+\hline
+{\em permissions} & The new publishing permissions to request. \\
+\hline
+{\em audience} & The default audience for publishing permissions to request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_af2d526dc0c3de8f84c72e3a4ebf2d31b}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!session@{session}}
+\index{session@{session}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{session}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} F\+B\+Session $\ast$) session 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_af2d526dc0c3de8f84c72e3a4ebf2d31b}
+Gets the Facebook session for the current user. \hypertarget{interface_p_f_facebook_utils_aa3b62d054bbf132e6ad10bc42df39c96}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!set\+Facebook\+Login\+Behavior\+:@{set\+Facebook\+Login\+Behavior\+:}}
+\index{set\+Facebook\+Login\+Behavior\+:@{set\+Facebook\+Login\+Behavior\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{set\+Facebook\+Login\+Behavior\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) set\+Facebook\+Login\+Behavior\+: 
+\begin{DoxyParamCaption}
+\item[{(F\+B\+Session\+Login\+Behavior)}]{behavior}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_aa3b62d054bbf132e6ad10bc42df39c96}
+Sets the default login behavior to be used when logging in or linking users with Facebook.
+
+Default is to allow Facebook Login, with fallback to Inline Facebook Login.
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & The behavior to set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_a6726a3ef8cb945db59d60e410b6c562d}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!unlink\+User\+:@{unlink\+User\+:}}
+\index{unlink\+User\+:@{unlink\+User\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{unlink\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unlink\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a6726a3ef8cb945db59d60e410b6c562d}
+Unlinks the $<$\+P\+F\+User$>$ from a Facebook account {\itshape synchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Facebook.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the unlink was successful, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a1ecc255c277054f6a5dcf34a53fbace8}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!unlink\+User\+:error\+:@{unlink\+User\+:error\+:}}
+\index{unlink\+User\+:error\+:@{unlink\+User\+:error\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{unlink\+User\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf unlink\+User\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a1ecc255c277054f6a5dcf34a53fbace8}
+Unlinks the $<$\+P\+F\+User$>$ from a Facebook account {\itshape synchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Facebook. \\
+\hline
+{\em error} & Error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the unlink was successful, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a0fa5b2f0bae045b05cefd4636935a61f}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!unlink\+User\+In\+Background\+:@{unlink\+User\+In\+Background\+:}}
+\index{unlink\+User\+In\+Background\+:@{unlink\+User\+In\+Background\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) unlink\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a0fa5b2f0bae045b05cefd4636935a61f}
+Unlinks the $<$\+P\+F\+User$>$ from a Facebook account {\itshape asynchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Facebook. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_a0fa5b2f0bae045b05cefd4636935a61f}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!unlink\+User\+In\+Background\+:@{unlink\+User\+In\+Background\+:}}
+\index{unlink\+User\+In\+Background\+:@{unlink\+User\+In\+Background\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) unlink\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_a0fa5b2f0bae045b05cefd4636935a61f}
+Unlinks the $<$\+P\+F\+User$>$ from a Facebook account {\itshape asynchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Facebook. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_facebook_utils_aca714aba621d4257861deab47d1dabc9}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!unlink\+User\+In\+Background\+:block\+:@{unlink\+User\+In\+Background\+:block\+:}}
+\index{unlink\+User\+In\+Background\+:block\+:@{unlink\+User\+In\+Background\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unlink\+User\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_aca714aba621d4257861deab47d1dabc9}
+Unlinks the $<$\+P\+F\+User$>$ from a Facebook account {\itshape asynchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Facebook. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_aca714aba621d4257861deab47d1dabc9}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!unlink\+User\+In\+Background\+:block\+:@{unlink\+User\+In\+Background\+:block\+:}}
+\index{unlink\+User\+In\+Background\+:block\+:@{unlink\+User\+In\+Background\+:block\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unlink\+User\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_aca714aba621d4257861deab47d1dabc9}
+Unlinks the $<$\+P\+F\+User$>$ from a Facebook account {\itshape asynchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Facebook. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_facebook_utils_ae2e3de3d5b10c5695e938e96408aba91}{}\index{P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}!unlink\+User\+In\+Background\+:target\+:selector\+:@{unlink\+User\+In\+Background\+:target\+:selector\+:}}
+\index{unlink\+User\+In\+Background\+:target\+:selector\+:@{unlink\+User\+In\+Background\+:target\+:selector\+:}!P\+F\+Facebook\+Utils@{P\+F\+Facebook\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unlink\+User\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_facebook_utils_ae2e3de3d5b10c5695e938e96408aba91}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse\+Facebook\+Utils.\+framework/\+Headers/\hyperlink{_parse_facebook_utils_8framework_2_headers_2_p_f_facebook_utils_8h}{P\+F\+Facebook\+Utils.\+h}\end{DoxyCompactItemize}

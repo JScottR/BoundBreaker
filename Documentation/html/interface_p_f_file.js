@@ -1,0 +1,25 @@
+var interface_p_f_file =
+[
+    [ "cancel", "interface_p_f_file.html#a4bfb537da098271602f871f111e8b7d7", null ],
+    [ "getData", "interface_p_f_file.html#a3ebfa05ef8b5f465313cdf5b5f0a305c", null ],
+    [ "getData:", "interface_p_f_file.html#a6b6292c101b4bb5646713db0c795cfe5", null ],
+    [ "getDataInBackground", "interface_p_f_file.html#afa838c8cd04d76127d2fd089a1ab5def", null ],
+    [ "getDataInBackgroundWithBlock:", "interface_p_f_file.html#a9cc27e24f952c4f1e589442fee9e0d01", null ],
+    [ "getDataInBackgroundWithBlock:progressBlock:", "interface_p_f_file.html#ab8e4ad2fe46274a6205a08e0e34bc2fb", null ],
+    [ "getDataInBackgroundWithTarget:selector:", "interface_p_f_file.html#a0aaf2e5e01ef1b72ad0a4c1f4b5b0189", null ],
+    [ "getDataStream", "interface_p_f_file.html#ab7a062ad25457387959c2ac5bb7838af", null ],
+    [ "getDataStream:", "interface_p_f_file.html#a8f0c2a44cb9bf11cc8a1a72091724b0e", null ],
+    [ "getDataStreamInBackground", "interface_p_f_file.html#ada0c56887e39c7c2a4dec3cb85e3dcde", null ],
+    [ "getDataStreamInBackgroundWithBlock:", "interface_p_f_file.html#a4bfc494366b2c7a8cb56f50d3c7cc37b", null ],
+    [ "getDataStreamInBackgroundWithBlock:progressBlock:", "interface_p_f_file.html#a30c2bad5ec70a9b274513f9fb933306f", null ],
+    [ "save", "interface_p_f_file.html#ac9426d716ea9b57546ac40237051df53", null ],
+    [ "save:", "interface_p_f_file.html#ac5465c3823e73dd5e17eab67b629b6dc", null ],
+    [ "saveInBackground", "interface_p_f_file.html#a93f883e430848b83e7ecd53811b00829", null ],
+    [ "saveInBackgroundWithBlock:", "interface_p_f_file.html#a8b38454eb589a3a64e48bf3ea327091a", null ],
+    [ "saveInBackgroundWithBlock:progressBlock:", "interface_p_f_file.html#a815a3e0ccf23f0e1c9c573ec38649258", null ],
+    [ "saveInBackgroundWithTarget:selector:", "interface_p_f_file.html#a962b01cfccc90ac5ffe6d009c31ff0af", null ],
+    [ "isDataAvailable", "interface_p_f_file.html#a097e8a889aaafc477ace9ba9fa607c54", null ],
+    [ "isDirty", "interface_p_f_file.html#a7c5c90890ac086b6acead25cb4777e2c", null ],
+    [ "name", "interface_p_f_file.html#a7602815ca9a5e7628b2727ba7dd93b22", null ],
+    [ "url", "interface_p_f_file.html#ada906196949937fe800cc0cab2bc10e4", null ]
+];

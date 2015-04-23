@@ -1,0 +1,860 @@
+\hypertarget{interface_p_f_push}{}\section{P\+F\+Push Class Reference}
+\label{interface_p_f_push}\index{P\+F\+Push@{P\+F\+Push}}
+
+
+{\ttfamily \#import $<$P\+F\+Push.\+h$>$}
+
+Inheritance diagram for P\+F\+Push\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_push}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Configuring a Push Notification}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_adff864ad664a6ef73025134d25dc635e}{set\+Channel\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_a7c330cf0ac5be80f67baced4fcc37e17}{set\+Channels\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_a21164e760882e2975d66550bb52db78c}{set\+Query\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_abcbcb4efb1e43155e5b13ca65763050c}{set\+Message\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_a9c08085efcc69bb087c5405c674ef3d4}{set\+Data\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_abb3c035bafca04776859b5162ebb2971}{set\+Push\+To\+Android\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_a909c5f0f00ce3975508b0717f9d346f7}{set\+Push\+To\+I\+O\+S\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_a101205e8c3c553b1bc83f1acbbf56241}{expire\+At\+Date\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_a3c188faed1a18b012997aa6f96a46ae6}{expire\+After\+Time\+Interval\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_a349b1b43b499be265940ff64252d10fa}{clear\+Expiration}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Creating a Push Notification}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_p_f_push}{P\+F\+Push} $\ast$) + \hyperlink{interface_p_f_push_a256acbba3e87a69f5f4fa5ca760f35ac}{push}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Handling Notifications}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_push_ad9cd495c20065b7dd33e57f60d3f5516}{handle\+Push\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Managing Channel Subscriptions}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_push_a5a32d5110566969b78742e0df3a1358a}{store\+Device\+Token\+:}
+\item 
+(N\+S\+Set $\ast$) + \hyperlink{interface_p_f_push_ad650374f85d7f28893e9392978d162b9}{get\+Subscribed\+Channels\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_push_a28fd7bddea5a7ac3dae091b27698a9e6}{get\+Subscribed\+Channels\+In\+Background}
+\item 
+(void) + \hyperlink{interface_p_f_push_a6efb20dfb3193e17bf49b216929f896d}{get\+Subscribed\+Channels\+In\+Background\+With\+Block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_add630e6b01210227cbba590e848126a5}{get\+Subscribed\+Channels\+In\+Background\+With\+Target\+:selector\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_push_a5158b29f91548f7d7c8569be5b80b322}{subscribe\+To\+Channel\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_push_a705a7125f2f1ff47bd80e9f352200b04}{subscribe\+To\+Channel\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_ae6e7bc77b5dcf183fe0ebb19d4e114e8}{subscribe\+To\+Channel\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_a6973c612cf162de5a046c6c7503a1752}{subscribe\+To\+Channel\+In\+Background\+:target\+:selector\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_push_ac6d89f2e60452417125528e3fd06eb5b}{unsubscribe\+From\+Channel\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_push_a697a78ecd8e6c9f080600a7e903bb976}{unsubscribe\+From\+Channel\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_a4951ab01bb19c746a0bd3b2e5187f99e}{unsubscribe\+From\+Channel\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_ae6ff1898c6f3f657c7ec95dcda92a99b}{unsubscribe\+From\+Channel\+In\+Background\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Sending Push Notifications}
+\label{_amgrpe6cb0893a72c17d8c8a97bd50a4bf421}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_push_a32b6cd45775490ec9b0e6fcc4e74744f}{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_push_a65afdd37ae139e6c507bbd09e848b91a}{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_a2b32857be566b43fcdd3f96a666dbca8}{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_a88439fa875385d01f26b974278a402ab}{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:target\+:selector\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_push_a3348f305a53a118f750c53a4d22983a7}{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_push_ad0acb79c0e6439daf37e1e22d524134a}{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_add921b3ff333dad017c1ee8490b3d1ad}{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:block\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_push_a0c6261c565e9289076fdffd6f14b66f6}{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_push_a033c034c9895d32caa0b57ca6bc45ef7}{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_ac2741d4da328547f80b5309b6c569e0a}{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_a183974b28ab6e7f22edcf9b57e5ecb98}{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:target\+:selector\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_push_a565a7dfcabeac3d46ba2fa0de91f6412}{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_push_a2f2745a7e9c49fd3eb6890bc4dba6ce9}{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:}
+\item 
+(void) + \hyperlink{interface_p_f_push_ae0fbe5b29d3f5a4af509623acd2a67a7}{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:block\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_push_a4b90df571e65bca79059b6bd573459bc}{send\+Push\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_push_af8f50e2738cbc4743fa93440f8b91545}{send\+Push\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_adc8ff70ef7f5b03dad376029e3a23f16}{send\+Push\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_push_ad8f340b9ffeb49f16c38be200d13a18b}{send\+Push\+In\+Background\+With\+Target\+:selector\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_push}{P\+F\+Push}} class defines a push notification that can be sent from a client device.
+
+The preferred way of modifying or retrieving channel subscriptions is to use the $<$\+P\+F\+Installation$>$ class, instead of the class methods in {\ttfamily \hyperlink{interface_p_f_push}{P\+F\+Push}}.
+
+This class is currently for i\+O\+S only. \hyperlink{interface_parse}{Parse} does not handle Push Notifications to \hyperlink{interface_parse}{Parse} applications running on O\+S X. Push Notifications can be sent from O\+S X applications via Cloud Code or the R\+E\+S\+T A\+P\+I to push-\/enabled devices (e.\+g. i\+O\+S or Android). 
+
+Definition at line 24 of file P\+F\+Push.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_push_a349b1b43b499be265940ff64252d10fa}{}\index{P\+F\+Push@{P\+F\+Push}!clear\+Expiration@{clear\+Expiration}}
+\index{clear\+Expiration@{clear\+Expiration}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{clear\+Expiration}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\+Expiration 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a349b1b43b499be265940ff64252d10fa}
+Clears both expiration values, indicating that the notification should never expire. \hypertarget{interface_p_f_push_a3c188faed1a18b012997aa6f96a46ae6}{}\index{P\+F\+Push@{P\+F\+Push}!expire\+After\+Time\+Interval\+:@{expire\+After\+Time\+Interval\+:}}
+\index{expire\+After\+Time\+Interval\+:@{expire\+After\+Time\+Interval\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{expire\+After\+Time\+Interval\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) expire\+After\+Time\+Interval\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Time\+Interval)}]{time\+Interval}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a3c188faed1a18b012997aa6f96a46ae6}
+Sets the time interval after which this notification should expire.
+
+This notification will be sent to devices which are either online at the time the notification is sent, or which come online within the given time interval of the notification being received by \hyperlink{interface_parse}{Parse}\textquotesingle{}s server. An interval which is less than or equal to zero indicates that the message should only be sent to devices which are currently online.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Interval} & The interval after which the notification should expire. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a101205e8c3c553b1bc83f1acbbf56241}{}\index{P\+F\+Push@{P\+F\+Push}!expire\+At\+Date\+:@{expire\+At\+Date\+:}}
+\index{expire\+At\+Date\+:@{expire\+At\+Date\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{expire\+At\+Date\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) expire\+At\+Date\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Date $\ast$)}]{date}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a101205e8c3c553b1bc83f1acbbf56241}
+Sets the expiration time for this notification.
+
+The notification will be sent to devices which are either online at the time the notification is sent, or which come online before the expiration time is reached. Because device clocks are not guaranteed to be accurate, most applications should instead use $<$expire\+After\+Time\+Interval\+:$>$.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_push_a3c188faed1a18b012997aa6f96a46ae6}{-\/ expire\+After\+Time\+Interval\+:}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The time at which the notification should expire. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_ad650374f85d7f28893e9392978d162b9}{}\index{P\+F\+Push@{P\+F\+Push}!get\+Subscribed\+Channels\+:@{get\+Subscribed\+Channels\+:}}
+\index{get\+Subscribed\+Channels\+:@{get\+Subscribed\+Channels\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{get\+Subscribed\+Channels\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+Set $\ast$) get\+Subscribed\+Channels\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ad650374f85d7f28893e9392978d162b9}
+{\itshape Synchronously} get all the channels that this device is subscribed to.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an {\ttfamily N\+S\+Set} containing all the channel names this device is subscribed to. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a28fd7bddea5a7ac3dae091b27698a9e6}{}\index{P\+F\+Push@{P\+F\+Push}!get\+Subscribed\+Channels\+In\+Background@{get\+Subscribed\+Channels\+In\+Background}}
+\index{get\+Subscribed\+Channels\+In\+Background@{get\+Subscribed\+Channels\+In\+Background}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{get\+Subscribed\+Channels\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) get\+Subscribed\+Channels\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a28fd7bddea5a7ac3dae091b27698a9e6}
+{\itshape Asynchronously} get all the channels that this device is subscribed to.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a6efb20dfb3193e17bf49b216929f896d}{}\index{P\+F\+Push@{P\+F\+Push}!get\+Subscribed\+Channels\+In\+Background\+With\+Block\+:@{get\+Subscribed\+Channels\+In\+Background\+With\+Block\+:}}
+\index{get\+Subscribed\+Channels\+In\+Background\+With\+Block\+:@{get\+Subscribed\+Channels\+In\+Background\+With\+Block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{get\+Subscribed\+Channels\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) get\+Subscribed\+Channels\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Set\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a6efb20dfb3193e17bf49b216929f896d}
+{\itshape Asynchronously} get all the channels that this device is subscribed to. 
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(N\+S\+Set $\ast$channels, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_add630e6b01210227cbba590e848126a5}{}\index{P\+F\+Push@{P\+F\+Push}!get\+Subscribed\+Channels\+In\+Background\+With\+Target\+:selector\+:@{get\+Subscribed\+Channels\+In\+Background\+With\+Target\+:selector\+:}}
+\index{get\+Subscribed\+Channels\+In\+Background\+With\+Target\+:selector\+:@{get\+Subscribed\+Channels\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{get\+Subscribed\+Channels\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) get\+Subscribed\+Channels\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\item[{selector:(S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_add630e6b01210227cbba590e848126a5}
+\hypertarget{interface_p_f_push_ad9cd495c20065b7dd33e57f60d3f5516}{}\index{P\+F\+Push@{P\+F\+Push}!handle\+Push\+:@{handle\+Push\+:}}
+\index{handle\+Push\+:@{handle\+Push\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{handle\+Push\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) handle\+Push\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{user\+Info}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ad9cd495c20065b7dd33e57f60d3f5516}
+A default handler for push notifications while the app is active that could be used to mimic the behavior of i\+O\+S push notifications while the app is backgrounded or not running.
+
+Call this from {\ttfamily application\+:did\+Receive\+Remote\+Notification\+:}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & The user\+Info dictionary you get in {\ttfamily appplication\+:did\+Receive\+Remote\+Notification\+:}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a256acbba3e87a69f5f4fa5ca760f35ac}{}\index{P\+F\+Push@{P\+F\+Push}!push@{push}}
+\index{push@{push}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+Push} $\ast$) push 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a256acbba3e87a69f5f4fa5ca760f35ac}
+\hypertarget{interface_p_f_push_a4b90df571e65bca79059b6bd573459bc}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+:@{send\+Push\+:}}
+\index{send\+Push\+:@{send\+Push\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) send\+Push\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a4b90df571e65bca79059b6bd573459bc}
+{\itshape Synchronously} send this push message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a0c6261c565e9289076fdffd6f14b66f6}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}}
+\index{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Data\+To\+Channel\+:with\+Data\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Data\+To\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a0c6261c565e9289076fdffd6f14b66f6}
+{\itshape Synchronously} send a push message with arbitrary data to a channel.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em data} & The data to send. \\
+\hline
+{\em error} & Pointer to an N\+S\+Error that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a033c034c9895d32caa0b57ca6bc45ef7}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:@{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:}}
+\index{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:@{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) send\+Push\+Data\+To\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a033c034c9895d32caa0b57ca6bc45ef7}
+{\itshape Asynchronously} send a push message with arbitrary data to a channel.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em data} & The data to send.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_ac2741d4da328547f80b5309b6c569e0a}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:block\+:@{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:block\+:}}
+\index{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:block\+:@{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) send\+Push\+Data\+To\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\item[{block:({\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ac2741d4da328547f80b5309b6c569e0a}
+Asynchronously sends a push message with arbitrary data to a channel and calls the given block.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em data} & The data to send. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a183974b28ab6e7f22edcf9b57e5ecb98}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:target\+:selector\+:@{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:target\+:selector\+:}}
+\index{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:target\+:selector\+:@{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:target\+:selector\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Data\+To\+Channel\+In\+Background\+:with\+Data\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) send\+Push\+Data\+To\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\item[{target:(id)}]{target}
+\item[{selector:(S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a183974b28ab6e7f22edcf9b57e5ecb98}
+\hypertarget{interface_p_f_push_a565a7dfcabeac3d46ba2fa0de91f6412}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}}
+\index{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:@{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Data\+To\+Query\+:with\+Data\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Data\+To\+Query\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query} $\ast$)}]{query}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a565a7dfcabeac3d46ba2fa0de91f6412}
+{\itshape Synchronously} send a push message with arbitrary data to a query.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a $<$\+P\+F\+Installation$>$ query created with $<$\mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}$>$. \\
+\hline
+{\em data} & The data to send. \\
+\hline
+{\em error} & Pointer to an N\+S\+Error that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a2f2745a7e9c49fd3eb6890bc4dba6ce9}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:@{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:}}
+\index{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:@{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) send\+Push\+Data\+To\+Query\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query} $\ast$)}]{query}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a2f2745a7e9c49fd3eb6890bc4dba6ce9}
+Asynchronously send a push message with arbitrary data to a query.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a $<$\+P\+F\+Installation$>$ query created with $<$\mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}$>$. \\
+\hline
+{\em data} & The data to send.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_ae0fbe5b29d3f5a4af509623acd2a67a7}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:block\+:@{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:block\+:}}
+\index{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:block\+:@{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Data\+To\+Query\+In\+Background\+:with\+Data\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) send\+Push\+Data\+To\+Query\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query} $\ast$)}]{query}
+\item[{withData:(N\+S\+Dictionary $\ast$)}]{data}
+\item[{block:({\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ae0fbe5b29d3f5a4af509623acd2a67a7}
+{\itshape Asynchronously} sends a push message with arbitrary data to a query and calls the given block.
+
+See the guide for information about the dictionary structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a $<$\+P\+F\+Installation$>$ query created with $<$\mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}$>$. \\
+\hline
+{\em data} & The data to send. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_af8f50e2738cbc4743fa93440f8b91545}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+In\+Background@{send\+Push\+In\+Background}}
+\index{send\+Push\+In\+Background@{send\+Push\+In\+Background}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) send\+Push\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_af8f50e2738cbc4743fa93440f8b91545}
+{\itshape Asynchronously} send this push message. \begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_adc8ff70ef7f5b03dad376029e3a23f16}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+In\+Background\+With\+Block\+:@{send\+Push\+In\+Background\+With\+Block\+:}}
+\index{send\+Push\+In\+Background\+With\+Block\+:@{send\+Push\+In\+Background\+With\+Block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Push\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_adc8ff70ef7f5b03dad376029e3a23f16}
+{\itshape Asynchronously} send this push message and executes the given callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_ad8f340b9ffeb49f16c38be200d13a18b}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+In\+Background\+With\+Target\+:selector\+:@{send\+Push\+In\+Background\+With\+Target\+:selector\+:}}
+\index{send\+Push\+In\+Background\+With\+Target\+:selector\+:@{send\+Push\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) send\+Push\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{target}
+\item[{selector:(S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ad8f340b9ffeb49f16c38be200d13a18b}
+\hypertarget{interface_p_f_push_a32b6cd45775490ec9b0e6fcc4e74744f}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}}
+\index{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Message\+To\+Channel\+:with\+Message\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Message\+To\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a32b6cd45775490ec9b0e6fcc4e74744f}
+{\itshape Synchronously} send a push message to a channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em message} & The message to send. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a65afdd37ae139e6c507bbd09e848b91a}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:@{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:}}
+\index{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:@{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) send\+Push\+Message\+To\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a65afdd37ae139e6c507bbd09e848b91a}
+{\itshape Asynchronously} send a push message to a channel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em message} & The message to send.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a2b32857be566b43fcdd3f96a666dbca8}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:block\+:@{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:block\+:}}
+\index{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:block\+:@{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) send\+Push\+Message\+To\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\item[{block:({\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a2b32857be566b43fcdd3f96a666dbca8}
+{\itshape Asynchronously} sends a push message to a channel and calls the given block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to send to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em message} & The message to send. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a88439fa875385d01f26b974278a402ab}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:target\+:selector\+:@{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:target\+:selector\+:}}
+\index{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:target\+:selector\+:@{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:target\+:selector\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Message\+To\+Channel\+In\+Background\+:with\+Message\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) send\+Push\+Message\+To\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\item[{target:(id)}]{target}
+\item[{selector:(S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a88439fa875385d01f26b974278a402ab}
+\hypertarget{interface_p_f_push_a3348f305a53a118f750c53a4d22983a7}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}}
+\index{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:@{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Message\+To\+Query\+:with\+Message\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) send\+Push\+Message\+To\+Query\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query} $\ast$)}]{query}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a3348f305a53a118f750c53a4d22983a7}
+Send a push message to a query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a $<$\+P\+F\+Installation$>$ query created with $<$\mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}$>$. \\
+\hline
+{\em message} & The message to send. \\
+\hline
+{\em error} & Pointer to an N\+S\+Error that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the send succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_ad0acb79c0e6439daf37e1e22d524134a}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:@{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:}}
+\index{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:@{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) send\+Push\+Message\+To\+Query\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query} $\ast$)}]{query}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ad0acb79c0e6439daf37e1e22d524134a}
+{\itshape Asynchronously} send a push message to a query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a $<$\+P\+F\+Installation$>$ query created with $<$\mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}$>$. \\
+\hline
+{\em message} & The message to send.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_add921b3ff333dad017c1ee8490b3d1ad}{}\index{P\+F\+Push@{P\+F\+Push}!send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:block\+:@{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:block\+:}}
+\index{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:block\+:@{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{send\+Push\+Message\+To\+Query\+In\+Background\+:with\+Message\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) send\+Push\+Message\+To\+Query\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query} $\ast$)}]{query}
+\item[{withMessage:(N\+S\+String $\ast$)}]{message}
+\item[{block:({\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_add921b3ff333dad017c1ee8490b3d1ad}
+{\itshape Asynchronously} sends a push message to a query and calls the given block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The query to send to. The query must be a \hyperlink{interface_p_f_installation}{P\+F\+Installation} query created with \mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}. \\
+\hline
+{\em message} & The message to send. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_adff864ad664a6ef73025134d25dc635e}{}\index{P\+F\+Push@{P\+F\+Push}!set\+Channel\+:@{set\+Channel\+:}}
+\index{set\+Channel\+:@{set\+Channel\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{set\+Channel\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_adff864ad664a6ef73025134d25dc635e}
+Sets the channel on which this push notification will be sent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to set for this push. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a7c330cf0ac5be80f67baced4fcc37e17}{}\index{P\+F\+Push@{P\+F\+Push}!set\+Channels\+:@{set\+Channels\+:}}
+\index{set\+Channels\+:@{set\+Channels\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{set\+Channels\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Channels\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{channels}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a7c330cf0ac5be80f67baced4fcc37e17}
+Sets the array of channels on which this push notification will be sent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channels} & The array of channels to set for this push. Each channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a9c08085efcc69bb087c5405c674ef3d4}{}\index{P\+F\+Push@{P\+F\+Push}!set\+Data\+:@{set\+Data\+:}}
+\index{set\+Data\+:@{set\+Data\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{set\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Dictionary $\ast$)}]{data}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a9c08085efcc69bb087c5405c674ef3d4}
+Sets an arbitrary data payload for this push notification.
+
+See the guide for information about the dictionary structure.
+
+\begin{DoxyWarning}{Warning}
+This will overwrite any data specified in set\+Message.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to send in this push. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_abcbcb4efb1e43155e5b13ca65763050c}{}\index{P\+F\+Push@{P\+F\+Push}!set\+Message\+:@{set\+Message\+:}}
+\index{set\+Message\+:@{set\+Message\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{set\+Message\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Message\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{message}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_abcbcb4efb1e43155e5b13ca65763050c}
+Sets an alert message for this push notification.
+
+\begin{DoxyWarning}{Warning}
+This will overwrite any data specified in set\+Data.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to send in this push. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_abb3c035bafca04776859b5162ebb2971}{}\index{P\+F\+Push@{P\+F\+Push}!set\+Push\+To\+Android\+:@{set\+Push\+To\+Android\+:}}
+\index{set\+Push\+To\+Android\+:@{set\+Push\+To\+Android\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{set\+Push\+To\+Android\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Push\+To\+Android\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Please use a  with a constraint on device\+Type.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\mbox{[}\+P\+F\+Installation query\mbox{]}}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_abb3c035bafca04776859b5162ebb2971}
+Sets whether this push will go to Android devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em push\+To\+Android} & Whether this push will go to Android devices.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]Please use a {\ttfamily \mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}} with a constraint on device\+Type instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_push_a909c5f0f00ce3975508b0717f9d346f7}{}\index{P\+F\+Push@{P\+F\+Push}!set\+Push\+To\+I\+O\+S\+:@{set\+Push\+To\+I\+O\+S\+:}}
+\index{set\+Push\+To\+I\+O\+S\+:@{set\+Push\+To\+I\+O\+S\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{set\+Push\+To\+I\+O\+S\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Push\+To\+I\+O\+S\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Please use a  with a constraint on device\+Type.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\mbox{[}\+P\+F\+Installation query\mbox{]}}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a909c5f0f00ce3975508b0717f9d346f7}
+Sets whether this push will go to i\+O\+S devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em push\+To\+I\+O\+S} & Whether this push will go to i\+O\+S devices.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]Please use a {\ttfamily \mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}} with a constraint on device\+Type instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_push_a21164e760882e2975d66550bb52db78c}{}\index{P\+F\+Push@{P\+F\+Push}!set\+Query\+:@{set\+Query\+:}}
+\index{set\+Query\+:@{set\+Query\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{set\+Query\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Query\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Query} $\ast$)}]{query}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a21164e760882e2975d66550bb52db78c}
+Sets an installation query to which this push notification will be sent.
+
+The query should be created via $<$\mbox{[}\hyperlink{interface_p_f_installation}{P\+F\+Installation} query\mbox{]}$>$ and should not specify a skip, limit, or order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & The installation query to set for this push. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a5a32d5110566969b78742e0df3a1358a}{}\index{P\+F\+Push@{P\+F\+Push}!store\+Device\+Token\+:@{store\+Device\+Token\+:}}
+\index{store\+Device\+Token\+:@{store\+Device\+Token\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{store\+Device\+Token\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) store\+Device\+Token\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{device\+Token}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a5a32d5110566969b78742e0df3a1358a}
+Store the device token locally for push notifications.
+
+Usually called from you main app delegate\textquotesingle{}s {\ttfamily did\+Register\+For\+Remote\+Notifications\+With\+Device\+Token\+:}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Token} & Either as an {\ttfamily N\+S\+Data} straight from {\ttfamily application\+:did\+Register\+For\+Remote\+Notifications\+With\+Device\+Token\+:} or as an {\ttfamily N\+S\+String} if you converted it yourself. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a5158b29f91548f7d7c8569be5b80b322}{}\index{P\+F\+Push@{P\+F\+Push}!subscribe\+To\+Channel\+:error\+:@{subscribe\+To\+Channel\+:error\+:}}
+\index{subscribe\+To\+Channel\+:error\+:@{subscribe\+To\+Channel\+:error\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{subscribe\+To\+Channel\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) subscribe\+To\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a5158b29f91548f7d7c8569be5b80b322}
+{\itshape Synchrnously} subscribes the device to a channel of push notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to subscribe to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the subscribe succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a705a7125f2f1ff47bd80e9f352200b04}{}\index{P\+F\+Push@{P\+F\+Push}!subscribe\+To\+Channel\+In\+Background\+:@{subscribe\+To\+Channel\+In\+Background\+:}}
+\index{subscribe\+To\+Channel\+In\+Background\+:@{subscribe\+To\+Channel\+In\+Background\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{subscribe\+To\+Channel\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) subscribe\+To\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a705a7125f2f1ff47bd80e9f352200b04}
+{\itshape Asynchronously} subscribes the device to a channel of push notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to subscribe to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_ae6e7bc77b5dcf183fe0ebb19d4e114e8}{}\index{P\+F\+Push@{P\+F\+Push}!subscribe\+To\+Channel\+In\+Background\+:block\+:@{subscribe\+To\+Channel\+In\+Background\+:block\+:}}
+\index{subscribe\+To\+Channel\+In\+Background\+:block\+:@{subscribe\+To\+Channel\+In\+Background\+:block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{subscribe\+To\+Channel\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf subscribe\+To\+Channel\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{block:({\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ae6e7bc77b5dcf183fe0ebb19d4e114e8}
+{\itshape Asynchronously} subscribes the device to a channel of push notifications and calls the given block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to subscribe to. The channel name must start with a letter and contain only letters, numbers, dashes, and underscores. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_a6973c612cf162de5a046c6c7503a1752}{}\index{P\+F\+Push@{P\+F\+Push}!subscribe\+To\+Channel\+In\+Background\+:target\+:selector\+:@{subscribe\+To\+Channel\+In\+Background\+:target\+:selector\+:}}
+\index{subscribe\+To\+Channel\+In\+Background\+:target\+:selector\+:@{subscribe\+To\+Channel\+In\+Background\+:target\+:selector\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{subscribe\+To\+Channel\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf subscribe\+To\+Channel\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{target:(id)}]{target}
+\item[{selector:(S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a6973c612cf162de5a046c6c7503a1752}
+\hypertarget{interface_p_f_push_ac6d89f2e60452417125528e3fd06eb5b}{}\index{P\+F\+Push@{P\+F\+Push}!unsubscribe\+From\+Channel\+:error\+:@{unsubscribe\+From\+Channel\+:error\+:}}
+\index{unsubscribe\+From\+Channel\+:error\+:@{unsubscribe\+From\+Channel\+:error\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{unsubscribe\+From\+Channel\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unsubscribe\+From\+Channel\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ac6d89f2e60452417125528e3fd06eb5b}
+{\itshape Synchronously} unsubscribes the device to a channel of push notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to unsubscribe from. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unsubscribe succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a697a78ecd8e6c9f080600a7e903bb976}{}\index{P\+F\+Push@{P\+F\+Push}!unsubscribe\+From\+Channel\+In\+Background\+:@{unsubscribe\+From\+Channel\+In\+Background\+:}}
+\index{unsubscribe\+From\+Channel\+In\+Background\+:@{unsubscribe\+From\+Channel\+In\+Background\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{unsubscribe\+From\+Channel\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) unsubscribe\+From\+Channel\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a697a78ecd8e6c9f080600a7e903bb976}
+{\itshape Asynchronously} unsubscribes the device from a channel of push notifications.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to unsubscribe from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_push_a4951ab01bb19c746a0bd3b2e5187f99e}{}\index{P\+F\+Push@{P\+F\+Push}!unsubscribe\+From\+Channel\+In\+Background\+:block\+:@{unsubscribe\+From\+Channel\+In\+Background\+:block\+:}}
+\index{unsubscribe\+From\+Channel\+In\+Background\+:block\+:@{unsubscribe\+From\+Channel\+In\+Background\+:block\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{unsubscribe\+From\+Channel\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unsubscribe\+From\+Channel\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{block:({\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_a4951ab01bb19c746a0bd3b2e5187f99e}
+{\itshape Asynchronously} unsubscribes the device from a channel of push notifications and calls the given block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel to unsubscribe from. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_push_ae6ff1898c6f3f657c7ec95dcda92a99b}{}\index{P\+F\+Push@{P\+F\+Push}!unsubscribe\+From\+Channel\+In\+Background\+:target\+:selector\+:@{unsubscribe\+From\+Channel\+In\+Background\+:target\+:selector\+:}}
+\index{unsubscribe\+From\+Channel\+In\+Background\+:target\+:selector\+:@{unsubscribe\+From\+Channel\+In\+Background\+:target\+:selector\+:}!P\+F\+Push@{P\+F\+Push}}
+\subsubsection[{unsubscribe\+From\+Channel\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unsubscribe\+From\+Channel\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{channel}
+\item[{target:(id)}]{target}
+\item[{selector:(S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_push_ae6ff1898c6f3f657c7ec95dcda92a99b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_push_8h}{P\+F\+Push.\+h}\end{DoxyCompactItemize}

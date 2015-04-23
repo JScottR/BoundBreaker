@@ -1,0 +1,144 @@
+\hypertarget{interface_p_f___twitter}{}\section{P\+F\+\_\+\+Twitter Class Reference}
+\label{interface_p_f___twitter}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+
+
+{\ttfamily \#import $<$P\+F\+\_\+\+Twitter.\+h$>$}
+
+Inheritance diagram for P\+F\+\_\+\+Twitter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f___twitter}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f___twitter_ab44d1e51b54da37a55056bdbb84cd782}{authorize\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f___twitter_a7a9a451aa7dfbaaf6e19c4bd69ba22dc}{authorize\+With\+Success\+:failure\+:cancel\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f___twitter_a3344db4a50a2d17afd180340dc4a2138}{sign\+Request\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f___twitter_abf8ce099ecc6b1ada8f4e00bdb263344}{consumer\+Key}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f___twitter_a5cd32ce792aa0047289c40ef24495d87}{consumer\+Secret}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f___twitter_a2f69919c3b94219d6a2d81746a2557ca}{auth\+Token}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f___twitter_a9ed4e1e1544a9963d41d0f2df5520123}{auth\+Token\+Secret}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f___twitter_a323160d0fafcc787ae3e7f705697e284}{user\+Id}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f___twitter_abd234e6e32ffb958ff2e9a7176c28e63}{screen\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f___twitter}{P\+F\+\_\+\+Twitter}} class is a simple interface for interacting with the Twitter R\+E\+S\+T A\+P\+I, automating sign-\/in and O\+Auth signing of requests against the A\+P\+I. 
+
+Definition at line 19 of file P\+F\+\_\+\+Twitter.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f___twitter_ab44d1e51b54da37a55056bdbb84cd782}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!authorize\+In\+Background@{authorize\+In\+Background}}
+\index{authorize\+In\+Background@{authorize\+In\+Background}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{authorize\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) authorize\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f___twitter_ab44d1e51b54da37a55056bdbb84cd782}
+Displays an auth dialog and populates the auth\+Token, auth\+Token\+Secret, user\+Id, and screen\+Name properties if the Twitter user grants permission to the application.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f___twitter_a7a9a451aa7dfbaaf6e19c4bd69ba22dc}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!authorize\+With\+Success\+:failure\+:cancel\+:@{authorize\+With\+Success\+:failure\+:cancel\+:}}
+\index{authorize\+With\+Success\+:failure\+:cancel\+:@{authorize\+With\+Success\+:failure\+:cancel\+:}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{authorize\+With\+Success\+:failure\+:cancel\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) authorize\+With\+Success\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} void($^\wedge$)(void))}]{success}
+\item[{failure:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} void($^\wedge$)(N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error))}]{failure}
+\item[{cancel:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} void($^\wedge$)(void))}]{cancel}
+\end{DoxyParamCaption}
+}\label{interface_p_f___twitter_a7a9a451aa7dfbaaf6e19c4bd69ba22dc}
+Displays an auth dialog and populates the auth\+Token, auth\+Token\+Secret, user\+Id, and screen\+Name properties if the Twitter user grants permission to the application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & Invoked upon successful authorization. \\
+\hline
+{\em failure} & Invoked upon an error occurring in the authorization process. \\
+\hline
+{\em cancel} & Invoked when the user cancels authorization. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f___twitter_a3344db4a50a2d17afd180340dc4a2138}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!sign\+Request\+:@{sign\+Request\+:}}
+\index{sign\+Request\+:@{sign\+Request\+:}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{sign\+Request\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sign\+Request\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Mutable\+U\+R\+L\+Request $\ast$)}]{request}
+\end{DoxyParamCaption}
+}\label{interface_p_f___twitter_a3344db4a50a2d17afd180340dc4a2138}
+Adds a 3-\/legged O\+Auth signature to an {\ttfamily N\+S\+Mutable\+U\+R\+L\+Request} based upon the properties set for the Twitter object.
+
+Use this function to sign requests being made to the Twitter A\+P\+I.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Request to sign. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f___twitter_a2f69919c3b94219d6a2d81746a2557ca}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!auth\+Token@{auth\+Token}}
+\index{auth\+Token@{auth\+Token}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{auth\+Token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) auth\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f___twitter_a2f69919c3b94219d6a2d81746a2557ca}
+Auth token for the current user. 
+
+Definition at line 34 of file P\+F\+\_\+\+Twitter.\+h.
+
+\hypertarget{interface_p_f___twitter_a9ed4e1e1544a9963d41d0f2df5520123}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!auth\+Token\+Secret@{auth\+Token\+Secret}}
+\index{auth\+Token\+Secret@{auth\+Token\+Secret}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{auth\+Token\+Secret}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) auth\+Token\+Secret\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f___twitter_a9ed4e1e1544a9963d41d0f2df5520123}
+Auth token secret for the current user. 
+
+Definition at line 39 of file P\+F\+\_\+\+Twitter.\+h.
+
+\hypertarget{interface_p_f___twitter_abf8ce099ecc6b1ada8f4e00bdb263344}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!consumer\+Key@{consumer\+Key}}
+\index{consumer\+Key@{consumer\+Key}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{consumer\+Key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) consumer\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f___twitter_abf8ce099ecc6b1ada8f4e00bdb263344}
+Consumer key of the application that is used to authorize with Twitter. 
+
+Definition at line 24 of file P\+F\+\_\+\+Twitter.\+h.
+
+\hypertarget{interface_p_f___twitter_a5cd32ce792aa0047289c40ef24495d87}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!consumer\+Secret@{consumer\+Secret}}
+\index{consumer\+Secret@{consumer\+Secret}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{consumer\+Secret}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) consumer\+Secret\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f___twitter_a5cd32ce792aa0047289c40ef24495d87}
+Consumer secret of the application that is used to authorize with Twitter. 
+
+Definition at line 29 of file P\+F\+\_\+\+Twitter.\+h.
+
+\hypertarget{interface_p_f___twitter_abd234e6e32ffb958ff2e9a7176c28e63}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!screen\+Name@{screen\+Name}}
+\index{screen\+Name@{screen\+Name}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{screen\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) screen\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f___twitter_abd234e6e32ffb958ff2e9a7176c28e63}
+Twitter screen name of the currently signed in user. 
+
+Definition at line 49 of file P\+F\+\_\+\+Twitter.\+h.
+
+\hypertarget{interface_p_f___twitter_a323160d0fafcc787ae3e7f705697e284}{}\index{P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}!user\+Id@{user\+Id}}
+\index{user\+Id@{user\+Id}!P\+F\+\_\+\+Twitter@{P\+F\+\_\+\+Twitter}}
+\subsubsection[{user\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) user\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f___twitter_a323160d0fafcc787ae3e7f705697e284}
+Twitter user id of the currently signed in user. 
+
+Definition at line 44 of file P\+F\+\_\+\+Twitter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f___twitter_8h}{P\+F\+\_\+\+Twitter.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{interface_p_f_session}{}\section{P\+F\+Session Class Reference}
+\label{interface_p_f_session}\index{P\+F\+Session@{P\+F\+Session}}
+
+
+{\ttfamily \#import $<$P\+F\+Session.\+h$>$}
+
+Inheritance diagram for P\+F\+Session\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_p_f_session}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_session_aedc9db93f901c4fc11416ebc4b746bf6}{get\+Current\+Session\+In\+Background}
+\item 
+(void) + \hyperlink{interface_p_f_session_a16bd2d5f71f28b5e73ac9b56686dbc2e}{get\+Current\+Session\+In\+Background\+With\+Block\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_session_a9e2e9da02a395f3b549cc0cca89e3baa}{session\+Token}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_p_f_session}{P\+F\+Session}} is a local representation of a session. This class is a subclass of a $<$\+P\+F\+Object$>$, and retains the same functionality as any other subclass of $<$\+P\+F\+Object$>$. 
+
+Definition at line 28 of file P\+F\+Session.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_session_aedc9db93f901c4fc11416ebc4b746bf6}{}\index{P\+F\+Session@{P\+F\+Session}!get\+Current\+Session\+In\+Background@{get\+Current\+Session\+In\+Background}}
+\index{get\+Current\+Session\+In\+Background@{get\+Current\+Session\+In\+Background}!P\+F\+Session@{P\+F\+Session}}
+\subsubsection[{get\+Current\+Session\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) get\+Current\+Session\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_session_aedc9db93f901c4fc11416ebc4b746bf6}
+Asynchronously$\ast$ fetches a {\ttfamily \hyperlink{interface_p_f_session}{P\+F\+Session}} object related to the current user.
+
+\begin{DoxyReturn}{Returns}
+A task that is {\ttfamily completed} with an instance of {\ttfamily \hyperlink{interface_p_f_session}{P\+F\+Session}} class or is {\ttfamily faulted} if the operation fails. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_session_a16bd2d5f71f28b5e73ac9b56686dbc2e}{}\index{P\+F\+Session@{P\+F\+Session}!get\+Current\+Session\+In\+Background\+With\+Block\+:@{get\+Current\+Session\+In\+Background\+With\+Block\+:}}
+\index{get\+Current\+Session\+In\+Background\+With\+Block\+:@{get\+Current\+Session\+In\+Background\+With\+Block\+:}!P\+F\+Session@{P\+F\+Session}}
+\subsubsection[{get\+Current\+Session\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) get\+Current\+Session\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Session\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_session_a16bd2d5f71f28b5e73ac9b56686dbc2e}
+Asynchronously$\ast$ fetches a {\ttfamily \hyperlink{interface_p_f_session}{P\+F\+Session}} object related to the current user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute when the operation completes. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_session}{P\+F\+Session} $\ast$session, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_session_a9e2e9da02a395f3b549cc0cca89e3baa}{}\index{P\+F\+Session@{P\+F\+Session}!session\+Token@{session\+Token}}
+\index{session\+Token@{session\+Token}!P\+F\+Session@{P\+F\+Session}}
+\subsubsection[{session\+Token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) session\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_session_a9e2e9da02a395f3b549cc0cca89e3baa}
+The session token string for this session. 
+
+Definition at line 33 of file P\+F\+Session.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_session_8h}{P\+F\+Session.\+h}\end{DoxyCompactItemize}

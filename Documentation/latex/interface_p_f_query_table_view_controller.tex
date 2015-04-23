@@ -1,0 +1,383 @@
+\hypertarget{interface_p_f_query_table_view_controller}{}\section{P\+F\+Query\+Table\+View\+Controller Class Reference}
+\label{interface_p_f_query_table_view_controller}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+
+
+{\ttfamily \#import $<$P\+F\+Query\+Table\+View\+Controller.\+h$>$}
+
+Inheritance diagram for P\+F\+Query\+Table\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.871795cm]{interface_p_f_query_table_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Creating a P\+F\+Query\+Table\+View\+Controller}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_query_table_view_controller_aa65d2f84f753e2ff528d5bd7ee62374f}{init\+With\+Style\+:class\+Name\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_query_table_view_controller_a64c1e48cae146ebce855879c91f19cdf}{init\+With\+Class\+Name\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Responding to Events}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_table_view_controller_a0eec6619963aeb275fcdb704fa6d8074}{objects\+Will\+Load}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_table_view_controller_ab2333be359021fd9cf681953732bb4a9}{objects\+Did\+Load\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Querying}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) -\/ \hyperlink{interface_p_f_query_table_view_controller_af74b91d2b7e062d6404b7a585e1a043b}{query\+For\+Table}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Data Source Methods}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_parse_u_i_constants_8h_af6e64a847348a9ac2a77923670373fe8}{P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_table_view_cell}{P\+F\+Table\+View\+Cell} $\ast$) -\/ \hyperlink{interface_p_f_query_table_view_controller_a41819a40649756991b380a33ae632571}{table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:}
+\item 
+(\hyperlink{_parse_u_i_constants_8h_af6e64a847348a9ac2a77923670373fe8}{P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_table_view_cell}{P\+F\+Table\+View\+Cell} $\ast$) -\/ \hyperlink{interface_p_f_query_table_view_controller_a0af23b181bdcaa0ed2eff45f9ee48421}{table\+View\+:cell\+For\+Next\+Page\+At\+Index\+Path\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{Indent}{\bf Configuring Behavior}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+I\+B\+Inspectable N\+S\+String $\ast$ \hyperlink{interface_p_f_query_table_view_controller_aaae6bcb41e59355b0bbf91a524bfc714}{parse\+Class\+Name}
+\item 
+I\+B\+Inspectable N\+S\+String $\ast$ \hyperlink{interface_p_f_query_table_view_controller_a8c8efe19f3ac20c048c82af0278d82b5}{text\+Key}
+\item 
+I\+B\+Inspectable N\+S\+String $\ast$ \hyperlink{interface_p_f_query_table_view_controller_aa146ef8616090c43f7bea9364728713d}{image\+Key}
+\item 
+I\+B\+Inspectable U\+I\+Image $\ast$ \hyperlink{interface_p_f_query_table_view_controller_a6e435ec43463857e02845f37174a342b}{placeholder\+Image}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_p_f_query_table_view_controller_a148dfb629f55cd4e20b0ac3936f365c9}{loading\+View\+Enabled}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_p_f_query_table_view_controller_ac6eea74d27530d3cc9e9b1b4ac5515ba}{pull\+To\+Refresh\+Enabled}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_p_f_query_table_view_controller_aafceccf00447e9f7e1d8db2faf4e8c76}{pagination\+Enabled}
+\item 
+I\+B\+Inspectable N\+S\+U\+Integer \hyperlink{interface_p_f_query_table_view_controller_a7d06a88ac58846f32e9ad109540f1297}{objects\+Per\+Page}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_query_table_view_controller_a2578f4fcefdba208a25fe508e09e31a3}{loading}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Accessing Results}
+\label{_amgrp09728c99dc72fa61614ba2e2c37af37c}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+Array $\ast$ \hyperlink{interface_p_f_query_table_view_controller_a7c13a3b0c79c7b98b534ebfa06d2c194}{objects}
+\item 
+(\hyperlink{_parse_u_i_constants_8h_af6e64a847348a9ac2a77923670373fe8}{P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$) -\/ \hyperlink{interface_p_f_query_table_view_controller_ade469153b024a79167a66f6b0b654e40}{object\+At\+Index\+Path\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_table_view_controller_ae733bbe29e12b2b3cdeaf106b614804e}{clear}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_table_view_controller_a4b016612f41127415c63b611ac51763a}{load\+Objects}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_table_view_controller_a5349a691adb92e260b43127df6e20e2c}{load\+Objects\+:clear\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_table_view_controller_aa2948cd4e957006f69c1f98b2452120e}{load\+Next\+Page}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class allows you to think about a one-\/to-\/one mapping between a $<$\+P\+F\+Object$>$ and a {\ttfamily U\+I\+Table\+View\+Cell}, rather than having to juggle index paths.
+
+You also get the following features out of the box\+:
+
+
+\begin{DoxyItemize}
+\item Pagination with a cell that can be tapped to load the next page.
+\item Pull-\/to-\/refresh table view header.
+\item Automatic downloading and displaying of remote images in cells.
+\item Loading screen, shown before any data is loaded.
+\item Automatic loading and management of the objects array.
+\item Various methods that can be overridden to customize behavior at major events in the data cycle. 
+\end{DoxyItemize}
+
+Definition at line 45 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_query_table_view_controller_ae733bbe29e12b2b3cdeaf106b614804e}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!clear@{clear}}
+\index{clear@{clear}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_ae733bbe29e12b2b3cdeaf106b614804e}
+Clears the table of all objects. \hypertarget{interface_p_f_query_table_view_controller_a64c1e48cae146ebce855879c91f19cdf}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!init\+With\+Class\+Name\+:@{init\+With\+Class\+Name\+:}}
+\index{init\+With\+Class\+Name\+:@{init\+With\+Class\+Name\+:}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{init\+With\+Class\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Class\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{class\+Name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_a64c1e48cae146ebce855879c91f19cdf}
+Initializes with a class name of the P\+F\+Objects that will be associated with this table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The class name of the instances of $<$\+P\+F\+Object$>$ that this table will display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_p_f_query_table_view_controller}{P\+F\+Query\+Table\+View\+Controller}} object or {\ttfamily nil} if the object couldn\textquotesingle{}t be created. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_table_view_controller_aa65d2f84f753e2ff528d5bd7ee62374f}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!init\+With\+Style\+:class\+Name\+:@{init\+With\+Style\+:class\+Name\+:}}
+\index{init\+With\+Style\+:class\+Name\+:@{init\+With\+Style\+:class\+Name\+:}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{init\+With\+Style\+:class\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Style\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Table\+View\+Style)}]{style}
+\item[{className:({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{N\+S\+\_\+\+D\+E\+S\+I\+G\+N\+A\+T\+E\+D\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_aa65d2f84f753e2ff528d5bd7ee62374f}
+Initializes with a class name of the $<$\+P\+F\+Object$>$ that will be associated with this table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em style} & The U\+I\+Table\+View\+Style for the table \\
+\hline
+{\em class\+Name} & The class name of the instances of $<$\+P\+F\+Object$>$ that this table will display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_p_f_query_table_view_controller}{P\+F\+Query\+Table\+View\+Controller}} object or {\ttfamily nil} if the object couldn\textquotesingle{}t be created. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_table_view_controller_aa2948cd4e957006f69c1f98b2452120e}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!load\+Next\+Page@{load\+Next\+Page}}
+\index{load\+Next\+Page@{load\+Next\+Page}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{load\+Next\+Page}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Next\+Page 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_aa2948cd4e957006f69c1f98b2452120e}
+Loads the next page of objects, appends to table, and refreshes. \hypertarget{interface_p_f_query_table_view_controller_a4b016612f41127415c63b611ac51763a}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!load\+Objects@{load\+Objects}}
+\index{load\+Objects@{load\+Objects}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{load\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Objects 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_a4b016612f41127415c63b611ac51763a}
+Clears the table and loads the first page of objects. \hypertarget{interface_p_f_query_table_view_controller_a5349a691adb92e260b43127df6e20e2c}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!load\+Objects\+:clear\+:@{load\+Objects\+:clear\+:}}
+\index{load\+Objects\+:clear\+:@{load\+Objects\+:clear\+:}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{load\+Objects\+:clear\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Objects\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Integer)}]{page}
+\item[{clear:(B\+O\+O\+L)}]{clear}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_a5349a691adb92e260b43127df6e20e2c}
+Loads the objects of the class\+Name at the specified page and appends it to the objects already loaded and refreshes the table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & The page of objects to load. \\
+\hline
+{\em clear} & Whether to clear the table after receiving the objects. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_query_table_view_controller_ade469153b024a79167a66f6b0b654e40}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!object\+At\+Index\+Path\+:@{object\+At\+Index\+Path\+:}}
+\index{object\+At\+Index\+Path\+:@{object\+At\+Index\+Path\+:}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{object\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object} $\ast$) object\+At\+Index\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_ade469153b024a79167a66f6b0b654e40}
+Returns an object at a particular index\+Path.
+
+The default impementation returns the object at {\ttfamily index\+Path.\+row}. If you want to return objects in a different index\+Path order, like for sections, override this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Path} & The index\+Path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object at the specified index 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_table_view_controller_ab2333be359021fd9cf681953732bb4a9}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!objects\+Did\+Load\+:@{objects\+Did\+Load\+:}}
+\index{objects\+Did\+Load\+:@{objects\+Did\+Load\+:}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{objects\+Did\+Load\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) objects\+Did\+Load\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Error $\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_ab2333be359021fd9cf681953732bb4a9}
+Called when objects have loaded from \hyperlink{interface_parse}{Parse}. If you override this method, you must call \mbox{[}super objects\+Did\+Load\+:\mbox{]} in your implementation. 
+\begin{DoxyParams}{Parameters}
+{\em error} & The \hyperlink{interface_parse}{Parse} error from running the \hyperlink{interface_p_f_query}{P\+F\+Query}, if there was any. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_query_table_view_controller_a0eec6619963aeb275fcdb704fa6d8074}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!objects\+Will\+Load@{objects\+Will\+Load}}
+\index{objects\+Will\+Load@{objects\+Will\+Load}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{objects\+Will\+Load}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) objects\+Will\+Load 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_a0eec6619963aeb275fcdb704fa6d8074}
+Called when objects will loaded from \hyperlink{interface_parse}{Parse}. If you override this method, you must call \mbox{[}super objects\+Will\+Load\mbox{]} in your implementation. \hypertarget{interface_p_f_query_table_view_controller_af74b91d2b7e062d6404b7a585e1a043b}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!query\+For\+Table@{query\+For\+Table}}
+\index{query\+For\+Table@{query\+For\+Table}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{query\+For\+Table}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Query} $\ast$) query\+For\+Table 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_af74b91d2b7e062d6404b7a585e1a043b}
+Override to construct your own custom \hyperlink{interface_p_f_query}{P\+F\+Query} to get the objects. \begin{DoxyReturn}{Returns}
+\hyperlink{interface_p_f_query}{P\+F\+Query} that load\+Objects will use to the objects for this table. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_table_view_controller_a0af23b181bdcaa0ed2eff45f9ee48421}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!table\+View\+:cell\+For\+Next\+Page\+At\+Index\+Path\+:@{table\+View\+:cell\+For\+Next\+Page\+At\+Index\+Path\+:}}
+\index{table\+View\+:cell\+For\+Next\+Page\+At\+Index\+Path\+:@{table\+View\+:cell\+For\+Next\+Page\+At\+Index\+Path\+:}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{table\+View\+:cell\+For\+Next\+Page\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Table\+View\+Cell} $\ast$) table\+View\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Table\+View $\ast$)}]{table\+View}
+\item[{cellForNextPageAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_a0af23b181bdcaa0ed2eff45f9ee48421}
+Override this method to customize the cell that allows the user to load the next page when pagination is turned on.
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+View} & The table view object associated with this controller. \\
+\hline
+{\em index\+Path} & The index\+Path of the cell.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cell that allows the user to paginate. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_table_view_controller_a41819a40649756991b380a33ae632571}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:@{table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:}}
+\index{table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:@{table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Table\+View\+Cell} $\ast$) table\+View\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Table\+View $\ast$)}]{table\+View}
+\item[{cellForRowAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\item[{object:({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object} $\ast$)}]{object}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_table_view_controller_a41819a40649756991b380a33ae632571}
+Override this method to customize each cell given a \hyperlink{interface_p_f_object}{P\+F\+Object} that is loaded.
+
+If you don\textquotesingle{}t override this method, it will use a default style cell and display either the first data key from the object, or it will display the key as specified with {\ttfamily text\+Key}, {\ttfamily image\+Key}.
+
+\begin{DoxyWarning}{Warning}
+The cell should inherit from $<$\+P\+F\+Table\+View\+Cell$>$ which is a subclass of {\ttfamily U\+I\+Table\+View\+Cell}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em table\+View} & The table view object associated with this controller. \\
+\hline
+{\em index\+Path} & The index\+Path of the cell. \\
+\hline
+{\em object} & The \hyperlink{interface_p_f_object}{P\+F\+Object} that is associated with the cell.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cell that represents this object. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_query_table_view_controller_aa146ef8616090c43f7bea9364728713d}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!image\+Key@{image\+Key}}
+\index{image\+Key@{image\+Key}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{image\+Key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable N\+S\+String$\ast$) image\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_query_table_view_controller_aa146ef8616090c43f7bea9364728713d}
+The key to use to display for the cell image view.
+
+This won\textquotesingle{}t apply if you override $<$table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:$>$ 
+
+Definition at line 92 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_a2578f4fcefdba208a25fe508e09e31a3}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!loading@{loading}}
+\index{loading@{loading}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{loading}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) loading\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_table_view_controller_a2578f4fcefdba208a25fe508e09e31a3}
+Whether the table is actively loading new data from the server. 
+
+Definition at line 124 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_a148dfb629f55cd4e20b0ac3936f365c9}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!loading\+View\+Enabled@{loading\+View\+Enabled}}
+\index{loading\+View\+Enabled@{loading\+View\+Enabled}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{loading\+View\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) loading\+View\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_table_view_controller_a148dfb629f55cd4e20b0ac3936f365c9}
+Whether the table should use the default loading view. Default -\/ {\ttfamily Y\+E\+S}. 
+
+Definition at line 104 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_a7c13a3b0c79c7b98b534ebfa06d2c194}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!objects@{objects}}
+\index{objects@{objects}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$\ast$) objects\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_query_table_view_controller_a7c13a3b0c79c7b98b534ebfa06d2c194}
+The array of instances of $<$\+P\+F\+Object$>$ that is used as a data source. 
+
+Definition at line 150 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_a7d06a88ac58846f32e9ad109540f1297}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!objects\+Per\+Page@{objects\+Per\+Page}}
+\index{objects\+Per\+Page@{objects\+Per\+Page}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{objects\+Per\+Page}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable N\+S\+U\+Integer) objects\+Per\+Page\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_table_view_controller_a7d06a88ac58846f32e9ad109540f1297}
+The number of objects to show per page. Default -\/ {\ttfamily 25}. 
+
+Definition at line 119 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_aafceccf00447e9f7e1d8db2faf4e8c76}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!pagination\+Enabled@{pagination\+Enabled}}
+\index{pagination\+Enabled@{pagination\+Enabled}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{pagination\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) pagination\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_table_view_controller_aafceccf00447e9f7e1d8db2faf4e8c76}
+Whether the table should use the built-\/in pagination feature. Default -\/ {\ttfamily Y\+E\+S}. 
+
+Definition at line 114 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_aaae6bcb41e59355b0bbf91a524bfc714}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!parse\+Class\+Name@{parse\+Class\+Name}}
+\index{parse\+Class\+Name@{parse\+Class\+Name}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{parse\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable N\+S\+String$\ast$) parse\+Class\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_query_table_view_controller_aaae6bcb41e59355b0bbf91a524bfc714}
+The class name of the $<$\+P\+F\+Object$>$ this table will use as a datasource. 
+
+Definition at line 78 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_a6e435ec43463857e02845f37174a342b}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!placeholder\+Image@{placeholder\+Image}}
+\index{placeholder\+Image@{placeholder\+Image}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{placeholder\+Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable U\+I\+Image$\ast$) placeholder\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_query_table_view_controller_a6e435ec43463857e02845f37174a342b}
+The image to use as a placeholder for the cell images.
+
+This won\textquotesingle{}t apply if you override $<$table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:$>$ 
+
+Definition at line 99 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_ac6eea74d27530d3cc9e9b1b4ac5515ba}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!pull\+To\+Refresh\+Enabled@{pull\+To\+Refresh\+Enabled}}
+\index{pull\+To\+Refresh\+Enabled@{pull\+To\+Refresh\+Enabled}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{pull\+To\+Refresh\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) pull\+To\+Refresh\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_table_view_controller_ac6eea74d27530d3cc9e9b1b4ac5515ba}
+Whether the table should use the built-\/in pull-\/to-\/refresh feature. Defualt -\/ {\ttfamily Y\+E\+S}. 
+
+Definition at line 109 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_table_view_controller_a8c8efe19f3ac20c048c82af0278d82b5}{}\index{P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}!text\+Key@{text\+Key}}
+\index{text\+Key@{text\+Key}!P\+F\+Query\+Table\+View\+Controller@{P\+F\+Query\+Table\+View\+Controller}}
+\subsubsection[{text\+Key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable N\+S\+String$\ast$) text\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_query_table_view_controller_a8c8efe19f3ac20c048c82af0278d82b5}
+The key to use to display for the cell text label.
+
+This won\textquotesingle{}t apply if you override $<$table\+View\+:cell\+For\+Row\+At\+Index\+Path\+:object\+:$>$ 
+
+Definition at line 85 of file P\+F\+Query\+Table\+View\+Controller.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse\+U\+I.\+framework/\+Headers/\hyperlink{_p_f_query_table_view_controller_8h}{P\+F\+Query\+Table\+View\+Controller.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,479 @@
+\hypertarget{interface_p_f_twitter_utils}{}\section{P\+F\+Twitter\+Utils Class Reference}
+\label{interface_p_f_twitter_utils}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+
+
+{\ttfamily \#import $<$P\+F\+Twitter\+Utils.\+h$>$}
+
+Inheritance diagram for P\+F\+Twitter\+Utils\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_twitter_utils}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Interacting With Twitter}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f___twitter}{P\+F\+\_\+\+Twitter} $\ast$) + \hyperlink{interface_p_f_twitter_utils_a6b8ce4bc0533455a9d9a0790216a00e5}{twitter}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a88b7ca865f58b38e1f6afca2312ec182}{initialize\+With\+Consumer\+Key\+:consumer\+Secret\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_twitter_utils_af8b1700a059aa3eb9828779395f70c4a}{is\+Linked\+With\+User\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Logging In \& Creating Twitter-\/\+Linked Users}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_twitter_utils_a92e1eac9fe329a12b44cf8e720f1653b}{log\+In\+In\+Background}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_aa0d65c7737dab2d1b8ab8d8f32de0d5c}{log\+In\+With\+Block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a7b4c41e315381294d3d891168ef3e17c}{log\+In\+With\+Target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_twitter_utils_aeee2be96e31173108a69f14d55983362}{log\+In\+With\+Twitter\+Id\+In\+Background\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a0765db35628d6a800a615f9254bb2bf0}{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a03151c53b54213d832251aad001da4d0}{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Linking Users with Twitter}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a0188a34093710d9f17ad4a667c3cabb9}{link\+User\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_twitter_utils_aa6ff7d471cb0cf129772beac65899c9f}{link\+User\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a73f2efd2e025523232e107c7fc666727}{link\+User\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a189f6500aaa2ab65eaf5fca61774ae77}{link\+User\+:target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_twitter_utils_a0058d585605c20245135e8ca9673111f}{link\+User\+In\+Background\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_abb68e7eb47fe8a5cb42033f18b83ba4a}{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_ae8b78960271f16d55d0c1d189b3b1fdf}{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Unlinking Users from Twitter}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_twitter_utils_aab9a874baf4f514dbfafc3c5d3b28bc2}{unlink\+User\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_twitter_utils_a6a5a9cb44784f240e405e49be8958200}{unlink\+User\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_twitter_utils_a4aea7b874c415647bdf4240e9bccc41d}{unlink\+User\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a5596c4e7857cd20855c2bc800c806611}{unlink\+User\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_twitter_utils_a1d2809a2982e3fd53b44ed78e202c4b7}{unlink\+User\+In\+Background\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_twitter_utils}{P\+F\+Twitter\+Utils}} class provides utility functions for working with Twitter in a \hyperlink{interface_parse}{Parse} application.
+
+This class is currently for i\+O\+S only. 
+
+Definition at line 22 of file P\+F\+Twitter\+Utils.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_twitter_utils_a88b7ca865f58b38e1f6afca2312ec182}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!initialize\+With\+Consumer\+Key\+:consumer\+Secret\+:@{initialize\+With\+Consumer\+Key\+:consumer\+Secret\+:}}
+\index{initialize\+With\+Consumer\+Key\+:consumer\+Secret\+:@{initialize\+With\+Consumer\+Key\+:consumer\+Secret\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{initialize\+With\+Consumer\+Key\+:consumer\+Secret\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) initialize\+With\+Consumer\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{consumer\+Key}
+\item[{consumerSecret:(N\+S\+String $\ast$)}]{consumer\+Secret}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a88b7ca865f58b38e1f6afca2312ec182}
+Initializes the Twitter singleton.
+
+\begin{DoxyWarning}{Warning}
+You must invoke this in order to use the Twitter functionality in \hyperlink{interface_parse}{Parse}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em consumer\+Key} & Your Twitter application\textquotesingle{}s consumer key. \\
+\hline
+{\em consumer\+Secret} & Your Twitter application\textquotesingle{}s consumer secret. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_twitter_utils_af8b1700a059aa3eb9828779395f70c4a}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}}
+\index{is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{is\+Linked\+With\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) is\+Linked\+With\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_af8b1700a059aa3eb9828779395f70c4a}
+Whether the user has their account linked to Twitter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to check for a Twitter link. The user must be logged in on this device.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if the user has their account linked to Twitter, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_a0188a34093710d9f17ad4a667c3cabb9}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!link\+User\+:@{link\+User\+:}}
+\index{link\+User\+:@{link\+User\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{link\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) link\+User\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Please use +{\bf link\+User\+In\+Background\+:} instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a0188a34093710d9f17ad4a667c3cabb9}
+{\itshape Asynchronously} links Twitter to an existing \hyperlink{interface_p_f_user}{P\+F\+User}.
+
+This method delegates to Twitter to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Twitter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000005}{Deprecated}]Please use {\ttfamily \mbox{[}\hyperlink{interface_p_f_twitter_utils}{P\+F\+Twitter\+Utils} link\+User\+In\+Background\+:\mbox{]}} instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_twitter_utils_a73f2efd2e025523232e107c7fc666727}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!link\+User\+:block\+:@{link\+User\+:block\+:}}
+\index{link\+User\+:block\+:@{link\+User\+:block\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{link\+User\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf link\+User\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a73f2efd2e025523232e107c7fc666727}
+{\itshape Asynchronously} links Twitter to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to Twitter to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Twitter. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L $\ast$success, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_twitter_utils_a189f6500aaa2ab65eaf5fca61774ae77}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!link\+User\+:target\+:selector\+:@{link\+User\+:target\+:selector\+:}}
+\index{link\+User\+:target\+:selector\+:@{link\+User\+:target\+:selector\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{link\+User\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf link\+User\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a189f6500aaa2ab65eaf5fca61774ae77}
+\hypertarget{interface_p_f_twitter_utils_abb68e7eb47fe8a5cb42033f18b83ba4a}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:@{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}}
+\index{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:@{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf link\+User\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{twitterId:(N\+S\+String $\ast$)}]{twitter\+Id}
+\item[{screenName:(N\+S\+String $\ast$)}]{screen\+Name}
+\item[{authToken:(N\+S\+String $\ast$)}]{auth\+Token}
+\item[{authTokenSecret:(N\+S\+String $\ast$)}]{auth\+Token\+Secret}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_abb68e7eb47fe8a5cb42033f18b83ba4a}
+{\itshape Asynchronously} links Twitter to an existing $<$\+P\+F\+User$>$.
+
+you to handle user login to Twitter, then provide authentication data to link the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Twitter. \\
+\hline
+{\em twitter\+Id} & The id of the Twitter user being linked. \\
+\hline
+{\em screen\+Name} & The screen name of the Twitter user being linked. \\
+\hline
+{\em auth\+Token} & The auth token for the user\textquotesingle{}s session. \\
+\hline
+{\em auth\+Token\+Secret} & The auth token secret for the user\textquotesingle{}s session. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L $\ast$success, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_twitter_utils_ae8b78960271f16d55d0c1d189b3b1fdf}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:@{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}}
+\index{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:@{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{link\+User\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf link\+User\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{twitterId:(N\+S\+String $\ast$)}]{twitter\+Id}
+\item[{screenName:(N\+S\+String $\ast$)}]{screen\+Name}
+\item[{authToken:(N\+S\+String $\ast$)}]{auth\+Token}
+\item[{authTokenSecret:(N\+S\+String $\ast$)}]{auth\+Token\+Secret}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_ae8b78960271f16d55d0c1d189b3b1fdf}
+\hypertarget{interface_p_f_twitter_utils_aa6ff7d471cb0cf129772beac65899c9f}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!link\+User\+In\+Background\+:@{link\+User\+In\+Background\+:}}
+\index{link\+User\+In\+Background\+:@{link\+User\+In\+Background\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) link\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_aa6ff7d471cb0cf129772beac65899c9f}
+{\itshape Asynchronously} links Twitter to an existing $<$\+P\+F\+User$>$.
+
+This method delegates to Twitter to authenticate the user, and then automatically links the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Twitter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_a0058d585605c20245135e8ca9673111f}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!link\+User\+In\+Background\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:@{link\+User\+In\+Background\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}}
+\index{link\+User\+In\+Background\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:@{link\+User\+In\+Background\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{link\+User\+In\+Background\+:twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) {\bf link\+User\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{twitterId:(N\+S\+String $\ast$)}]{twitter\+Id}
+\item[{screenName:(N\+S\+String $\ast$)}]{screen\+Name}
+\item[{authToken:(N\+S\+String $\ast$)}]{auth\+Token}
+\item[{authTokenSecret:(N\+S\+String $\ast$)}]{auth\+Token\+Secret}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a0058d585605c20245135e8ca9673111f}
+{\itshape Asynchronously} links Twitter to an existing \hyperlink{interface_p_f_user}{P\+F\+User} asynchronously.
+
+Allows you to handle user login to Twitter, then provide authentication data to link the account to the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to link to Twitter. \\
+\hline
+{\em twitter\+Id} & The id of the Twitter user being linked. \\
+\hline
+{\em screen\+Name} & The screen name of the Twitter user being linked. \\
+\hline
+{\em auth\+Token} & The auth token for the user\textquotesingle{}s session. \\
+\hline
+{\em auth\+Token\+Secret} & The auth token secret for the user\textquotesingle{}s session. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_a92e1eac9fe329a12b44cf8e720f1653b}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!log\+In\+In\+Background@{log\+In\+In\+Background}}
+\index{log\+In\+In\+Background@{log\+In\+In\+Background}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{log\+In\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a92e1eac9fe329a12b44cf8e720f1653b}
+{\itshape Asynchronously} logs in a user using Twitter.
+
+This method delegates to Twitter to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a $<$\+P\+F\+User$>$.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_aa0d65c7737dab2d1b8ab8d8f32de0d5c}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!log\+In\+With\+Block\+:@{log\+In\+With\+Block\+:}}
+\index{log\+In\+With\+Block\+:@{log\+In\+With\+Block\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{log\+In\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_aa0d65c7737dab2d1b8ab8d8f32de0d5c}
+{\itshape Asynchronously} logs in a user using Twitter.
+
+This method delegates to Twitter to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_twitter_utils_a7b4c41e315381294d3d891168ef3e17c}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!log\+In\+With\+Target\+:selector\+:@{log\+In\+With\+Target\+:selector\+:}}
+\index{log\+In\+With\+Target\+:selector\+:@{log\+In\+With\+Target\+:selector\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{log\+In\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a7b4c41e315381294d3d891168ef3e17c}
+\hypertarget{interface_p_f_twitter_utils_a0765db35628d6a800a615f9254bb2bf0}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:@{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}}
+\index{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:@{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Twitter\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{twitter\+Id}
+\item[{screenName:(N\+S\+String $\ast$)}]{screen\+Name}
+\item[{authToken:(N\+S\+String $\ast$)}]{auth\+Token}
+\item[{authTokenSecret:(N\+S\+String $\ast$)}]{auth\+Token\+Secret}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a0765db35628d6a800a615f9254bb2bf0}
+Logs in a user using Twitter.
+
+Allows you to handle user login to Twitter, then provide authentication data to log in (or create, in the case where it is a new user) the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em twitter\+Id} & The id of the Twitter user being linked \\
+\hline
+{\em screen\+Name} & The screen name of the Twitter user being linked \\
+\hline
+{\em auth\+Token} & The auth token for the user\textquotesingle{}s session \\
+\hline
+{\em auth\+Token\+Secret} & The auth token secret for the user\textquotesingle{}s session \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_twitter_utils_a03151c53b54213d832251aad001da4d0}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:@{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}}
+\index{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:@{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{log\+In\+With\+Twitter\+Id\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Twitter\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{twitter\+Id}
+\item[{screenName:(N\+S\+String $\ast$)}]{screen\+Name}
+\item[{authToken:(N\+S\+String $\ast$)}]{auth\+Token}
+\item[{authTokenSecret:(N\+S\+String $\ast$)}]{auth\+Token\+Secret}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a03151c53b54213d832251aad001da4d0}
+\hypertarget{interface_p_f_twitter_utils_aeee2be96e31173108a69f14d55983362}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!log\+In\+With\+Twitter\+Id\+In\+Background\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:@{log\+In\+With\+Twitter\+Id\+In\+Background\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}}
+\index{log\+In\+With\+Twitter\+Id\+In\+Background\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:@{log\+In\+With\+Twitter\+Id\+In\+Background\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{log\+In\+With\+Twitter\+Id\+In\+Background\+:screen\+Name\+:auth\+Token\+:auth\+Token\+Secret\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+With\+Twitter\+Id\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{twitter\+Id}
+\item[{screenName:(N\+S\+String $\ast$)}]{screen\+Name}
+\item[{authToken:(N\+S\+String $\ast$)}]{auth\+Token}
+\item[{authTokenSecret:(N\+S\+String $\ast$)}]{auth\+Token\+Secret}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_aeee2be96e31173108a69f14d55983362}
+{\itshape Asynchronously} logs in a user using Twitter.
+
+Allows you to handle user login to Twitter, then provide authentication data to log in (or create, in the case where it is a new user) the $<$\+P\+F\+User$>$.
+
+
+\begin{DoxyParams}{Parameters}
+{\em twitter\+Id} & The id of the Twitter user being linked. \\
+\hline
+{\em screen\+Name} & The screen name of the Twitter user being linked. \\
+\hline
+{\em auth\+Token} & The auth token for the user\textquotesingle{}s session. \\
+\hline
+{\em auth\+Token\+Secret} & The auth token secret for the user\textquotesingle{}s session.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_a6b8ce4bc0533455a9d9a0790216a00e5}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!twitter@{twitter}}
+\index{twitter@{twitter}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{twitter}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+\_\+\+Twitter} $\ast$) twitter 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a6b8ce4bc0533455a9d9a0790216a00e5}
+Gets the instance of the $<$\+P\+F\+\_\+\+Twitter$>$ object that \hyperlink{interface_parse}{Parse} uses.
+
+\begin{DoxyReturn}{Returns}
+An instance of $<$\+P\+F\+\_\+\+Twitter$>$ object. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_aab9a874baf4f514dbfafc3c5d3b28bc2}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!unlink\+User\+:@{unlink\+User\+:}}
+\index{unlink\+User\+:@{unlink\+User\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{unlink\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unlink\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_aab9a874baf4f514dbfafc3c5d3b28bc2}
+{\itshape Synchronously} unlinks the $<$\+P\+F\+User$>$ from a Twitter account.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Twitter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the unlink was successful. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_a6a5a9cb44784f240e405e49be8958200}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!unlink\+User\+:error\+:@{unlink\+User\+:error\+:}}
+\index{unlink\+User\+:error\+:@{unlink\+User\+:error\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{unlink\+User\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf unlink\+User\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a6a5a9cb44784f240e405e49be8958200}
+{\itshape Synchronously} unlinks the \hyperlink{interface_p_f_user}{P\+F\+User} from a Twitter account.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Twitter. \\
+\hline
+{\em error} & Error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the unlink was successful, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_a4aea7b874c415647bdf4240e9bccc41d}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!unlink\+User\+In\+Background\+:@{unlink\+User\+In\+Background\+:}}
+\index{unlink\+User\+In\+Background\+:@{unlink\+User\+In\+Background\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) unlink\+User\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a4aea7b874c415647bdf4240e9bccc41d}
+Makes an {\itshape asynchronous} request to unlink a user from a Twitter account.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Twitter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_twitter_utils_a5596c4e7857cd20855c2bc800c806611}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!unlink\+User\+In\+Background\+:block\+:@{unlink\+User\+In\+Background\+:block\+:}}
+\index{unlink\+User\+In\+Background\+:block\+:@{unlink\+User\+In\+Background\+:block\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unlink\+User\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a5596c4e7857cd20855c2bc800c806611}
+Makes an {\itshape asynchronous} request to unlink a user from a Twitter account.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to unlink from Twitter. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_twitter_utils_a1d2809a2982e3fd53b44ed78e202c4b7}{}\index{P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}!unlink\+User\+In\+Background\+:target\+:selector\+:@{unlink\+User\+In\+Background\+:target\+:selector\+:}}
+\index{unlink\+User\+In\+Background\+:target\+:selector\+:@{unlink\+User\+In\+Background\+:target\+:selector\+:}!P\+F\+Twitter\+Utils@{P\+F\+Twitter\+Utils}}
+\subsubsection[{unlink\+User\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unlink\+User\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+User} $\ast$)}]{user}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_twitter_utils_a1d2809a2982e3fd53b44ed78e202c4b7}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_twitter_utils_8h}{P\+F\+Twitter\+Utils.\+h}\end{DoxyCompactItemize}

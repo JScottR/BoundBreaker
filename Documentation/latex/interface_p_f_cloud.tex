@@ -1,0 +1,133 @@
+\hypertarget{interface_p_f_cloud}{}\section{P\+F\+Cloud Class Reference}
+\label{interface_p_f_cloud}\index{P\+F\+Cloud@{P\+F\+Cloud}}
+
+
+{\ttfamily \#import $<$P\+F\+Cloud.\+h$>$}
+
+Inheritance diagram for P\+F\+Cloud\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_cloud}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) + \hyperlink{interface_p_f_cloud_af7b5a07bf638cd458d531e72f793fd0f}{call\+Function\+:with\+Parameters\+:}
+\item 
+(\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) + \hyperlink{interface_p_f_cloud_a1356f5a6e82e63aa5210c9f19dc728dc}{call\+Function\+:with\+Parameters\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_cloud_a7e4853fb17bb93a8e6c4c36c5f563bed}{call\+Function\+In\+Background\+:with\+Parameters\+:}
+\item 
+(void) + \hyperlink{interface_p_f_cloud_a0c3ae9ef1dce00f8a11943d2a07bc264}{call\+Function\+In\+Background\+:with\+Parameters\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_cloud_abab6931194eff2635b764b589075d376}{call\+Function\+In\+Background\+:with\+Parameters\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_cloud}{P\+F\+Cloud}} class provides methods for interacting with \hyperlink{interface_parse}{Parse} Cloud Functions. 
+
+Definition at line 22 of file P\+F\+Cloud.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_cloud_af7b5a07bf638cd458d531e72f793fd0f}{}\index{P\+F\+Cloud@{P\+F\+Cloud}!call\+Function\+:with\+Parameters\+:@{call\+Function\+:with\+Parameters\+:}}
+\index{call\+Function\+:with\+Parameters\+:@{call\+Function\+:with\+Parameters\+:}!P\+F\+Cloud@{P\+F\+Cloud}}
+\subsubsection[{call\+Function\+:with\+Parameters\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) call\+Function\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{function}
+\item[{withParameters:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{parameters}
+\end{DoxyParamCaption}
+}\label{interface_p_f_cloud_af7b5a07bf638cd458d531e72f793fd0f}
+Calls the given cloud function {\itshape synchronously} with the parameters provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The function name to call. \\
+\hline
+{\em parameters} & The parameters to send to the function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response from the cloud function. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_cloud_a1356f5a6e82e63aa5210c9f19dc728dc}{}\index{P\+F\+Cloud@{P\+F\+Cloud}!call\+Function\+:with\+Parameters\+:error\+:@{call\+Function\+:with\+Parameters\+:error\+:}}
+\index{call\+Function\+:with\+Parameters\+:error\+:@{call\+Function\+:with\+Parameters\+:error\+:}!P\+F\+Cloud@{P\+F\+Cloud}}
+\subsubsection[{call\+Function\+:with\+Parameters\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) call\+Function\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{function}
+\item[{withParameters:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{parameters}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_cloud_a1356f5a6e82e63aa5210c9f19dc728dc}
+Calls the given cloud function {\itshape synchronously} with the parameters provided and sets the error if there is one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The function name to call. \\
+\hline
+{\em parameters} & The parameters to send to the function. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response from the cloud function. This result could be a {\ttfamily N\+S\+Dictionary}, an {\ttfamily N\+S\+Array}, {\ttfamily N\+S\+Number} or {\ttfamily N\+S\+String}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_cloud_a7e4853fb17bb93a8e6c4c36c5f563bed}{}\index{P\+F\+Cloud@{P\+F\+Cloud}!call\+Function\+In\+Background\+:with\+Parameters\+:@{call\+Function\+In\+Background\+:with\+Parameters\+:}}
+\index{call\+Function\+In\+Background\+:with\+Parameters\+:@{call\+Function\+In\+Background\+:with\+Parameters\+:}!P\+F\+Cloud@{P\+F\+Cloud}}
+\subsubsection[{call\+Function\+In\+Background\+:with\+Parameters\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) call\+Function\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{function}
+\item[{withParameters:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{parameters}
+\end{DoxyParamCaption}
+}\label{interface_p_f_cloud_a7e4853fb17bb93a8e6c4c36c5f563bed}
+Calls the given cloud function {\itshape asynchronously} with the parameters provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The function name to call. \\
+\hline
+{\em parameters} & The parameters to send to the function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_cloud_a0c3ae9ef1dce00f8a11943d2a07bc264}{}\index{P\+F\+Cloud@{P\+F\+Cloud}!call\+Function\+In\+Background\+:with\+Parameters\+:block\+:@{call\+Function\+In\+Background\+:with\+Parameters\+:block\+:}}
+\index{call\+Function\+In\+Background\+:with\+Parameters\+:block\+:@{call\+Function\+In\+Background\+:with\+Parameters\+:block\+:}!P\+F\+Cloud@{P\+F\+Cloud}}
+\subsubsection[{call\+Function\+In\+Background\+:with\+Parameters\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) call\+Function\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{function}
+\item[{withParameters:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{parameters}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Id\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_cloud_a0c3ae9ef1dce00f8a11943d2a07bc264}
+Calls the given cloud function {\itshape asynchronously} with the parameters provided and executes the given block when it is done.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The function name to call. \\
+\hline
+{\em parameters} & The parameters to send to the function. \\
+\hline
+{\em block} & The block to execute when the function call finished. It should have the following argument signature\+: {\ttfamily $^\wedge$(id result, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_cloud_abab6931194eff2635b764b589075d376}{}\index{P\+F\+Cloud@{P\+F\+Cloud}!call\+Function\+In\+Background\+:with\+Parameters\+:target\+:selector\+:@{call\+Function\+In\+Background\+:with\+Parameters\+:target\+:selector\+:}}
+\index{call\+Function\+In\+Background\+:with\+Parameters\+:target\+:selector\+:@{call\+Function\+In\+Background\+:with\+Parameters\+:target\+:selector\+:}!P\+F\+Cloud@{P\+F\+Cloud}}
+\subsubsection[{call\+Function\+In\+Background\+:with\+Parameters\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) call\+Function\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{function}
+\item[{withParameters:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{parameters}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_cloud_abab6931194eff2635b764b589075d376}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_cloud_8h}{P\+F\+Cloud.\+h}\end{DoxyCompactItemize}

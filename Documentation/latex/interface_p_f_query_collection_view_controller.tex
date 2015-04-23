@@ -1,0 +1,354 @@
+\hypertarget{interface_p_f_query_collection_view_controller}{}\section{P\+F\+Query\+Collection\+View\+Controller Class Reference}
+\label{interface_p_f_query_collection_view_controller}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+
+
+{\ttfamily \#import $<$P\+F\+Query\+Collection\+View\+Controller.\+h$>$}
+
+Inheritance diagram for P\+F\+Query\+Collection\+View\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_query_collection_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Creating a P\+F\+Query\+Collection\+View\+Controller}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a151cbbf61d89764271844f8cbe90a171}{init\+With\+Class\+Name\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_query_collection_view_controller_ab2e7e098f41e99bd7b787b5075814526}{init\+With\+Collection\+View\+Layout\+:class\+Name\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Responding to Events}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_collection_view_controller_aaa83526611f039cce098da1f680b4ea7}{N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a2a2bd8bb0697fc36f41a481ea96ceb63}{objects\+Did\+Load\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Loading Data}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a70df62cea5ae24a8a5f8200033c16e74}{load\+Objects}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_collection_view_controller_acdde1097806c5605ce4d5d950966995d}{load\+Objects\+:clear\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a5ab50cb4867b19a7b0f6b37a04eef8d4}{load\+Next\+Page}
+\item 
+(void) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a80afde65d76220d0b26650a704db26ed}{clear}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Querying}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a99af0f169ec01b00da799a1cb45b7027}{query\+For\+Collection}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Data Source Methods}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_parse_u_i_constants_8h_af6e64a847348a9ac2a77923670373fe8}{P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_collection_view_cell}{P\+F\+Collection\+View\+Cell} $\ast$) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a61f11bba659cca616766048f2ad24a8a}{collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:object\+:}
+\item 
+(\hyperlink{_parse_u_i_constants_8h_af6e64a847348a9ac2a77923670373fe8}{P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} U\+I\+Collection\+Reusable\+View $\ast$) -\/ \hyperlink{interface_p_f_query_collection_view_controller_a1a8271346b3dd19205d38e7b493b01a0}{collection\+View\+Reusable\+View\+For\+Next\+Page\+Action\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+B\+Inspectable N\+S\+String $\ast$ \hyperlink{interface_p_f_query_collection_view_controller_a78ef068278e2ba0354358f7c68155547}{parse\+Class\+Name}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_p_f_query_collection_view_controller_abf284e942b6631b132cc303d4591149e}{loading\+View\+Enabled}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_p_f_query_collection_view_controller_ac90e0f5906f3e8cc93f2221b71b4ea4c}{pull\+To\+Refresh\+Enabled}
+\item 
+I\+B\+Inspectable B\+O\+O\+L \hyperlink{interface_p_f_query_collection_view_controller_a28c0a0d62e1c36a171f19dac89b5fe82}{pagination\+Enabled}
+\item 
+I\+B\+Inspectable N\+S\+U\+Integer \hyperlink{interface_p_f_query_collection_view_controller_afb8b2f184f0eff2f763f2e77aae9dd0b}{objects\+Per\+Page}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_query_collection_view_controller_a68ba6683404635bb5ac0834b6c125f0f}{loading}
+\end{DoxyCompactItemize}
+\subsection*{Accessing Results}
+\label{_amgrp09728c99dc72fa61614ba2e2c37af37c}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+Array $\ast$ \hyperlink{interface_p_f_query_collection_view_controller_a97138630bccda46aa8acdd0fd460b42a}{objects}
+\item 
+(\hyperlink{_parse_u_i_constants_8h_af6e64a847348a9ac2a77923670373fe8}{P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$) -\/ \hyperlink{interface_p_f_query_collection_view_controller_aa7af282869b7ffda762afbee45ac216d}{object\+At\+Index\+Path\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class allows you to think about a one-\/to-\/one mapping between a $<$\+P\+F\+Object$>$ and a {\ttfamily U\+I\+Collection\+View\+Cell}, rather than having to juggle index paths.
+
+You also get the following features out of the box\+:
+
+
+\begin{DoxyItemize}
+\item Pagination with a cell that can be tapped to load the next page.
+\item Pull-\/to-\/refresh collection view header.
+\item Automatic downloading and displaying of remote images in cells.
+\item Loading screen, shown before any data is loaded.
+\item Automatic loading and management of the objects array.
+\item Various methods that can be overridden to customize behavior at major events in the data cycle.
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_collection_view_cell}{P\+F\+Collection\+View\+Cell} 
+\end{DoxySeeAlso}
+
+
+Definition at line 47 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_query_collection_view_controller_a80afde65d76220d0b26650a704db26ed}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!clear@{clear}}
+\index{clear@{clear}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a80afde65d76220d0b26650a704db26ed}
+Clears the collection view of all objects. \hypertarget{interface_p_f_query_collection_view_controller_a61f11bba659cca616766048f2ad24a8a}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:object\+:@{collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:object\+:}}
+\index{collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:object\+:@{collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:object\+:}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{collection\+View\+:cell\+For\+Item\+At\+Index\+Path\+:object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Collection\+View\+Cell} $\ast$) collection\+View\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Collection\+View $\ast$)}]{collection\+View}
+\item[{cellForItemAtIndexPath:(N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\item[{object:({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object} $\ast$)}]{object}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a61f11bba659cca616766048f2ad24a8a}
+Override this method to customize each cell given a $<$\+P\+F\+Object$>$ that is loaded.
+
+\begin{DoxyWarning}{Warning}
+The cell should inherit from $<$\+P\+F\+Collection\+View\+Cell$>$ which is a subclass of {\ttfamily U\+I\+Collection\+View\+Cell}.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object associated with this controller. \\
+\hline
+{\em index\+Path} & The index\+Path of the cell. \\
+\hline
+{\em object} & The $<$\+P\+F\+Object$>$ that is associated with the cell.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cell that represents this object. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_collection_view_controller_a1a8271346b3dd19205d38e7b493b01a0}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!collection\+View\+Reusable\+View\+For\+Next\+Page\+Action\+:@{collection\+View\+Reusable\+View\+For\+Next\+Page\+Action\+:}}
+\index{collection\+View\+Reusable\+View\+For\+Next\+Page\+Action\+:@{collection\+View\+Reusable\+View\+For\+Next\+Page\+Action\+:}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{collection\+View\+Reusable\+View\+For\+Next\+Page\+Action\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} U\+I\+Collection\+Reusable\+View $\ast$) collection\+View\+Reusable\+View\+For\+Next\+Page\+Action\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Collection\+View $\ast$)}]{collection\+View}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a1a8271346b3dd19205d38e7b493b01a0}
+Override this method to customize the view that allows the user to load the next page when pagination is turned on.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+View} & The collection view object associated with this controller.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The view that allows the user to paginate. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_collection_view_controller_a151cbbf61d89764271844f8cbe90a171}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!init\+With\+Class\+Name\+:@{init\+With\+Class\+Name\+:}}
+\index{init\+With\+Class\+Name\+:@{init\+With\+Class\+Name\+:}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{init\+With\+Class\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Class\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{class\+Name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a151cbbf61d89764271844f8cbe90a171}
+Initializes a view controller with a {\ttfamily U\+I\+Collection\+View\+Flow\+Layout} and a class name of $<$\+P\+F\+Object$>$ that will be associated with this collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The class name of the instances of $<$\+P\+F\+Object$>$ that this table will display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_p_f_query_collection_view_controller}{P\+F\+Query\+Collection\+View\+Controller}} object or {\ttfamily nil} if the object couldn\textquotesingle{}t be created. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_collection_view_controller_ab2e7e098f41e99bd7b787b5075814526}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!init\+With\+Collection\+View\+Layout\+:class\+Name\+:@{init\+With\+Collection\+View\+Layout\+:class\+Name\+:}}
+\index{init\+With\+Collection\+View\+Layout\+:class\+Name\+:@{init\+With\+Collection\+View\+Layout\+:class\+Name\+:}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{init\+With\+Collection\+View\+Layout\+:class\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Collection\+View\+Layout\+: 
+\begin{DoxyParamCaption}
+\item[{(U\+I\+Collection\+View\+Layout $\ast$)}]{layout}
+\item[{className:({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{N\+S\+\_\+\+D\+E\+S\+I\+G\+N\+A\+T\+E\+D\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+E\+R}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_ab2e7e098f41e99bd7b787b5075814526}
+Initializes a view controller with a class name of $<$\+P\+F\+Object$>$ that will be associated with this collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layout} & Layout for collection view to use. \\
+\hline
+{\em class\+Name} & The class name of the instances of $<$\+P\+F\+Object$>$ that this table will display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \hyperlink{interface_p_f_query_collection_view_controller}{P\+F\+Query\+Collection\+View\+Controller}} object or {\ttfamily nil} if the object couldn\textquotesingle{}t be created. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_collection_view_controller_a5ab50cb4867b19a7b0f6b37a04eef8d4}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!load\+Next\+Page@{load\+Next\+Page}}
+\index{load\+Next\+Page@{load\+Next\+Page}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{load\+Next\+Page}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Next\+Page 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a5ab50cb4867b19a7b0f6b37a04eef8d4}
+Loads the next page of objects, appends to table, and refreshes. \hypertarget{interface_p_f_query_collection_view_controller_a70df62cea5ae24a8a5f8200033c16e74}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!load\+Objects@{load\+Objects}}
+\index{load\+Objects@{load\+Objects}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{load\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Objects 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a70df62cea5ae24a8a5f8200033c16e74}
+Clears the collection view and loads the first page of objects. \hypertarget{interface_p_f_query_collection_view_controller_acdde1097806c5605ce4d5d950966995d}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!load\+Objects\+:clear\+:@{load\+Objects\+:clear\+:}}
+\index{load\+Objects\+:clear\+:@{load\+Objects\+:clear\+:}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{load\+Objects\+:clear\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) load\+Objects\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Integer)}]{page}
+\item[{clear:(B\+O\+O\+L)}]{clear}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_acdde1097806c5605ce4d5d950966995d}
+Loads the objects of the $<$parse\+Class\+Name$>$ at the specified page and appends it to the objects already loaded and refreshes the collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & The page of objects to load. \\
+\hline
+{\em clear} & Whether to clear the collection view after receiving the objects. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_query_collection_view_controller_aaa83526611f039cce098da1f680b4ea7}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R@{N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R}}
+\index{N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R@{N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_aaa83526611f039cce098da1f680b4ea7}
+Called when objects will be loaded from \hyperlink{interface_parse}{Parse}. If you override this method, you must call \mbox{[}super objects\+Will\+Load\mbox{]} in your implementation. \hypertarget{interface_p_f_query_collection_view_controller_aa7af282869b7ffda762afbee45ac216d}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!object\+At\+Index\+Path\+:@{object\+At\+Index\+Path\+:}}
+\index{object\+At\+Index\+Path\+:@{object\+At\+Index\+Path\+:}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{object\+At\+Index\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object} $\ast$) object\+At\+Index\+Path\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Index\+Path $\ast$)}]{index\+Path}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_aa7af282869b7ffda762afbee45ac216d}
+Returns an object at a particular index\+Path.
+
+The default impementation returns the object at {\ttfamily index\+Path.\+item}. If you want to return objects in a different index\+Path order, like for sections, override this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Path} & An instance of {\ttfamily N\+S\+Index\+Path}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object at the specified index\+Path. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_query_collection_view_controller_a2a2bd8bb0697fc36f41a481ea96ceb63}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!objects\+Did\+Load\+:@{objects\+Did\+Load\+:}}
+\index{objects\+Did\+Load\+:@{objects\+Did\+Load\+:}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{objects\+Did\+Load\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) objects\+Did\+Load\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+U\+I\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Error $\ast$)}]{N\+S\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+S\+\_\+\+S\+U\+P\+E\+R}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a2a2bd8bb0697fc36f41a481ea96ceb63}
+Called when objects have loaded from \hyperlink{interface_parse}{Parse}. If you override this method, you must call \mbox{[}super objects\+Did\+Load\+:\mbox{]} in your implementation. 
+\begin{DoxyParams}{Parameters}
+{\em error} & The \hyperlink{interface_parse}{Parse} error from running the \hyperlink{interface_p_f_query}{P\+F\+Query}, if there was any. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_query_collection_view_controller_a99af0f169ec01b00da799a1cb45b7027}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!query\+For\+Collection@{query\+For\+Collection}}
+\index{query\+For\+Collection@{query\+For\+Collection}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{query\+For\+Collection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Query} $\ast$) query\+For\+Collection 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_query_collection_view_controller_a99af0f169ec01b00da799a1cb45b7027}
+Override to construct your own custom $<$\+P\+F\+Query$>$ to get the objects.
+
+\begin{DoxyReturn}{Returns}
+An instance of $<$\+P\+F\+Query$>$ that $<$load\+Objects$>$ method will use to the objects for this collection. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_query_collection_view_controller_a68ba6683404635bb5ac0834b6c125f0f}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!loading@{loading}}
+\index{loading@{loading}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{loading}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) loading\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_collection_view_controller_a68ba6683404635bb5ac0834b6c125f0f}
+Whether the collection is actively loading new data from the server. 
+
+Definition at line 77 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_collection_view_controller_abf284e942b6631b132cc303d4591149e}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!loading\+View\+Enabled@{loading\+View\+Enabled}}
+\index{loading\+View\+Enabled@{loading\+View\+Enabled}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{loading\+View\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) loading\+View\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_collection_view_controller_abf284e942b6631b132cc303d4591149e}
+Whether the collection should use the default loading view. Default -\/ {\ttfamily Y\+E\+S}. 
+
+Definition at line 57 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_collection_view_controller_a97138630bccda46aa8acdd0fd460b42a}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!objects@{objects}}
+\index{objects@{objects}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array$\ast$) objects\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_query_collection_view_controller_a97138630bccda46aa8acdd0fd460b42a}
+The array of instances of $<$\+P\+F\+Object$>$ that is used as a data source. 
+
+Definition at line 128 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_collection_view_controller_afb8b2f184f0eff2f763f2e77aae9dd0b}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!objects\+Per\+Page@{objects\+Per\+Page}}
+\index{objects\+Per\+Page@{objects\+Per\+Page}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{objects\+Per\+Page}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable N\+S\+U\+Integer) objects\+Per\+Page\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_collection_view_controller_afb8b2f184f0eff2f763f2e77aae9dd0b}
+The number of objects to show per page. Default -\/ {\ttfamily 25}. 
+
+Definition at line 72 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_collection_view_controller_a28c0a0d62e1c36a171f19dac89b5fe82}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!pagination\+Enabled@{pagination\+Enabled}}
+\index{pagination\+Enabled@{pagination\+Enabled}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{pagination\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) pagination\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_collection_view_controller_a28c0a0d62e1c36a171f19dac89b5fe82}
+Whether the collection should use the built-\/in pagination feature. Default -\/ {\ttfamily Y\+E\+S}. 
+
+Definition at line 67 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_collection_view_controller_a78ef068278e2ba0354358f7c68155547}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!parse\+Class\+Name@{parse\+Class\+Name}}
+\index{parse\+Class\+Name@{parse\+Class\+Name}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{parse\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable N\+S\+String$\ast$) parse\+Class\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_query_collection_view_controller_a78ef068278e2ba0354358f7c68155547}
+The class name of the $<$\+P\+F\+Object$>$ this collection will use as a datasource. 
+
+Definition at line 52 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+\hypertarget{interface_p_f_query_collection_view_controller_ac90e0f5906f3e8cc93f2221b71b4ea4c}{}\index{P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}!pull\+To\+Refresh\+Enabled@{pull\+To\+Refresh\+Enabled}}
+\index{pull\+To\+Refresh\+Enabled@{pull\+To\+Refresh\+Enabled}!P\+F\+Query\+Collection\+View\+Controller@{P\+F\+Query\+Collection\+View\+Controller}}
+\subsubsection[{pull\+To\+Refresh\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Inspectable B\+O\+O\+L) pull\+To\+Refresh\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_query_collection_view_controller_ac90e0f5906f3e8cc93f2221b71b4ea4c}
+Whether the collection should use the built-\/in pull-\/to-\/refresh feature. Defualt -\/ {\ttfamily Y\+E\+S}. 
+
+Definition at line 62 of file P\+F\+Query\+Collection\+View\+Controller.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse\+U\+I.\+framework/\+Headers/\hyperlink{_p_f_query_collection_view_controller_8h}{P\+F\+Query\+Collection\+View\+Controller.\+h}\end{DoxyCompactItemize}

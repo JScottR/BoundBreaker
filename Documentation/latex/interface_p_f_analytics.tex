@@ -1,0 +1,231 @@
+\hypertarget{interface_p_f_analytics}{}\section{P\+F\+Analytics Class Reference}
+\label{interface_p_f_analytics}\index{P\+F\+Analytics@{P\+F\+Analytics}}
+
+
+{\ttfamily \#import $<$P\+F\+Analytics.\+h$>$}
+
+Inheritance diagram for P\+F\+Analytics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_analytics}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{Indent}{\bf App-\/\+Open / Push Analytics}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_analytics_a6ef303c214aea9acb9be0c95dcfc21c8}{track\+App\+Opened\+With\+Launch\+Options\+:}
+\item 
+(void) + \hyperlink{interface_p_f_analytics_adcb8651a55a0860addb9154fed50ccb1}{track\+App\+Opened\+With\+Launch\+Options\+In\+Background\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_analytics_a9b59fb69ce3cbb808860f0118d801c17}{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+:}
+\item 
+(void) + \hyperlink{interface_p_f_analytics_ad2c7b6ddd5eb097016058d91a762e227}{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+In\+Background\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Custom Analytics}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_analytics_adb5aff5fa1ec04d9afe8a72158140c2a}{track\+Event\+:}
+\item 
+(void) + \hyperlink{interface_p_f_analytics_ad9cdc0a4c76878ea38851f09a9c50733}{track\+Event\+In\+Background\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_analytics_a9b4b20642864e92d7810091388ee1949}{track\+Event\+:dimensions\+:}
+\item 
+(void) + \hyperlink{interface_p_f_analytics_a431e4beca03db128f9600c473606edcd}{track\+Event\+In\+Background\+:dimensions\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_p_f_analytics}{P\+F\+Analytics}} provides an interface to \hyperlink{interface_parse}{Parse}\textquotesingle{}s logging and analytics backend.
+
+Methods will return immediately and cache the request (+ timestamp) to be handled \char`\"{}eventually.\char`\"{} That is, the request will be sent immediately if possible or the next time a network connection is available. 
+
+Definition at line 26 of file P\+F\+Analytics.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_analytics_a6ef303c214aea9acb9be0c95dcfc21c8}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+App\+Opened\+With\+Launch\+Options\+:@{track\+App\+Opened\+With\+Launch\+Options\+:}}
+\index{track\+App\+Opened\+With\+Launch\+Options\+:@{track\+App\+Opened\+With\+Launch\+Options\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+App\+Opened\+With\+Launch\+Options\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) track\+App\+Opened\+With\+Launch\+Options\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{launch\+Options}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_a6ef303c214aea9acb9be0c95dcfc21c8}
+Tracks this application being launched. If this happened as the result of the user opening a push notification, this method sends along information to correlate this open with that push.
+
+Pass in {\ttfamily nil} to track a standard \char`\"{}application opened\char`\"{} event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em launch\+Options} & The {\ttfamily N\+S\+Dictionary} indicating the reason the application was launched, if any. This value can be found as a parameter to various {\ttfamily \hyperlink{class_u_i_application_delegate-p}{U\+I\+Application\+Delegate}} methods, and can be empty or {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the task encapsulating the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_analytics_adcb8651a55a0860addb9154fed50ccb1}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+App\+Opened\+With\+Launch\+Options\+In\+Background\+:block\+:@{track\+App\+Opened\+With\+Launch\+Options\+In\+Background\+:block\+:}}
+\index{track\+App\+Opened\+With\+Launch\+Options\+In\+Background\+:block\+:@{track\+App\+Opened\+With\+Launch\+Options\+In\+Background\+:block\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+App\+Opened\+With\+Launch\+Options\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) track\+App\+Opened\+With\+Launch\+Options\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{launch\+Options}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_adcb8651a55a0860addb9154fed50ccb1}
+Tracks this application being launched. If this happened as the result of the user opening a push notification, this method sends along information to correlate this open with that push.
+
+Pass in {\ttfamily nil} to track a standard \char`\"{}application opened\char`\"{} event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em launch\+Options} & The dictionary indicating the reason the application was launched, if any. This value can be found as a parameter to various {\ttfamily \hyperlink{class_u_i_application_delegate-p}{U\+I\+Application\+Delegate}} methods, and can be empty or {\ttfamily nil}. \\
+\hline
+{\em block} & The block to execute on server response. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_analytics_a9b59fb69ce3cbb808860f0118d801c17}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+App\+Opened\+With\+Remote\+Notification\+Payload\+:@{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+:}}
+\index{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+:@{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) track\+App\+Opened\+With\+Remote\+Notification\+Payload\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{user\+Info}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_a9b59fb69ce3cbb808860f0118d801c17}
+Tracks this application being launched. If this happened as the result of the user opening a push notification, this method sends along information to correlate this open with that push.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & The Remote Notification payload, if any. This value can be found either under {\ttfamily U\+I\+Application\+Launch\+Options\+Remote\+Notification\+Key} on {\ttfamily launch\+Options}, or as a parameter to {\ttfamily application\+:did\+Receive\+Remote\+Notification\+:}. This can be empty or {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the task encapsulating the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_analytics_ad2c7b6ddd5eb097016058d91a762e227}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+App\+Opened\+With\+Remote\+Notification\+Payload\+In\+Background\+:block\+:@{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+In\+Background\+:block\+:}}
+\index{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+In\+Background\+:block\+:@{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+In\+Background\+:block\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+App\+Opened\+With\+Remote\+Notification\+Payload\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) track\+App\+Opened\+With\+Remote\+Notification\+Payload\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{user\+Info}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_ad2c7b6ddd5eb097016058d91a762e227}
+Tracks this application being launched. If this happened as the result of the user opening a push notification, this method sends along information to correlate this open with that push.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Info} & The Remote Notification payload, if any. This value can be found either under {\ttfamily U\+I\+Application\+Launch\+Options\+Remote\+Notification\+Key} on {\ttfamily launch\+Options}, or as a parameter to {\ttfamily application\+:did\+Receive\+Remote\+Notification\+:}. This can be empty or {\ttfamily nil}. \\
+\hline
+{\em block} & The block to execute on server response. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_analytics_adb5aff5fa1ec04d9afe8a72158140c2a}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+Event\+:@{track\+Event\+:}}
+\index{track\+Event\+:@{track\+Event\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+Event\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) track\+Event\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_adb5aff5fa1ec04d9afe8a72158140c2a}
+Tracks the occurrence of a custom event.
+
+\hyperlink{interface_parse}{Parse} will store a data point at the time of invocation with the given event name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the custom event to report to \hyperlink{interface_parse}{Parse} as having happened.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the task encapsulating the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_analytics_a9b4b20642864e92d7810091388ee1949}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+Event\+:dimensions\+:@{track\+Event\+:dimensions\+:}}
+\index{track\+Event\+:dimensions\+:@{track\+Event\+:dimensions\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+Event\+:dimensions\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) {\bf track\+Event\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{dimensions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{dimensions}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_a9b4b20642864e92d7810091388ee1949}
+Tracks the occurrence of a custom event with additional dimensions. \hyperlink{interface_parse}{Parse} will store a data point at the time of invocation with the given event name.
+
+Dimensions will allow segmentation of the occurrences of this custom event. Keys and values should be N\+S\+Strings, and will throw otherwise.
+
+To track a user signup along with additional metadata, consider the following\+:
+
+N\+S\+Dictionary $\ast$dimensions = "gender\char`\"{}\+: @\char`\"{}m\char`\"{},
+@\char`\"{}source\char`\"{}\+: @\char`\"{}web\char`\"{},
+@\char`\"{}day\+Type\char`\"{}\+: @\char`\"{}weekend\char`\"{} \};
+\mbox{[}\+P\+F\+Analytics track\+Event\+:@\char`\"{}signup" dimensions\+:dimensions\mbox{]};
+
+\begin{DoxyWarning}{Warning}
+There is a default limit of 8 dimensions per event tracked.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the custom event to report to \hyperlink{interface_parse}{Parse} as having happened. \\
+\hline
+{\em dimensions} & The {\ttfamily N\+S\+Dictionary} of information by which to segment this event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the task encapsulating the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_analytics_ad9cdc0a4c76878ea38851f09a9c50733}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+Event\+In\+Background\+:block\+:@{track\+Event\+In\+Background\+:block\+:}}
+\index{track\+Event\+In\+Background\+:block\+:@{track\+Event\+In\+Background\+:block\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+Event\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) track\+Event\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_ad9cdc0a4c76878ea38851f09a9c50733}
+Tracks the occurrence of a custom event. \hyperlink{interface_parse}{Parse} will store a data point at the time of invocation with the given event name. The event will be sent at some unspecified time in the future, even if \hyperlink{interface_parse}{Parse} is currently inaccessible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the custom event to report to \hyperlink{interface_parse}{Parse} as having happened. \\
+\hline
+{\em block} & The block to execute on server response. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_analytics_a431e4beca03db128f9600c473606edcd}{}\index{P\+F\+Analytics@{P\+F\+Analytics}!track\+Event\+In\+Background\+:dimensions\+:block\+:@{track\+Event\+In\+Background\+:dimensions\+:block\+:}}
+\index{track\+Event\+In\+Background\+:dimensions\+:block\+:@{track\+Event\+In\+Background\+:dimensions\+:block\+:}!P\+F\+Analytics@{P\+F\+Analytics}}
+\subsubsection[{track\+Event\+In\+Background\+:dimensions\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) track\+Event\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{dimensions:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{dimensions}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_analytics_a431e4beca03db128f9600c473606edcd}
+Tracks the occurrence of a custom event with additional dimensions. \hyperlink{interface_parse}{Parse} will store a data point at the time of invocation with the given event name. The event will be sent at some unspecified time in the future, even if \hyperlink{interface_parse}{Parse} is currently inaccessible.
+
+will allow segmentation of the occurrences of this custom event. Keys and values should be N\+S\+Strings, and will throw otherwise.
+
+To track a user signup along with additional metadata, consider the following\+: N\+S\+Dictionary $\ast$dimensions = "gender\char`\"{}\+: @\char`\"{}m\char`\"{},
+@\char`\"{}source\char`\"{}\+: @\char`\"{}web\char`\"{},
+@\char`\"{}day\+Type\char`\"{}\+: @\char`\"{}weekend\char`\"{} \};
+\mbox{[}\+P\+F\+Analytics track\+Event\+:@\char`\"{}signup" dimensions\+:dimensions\mbox{]};
+
+There is a default limit of 8 dimensions per event tracked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the custom event to report to \hyperlink{interface_parse}{Parse} as having happened. \\
+\hline
+{\em dimensions} & The {\ttfamily N\+S\+Dictionary} of information by which to segment this event. \\
+\hline
+{\em block} & The block to execute on server response. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_analytics_8h}{P\+F\+Analytics.\+h}\end{DoxyCompactItemize}

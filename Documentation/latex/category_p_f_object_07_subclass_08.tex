@@ -1,0 +1,141 @@
+\hypertarget{category_p_f_object_07_subclass_08}{}\section{P\+F\+Object(Subclass) Category Reference}
+\label{category_p_f_object_07_subclass_08}\index{P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}}
+
+
+{\ttfamily \#import $<$P\+F\+Object+\+Subclass.\+h$>$}
+
+\subsection*{Methods for Subclasses}
+\label{_amgrp4855bbbf49c1c72434fd4c207435763a}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{category_p_f_object_07_subclass_08_a174f279ef1d936f8b9d3ffad226c0a6b}{init}
+\item 
+(instancetype) + \hyperlink{category_p_f_object_07_subclass_08_a04d543b41a02f273bbf2dde644e5e0ef}{object}
+\item 
+(instancetype) + \hyperlink{category_p_f_object_07_subclass_08_afb4e4b2170ba91ae798f94833c6686bb}{object\+Without\+Data\+With\+Object\+Id\+:}
+\item 
+(void) + \hyperlink{category_p_f_object_07_subclass_08_a44be6ed21a7d2807fe8c0e420a3ea736}{register\+Subclass}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) + \hyperlink{category_p_f_object_07_subclass_08_a13571072ecdde530ba4a0c2c90e451f1}{query}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) + \hyperlink{category_p_f_object_07_subclass_08_ac982b71a43cc2a36f37b9e71115b2daa}{query\+With\+Predicate\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 62 of file P\+F\+Object+\+Subclass.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{category_p_f_object_07_subclass_08_a174f279ef1d936f8b9d3ffad226c0a6b}{}\index{P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}!init@{init}}
+\index{init@{init}!P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_subclass_08_a174f279ef1d936f8b9d3ffad226c0a6b}
+Designated initializer for subclasses. This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. This method should not be overridden. 
+
+Extends class \hyperlink{interface_p_f_object_a174f279ef1d936f8b9d3ffad226c0a6b}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_subclass_08_a04d543b41a02f273bbf2dde644e5e0ef}{}\index{P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}!object@{object}}
+\index{object@{object}!P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_subclass_08_a04d543b41a02f273bbf2dde644e5e0ef}
+Creates an instance of the registered subclass with this class\textquotesingle{}s $<$parse\+Class\+Name$>$.
+
+This helps a subclass ensure that it can be subclassed itself. For example, {\ttfamily \mbox{[}\hyperlink{interface_p_f_user}{P\+F\+User} object\mbox{]}} will return a {\ttfamily My\+User} object if {\ttfamily My\+User} is a registered subclass of {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. For this reason, {\ttfamily \mbox{[}My\+Class object\mbox{]}} is preferred to {\ttfamily \mbox{[}\mbox{[}My\+Class alloc\mbox{]} init\mbox{]}}. This method can only be called on subclasses which conform to {\ttfamily \hyperlink{protocol_p_f_subclassing-p}{P\+F\+Subclassing}}. A default implementation is provided by {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} which should always be sufficient. 
+
+Extends class \hyperlink{interface_p_f_object_a04d543b41a02f273bbf2dde644e5e0ef}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_subclass_08_afb4e4b2170ba91ae798f94833c6686bb}{}\index{P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}!object\+Without\+Data\+With\+Object\+Id\+:@{object\+Without\+Data\+With\+Object\+Id\+:}}
+\index{object\+Without\+Data\+With\+Object\+Id\+:@{object\+Without\+Data\+With\+Object\+Id\+:}!P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}}
+\subsubsection[{object\+Without\+Data\+With\+Object\+Id\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object\+Without\+Data\+With\+Object\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{object\+Id}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_subclass_08_afb4e4b2170ba91ae798f94833c6686bb}
+Creates a reference to an existing {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} for use in creating associations between {\ttfamily P\+F\+Objects}.
+
+Calling $<$is\+Data\+Available$>$ on this object will return {\ttfamily N\+O} until $<$fetch\+If\+Needed$>$ or $<$fetch$>$ has been called. This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. A default implementation is provided by {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} which should always be sufficient. No network request will be made.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Id} & The object id for the referenced object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} without data. 
+\end{DoxyReturn}
+
+
+Extends class \hyperlink{interface_p_f_object_afb4e4b2170ba91ae798f94833c6686bb}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_subclass_08_a13571072ecdde530ba4a0c2c90e451f1}{}\index{P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}!query@{query}}
+\index{query@{query}!P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Query} $\ast$) query 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_subclass_08_a13571072ecdde530ba4a0c2c90e451f1}
+Returns a query for objects of type $<$parse\+Class\+Name$>$.
+
+This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. A default implementation is provided by $<$\+P\+F\+Object$>$ which should always be sufficient. 
+
+Extends class \hyperlink{interface_p_f_object_a13571072ecdde530ba4a0c2c90e451f1}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_subclass_08_ac982b71a43cc2a36f37b9e71115b2daa}{}\index{P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}!query\+With\+Predicate\+:@{query\+With\+Predicate\+:}}
+\index{query\+With\+Predicate\+:@{query\+With\+Predicate\+:}!P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}}
+\subsubsection[{query\+With\+Predicate\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Query} $\ast$) query\+With\+Predicate\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Predicate $\ast$)}]{predicate}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_subclass_08_ac982b71a43cc2a36f37b9e71115b2daa}
+Returns a query for objects of type $<$parse\+Class\+Name$>$ with a given predicate.
+
+A default implementation is provided by $<$\+P\+F\+Object$>$ which should always be sufficient. \begin{DoxyWarning}{Warning}
+This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The predicate to create conditions from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of $<$\+P\+F\+Query$>$.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} query\+With\+Class\+Name\+:predicate\+:\mbox{]} 
+\end{DoxySeeAlso}
+
+
+Extends class \hyperlink{interface_p_f_object_ac982b71a43cc2a36f37b9e71115b2daa}{P\+F\+Object}.
+
+\hypertarget{category_p_f_object_07_subclass_08_a44be6ed21a7d2807fe8c0e420a3ea736}{}\index{P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}!register\+Subclass@{register\+Subclass}}
+\index{register\+Subclass@{register\+Subclass}!P\+F\+Object(\+Subclass)@{P\+F\+Object(\+Subclass)}}
+\subsubsection[{register\+Subclass}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) register\+Subclass 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{category_p_f_object_07_subclass_08_a44be6ed21a7d2807fe8c0e420a3ea736}
+Registers an Objective-\/\+C class for \hyperlink{interface_parse}{Parse} to use for representing a given \hyperlink{interface_parse}{Parse} class.
+
+Once this is called on a {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} subclass, any {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} \hyperlink{interface_parse}{Parse} creates with a class name that matches {\ttfamily \mbox{[}self parse\+Class\+Name\mbox{]}} will be an instance of subclass. This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. A default implementation is provided by {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} which should always be sufficient. 
+
+Extends class \hyperlink{interface_p_f_object_a44be6ed21a7d2807fe8c0e420a3ea736}{P\+F\+Object}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_object_09_subclass_8h}{P\+F\+Object+\+Subclass.\+h}\end{DoxyCompactItemize}

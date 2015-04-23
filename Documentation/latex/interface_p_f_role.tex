@@ -1,0 +1,160 @@
+\hypertarget{interface_p_f_role}{}\section{P\+F\+Role Class Reference}
+\label{interface_p_f_role}\index{P\+F\+Role@{P\+F\+Role}}
+
+
+{\ttfamily \#import $<$P\+F\+Role.\+h$>$}
+
+Inheritance diagram for P\+F\+Role\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_p_f_role}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{Indent}{\bf Role-\/specific Properties}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_role_a35330d20271e1cbec133e236e578ef0a}{name}
+\item 
+\hyperlink{interface_p_f_relation}{P\+F\+Relation} $\ast$ \hyperlink{interface_p_f_role_a32309ad1b427b9d002e5487054e8ba91}{users}
+\item 
+\hyperlink{interface_p_f_relation}{P\+F\+Relation} $\ast$ \hyperlink{interface_p_f_role_abb4c019b60e2065df9bf16636bab7d1d}{roles}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Creating a New Role}
+\label{_amgrp58ecae998947f9174bcf466f23fe573d}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_role_aa34a475774131201505c0629667a06b5}{init\+With\+Name\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_role_aa9ae2e54495d51779fe2da83008dc059}{init\+With\+Name\+:acl\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_role_a1e1d2ca90a4ce69a41c9cbe3eadfa226}{role\+With\+Name\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_role_adcd6e87b0137f86b7d4a9122f46f3b06}{role\+With\+Name\+:acl\+:}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_role}{P\+F\+Role}} class represents a Role on the \hyperlink{interface_parse}{Parse} server. {\ttfamily P\+F\+Roles} represent groupings of $<$\+P\+F\+User$>$ objects for the purposes of granting permissions (e.\+g. specifying a $<$\+P\+F\+A\+C\+L$>$ for a $<$\+P\+F\+Object$>$). Roles are specified by their sets of child users and child roles, all of which are granted any permissions that the parent role has.
+
+Roles must have a name (which cannot be changed after creation of the role), and must specify an A\+C\+L. 
+
+Definition at line 30 of file P\+F\+Role.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_role_aa34a475774131201505c0629667a06b5}{}\index{P\+F\+Role@{P\+F\+Role}!init\+With\+Name\+:@{init\+With\+Name\+:}}
+\index{init\+With\+Name\+:@{init\+With\+Name\+:}!P\+F\+Role@{P\+F\+Role}}
+\subsubsection[{init\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_role_aa34a475774131201505c0629667a06b5}
+Constructs a new {\ttfamily \hyperlink{interface_p_f_role}{P\+F\+Role}} with the given name. If no default A\+C\+L has been specified, you must provide an A\+C\+L for the role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the Role to create. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_role_aa9ae2e54495d51779fe2da83008dc059}{}\index{P\+F\+Role@{P\+F\+Role}!init\+With\+Name\+:acl\+:@{init\+With\+Name\+:acl\+:}}
+\index{init\+With\+Name\+:acl\+:@{init\+With\+Name\+:acl\+:}!P\+F\+Role@{P\+F\+Role}}
+\subsubsection[{init\+With\+Name\+:acl\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) {\bf init\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{acl:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+A\+C\+L} $\ast$)}]{acl}
+\end{DoxyParamCaption}
+}\label{interface_p_f_role_aa9ae2e54495d51779fe2da83008dc059}
+Constructs a new {\ttfamily \hyperlink{interface_p_f_role}{P\+F\+Role}} with the given name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the Role to create. \\
+\hline
+{\em acl} & The A\+C\+L for this role. Roles must have an A\+C\+L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_role_a1e1d2ca90a4ce69a41c9cbe3eadfa226}{}\index{P\+F\+Role@{P\+F\+Role}!role\+With\+Name\+:@{role\+With\+Name\+:}}
+\index{role\+With\+Name\+:@{role\+With\+Name\+:}!P\+F\+Role@{P\+F\+Role}}
+\subsubsection[{role\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) role\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_role_a1e1d2ca90a4ce69a41c9cbe3eadfa226}
+Constructs a new {\ttfamily \hyperlink{interface_p_f_role}{P\+F\+Role}} with the given name.
+
+If no default A\+C\+L has been specified, you must provide an A\+C\+L for the role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the Role to create. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_role_adcd6e87b0137f86b7d4a9122f46f3b06}{}\index{P\+F\+Role@{P\+F\+Role}!role\+With\+Name\+:acl\+:@{role\+With\+Name\+:acl\+:}}
+\index{role\+With\+Name\+:acl\+:@{role\+With\+Name\+:acl\+:}!P\+F\+Role@{P\+F\+Role}}
+\subsubsection[{role\+With\+Name\+:acl\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) {\bf role\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{acl:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+A\+C\+L} $\ast$)}]{acl}
+\end{DoxyParamCaption}
+}\label{interface_p_f_role_adcd6e87b0137f86b7d4a9122f46f3b06}
+Constructs a new {\ttfamily \hyperlink{interface_p_f_role}{P\+F\+Role}} with the given name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the Role to create. \\
+\hline
+{\em acl} & The A\+C\+L for this role. Roles must have an A\+C\+L. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_role_a35330d20271e1cbec133e236e578ef0a}{}\index{P\+F\+Role@{P\+F\+Role}!name@{name}}
+\index{name@{name}!P\+F\+Role@{P\+F\+Role}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_role_a35330d20271e1cbec133e236e578ef0a}
+Gets or sets the name for a role.
+
+This value must be set before the role has been saved to the server, and cannot be set once the role has been saved.
+
+\begin{DoxyWarning}{Warning}
+A role\textquotesingle{}s name can only contain alphanumeric characters, {\ttfamily \+\_\+}, {\ttfamily -\/}, and spaces. 
+\end{DoxyWarning}
+
+
+Definition at line 81 of file P\+F\+Role.\+h.
+
+\hypertarget{interface_p_f_role_abb4c019b60e2065df9bf16636bab7d1d}{}\index{P\+F\+Role@{P\+F\+Role}!roles@{roles}}
+\index{roles@{roles}!P\+F\+Role@{P\+F\+Role}}
+\subsubsection[{roles}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Relation}$\ast$) roles\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_role_abb4c019b60e2065df9bf16636bab7d1d}
+Gets the $<$\+P\+F\+Relation$>$ for the {\ttfamily \hyperlink{interface_p_f_role}{P\+F\+Role}} objects that are direct children of this role.
+
+These roles\textquotesingle{} users are granted any privileges that this role has been granted (e.\+g. read or write access through A\+C\+Ls). You can add or remove child roles from this role through this relation. 
+
+Definition at line 99 of file P\+F\+Role.\+h.
+
+\hypertarget{interface_p_f_role_a32309ad1b427b9d002e5487054e8ba91}{}\index{P\+F\+Role@{P\+F\+Role}!users@{users}}
+\index{users@{users}!P\+F\+Role@{P\+F\+Role}}
+\subsubsection[{users}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Relation}$\ast$) users\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_role_a32309ad1b427b9d002e5487054e8ba91}
+Gets the $<$\+P\+F\+Relation$>$ for the $<$\+P\+F\+User$>$ objects that are direct children of this role.
+
+These users are granted any privileges that this role has been granted (e.\+g. read or write access through A\+C\+Ls). You can add or remove users from the role through this relation. 
+
+Definition at line 90 of file P\+F\+Role.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_role_8h}{P\+F\+Role.\+h}\end{DoxyCompactItemize}
