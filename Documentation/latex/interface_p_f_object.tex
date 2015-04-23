@@ -1,0 +1,2469 @@
+\hypertarget{interface_p_f_object}{}\section{P\+F\+Object Class Reference}
+\label{interface_p_f_object}\index{P\+F\+Object@{P\+F\+Object}}
+
+
+{\ttfamily \#import $<$P\+F\+Object.\+h$>$}
+
+Inheritance diagram for P\+F\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_p_f_object}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Accessors}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) -\/ \hyperlink{interface_p_f_object_a9ee439c1af34c1242087d5b1930214a9}{object\+For\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_ac433d818cd62eb486ce1fa6fb1ad5015}{set\+Object\+:for\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_afcbbe0e25d243c361281ff2521188fa7}{remove\+Object\+For\+Key\+:}
+\item 
+(\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) -\/ \hyperlink{interface_p_f_object_a4a0253ac900de704d559baeb2f9480ec}{object\+For\+Keyed\+Subscript\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a1c466b8ea8ee08f1f356c9089f9c1581}{set\+Object\+:for\+Keyed\+Subscript\+:}
+\item 
+(\hyperlink{interface_p_f_relation}{P\+F\+Relation} $\ast$) -\/ \hyperlink{interface_p_f_object_ab846711592e4d81c38a11147410eb028}{relation\+For\+Key\+:}
+\item 
+(\hyperlink{interface_p_f_relation}{P\+F\+Relation} $\ast$) -\/ \hyperlink{interface_p_f_object_a5fcd143c041166de62dce229299f6354}{relationfor\+Key\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Array Accessors}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a8b89e4344c41b638a82793e0ef79e60e}{add\+Object\+:for\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a3c4b12bd5f7531276e0614a586d7cb9d}{add\+Objects\+From\+Array\+:for\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a55b0fbe1266be7219ad2386fc2367ad7}{add\+Unique\+Object\+:for\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a5ad1fc29f29e007f8e21fb454c5ab6b1}{add\+Unique\+Objects\+From\+Array\+:for\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a03f864a19b0a6ba6b6a01f5898049e49}{remove\+Object\+:for\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_adbcf2779180aac2f2953caa9fbf30f7c}{remove\+Objects\+In\+Array\+:for\+Key\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Increment}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_aa56894782ce606ff221d224a235d11e9}{increment\+Key\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a9faadc60497971f463549a28848f4e7e}{increment\+Key\+:by\+Amount\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Saving Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a3f4fb72a9a33abafce4ebdbb61c87631}{save}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a7e589a961320f1b1d1f44f96648f1529}{save\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a07c14496c1b1f106101f6e4aa16bec6b}{save\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a2eea7c4efcbb46f4466b439853322193}{save\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_afae50e6f500694d47642ffb001d161e4}{save\+In\+Background\+With\+Target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a6d26d04b44a2b3ab9a2cfbadecedaae5}{save\+Eventually}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a5c71fde395b8fd8c33ff85bbcf79afd9}{save\+Eventually\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Getting an Object}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_ab6e50a115014722bc4b655dc5823dcbd}{is\+Data\+Available}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a7b078c030aeef4f82e9416e5dc8269bc}{fetch}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_adb7db3f147ddf6d8b12e399ba1ac09ee}{fetch\+:}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$) -\/ \hyperlink{interface_p_f_object_a6f8f5251558096eb6805e8b66c3dedd0}{fetch\+If\+Needed}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$) -\/ \hyperlink{interface_p_f_object_a0f60160b20bdb15d06ed9bc47ae98871}{fetch\+If\+Needed\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a897a2f3ae0a03adc1e7b6b787a6f1ea3}{fetch\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a1a9ced242cf3ddc9a97e6361fb6060d2}{fetch\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a17ac9dd49c10d4117dfe150686374c66}{fetch\+In\+Background\+With\+Target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a9ebe8f992e414295691558a2833990ee}{fetch\+If\+Needed\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a6b6b5dfdc2677cca6b1f8c2cb78b9c05}{fetch\+If\+Needed\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a3e82d8a156a2a152d45807ad4eca0bab}{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Fetching From Local Datastore}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a93dbc7c60eb8bfcd239ad6b9c6df63ca}{fetch\+From\+Local\+Datastore}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_ae8707aa3350eaf3c39ab47ad1ec596ff}{fetch\+From\+Local\+Datastore\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a83205023ff184c314115a4c7cd500bfd}{fetch\+From\+Local\+Datastore\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_af5cd865392d1feae3d079e8b0404d737}{fetch\+From\+Local\+Datastore\+In\+Background\+With\+Block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Deleting an Object}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_ae661ddf471abc990874c0b1c36c6373c}{delete}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_aff501c435717a04f800c5af5c49c9de0}{delete\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a6946805df2ac3480c17c2ad220b86422}{delete\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a09d09829b4832991d609ee2fe5f88fa1}{delete\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a8c8889b9f1a968ed70ecbf5e55356277}{delete\+In\+Background\+With\+Target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_abfaafef6b0ea7901cfed5c8ccc89a514}{delete\+Eventually}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Dirtiness}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a51db61edb78c7e444fcf863a6e10b255}{is\+Dirty}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_ad9c48cb7670b4f3bfeee7a249fe02c8a}{is\+Dirty\+For\+Key\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Pinning}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a48f9b1b0cfb0ae73050288f6e80df138}{pin}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a8a625ba1a4e971b9a1baae2751afc4d1}{pin\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a5d42f3a47a2b12c45ace4fd0ae1cfed2}{pin\+With\+Name\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a981f300fc73989e22b9830f6ca1ad3dc}{pin\+With\+Name\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_acf8e9063b2f2902205d6543d89cfbfb4}{pin\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a35ad8691e4d82e8b917195b1ee06625c}{pin\+In\+Background\+With\+Block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a68c437692e5c24e02b018b4f11b5916b}{pin\+In\+Background\+With\+Name\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_abfbc0604772dc55089c404914ffee532}{pin\+In\+Background\+With\+Name\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Unpinning}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_adc7c8ee4cf7b3a3d159f953fd900aff7}{unpin}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_aa55b03b3c308055daeb244f6c524de55}{unpin\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a2ffe1f92b9ed03b56ba15f0791b16f69}{unpin\+With\+Name\+:}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_object_a937a9ad0989ad1d32b1b3ac0f0c7a2ca}{unpin\+With\+Name\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a82d006a5567d4119c7182fad27c348a6}{unpin\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a1b4bb00cbf5d2841f32deeb097beda96}{unpin\+In\+Background\+With\+Block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_object_a56ddcda6b43920aaf4c4d4da4a024666}{unpin\+In\+Background\+With\+Name\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_object_a645947dac58fe9604e3e939335d1a1d1}{unpin\+In\+Background\+With\+Name\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Saving Many Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a9f090fc6bf0b878b3b15b679e315bfb7}{save\+All\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_ab2d2d92e9ab9bfc363e9e020ca0d84e2}{save\+All\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_ad1aaa7ea173ca436bacf101fb16adce5}{save\+All\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a7dce84e2f8b968ce3df607ae47f3c38e}{save\+All\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_ad8152658d26a91755b1d27f4e37c8146}{save\+All\+In\+Background\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Deleting Many Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_ac4dd461a6c8063f7e8d4310df3198041}{delete\+All\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a68a6c625995fa77058cb797159a3d70b}{delete\+All\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_ab91511457f6ceea2b3aa4e91bd6e0201}{delete\+All\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a58bb3dc89e5ec241f69251f169fdc644}{delete\+All\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a3949313f64f4a29c02a84cdbfbe32c8d}{delete\+All\+In\+Background\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Getting Many Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_object_a055793138eed650aa66435cab1fef2f7}{fetch\+All\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a9616196b45e87760d4d72b494e335fc7}{fetch\+All\+:error\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_abf6daa1d6ec178fa29dd59b086a60486}{fetch\+All\+If\+Needed\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_acf03ee604920fa8ed416b6617edde18d}{fetch\+All\+If\+Needed\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_a2491466b04768c3b45c3ef28fe3263d9}{fetch\+All\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a4eb3c5eb577ba7b8dfef8774d9c98c4e}{fetch\+All\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a110f30d5e8852de33ec73d2a00f04f01}{fetch\+All\+In\+Background\+:target\+:selector\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_ac0d11b45415b6100df9c83128eb89d1c}{fetch\+All\+If\+Needed\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_af3bef9e42192f53d5b91c02c75b2d125}{fetch\+All\+If\+Needed\+In\+Background\+:block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_ac04eae13cbd03d825e0b69ed29faed12}{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Pinning Many Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a7b745822b356bdcb5585060852dfb6dd}{pin\+All\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a751ea6dfe718ba34b041d03ea5bfc985}{pin\+All\+:error\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a6d08a07477b09e805ec5aaed3bde5cf6}{pin\+All\+:with\+Name\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a77e27f014698e4155c6111da26730a5d}{pin\+All\+:with\+Name\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_a66c1124af29558923ac3d498239555bc}{pin\+All\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_ac6ad9fc31ab6a60856de8d0abf510a1c}{pin\+All\+In\+Background\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_a2ddadf854045c1eccbde4a80e17f52c0}{pin\+All\+In\+Background\+:with\+Name\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a8c33c98095aa5dbca816b1aca47632dd}{pin\+All\+In\+Background\+:with\+Name\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Unpinning Many Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_aefe87d95ee369f03ed416a187aa24011}{unpin\+All\+Objects}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a783bc216a71c8a7bce6d020d4724dc48}{unpin\+All\+Objects\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a360d3e289ac30c51a8b23ac6feeb5de7}{unpin\+All\+Objects\+With\+Name\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a76ff35cff9ce5a28bb4ebb53f454981d}{unpin\+All\+Objects\+With\+Name\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_ad54f6195e60ee955fbe062f2a8e2b7d7}{unpin\+All\+Objects\+In\+Background}
+\item 
+(void) + \hyperlink{interface_p_f_object_ace8bc38c08f48d9a4c7becb42d4476b7}{unpin\+All\+Objects\+In\+Background\+With\+Block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_a4326eeacda5eb264e65797a0596bdf03}{unpin\+All\+Objects\+In\+Background\+With\+Name\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a3080d544545226eac4240d85d0e6a97d}{unpin\+All\+Objects\+In\+Background\+With\+Name\+:block\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a1445e75e81dc5e0172567dab159a3d4d}{unpin\+All\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_a60e33a679c284748821d158ae34a98b2}{unpin\+All\+:error\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_ad57a8bb2d17d07fbabaf868315d03319}{unpin\+All\+:with\+Name\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_object_afe8b5e9bff903561a6ab690097f04237}{unpin\+All\+:with\+Name\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_afced3b233c45a765a9cb2a8b25a86485}{unpin\+All\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a9e306600e8a9957670eb21a8cabc8b50}{unpin\+All\+In\+Background\+:block\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_object_a945befe537909fe0a1b4a0d4c6a409e2}{unpin\+All\+In\+Background\+:with\+Name\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a5f85aa7fc8c7b2f4da2c691d034e9ebf}{unpin\+All\+In\+Background\+:with\+Name\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_object_a7de11c083384297eb896760eab880ecf}{dirty}
+\item 
+N\+S\+Mutable\+Array $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} \hyperlink{interface_p_f_object_acb2994f40fd392505e774a92f501c84c}{operation\+Set\+Queue}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} \hyperlink{interface_p_f_object_acf0bccf3bb9bcbd996ef9bc59a14108b}{estimated\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Methods for Subclasses}
+\label{_amgrp4855bbbf49c1c72434fd4c207435763a}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_p_f_object_a04d543b41a02f273bbf2dde644e5e0ef}{object}
+\item 
+(instancetype) + \hyperlink{interface_p_f_object_afb4e4b2170ba91ae798f94833c6686bb}{object\+Without\+Data\+With\+Object\+Id\+:}
+\item 
+(void) + \hyperlink{interface_p_f_object_a44be6ed21a7d2807fe8c0e420a3ea736}{register\+Subclass}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) + \hyperlink{interface_p_f_object_a13571072ecdde530ba4a0c2c90e451f1}{query}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) + \hyperlink{interface_p_f_object_ac982b71a43cc2a36f37b9e71115b2daa}{query\+With\+Predicate\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_object_a174f279ef1d936f8b9d3ffad226c0a6b}{init}
+\end{DoxyCompactItemize}
+\subsection*{Creating a P\+F\+Object}
+\label{_amgrpb4032590b04677ab2853e1bcb1c62401}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{interface_p_f_object_a4efd97521f641676eb91165c0c0d2365}{object\+With\+Class\+Name\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_object_a2cbc64dd7c830796cb27873d17ad1696}{object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:}
+\item 
+(\hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$) + \hyperlink{interface_p_f_object_aa43c02aea2c183aaec624e5ef1e3abf7}{object\+With\+Class\+Name\+:dictionary\+:}
+\item 
+(instancetype) -\/ \hyperlink{interface_p_f_object_ad98dd444e5e56becfc4e0682d93cd6e2}{init\+With\+Class\+Name\+:}
+\end{DoxyCompactItemize}
+\subsection*{Managing Object Properties}
+\label{_amgrp467078e03296ee05692a2db747be7751}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_object_acd02c0585de1cc52e3adae4f3ea631aa}{parse\+Class\+Name}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_object_ac957b8fb3842dcf264264c3f4af836f6}{object\+Id}
+\item 
+N\+S\+Date $\ast$ \hyperlink{interface_p_f_object_aa0bd6d2f6c6489b6cc06ef043c4b179a}{updated\+At}
+\item 
+N\+S\+Date $\ast$ \hyperlink{interface_p_f_object_ab9baa371bf6fc375e538dec6e95c4200}{created\+At}
+\item 
+\hyperlink{interface_p_f_a_c_l}{P\+F\+A\+C\+L} $\ast$ \hyperlink{interface_p_f_object_ad09c7decbf32c9119852e30da0bf09a6}{A\+C\+L}
+\item 
+(N\+S\+Array $\ast$) -\/ \hyperlink{interface_p_f_object_a2ec332a3b46b46cc7d9890cb83057066}{all\+Keys}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} class is a local representation of data persisted to the \hyperlink{interface_parse}{Parse} cloud. This is the main class that is used to interact with objects in your app. 
+
+Definition at line 33 of file P\+F\+Object.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_object_a8b89e4344c41b638a82793e0ef79e60e}{}\index{P\+F\+Object@{P\+F\+Object}!add\+Object\+:for\+Key\+:@{add\+Object\+:for\+Key\+:}}
+\index{add\+Object\+:for\+Key\+:@{add\+Object\+:for\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{add\+Object\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{object}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a8b89e4344c41b638a82793e0ef79e60e}
+Adds an object to the end of the array associated with a given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to add. \\
+\hline
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a3c4b12bd5f7531276e0614a586d7cb9d}{}\index{P\+F\+Object@{P\+F\+Object}!add\+Objects\+From\+Array\+:for\+Key\+:@{add\+Objects\+From\+Array\+:for\+Key\+:}}
+\index{add\+Objects\+From\+Array\+:for\+Key\+:@{add\+Objects\+From\+Array\+:for\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{add\+Objects\+From\+Array\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Objects\+From\+Array\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{objects}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a3c4b12bd5f7531276e0614a586d7cb9d}
+Adds the objects contained in another array to the end of the array associated with a given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to add. \\
+\hline
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a55b0fbe1266be7219ad2386fc2367ad7}{}\index{P\+F\+Object@{P\+F\+Object}!add\+Unique\+Object\+:for\+Key\+:@{add\+Unique\+Object\+:for\+Key\+:}}
+\index{add\+Unique\+Object\+:for\+Key\+:@{add\+Unique\+Object\+:for\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{add\+Unique\+Object\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Unique\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{object}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a55b0fbe1266be7219ad2386fc2367ad7}
+Adds an object to the array associated with a given key, only if it is not already present in the array.
+
+The position of the insert is not guaranteed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to add. \\
+\hline
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a5ad1fc29f29e007f8e21fb454c5ab6b1}{}\index{P\+F\+Object@{P\+F\+Object}!add\+Unique\+Objects\+From\+Array\+:for\+Key\+:@{add\+Unique\+Objects\+From\+Array\+:for\+Key\+:}}
+\index{add\+Unique\+Objects\+From\+Array\+:for\+Key\+:@{add\+Unique\+Objects\+From\+Array\+:for\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{add\+Unique\+Objects\+From\+Array\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Unique\+Objects\+From\+Array\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{objects}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a5ad1fc29f29e007f8e21fb454c5ab6b1}
+Adds the objects contained in another array to the array associated with a given key, only adding elements which are not already present in the array.
+
+The position of the insert is not guaranteed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to add. \\
+\hline
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a2ec332a3b46b46cc7d9890cb83057066}{}\index{P\+F\+Object@{P\+F\+Object}!all\+Keys@{all\+Keys}}
+\index{all\+Keys@{all\+Keys}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{all\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Array $\ast$) all\+Keys 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a2ec332a3b46b46cc7d9890cb83057066}
+Returns an array of the keys contained in this object.
+
+This does not include {\ttfamily created\+At}, {\ttfamily updated\+At}, {\ttfamily auth\+Data}, or {\ttfamily object\+Id}. It does include things like username and A\+C\+L. \hypertarget{interface_p_f_object_ae661ddf471abc990874c0b1c36c6373c}{}\index{P\+F\+Object@{P\+F\+Object}!delete@{delete}}
+\index{delete@{delete}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) delete 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ae661ddf471abc990874c0b1c36c6373c}
+{\itshape Synchronously} deletes the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}}.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the delete succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_aff501c435717a04f800c5af5c49c9de0}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+:@{delete\+:}}
+\index{delete\+:@{delete\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) delete\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_aff501c435717a04f800c5af5c49c9de0}
+{\itshape Synchronously} deletes the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the delete succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_ac4dd461a6c8063f7e8d4310df3198041}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+All\+:@{delete\+All\+:}}
+\index{delete\+All\+:@{delete\+All\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+All\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) delete\+All\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ac4dd461a6c8063f7e8d4310df3198041}
+{\itshape Synchronously} deletes a collection of objects all at once.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to delete.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the delete succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a68a6c625995fa77058cb797159a3d70b}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+All\+:error\+:@{delete\+All\+:error\+:}}
+\index{delete\+All\+:error\+:@{delete\+All\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+All\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf delete\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a68a6c625995fa77058cb797159a3d70b}
+{\itshape Synchronously} deletes a collection of objects all at once and sets an error if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to delete. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the delete succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_ab91511457f6ceea2b3aa4e91bd6e0201}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+All\+In\+Background\+:@{delete\+All\+In\+Background\+:}}
+\index{delete\+All\+In\+Background\+:@{delete\+All\+In\+Background\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+All\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) delete\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ab91511457f6ceea2b3aa4e91bd6e0201}
+Deletes a collection of objects all at once asynchronously. 
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a58bb3dc89e5ec241f69251f169fdc644}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+All\+In\+Background\+:block\+:@{delete\+All\+In\+Background\+:block\+:}}
+\index{delete\+All\+In\+Background\+:block\+:@{delete\+All\+In\+Background\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+All\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf delete\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a58bb3dc89e5ec241f69251f169fdc644}
+Deletes a collection of objects all at once {\itshape asynchronously} and executes the block when done.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to delete. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a3949313f64f4a29c02a84cdbfbe32c8d}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+All\+In\+Background\+:target\+:selector\+:@{delete\+All\+In\+Background\+:target\+:selector\+:}}
+\index{delete\+All\+In\+Background\+:target\+:selector\+:@{delete\+All\+In\+Background\+:target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+All\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf delete\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a3949313f64f4a29c02a84cdbfbe32c8d}
+\hypertarget{interface_p_f_object_abfaafef6b0ea7901cfed5c8ccc89a514}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+Eventually@{delete\+Eventually}}
+\index{delete\+Eventually@{delete\+Eventually}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+Eventually}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) delete\+Eventually 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_abfaafef6b0ea7901cfed5c8ccc89a514}
+Deletes this object from the server at some unspecified time in the future, even if \hyperlink{interface_parse}{Parse} is currently inaccessible.
+
+Use this when you may not have a solid network connection, and don\textquotesingle{}t need to know when the delete completes. If there is some problem with the object such that it can\textquotesingle{}t be deleted, the request will be silently discarded.
+
+Delete instructions made with this method will be stored locally in an on-\/disk cache until they can be transmitted to \hyperlink{interface_parse}{Parse}. They will be sent immediately if possible. Otherwise, they will be sent the next time a network connection is available. Delete requests will persist even after the app is closed, in which case they will be sent the next time the app is opened. If more than 10\+M\+B of $<$save\+Eventually$>$ or $<$delete\+Eventually$>$ commands are waiting to be sent, subsequent calls to $<$save\+Eventually$>$ or $<$delete\+Eventually$>$ will cause old requests to be silently discarded until the connection can be re-\/established, and the queued requests can go through.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a6946805df2ac3480c17c2ad220b86422}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+In\+Background@{delete\+In\+Background}}
+\index{delete\+In\+Background@{delete\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) delete\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a6946805df2ac3480c17c2ad220b86422}
+Deletes the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} {\itshape asynchronously}.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a09d09829b4832991d609ee2fe5f88fa1}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+In\+Background\+With\+Block\+:@{delete\+In\+Background\+With\+Block\+:}}
+\index{delete\+In\+Background\+With\+Block\+:@{delete\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a09d09829b4832991d609ee2fe5f88fa1}
+Deletes the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} {\itshape asynchronously} and executes the given callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a8c8889b9f1a968ed70ecbf5e55356277}{}\index{P\+F\+Object@{P\+F\+Object}!delete\+In\+Background\+With\+Target\+:selector\+:@{delete\+In\+Background\+With\+Target\+:selector\+:}}
+\index{delete\+In\+Background\+With\+Target\+:selector\+:@{delete\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{delete\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) delete\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a8c8889b9f1a968ed70ecbf5e55356277}
+\hypertarget{interface_p_f_object_a7b078c030aeef4f82e9416e5dc8269bc}{}\index{P\+F\+Object@{P\+F\+Object}!fetch@{fetch}}
+\index{fetch@{fetch}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a7b078c030aeef4f82e9416e5dc8269bc}
+{\itshape Synchronously} fetches the \hyperlink{interface_p_f_object}{P\+F\+Object} with the current data from the server. \hypertarget{interface_p_f_object_adb7db3f147ddf6d8b12e399ba1ac09ee}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+:@{fetch\+:}}
+\index{fetch\+:@{fetch\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_adb7db3f147ddf6d8b12e399ba1ac09ee}
+{\itshape Synchronously} fetches the \hyperlink{interface_p_f_object}{P\+F\+Object} with the current data from the server and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a055793138eed650aa66435cab1fef2f7}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+:@{fetch\+All\+:}}
+\index{fetch\+All\+:@{fetch\+All\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) fetch\+All\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a055793138eed650aa66435cab1fef2f7}
+{\itshape Synchronously} fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a9616196b45e87760d4d72b494e335fc7}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+:error\+:@{fetch\+All\+:error\+:}}
+\index{fetch\+All\+:error\+:@{fetch\+All\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf fetch\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a9616196b45e87760d4d72b494e335fc7}
+{\itshape Synchronously} fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_abf6daa1d6ec178fa29dd59b086a60486}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+If\+Needed\+:@{fetch\+All\+If\+Needed\+:}}
+\index{fetch\+All\+If\+Needed\+:@{fetch\+All\+If\+Needed\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+If\+Needed\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) fetch\+All\+If\+Needed\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_abf6daa1d6ec178fa29dd59b086a60486}
+{\itshape Synchronously} fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server. 
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_acf03ee604920fa8ed416b6617edde18d}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+If\+Needed\+:error\+:@{fetch\+All\+If\+Needed\+:error\+:}}
+\index{fetch\+All\+If\+Needed\+:error\+:@{fetch\+All\+If\+Needed\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+If\+Needed\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf fetch\+All\+If\+Needed\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_acf03ee604920fa8ed416b6617edde18d}
+{\itshape Synchronously} fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_ac0d11b45415b6100df9c83128eb89d1c}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+If\+Needed\+In\+Background\+:@{fetch\+All\+If\+Needed\+In\+Background\+:}}
+\index{fetch\+All\+If\+Needed\+In\+Background\+:@{fetch\+All\+If\+Needed\+In\+Background\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+If\+Needed\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) fetch\+All\+If\+Needed\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ac0d11b45415b6100df9c83128eb89d1c}
+Fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server {\itshape asynchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_af3bef9e42192f53d5b91c02c75b2d125}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+If\+Needed\+In\+Background\+:block\+:@{fetch\+All\+If\+Needed\+In\+Background\+:block\+:}}
+\index{fetch\+All\+If\+Needed\+In\+Background\+:block\+:@{fetch\+All\+If\+Needed\+In\+Background\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+If\+Needed\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf fetch\+All\+If\+Needed\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Array\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_af3bef9e42192f53d5b91c02c75b2d125}
+Fetches all of the P\+F\+Objects with the current data from the server {\itshape asynchronously} and calls the given block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(N\+S\+Array $\ast$objects, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_ac04eae13cbd03d825e0b69ed29faed12}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:@{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}}
+\index{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:@{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+If\+Needed\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf fetch\+All\+If\+Needed\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ac04eae13cbd03d825e0b69ed29faed12}
+\hypertarget{interface_p_f_object_a2491466b04768c3b45c3ef28fe3263d9}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+In\+Background\+:@{fetch\+All\+In\+Background\+:}}
+\index{fetch\+All\+In\+Background\+:@{fetch\+All\+In\+Background\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) fetch\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a2491466b04768c3b45c3ef28fe3263d9}
+Fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server {\itshape asynchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a4eb3c5eb577ba7b8dfef8774d9c98c4e}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+In\+Background\+:block\+:@{fetch\+All\+In\+Background\+:block\+:}}
+\index{fetch\+All\+In\+Background\+:block\+:@{fetch\+All\+In\+Background\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf fetch\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Array\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a4eb3c5eb577ba7b8dfef8774d9c98c4e}
+Fetches all of the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} objects with the current data from the server {\itshape asynchronously} and calls the given block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The list of objects to fetch. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(N\+S\+Array $\ast$objects, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a110f30d5e8852de33ec73d2a00f04f01}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+All\+In\+Background\+:target\+:selector\+:@{fetch\+All\+In\+Background\+:target\+:selector\+:}}
+\index{fetch\+All\+In\+Background\+:target\+:selector\+:@{fetch\+All\+In\+Background\+:target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+All\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf fetch\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a110f30d5e8852de33ec73d2a00f04f01}
+\hypertarget{interface_p_f_object_a93dbc7c60eb8bfcd239ad6b9c6df63ca}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+From\+Local\+Datastore@{fetch\+From\+Local\+Datastore}}
+\index{fetch\+From\+Local\+Datastore@{fetch\+From\+Local\+Datastore}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+From\+Local\+Datastore}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+From\+Local\+Datastore 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a93dbc7c60eb8bfcd239ad6b9c6df63ca}
+{\itshape Synchronously} loads data from the local datastore into this object, if it has not been fetched from the server already. \hypertarget{interface_p_f_object_ae8707aa3350eaf3c39ab47ad1ec596ff}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+From\+Local\+Datastore\+:@{fetch\+From\+Local\+Datastore\+:}}
+\index{fetch\+From\+Local\+Datastore\+:@{fetch\+From\+Local\+Datastore\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+From\+Local\+Datastore\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+From\+Local\+Datastore\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ae8707aa3350eaf3c39ab47ad1ec596ff}
+{\itshape Synchronously} loads data from the local datastore into this object, if it has not been fetched from the server already.
+
+If the object is not stored in the local datastore, this {\ttfamily error} will be set to return k\+P\+F\+Error\+Cache\+Miss.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a83205023ff184c314115a4c7cd500bfd}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+From\+Local\+Datastore\+In\+Background@{fetch\+From\+Local\+Datastore\+In\+Background}}
+\index{fetch\+From\+Local\+Datastore\+In\+Background@{fetch\+From\+Local\+Datastore\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+From\+Local\+Datastore\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) fetch\+From\+Local\+Datastore\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a83205023ff184c314115a4c7cd500bfd}
+{\itshape Asynchronously} loads data from the local datastore into this object, if it has not been fetched from the server already.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_af5cd865392d1feae3d079e8b0404d737}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+From\+Local\+Datastore\+In\+Background\+With\+Block\+:@{fetch\+From\+Local\+Datastore\+In\+Background\+With\+Block\+:}}
+\index{fetch\+From\+Local\+Datastore\+In\+Background\+With\+Block\+:@{fetch\+From\+Local\+Datastore\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+From\+Local\+Datastore\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+From\+Local\+Datastore\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_af5cd865392d1feae3d079e8b0404d737}
+{\itshape Asynchronously} loads data from the local datastore into this object, if it has not been fetched from the server already.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$object, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a6f8f5251558096eb6805e8b66c3dedd0}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+If\+Needed@{fetch\+If\+Needed}}
+\index{fetch\+If\+Needed@{fetch\+If\+Needed}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+If\+Needed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object} $\ast$) fetch\+If\+Needed 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a6f8f5251558096eb6805e8b66c3dedd0}
+{\itshape Synchronously} fetches the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} data from the server if $<$is\+Data\+Available$>$ is {\ttfamily N\+O}. \hypertarget{interface_p_f_object_a0f60160b20bdb15d06ed9bc47ae98871}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+If\+Needed\+:@{fetch\+If\+Needed\+:}}
+\index{fetch\+If\+Needed\+:@{fetch\+If\+Needed\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+If\+Needed\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object} $\ast$) fetch\+If\+Needed\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a0f60160b20bdb15d06ed9bc47ae98871}
+{\itshape Synchronously} fetches the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} data from the server if $<$is\+Data\+Available$>$ is {\ttfamily N\+O}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a9ebe8f992e414295691558a2833990ee}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+If\+Needed\+In\+Background@{fetch\+If\+Needed\+In\+Background}}
+\index{fetch\+If\+Needed\+In\+Background@{fetch\+If\+Needed\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+If\+Needed\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) fetch\+If\+Needed\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a9ebe8f992e414295691558a2833990ee}
+Fetches the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} data {\itshape asynchronously} if is\+Data\+Available is {\ttfamily N\+O}, then sets it as a result for the task.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a6b6b5dfdc2677cca6b1f8c2cb78b9c05}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+If\+Needed\+In\+Background\+With\+Block\+:@{fetch\+If\+Needed\+In\+Background\+With\+Block\+:}}
+\index{fetch\+If\+Needed\+In\+Background\+With\+Block\+:@{fetch\+If\+Needed\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+If\+Needed\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+If\+Needed\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a6b6b5dfdc2677cca6b1f8c2cb78b9c05}
+Fetches the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} data {\itshape asynchronously} if $<$is\+Data\+Available$>$ is {\ttfamily N\+O}, then calls the callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$object, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a3e82d8a156a2a152d45807ad4eca0bab}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:@{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}}
+\index{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:@{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+If\+Needed\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+If\+Needed\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a3e82d8a156a2a152d45807ad4eca0bab}
+\hypertarget{interface_p_f_object_a897a2f3ae0a03adc1e7b6b787a6f1ea3}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+In\+Background@{fetch\+In\+Background}}
+\index{fetch\+In\+Background@{fetch\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) fetch\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a897a2f3ae0a03adc1e7b6b787a6f1ea3}
+Fetches the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} {\itshape asynchronously} and sets it as a result for the task.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a1a9ced242cf3ddc9a97e6361fb6060d2}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+In\+Background\+With\+Block\+:@{fetch\+In\+Background\+With\+Block\+:}}
+\index{fetch\+In\+Background\+With\+Block\+:@{fetch\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Object\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a1a9ced242cf3ddc9a97e6361fb6060d2}
+Fetches the \hyperlink{interface_p_f_object}{P\+F\+Object} {\itshape asynchronously} and executes the given callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$object, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a17ac9dd49c10d4117dfe150686374c66}{}\index{P\+F\+Object@{P\+F\+Object}!fetch\+In\+Background\+With\+Target\+:selector\+:@{fetch\+In\+Background\+With\+Target\+:selector\+:}}
+\index{fetch\+In\+Background\+With\+Target\+:selector\+:@{fetch\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{fetch\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) fetch\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a17ac9dd49c10d4117dfe150686374c66}
+\hypertarget{interface_p_f_object_aa56894782ce606ff221d224a235d11e9}{}\index{P\+F\+Object@{P\+F\+Object}!increment\+Key\+:@{increment\+Key\+:}}
+\index{increment\+Key\+:@{increment\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{increment\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) increment\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_aa56894782ce606ff221d224a235d11e9}
+Increments the given key by {\ttfamily 1}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a9faadc60497971f463549a28848f4e7e}{}\index{P\+F\+Object@{P\+F\+Object}!increment\+Key\+:by\+Amount\+:@{increment\+Key\+:by\+Amount\+:}}
+\index{increment\+Key\+:by\+Amount\+:@{increment\+Key\+:by\+Amount\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{increment\+Key\+:by\+Amount\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf increment\+Key\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\item[{byAmount:(N\+S\+Number $\ast$)}]{amount}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a9faadc60497971f463549a28848f4e7e}
+Increments the given key by a number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+{\em amount} & The amount to increment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a174f279ef1d936f8b9d3ffad226c0a6b}{}\index{P\+F\+Object@{P\+F\+Object}!init@{init}}
+\index{init@{init}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a174f279ef1d936f8b9d3ffad226c0a6b}
+Designated initializer for subclasses. This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. This method should not be overridden. 
+
+Provided by category \hyperlink{category_p_f_object_07_subclass_08_a174f279ef1d936f8b9d3ffad226c0a6b}{P\+F\+Object(\+Subclass)}.
+
+\hypertarget{interface_p_f_object_ad98dd444e5e56becfc4e0682d93cd6e2}{}\index{P\+F\+Object@{P\+F\+Object}!init\+With\+Class\+Name\+:@{init\+With\+Class\+Name\+:}}
+\index{init\+With\+Class\+Name\+:@{init\+With\+Class\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{init\+With\+Class\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (instancetype) init\+With\+Class\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{new\+Class\+Name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ad98dd444e5e56becfc4e0682d93cd6e2}
+Initializes a new empty {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} instance with a class name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Class\+Name} & A class name can be any alphanumeric string that begins with a letter. It represents an object in your app, like a \textquotesingle{}User\textquotesingle{} or a \textquotesingle{}Document\textquotesingle{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the object that is instantiated with the given class name. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_ab6e50a115014722bc4b655dc5823dcbd}{}\index{P\+F\+Object@{P\+F\+Object}!is\+Data\+Available@{is\+Data\+Available}}
+\index{is\+Data\+Available@{is\+Data\+Available}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{is\+Data\+Available}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Data\+Available 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ab6e50a115014722bc4b655dc5823dcbd}
+Gets whether the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} has been fetched.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if the \hyperlink{interface_p_f_object}{P\+F\+Object} is new or has been fetched or refreshed, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a51db61edb78c7e444fcf863a6e10b255}{}\index{P\+F\+Object@{P\+F\+Object}!is\+Dirty@{is\+Dirty}}
+\index{is\+Dirty@{is\+Dirty}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{is\+Dirty}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Dirty 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a51db61edb78c7e444fcf863a6e10b255}
+Gets whether any key-\/value pair in this object (or its children) has been added/updated/removed and not saved yet.
+
+\begin{DoxyReturn}{Returns}
+Returns whether this object has been altered and not saved yet. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_ad9c48cb7670b4f3bfeee7a249fe02c8a}{}\index{P\+F\+Object@{P\+F\+Object}!is\+Dirty\+For\+Key\+:@{is\+Dirty\+For\+Key\+:}}
+\index{is\+Dirty\+For\+Key\+:@{is\+Dirty\+For\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{is\+Dirty\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Dirty\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ad9c48cb7670b4f3bfeee7a249fe02c8a}
+Get whether a value associated with a key has been added/updated/removed and not saved yet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to check for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether this key has been altered and not saved yet. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a04d543b41a02f273bbf2dde644e5e0ef}{}\index{P\+F\+Object@{P\+F\+Object}!object@{object}}
+\index{object@{object}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a04d543b41a02f273bbf2dde644e5e0ef}
+Creates an instance of the registered subclass with this class\textquotesingle{}s $<$parse\+Class\+Name$>$.
+
+This helps a subclass ensure that it can be subclassed itself. For example, {\ttfamily \mbox{[}\hyperlink{interface_p_f_user}{P\+F\+User} object\mbox{]}} will return a {\ttfamily My\+User} object if {\ttfamily My\+User} is a registered subclass of {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. For this reason, {\ttfamily \mbox{[}My\+Class object\mbox{]}} is preferred to {\ttfamily \mbox{[}\mbox{[}My\+Class alloc\mbox{]} init\mbox{]}}. This method can only be called on subclasses which conform to {\ttfamily \hyperlink{protocol_p_f_subclassing-p}{P\+F\+Subclassing}}. A default implementation is provided by {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} which should always be sufficient. 
+
+Provided by category \hyperlink{category_p_f_object_07_subclass_08_a04d543b41a02f273bbf2dde644e5e0ef}{P\+F\+Object(\+Subclass)}.
+
+\hypertarget{interface_p_f_object_a9ee439c1af34c1242087d5b1930214a9}{}\index{P\+F\+Object@{P\+F\+Object}!object\+For\+Key\+:@{object\+For\+Key\+:}}
+\index{object\+For\+Key\+:@{object\+For\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) object\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a9ee439c1af34c1242087d5b1930214a9}
+Returns the value associated with a given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for which to return the corresponding value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a4a0253ac900de704d559baeb2f9480ec}{}\index{P\+F\+Object@{P\+F\+Object}!object\+For\+Keyed\+Subscript\+:@{object\+For\+Keyed\+Subscript\+:}}
+\index{object\+For\+Keyed\+Subscript\+:@{object\+For\+Keyed\+Subscript\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object\+For\+Keyed\+Subscript\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id) object\+For\+Keyed\+Subscript\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a4a0253ac900de704d559baeb2f9480ec}
+Returns the value associated with a given key.
+
+This method enables usage of literal syntax on {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}}. E.\+g. {\ttfamily N\+S\+String $\ast$value = object\mbox{[}@\char`\"{}key\char`\"{}\mbox{]};}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for which to return the corresponding value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a9ee439c1af34c1242087d5b1930214a9}{-\/ object\+For\+Key\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a4efd97521f641676eb91165c0c0d2365}{}\index{P\+F\+Object@{P\+F\+Object}!object\+With\+Class\+Name\+:@{object\+With\+Class\+Name\+:}}
+\index{object\+With\+Class\+Name\+:@{object\+With\+Class\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object\+With\+Class\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object\+With\+Class\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{class\+Name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a4efd97521f641676eb91165c0c0d2365}
+Creates a new \hyperlink{interface_p_f_object}{P\+F\+Object} with a class name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & A class name can be any alphanumeric string that begins with a letter. It represents an object in your app, like a \textquotesingle{}User\textquotesingle{} or a \textquotesingle{}Document\textquotesingle{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the object that is instantiated with the given class name. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_aa43c02aea2c183aaec624e5ef1e3abf7}{}\index{P\+F\+Object@{P\+F\+Object}!object\+With\+Class\+Name\+:dictionary\+:@{object\+With\+Class\+Name\+:dictionary\+:}}
+\index{object\+With\+Class\+Name\+:dictionary\+:@{object\+With\+Class\+Name\+:dictionary\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object\+With\+Class\+Name\+:dictionary\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+Object} $\ast$) {\bf object\+With\+Class\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{class\+Name}
+\item[{dictionary:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Dictionary $\ast$)}]{dictionary}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_aa43c02aea2c183aaec624e5ef1e3abf7}
+Creates a new {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} with a class name, initialized with data constructed from the specified set of objects and keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The object\textquotesingle{}s class. \\
+\hline
+{\em dictionary} & An {\ttfamily N\+S\+Dictionary} of keys and objects to set on the new {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{interface_p_f_object}{P\+F\+Object} with the given class name and set with the given data. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a2cbc64dd7c830796cb27873d17ad1696}{}\index{P\+F\+Object@{P\+F\+Object}!object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:@{object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:}}
+\index{object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:@{object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object\+Without\+Data\+With\+Class\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{class\+Name}
+\item[{objectId:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{object\+Id}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a2cbc64dd7c830796cb27873d17ad1696}
+Creates a reference to an existing \hyperlink{interface_p_f_object}{P\+F\+Object} for use in creating associations between P\+F\+Objects.
+
+Calling $<$is\+Data\+Available$>$ on this object will return {\ttfamily N\+O} until $<$fetch\+If\+Needed$>$ has been called. No network request will be made.
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Name} & The object\textquotesingle{}s class. \\
+\hline
+{\em object\+Id} & The object id for the referenced object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} instance without data. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_afb4e4b2170ba91ae798f94833c6686bb}{}\index{P\+F\+Object@{P\+F\+Object}!object\+Without\+Data\+With\+Object\+Id\+:@{object\+Without\+Data\+With\+Object\+Id\+:}}
+\index{object\+Without\+Data\+With\+Object\+Id\+:@{object\+Without\+Data\+With\+Object\+Id\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object\+Without\+Data\+With\+Object\+Id\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object\+Without\+Data\+With\+Object\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{object\+Id}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_afb4e4b2170ba91ae798f94833c6686bb}
+Creates a reference to an existing {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} for use in creating associations between {\ttfamily P\+F\+Objects}.
+
+Calling $<$is\+Data\+Available$>$ on this object will return {\ttfamily N\+O} until $<$fetch\+If\+Needed$>$ or $<$fetch$>$ has been called. This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. A default implementation is provided by {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} which should always be sufficient. No network request will be made.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Id} & The object id for the referenced object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} without data. 
+\end{DoxyReturn}
+
+
+Provided by category \hyperlink{category_p_f_object_07_subclass_08_afb4e4b2170ba91ae798f94833c6686bb}{P\+F\+Object(\+Subclass)}.
+
+\hypertarget{interface_p_f_object_a48f9b1b0cfb0ae73050288f6e80df138}{}\index{P\+F\+Object@{P\+F\+Object}!pin@{pin}}
+\index{pin@{pin}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) pin 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a48f9b1b0cfb0ae73050288f6e80df138}
+{\itshape Synchronously} stores the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_aa55b03b3c308055daeb244f6c524de55}{-\/ unpin\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a8a625ba1a4e971b9a1baae2751afc4d1}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+:@{pin\+:}}
+\index{pin\+:@{pin\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) pin\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a8a625ba1a4e971b9a1baae2751afc4d1}
+{\itshape Synchronously} stores the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_aa55b03b3c308055daeb244f6c524de55}{-\/ unpin\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a7b745822b356bdcb5585060852dfb6dd}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+:@{pin\+All\+:}}
+\index{pin\+All\+:@{pin\+All\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) pin\+All\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a7b745822b356bdcb5585060852dfb6dd}
+{\itshape Synchronously} stores the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a1445e75e81dc5e0172567dab159a3d4d}{+ unpin\+All\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a751ea6dfe718ba34b041d03ea5bfc985}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+:error\+:@{pin\+All\+:error\+:}}
+\index{pin\+All\+:error\+:@{pin\+All\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf pin\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a751ea6dfe718ba34b041d03ea5bfc985}
+{\itshape Synchronously} stores the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a60e33a679c284748821d158ae34a98b2}{+ unpin\+All\+:error\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a6d08a07477b09e805ec5aaed3bde5cf6}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+:with\+Name\+:@{pin\+All\+:with\+Name\+:}}
+\index{pin\+All\+:with\+Name\+:@{pin\+All\+:with\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+:with\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf pin\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a6d08a07477b09e805ec5aaed3bde5cf6}
+{\itshape Synchronously} stores the objects and every object they point to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned. \\
+\hline
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_ad57a8bb2d17d07fbabaf868315d03319}{+ unpin\+All\+:with\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a77e27f014698e4155c6111da26730a5d}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+:with\+Name\+:error\+:@{pin\+All\+:with\+Name\+:error\+:}}
+\index{pin\+All\+:with\+Name\+:error\+:@{pin\+All\+:with\+Name\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+:with\+Name\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf pin\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a77e27f014698e4155c6111da26730a5d}
+{\itshape Synchronously} stores the objects and every object they point to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned. \\
+\hline
+{\em name} & The name of the pin. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_afe8b5e9bff903561a6ab690097f04237}{+ unpin\+All\+:with\+Name\+:error\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a66c1124af29558923ac3d498239555bc}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+In\+Background\+:@{pin\+All\+In\+Background\+:}}
+\index{pin\+All\+In\+Background\+:@{pin\+All\+In\+Background\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) pin\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a66c1124af29558923ac3d498239555bc}
+{\itshape Asynchronously} stores the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_afced3b233c45a765a9cb2a8b25a86485}{+ unpin\+All\+In\+Background\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_ac6ad9fc31ab6a60856de8d0abf510a1c}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+In\+Background\+:block\+:@{pin\+All\+In\+Background\+:block\+:}}
+\index{pin\+All\+In\+Background\+:block\+:@{pin\+All\+In\+Background\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf pin\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ac6ad9fc31ab6a60856de8d0abf510a1c}
+{\itshape Asynchronously} stores the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a9e306600e8a9957670eb21a8cabc8b50}{+ unpin\+All\+In\+Background\+:block\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a2ddadf854045c1eccbde4a80e17f52c0}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+In\+Background\+:with\+Name\+:@{pin\+All\+In\+Background\+:with\+Name\+:}}
+\index{pin\+All\+In\+Background\+:with\+Name\+:@{pin\+All\+In\+Background\+:with\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+In\+Background\+:with\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) {\bf pin\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a2ddadf854045c1eccbde4a80e17f52c0}
+{\itshape Asynchronously} stores the objects and every object they point to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned. \\
+\hline
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a945befe537909fe0a1b4a0d4c6a409e2}{+ unpin\+All\+In\+Background\+:with\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a8c33c98095aa5dbca816b1aca47632dd}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+All\+In\+Background\+:with\+Name\+:block\+:@{pin\+All\+In\+Background\+:with\+Name\+:block\+:}}
+\index{pin\+All\+In\+Background\+:with\+Name\+:block\+:@{pin\+All\+In\+Background\+:with\+Name\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+All\+In\+Background\+:with\+Name\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf pin\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a8c33c98095aa5dbca816b1aca47632dd}
+{\itshape Asynchronously} stores the objects and every object they point to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}} and then call {\ttfamily fetch\+From\+Local\+Datastore\+:} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects to be pinned. \\
+\hline
+{\em name} & The name of the pin. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a5f85aa7fc8c7b2f4da2c691d034e9ebf}{+ unpin\+All\+In\+Background\+:with\+Name\+:block\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_acf8e9063b2f2902205d6543d89cfbfb4}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+In\+Background@{pin\+In\+Background}}
+\index{pin\+In\+Background@{pin\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) pin\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_acf8e9063b2f2902205d6543d89cfbfb4}
+{\itshape Asynchronously} stores the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a82d006a5567d4119c7182fad27c348a6}{-\/ unpin\+In\+Background} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a35ad8691e4d82e8b917195b1ee06625c}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+In\+Background\+With\+Block\+:@{pin\+In\+Background\+With\+Block\+:}}
+\index{pin\+In\+Background\+With\+Block\+:@{pin\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) pin\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a35ad8691e4d82e8b917195b1ee06625c}
+{\itshape Asynchronously} stores the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a1b4bb00cbf5d2841f32deeb097beda96}{-\/ unpin\+In\+Background\+With\+Block\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a68c437692e5c24e02b018b4f11b5916b}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+In\+Background\+With\+Name\+:@{pin\+In\+Background\+With\+Name\+:}}
+\index{pin\+In\+Background\+With\+Name\+:@{pin\+In\+Background\+With\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+In\+Background\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) pin\+In\+Background\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a68c437692e5c24e02b018b4f11b5916b}
+{\itshape Asynchronously} stores the object and every object it points to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a56ddcda6b43920aaf4c4d4da4a024666}{-\/ unpin\+In\+Background\+With\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_abfbc0604772dc55089c404914ffee532}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+In\+Background\+With\+Name\+:block\+:@{pin\+In\+Background\+With\+Name\+:block\+:}}
+\index{pin\+In\+Background\+With\+Name\+:block\+:@{pin\+In\+Background\+With\+Name\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+In\+Background\+With\+Name\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf pin\+In\+Background\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_abfbc0604772dc55089c404914ffee532}
+{\itshape Asynchronously} stores the object and every object it points to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a645947dac58fe9604e3e939335d1a1d1}{-\/ unpin\+In\+Background\+With\+Name\+:block\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a5d42f3a47a2b12c45ace4fd0ae1cfed2}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+With\+Name\+:@{pin\+With\+Name\+:}}
+\index{pin\+With\+Name\+:@{pin\+With\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) pin\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a5d42f3a47a2b12c45ace4fd0ae1cfed2}
+{\itshape Synchronously} stores the object and every object it points to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a2ffe1f92b9ed03b56ba15f0791b16f69}{-\/ unpin\+With\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a981f300fc73989e22b9830f6ca1ad3dc}{}\index{P\+F\+Object@{P\+F\+Object}!pin\+With\+Name\+:error\+:@{pin\+With\+Name\+:error\+:}}
+\index{pin\+With\+Name\+:error\+:@{pin\+With\+Name\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{pin\+With\+Name\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) {\bf pin\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a981f300fc73989e22b9830f6ca1ad3dc}
+{\itshape Synchronously} stores the object and every object it points to in the local datastore, recursively.
+
+If those other objects have not been fetched from \hyperlink{interface_parse}{Parse}, they will not be stored. However, if they have changed data, all the changes will be retained. To get the objects back later, you can use a $<$\+P\+F\+Query$>$ that uses $<$\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} from\+Local\+Datastore\mbox{]}$>$, or you can create an unfetched pointer with $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} object\+Without\+Data\+With\+Class\+Name\+:object\+Id\+:\mbox{]}$>$ and then call $<$fetch\+From\+Local\+Datastore$>$ on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the pin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a2ffe1f92b9ed03b56ba15f0791b16f69}{-\/ unpin\+With\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a13571072ecdde530ba4a0c2c90e451f1}{}\index{P\+F\+Object@{P\+F\+Object}!query@{query}}
+\index{query@{query}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Query} $\ast$) query 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a13571072ecdde530ba4a0c2c90e451f1}
+Returns a query for objects of type $<$parse\+Class\+Name$>$.
+
+This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. A default implementation is provided by $<$\+P\+F\+Object$>$ which should always be sufficient. 
+
+Implemented in \hyperlink{interface_p_f_installation_a6746d978e58db0413ed4be993810de32}{P\+F\+Installation}.
+
+
+
+Provided by category \hyperlink{category_p_f_object_07_subclass_08_a13571072ecdde530ba4a0c2c90e451f1}{P\+F\+Object(\+Subclass)}.
+
+\hypertarget{interface_p_f_object_ac982b71a43cc2a36f37b9e71115b2daa}{}\index{P\+F\+Object@{P\+F\+Object}!query\+With\+Predicate\+:@{query\+With\+Predicate\+:}}
+\index{query\+With\+Predicate\+:@{query\+With\+Predicate\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{query\+With\+Predicate\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Query} $\ast$) query\+With\+Predicate\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Predicate $\ast$)}]{predicate}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ac982b71a43cc2a36f37b9e71115b2daa}
+Returns a query for objects of type $<$parse\+Class\+Name$>$ with a given predicate.
+
+A default implementation is provided by $<$\+P\+F\+Object$>$ which should always be sufficient. \begin{DoxyWarning}{Warning}
+This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The predicate to create conditions from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of $<$\+P\+F\+Query$>$.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} query\+With\+Class\+Name\+:predicate\+:\mbox{]} 
+\end{DoxySeeAlso}
+
+
+Provided by category \hyperlink{category_p_f_object_07_subclass_08_ac982b71a43cc2a36f37b9e71115b2daa}{P\+F\+Object(\+Subclass)}.
+
+\hypertarget{interface_p_f_object_a44be6ed21a7d2807fe8c0e420a3ea736}{}\index{P\+F\+Object@{P\+F\+Object}!register\+Subclass@{register\+Subclass}}
+\index{register\+Subclass@{register\+Subclass}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{register\+Subclass}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) register\+Subclass 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a44be6ed21a7d2807fe8c0e420a3ea736}
+Registers an Objective-\/\+C class for \hyperlink{interface_parse}{Parse} to use for representing a given \hyperlink{interface_parse}{Parse} class.
+
+Once this is called on a {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} subclass, any {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} \hyperlink{interface_parse}{Parse} creates with a class name that matches {\ttfamily \mbox{[}self parse\+Class\+Name\mbox{]}} will be an instance of subclass. This method can only be called on subclasses which conform to $<$\+P\+F\+Subclassing$>$. A default implementation is provided by {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} which should always be sufficient. 
+
+Provided by category \hyperlink{category_p_f_object_07_subclass_08_a44be6ed21a7d2807fe8c0e420a3ea736}{P\+F\+Object(\+Subclass)}.
+
+\hypertarget{interface_p_f_object_ab846711592e4d81c38a11147410eb028}{}\index{P\+F\+Object@{P\+F\+Object}!relation\+For\+Key\+:@{relation\+For\+Key\+:}}
+\index{relation\+For\+Key\+:@{relation\+For\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{relation\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Relation} $\ast$) relation\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ab846711592e4d81c38a11147410eb028}
+Returns the relation object associated with the given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key that the relation is associated with. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a5fcd143c041166de62dce229299f6354}{}\index{P\+F\+Object@{P\+F\+Object}!relationfor\+Key\+:@{relationfor\+Key\+:}}
+\index{relationfor\+Key\+:@{relationfor\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{relationfor\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+Relation} $\ast$) relationfor\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(\char`\"{}Please use -\/{\bf relation\+For\+Key\+:} instead.\char`\"{})}]{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a5fcd143c041166de62dce229299f6354}
+Returns the relation object associated with the given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key that the relation is associated with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]Please use {\ttfamily \mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} relation\+For\+Key\+:\mbox{]}} instead. \end{DoxyRefDesc}
+\hypertarget{interface_p_f_object_a03f864a19b0a6ba6b6a01f5898049e49}{}\index{P\+F\+Object@{P\+F\+Object}!remove\+Object\+:for\+Key\+:@{remove\+Object\+:for\+Key\+:}}
+\index{remove\+Object\+:for\+Key\+:@{remove\+Object\+:for\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{remove\+Object\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{object}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a03f864a19b0a6ba6b6a01f5898049e49}
+Removes all occurrences of an object from the array associated with a given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to remove. \\
+\hline
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_afcbbe0e25d243c361281ff2521188fa7}{}\index{P\+F\+Object@{P\+F\+Object}!remove\+Object\+For\+Key\+:@{remove\+Object\+For\+Key\+:}}
+\index{remove\+Object\+For\+Key\+:@{remove\+Object\+For\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{remove\+Object\+For\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Object\+For\+Key\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_afcbbe0e25d243c361281ff2521188fa7}
+Unsets a key on the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_adbcf2779180aac2f2953caa9fbf30f7c}{}\index{P\+F\+Object@{P\+F\+Object}!remove\+Objects\+In\+Array\+:for\+Key\+:@{remove\+Objects\+In\+Array\+:for\+Key\+:}}
+\index{remove\+Objects\+In\+Array\+:for\+Key\+:@{remove\+Objects\+In\+Array\+:for\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{remove\+Objects\+In\+Array\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Objects\+In\+Array\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Array $\ast$)}]{objects}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_adbcf2779180aac2f2953caa9fbf30f7c}
+Removes all occurrences of the objects contained in another array from the array associated with a given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to remove. \\
+\hline
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a3f4fb72a9a33abafce4ebdbb61c87631}{}\index{P\+F\+Object@{P\+F\+Object}!save@{save}}
+\index{save@{save}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) save 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a3f4fb72a9a33abafce4ebdbb61c87631}
+{\itshape Synchronously} saves the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}}.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a7e589a961320f1b1d1f44f96648f1529}{}\index{P\+F\+Object@{P\+F\+Object}!save\+:@{save\+:}}
+\index{save\+:@{save\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) save\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a7e589a961320f1b1d1f44f96648f1529}
+{\itshape Synchronously} saves the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an N\+S\+Error that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a9f090fc6bf0b878b3b15b679e315bfb7}{}\index{P\+F\+Object@{P\+F\+Object}!save\+All\+:@{save\+All\+:}}
+\index{save\+All\+:@{save\+All\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+All\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) save\+All\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a9f090fc6bf0b878b3b15b679e315bfb7}
+Saves a collection of objects $\ast$synchronously all at once.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to save.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_ab2d2d92e9ab9bfc363e9e020ca0d84e2}{}\index{P\+F\+Object@{P\+F\+Object}!save\+All\+:error\+:@{save\+All\+:error\+:}}
+\index{save\+All\+:error\+:@{save\+All\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+All\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf save\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ab2d2d92e9ab9bfc363e9e020ca0d84e2}
+Saves a collection of objects {\itshape synchronously} all at once and sets an error if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to save. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_ad1aaa7ea173ca436bacf101fb16adce5}{}\index{P\+F\+Object@{P\+F\+Object}!save\+All\+In\+Background\+:@{save\+All\+In\+Background\+:}}
+\index{save\+All\+In\+Background\+:@{save\+All\+In\+Background\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+All\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) save\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ad1aaa7ea173ca436bacf101fb16adce5}
+Saves a collection of objects all at once {\itshape asynchronously}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to save.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a7dce84e2f8b968ce3df607ae47f3c38e}{}\index{P\+F\+Object@{P\+F\+Object}!save\+All\+In\+Background\+:block\+:@{save\+All\+In\+Background\+:block\+:}}
+\index{save\+All\+In\+Background\+:block\+:@{save\+All\+In\+Background\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+All\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf save\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a7dce84e2f8b968ce3df607ae47f3c38e}
+Saves a collection of objects all at once {\ttfamily asynchronously} and executes the block when done.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The array of objects to save. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_ad8152658d26a91755b1d27f4e37c8146}{}\index{P\+F\+Object@{P\+F\+Object}!save\+All\+In\+Background\+:target\+:selector\+:@{save\+All\+In\+Background\+:target\+:selector\+:}}
+\index{save\+All\+In\+Background\+:target\+:selector\+:@{save\+All\+In\+Background\+:target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+All\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf save\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ad8152658d26a91755b1d27f4e37c8146}
+\hypertarget{interface_p_f_object_a6d26d04b44a2b3ab9a2cfbadecedaae5}{}\index{P\+F\+Object@{P\+F\+Object}!save\+Eventually@{save\+Eventually}}
+\index{save\+Eventually@{save\+Eventually}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+Eventually}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) save\+Eventually 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a6d26d04b44a2b3ab9a2cfbadecedaae5}
+Saves this object to the server at some unspecified time in the future, even if \hyperlink{interface_parse}{Parse} is currently inaccessible.
+
+Use this when you may not have a solid network connection, and don\textquotesingle{}t need to know when the save completes. If there is some problem with the object such that it can\textquotesingle{}t be saved, it will be silently discarded. If the save completes successfully while the object is still in memory, then callback will be called.
+
+Objects saved with this method will be stored locally in an on-\/disk cache until they can be delivered to \hyperlink{interface_parse}{Parse}. They will be sent immediately if possible. Otherwise, they will be sent the next time a network connection is available. Objects saved this way will persist even after the app is closed, in which case they will be sent the next time the app is opened. If more than 10\+M\+B of data is waiting to be sent, subsequent calls to $<$save\+Eventually$>$ will cause old saves to be silently discarded until the connection can be re-\/established, and the queued objects can be saved.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a5c71fde395b8fd8c33ff85bbcf79afd9}{}\index{P\+F\+Object@{P\+F\+Object}!save\+Eventually\+:@{save\+Eventually\+:}}
+\index{save\+Eventually\+:@{save\+Eventually\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+Eventually\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) save\+Eventually\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{callback}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a5c71fde395b8fd8c33ff85bbcf79afd9}
+Saves this object to the server at some unspecified time in the future, even if \hyperlink{interface_parse}{Parse} is currently inaccessible.
+
+Use this when you may not have a solid network connection, and don\textquotesingle{}t need to know when the save completes. If there is some problem with the object such that it can\textquotesingle{}t be saved, it will be silently discarded. If the save completes successfully while the object is still in memory, then callback will be called.
+
+Objects saved with this method will be stored locally in an on-\/disk cache until they can be delivered to \hyperlink{interface_parse}{Parse}. They will be sent immediately if possible. Otherwise, they will be sent the next time a network connection is available. Objects saved this way will persist even after the app is closed, in which case they will be sent the next time the app is opened. If more than 10\+M\+B of data is waiting to be sent, subsequent calls to $<$save\+Eventually$>$ will cause old saves to be silently discarded until the connection can be re-\/established, and the queued objects can be saved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a07c14496c1b1f106101f6e4aa16bec6b}{}\index{P\+F\+Object@{P\+F\+Object}!save\+In\+Background@{save\+In\+Background}}
+\index{save\+In\+Background@{save\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) save\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a07c14496c1b1f106101f6e4aa16bec6b}
+Saves the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} {\itshape asynchronously}.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a2eea7c4efcbb46f4466b439853322193}{}\index{P\+F\+Object@{P\+F\+Object}!save\+In\+Background\+With\+Block\+:@{save\+In\+Background\+With\+Block\+:}}
+\index{save\+In\+Background\+With\+Block\+:@{save\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) save\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a2eea7c4efcbb46f4466b439853322193}
+Saves the {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}} {\itshape asynchronously} and executes the given callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_afae50e6f500694d47642ffb001d161e4}{}\index{P\+F\+Object@{P\+F\+Object}!save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}}
+\index{save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{save\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) save\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_afae50e6f500694d47642ffb001d161e4}
+\hypertarget{interface_p_f_object_ac433d818cd62eb486ce1fa6fb1ad5015}{}\index{P\+F\+Object@{P\+F\+Object}!set\+Object\+:for\+Key\+:@{set\+Object\+:for\+Key\+:}}
+\index{set\+Object\+:for\+Key\+:@{set\+Object\+:for\+Key\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{set\+Object\+:for\+Key\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{object}
+\item[{forKey:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ac433d818cd62eb486ce1fa6fb1ad5015}
+Sets the object associated with a given key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object for {\ttfamily key}. A strong reference to the object is maintaned by \hyperlink{interface_p_f_object}{P\+F\+Object}. Raises an {\ttfamily N\+S\+Invalid\+Argument\+Exception} if {\ttfamily object} is {\ttfamily nil}. If you need to represent a {\ttfamily nil} value -\/ use {\ttfamily N\+S\+Null}. \\
+\hline
+{\em key} & The key for {\ttfamily object}. Raises an {\ttfamily N\+S\+Invalid\+Argument\+Exception} if {\ttfamily key} is {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a1c466b8ea8ee08f1f356c9089f9c1581}{-\/ set\+Object\+:for\+Keyed\+Subscript\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a1c466b8ea8ee08f1f356c9089f9c1581}{}\index{P\+F\+Object@{P\+F\+Object}!set\+Object\+:for\+Keyed\+Subscript\+:@{set\+Object\+:for\+Keyed\+Subscript\+:}}
+\index{set\+Object\+:for\+Keyed\+Subscript\+:@{set\+Object\+:for\+Keyed\+Subscript\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{set\+Object\+:for\+Keyed\+Subscript\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{object}
+\item[{forKeyedSubscript:(N\+S\+String $\ast$)}]{key}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a1c466b8ea8ee08f1f356c9089f9c1581}
+Returns the value associated with a given key.
+
+This method enables usage of literal syntax on {\ttfamily \hyperlink{interface_p_f_object}{P\+F\+Object}}. E.\+g. {\ttfamily object\mbox{[}@\char`\"{}key\char`\"{}\mbox{]} = @\char`\"{}value\char`\"{};}
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object for {\ttfamily key}. A strong reference to the object is maintaned by \hyperlink{interface_p_f_object}{P\+F\+Object}. Raises an {\ttfamily N\+S\+Invalid\+Argument\+Exception} if {\ttfamily object} is {\ttfamily nil}. If you need to represent a {\ttfamily nil} value -\/ use {\ttfamily N\+S\+Null}. \\
+\hline
+{\em key} & The key for {\ttfamily object}. Raises an {\ttfamily N\+S\+Invalid\+Argument\+Exception} if {\ttfamily key} is {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_ac433d818cd62eb486ce1fa6fb1ad5015}{-\/ set\+Object\+:for\+Key\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_adc7c8ee4cf7b3a3d159f953fd900aff7}{}\index{P\+F\+Object@{P\+F\+Object}!unpin@{unpin}}
+\index{unpin@{unpin}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) unpin 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_adc7c8ee4cf7b3a3d159f953fd900aff7}
+{\itshape Synchronously} removes the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a8a625ba1a4e971b9a1baae2751afc4d1}{-\/ pin\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_aa55b03b3c308055daeb244f6c524de55}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+:@{unpin\+:}}
+\index{unpin\+:@{unpin\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) unpin\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_aa55b03b3c308055daeb244f6c524de55}
+{\itshape Synchronously} removes the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a8a625ba1a4e971b9a1baae2751afc4d1}{-\/ pin\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a1445e75e81dc5e0172567dab159a3d4d}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+:@{unpin\+All\+:}}
+\index{unpin\+All\+:@{unpin\+All\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unpin\+All\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a1445e75e81dc5e0172567dab159a3d4d}
+{\itshape Synchronously} removes the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a7b745822b356bdcb5585060852dfb6dd}{+ pin\+All\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a60e33a679c284748821d158ae34a98b2}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+:error\+:@{unpin\+All\+:error\+:}}
+\index{unpin\+All\+:error\+:@{unpin\+All\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf unpin\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a60e33a679c284748821d158ae34a98b2}
+{\itshape Synchronously} removes the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a751ea6dfe718ba34b041d03ea5bfc985}{+ pin\+All\+:error\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_ad57a8bb2d17d07fbabaf868315d03319}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+:with\+Name\+:@{unpin\+All\+:with\+Name\+:}}
+\index{unpin\+All\+:with\+Name\+:@{unpin\+All\+:with\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+:with\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf unpin\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ad57a8bb2d17d07fbabaf868315d03319}
+{\itshape Synchronously} removes the objects and every object they point to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects. \\
+\hline
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a6d08a07477b09e805ec5aaed3bde5cf6}{+ pin\+All\+:with\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_afe8b5e9bff903561a6ab690097f04237}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+:with\+Name\+:error\+:@{unpin\+All\+:with\+Name\+:error\+:}}
+\index{unpin\+All\+:with\+Name\+:error\+:@{unpin\+All\+:with\+Name\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+:with\+Name\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf unpin\+All\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_afe8b5e9bff903561a6ab690097f04237}
+{\itshape Synchronously} removes the objects and every object they point to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects. \\
+\hline
+{\em name} & The name of the pin. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a77e27f014698e4155c6111da26730a5d}{+ pin\+All\+:with\+Name\+:error\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_afced3b233c45a765a9cb2a8b25a86485}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+In\+Background\+:@{unpin\+All\+In\+Background\+:}}
+\index{unpin\+All\+In\+Background\+:@{unpin\+All\+In\+Background\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) unpin\+All\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_afced3b233c45a765a9cb2a8b25a86485}
+{\itshape Asynchronously} removes the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a66c1124af29558923ac3d498239555bc}{+ pin\+All\+In\+Background\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a9e306600e8a9957670eb21a8cabc8b50}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+In\+Background\+:block\+:@{unpin\+All\+In\+Background\+:block\+:}}
+\index{unpin\+All\+In\+Background\+:block\+:@{unpin\+All\+In\+Background\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unpin\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a9e306600e8a9957670eb21a8cabc8b50}
+{\itshape Asynchronously} removes the objects and every object they point to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_ac6ad9fc31ab6a60856de8d0abf510a1c}{+ pin\+All\+In\+Background\+:block\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a945befe537909fe0a1b4a0d4c6a409e2}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+In\+Background\+:with\+Name\+:@{unpin\+All\+In\+Background\+:with\+Name\+:}}
+\index{unpin\+All\+In\+Background\+:with\+Name\+:@{unpin\+All\+In\+Background\+:with\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+In\+Background\+:with\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) {\bf unpin\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a945befe537909fe0a1b4a0d4c6a409e2}
+{\itshape Asynchronously} removes the objects and every object they point to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects. \\
+\hline
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a2ddadf854045c1eccbde4a80e17f52c0}{+ pin\+All\+In\+Background\+:with\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a5f85aa7fc8c7b2f4da2c691d034e9ebf}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+In\+Background\+:with\+Name\+:block\+:@{unpin\+All\+In\+Background\+:with\+Name\+:block\+:}}
+\index{unpin\+All\+In\+Background\+:with\+Name\+:block\+:@{unpin\+All\+In\+Background\+:with\+Name\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+In\+Background\+:with\+Name\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unpin\+All\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Array $\ast$)}]{objects}
+\item[{withName:(N\+S\+String $\ast$)}]{name}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a5f85aa7fc8c7b2f4da2c691d034e9ebf}
+{\itshape Asynchronously} removes the objects and every object they point to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & The objects. \\
+\hline
+{\em name} & The name of the pin. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a8c33c98095aa5dbca816b1aca47632dd}{+ pin\+All\+In\+Background\+:with\+Name\+:block\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_aefe87d95ee369f03ed416a187aa24011}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects@{unpin\+All\+Objects}}
+\index{unpin\+All\+Objects@{unpin\+All\+Objects}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unpin\+All\+Objects 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_aefe87d95ee369f03ed416a187aa24011}
+{\itshape Synchronously} removes all objects in the local datastore using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a783bc216a71c8a7bce6d020d4724dc48}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects\+:@{unpin\+All\+Objects\+:}}
+\index{unpin\+All\+Objects\+:@{unpin\+All\+Objects\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unpin\+All\+Objects\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a783bc216a71c8a7bce6d020d4724dc48}
+{\itshape Synchronously} removes all objects in the local datastore using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_ad54f6195e60ee955fbe062f2a8e2b7d7}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects\+In\+Background@{unpin\+All\+Objects\+In\+Background}}
+\index{unpin\+All\+Objects\+In\+Background@{unpin\+All\+Objects\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) unpin\+All\+Objects\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ad54f6195e60ee955fbe062f2a8e2b7d7}
+{\itshape Asynchronously} removes all objects in the local datastore using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_ace8bc38c08f48d9a4c7becb42d4476b7}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects\+In\+Background\+With\+Block\+:@{unpin\+All\+Objects\+In\+Background\+With\+Block\+:}}
+\index{unpin\+All\+Objects\+In\+Background\+With\+Block\+:@{unpin\+All\+Objects\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) unpin\+All\+Objects\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_ace8bc38c08f48d9a4c7becb42d4476b7}
+{\itshape Asynchronously} removes all objects in the local datastore using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a4326eeacda5eb264e65797a0596bdf03}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects\+In\+Background\+With\+Name\+:@{unpin\+All\+Objects\+In\+Background\+With\+Name\+:}}
+\index{unpin\+All\+Objects\+In\+Background\+With\+Name\+:@{unpin\+All\+Objects\+In\+Background\+With\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects\+In\+Background\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) unpin\+All\+Objects\+In\+Background\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a4326eeacda5eb264e65797a0596bdf03}
+{\itshape Asynchronously} removes all objects with the specified pin name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a3080d544545226eac4240d85d0e6a97d}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects\+In\+Background\+With\+Name\+:block\+:@{unpin\+All\+Objects\+In\+Background\+With\+Name\+:block\+:}}
+\index{unpin\+All\+Objects\+In\+Background\+With\+Name\+:block\+:@{unpin\+All\+Objects\+In\+Background\+With\+Name\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects\+In\+Background\+With\+Name\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf unpin\+All\+Objects\+In\+Background\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a3080d544545226eac4240d85d0e6a97d}
+{\itshape Asynchronously} removes all objects with the specified pin name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_object_a360d3e289ac30c51a8b23ac6feeb5de7}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects\+With\+Name\+:@{unpin\+All\+Objects\+With\+Name\+:}}
+\index{unpin\+All\+Objects\+With\+Name\+:@{unpin\+All\+Objects\+With\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) unpin\+All\+Objects\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a360d3e289ac30c51a8b23ac6feeb5de7}
+{\itshape Synchronously} removes all objects with the specified pin name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a76ff35cff9ce5a28bb4ebb53f454981d}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+All\+Objects\+With\+Name\+:error\+:@{unpin\+All\+Objects\+With\+Name\+:error\+:}}
+\index{unpin\+All\+Objects\+With\+Name\+:error\+:@{unpin\+All\+Objects\+With\+Name\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+All\+Objects\+With\+Name\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf unpin\+All\+Objects\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a76ff35cff9ce5a28bb4ebb53f454981d}
+{\itshape Synchronously} removes all objects with the specified pin name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_object_a82d006a5567d4119c7182fad27c348a6}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+In\+Background@{unpin\+In\+Background}}
+\index{unpin\+In\+Background@{unpin\+In\+Background}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) unpin\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a82d006a5567d4119c7182fad27c348a6}
+{\itshape Asynchronously} removes the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_acf8e9063b2f2902205d6543d89cfbfb4}{-\/ pin\+In\+Background} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a1b4bb00cbf5d2841f32deeb097beda96}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+In\+Background\+With\+Block\+:@{unpin\+In\+Background\+With\+Block\+:}}
+\index{unpin\+In\+Background\+With\+Block\+:@{unpin\+In\+Background\+With\+Block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) unpin\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a1b4bb00cbf5d2841f32deeb097beda96}
+{\itshape Asynchronously} removes the object and every object it points to in the local datastore, recursively, using a default pin name\+: {\ttfamily P\+F\+Object\+Default\+Pin}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a35ad8691e4d82e8b917195b1ee06625c}{-\/ pin\+In\+Background\+With\+Block\+:} 
+
+\hyperlink{_p_f_object_8h_a1ee1eb5cbece8628b21de2a7e447509f}{P\+F\+Object\+Default\+Pin} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a56ddcda6b43920aaf4c4d4da4a024666}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+In\+Background\+With\+Name\+:@{unpin\+In\+Background\+With\+Name\+:}}
+\index{unpin\+In\+Background\+With\+Name\+:@{unpin\+In\+Background\+With\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+In\+Background\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) unpin\+In\+Background\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a56ddcda6b43920aaf4c4d4da4a024666}
+{\itshape Asynchronously} removes the object and every object it points to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task that encapsulates the work being done.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a68c437692e5c24e02b018b4f11b5916b}{-\/ pin\+In\+Background\+With\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a645947dac58fe9604e3e939335d1a1d1}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+In\+Background\+With\+Name\+:block\+:@{unpin\+In\+Background\+With\+Name\+:block\+:}}
+\index{unpin\+In\+Background\+With\+Name\+:block\+:@{unpin\+In\+Background\+With\+Name\+:block\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+In\+Background\+With\+Name\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf unpin\+In\+Background\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a645947dac58fe9604e3e939335d1a1d1}
+{\itshape Asynchronously} removes the object and every object it points to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_abfbc0604772dc55089c404914ffee532}{-\/ pin\+In\+Background\+With\+Name\+:block\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a2ffe1f92b9ed03b56ba15f0791b16f69}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+With\+Name\+:@{unpin\+With\+Name\+:}}
+\index{unpin\+With\+Name\+:@{unpin\+With\+Name\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+With\+Name\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) unpin\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a2ffe1f92b9ed03b56ba15f0791b16f69}
+{\itshape Synchronously} removes the object and every object it points to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a5d42f3a47a2b12c45ace4fd0ae1cfed2}{-\/ pin\+With\+Name\+:} 
+\end{DoxySeeAlso}
+\hypertarget{interface_p_f_object_a937a9ad0989ad1d32b1b3ac0f0c7a2ca}{}\index{P\+F\+Object@{P\+F\+Object}!unpin\+With\+Name\+:error\+:@{unpin\+With\+Name\+:error\+:}}
+\index{unpin\+With\+Name\+:error\+:@{unpin\+With\+Name\+:error\+:}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{unpin\+With\+Name\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) {\bf unpin\+With\+Name\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{name}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_object_a937a9ad0989ad1d32b1b3ac0f0c7a2ca}
+{\itshape Synchronously} removes the object and every object it points to in the local datastore, recursively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the pin. \\
+\hline
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the unpin succeeded.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_object_a981f300fc73989e22b9830f6ca1ad3dc}{-\/ pin\+With\+Name\+:error\+:} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_p_f_object_a7de11c083384297eb896760eab880ecf}{}\index{P\+F\+Object@{P\+F\+Object}!dirty@{dirty}}
+\index{dirty@{dirty}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{dirty}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) dirty\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_p_f_object_a7de11c083384297eb896760eab880ecf}
+
+
+Definition at line 34 of file P\+F\+Object.\+h.
+
+\hypertarget{interface_p_f_object_acf0bccf3bb9bcbd996ef9bc59a14108b}{}\index{P\+F\+Object@{P\+F\+Object}!estimated\+Data@{estimated\+Data}}
+\index{estimated\+Data@{estimated\+Data}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{estimated\+Data}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Dictionary$\ast$ {\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S}) estimated\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_p_f_object_acf0bccf3bb9bcbd996ef9bc59a14108b}
+
+
+Definition at line 47 of file P\+F\+Object.\+h.
+
+\hypertarget{interface_p_f_object_acb2994f40fd392505e774a92f501c84c}{}\index{P\+F\+Object@{P\+F\+Object}!operation\+Set\+Queue@{operation\+Set\+Queue}}
+\index{operation\+Set\+Queue@{operation\+Set\+Queue}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{operation\+Set\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Mutable\+Array$\ast$ {\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S}) operation\+Set\+Queue\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_p_f_object_acb2994f40fd392505e774a92f501c84c}
+
+
+Definition at line 43 of file P\+F\+Object.\+h.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_object_ad09c7decbf32c9119852e30da0bf09a6}{}\index{P\+F\+Object@{P\+F\+Object}!A\+C\+L@{A\+C\+L}}
+\index{A\+C\+L@{A\+C\+L}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{A\+C\+L}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+A\+C\+L}$\ast$) A\+C\+L\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_object_ad09c7decbf32c9119852e30da0bf09a6}
+The A\+C\+L for this object. 
+
+Definition at line 127 of file P\+F\+Object.\+h.
+
+\hypertarget{interface_p_f_object_ab9baa371bf6fc375e538dec6e95c4200}{}\index{P\+F\+Object@{P\+F\+Object}!created\+At@{created\+At}}
+\index{created\+At@{created\+At}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{created\+At}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Date$\ast$) created\+At\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_object_ab9baa371bf6fc375e538dec6e95c4200}
+When the object was created. 
+
+Definition at line 122 of file P\+F\+Object.\+h.
+
+\hypertarget{interface_p_f_object_ac957b8fb3842dcf264264c3f4af836f6}{}\index{P\+F\+Object@{P\+F\+Object}!object\+Id@{object\+Id}}
+\index{object\+Id@{object\+Id}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{object\+Id}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) object\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_object_ac957b8fb3842dcf264264c3f4af836f6}
+The id of the object. 
+
+Definition at line 112 of file P\+F\+Object.\+h.
+
+\hypertarget{interface_p_f_object_acd02c0585de1cc52e3adae4f3ea631aa}{}\index{P\+F\+Object@{P\+F\+Object}!parse\+Class\+Name@{parse\+Class\+Name}}
+\index{parse\+Class\+Name@{parse\+Class\+Name}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{parse\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) parse\+Class\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [strong]}}\label{interface_p_f_object_acd02c0585de1cc52e3adae4f3ea631aa}
+The class name of the object. 
+
+Definition at line 107 of file P\+F\+Object.\+h.
+
+\hypertarget{interface_p_f_object_aa0bd6d2f6c6489b6cc06ef043c4b179a}{}\index{P\+F\+Object@{P\+F\+Object}!updated\+At@{updated\+At}}
+\index{updated\+At@{updated\+At}!P\+F\+Object@{P\+F\+Object}}
+\subsubsection[{updated\+At}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Date$\ast$) updated\+At\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_object_aa0bd6d2f6c6489b6cc06ef043c4b179a}
+When the object was last updated. 
+
+Definition at line 117 of file P\+F\+Object.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_object_8h}{P\+F\+Object.\+h}\end{DoxyCompactItemize}

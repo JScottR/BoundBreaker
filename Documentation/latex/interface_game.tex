@@ -1,0 +1,444 @@
+\hypertarget{interface_game}{}\section{Game Class Reference}
+\label{interface_game}\index{Game@{Game}}
+
+
+{\ttfamily \#import $<$Game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_game}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_a76f9ded0ae00bb71a0d4537b63e0a037}{Start\+Game\+:}
+\begin{DoxyCompactList}\small\item\em Action that begins the game. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_a5282ada4b519d6f40b0336f01f9763b9}{Easy\+Difficulty\+:}
+\begin{DoxyCompactList}\small\item\em Action that sets difficulty to easy. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_a5e4cedf99a9de2a204e9bc79dcfd3ce7}{Medium\+Difficulty\+:}
+\begin{DoxyCompactList}\small\item\em Action that sets difficulty to medium. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_afb1de927fac817db6ee4690f95f1e190}{Hard\+Difficulty\+:}
+\begin{DoxyCompactList}\small\item\em Action that sets difficulty to hard. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_a6541a38a55ee81db37b38797431efc6d}{Right\+Press\+:}
+\begin{DoxyCompactList}\small\item\em Action that initializes ball right movement Triggered by rpressing the right movement button. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_ae7f6c4d2f13a755392735378117bd86a}{Right\+Lift\+Inside\+:}
+\begin{DoxyCompactList}\small\item\em Action that deactivates ball right movement Triggered by releasing inside of the right movement button. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_a10b8c73398f7fc7955092ec555f7ae61}{Right\+Lift\+Outside\+:}
+\begin{DoxyCompactList}\small\item\em Action that deactivates ball right movement Triggered by releasing outside of the right movement button. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_a56b5dd5d335d7abe76c8e679ccd008ee}{Left\+Press\+:}
+\begin{DoxyCompactList}\small\item\em Action that deactivates left ball movement Triggered by pressing the left movement button. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_ae686b4c3b5604a934e5f2e61cb780aa8}{Left\+Lift\+Inside\+:}
+\begin{DoxyCompactList}\small\item\em Action that deactivates ball left movement Triggered by releasing inside of the left movement button. \end{DoxyCompactList}\item 
+(I\+B\+Action) -\/ \hyperlink{interface_game_af37af92cb4313502176bd9e7104be070}{Left\+Lift\+Outside\+:}
+\begin{DoxyCompactList}\small\item\em Action that deactivates ball left movement Triggered by releasing outside of the left movement button. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_game_a732ad799223c4080df44772ea2d47275}{Obstacles\+Moving}
+\begin{DoxyCompactList}\small\item\em Method triggered by the Obstacle\+Movement timer Executes methods involved with motion. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_game_ad4cd848fd51d1fdca936695d886a182a}{ball\+Touching\+Obstacle}
+\item 
+(void) -\/ \hyperlink{interface_game_aa65335ef3b380bf84588f6ad43c60892}{ball\+Not\+Touching\+Obstacle}
+\item 
+(void) -\/ \hyperlink{interface_game_a859b5fe67834eaeaac3b758d0a6a6498}{Place\+Obstacles1}
+\item 
+(void) -\/ \hyperlink{interface_game_af458978203f59ae5fb36b598c770f93c}{Place\+Obstacles2}
+\item 
+(void) -\/ \hyperlink{interface_game_a5cb9a08f94edfd2c5cf9e265b0ff04e4}{Score}
+\begin{DoxyCompactList}\small\item\em Method to increase the score by 1, also logs the score number. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_game_aeef0f3e9e8d8f2efeb75c10e1dda4ef2}{Game\+Over}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+B\+Outlet U\+I\+Button $\ast$ \hyperlink{interface_game_abf35f63e020058662153b0ae30bbd0ee}{Tap\+Right}
+\item 
+I\+B\+Outlet U\+I\+Button $\ast$ \hyperlink{interface_game_a7f62328175e8d51677326d5790543944}{Tap\+Left}
+\item 
+I\+B\+Outlet U\+I\+Button $\ast$ \hyperlink{interface_game_a78210082a1410aee42773e4fb591be43}{Game\+Over}
+\item 
+I\+B\+Outlet U\+I\+Button $\ast$ \hyperlink{interface_game_a26ba198ea2f0a414b0b95360d1400d36}{Easy\+Difficulty\+Button}
+\item 
+I\+B\+Outlet U\+I\+Button $\ast$ \hyperlink{interface_game_a531920162f2cb866f3aa0af3ac5b292a}{Medium\+Difficulty\+Button}
+\item 
+I\+B\+Outlet U\+I\+Button $\ast$ \hyperlink{interface_game_add112e180082fe43d77188c8ce3d5218}{Hard\+Difficulty\+Button}
+\item 
+I\+B\+Outlet U\+I\+Image\+View $\ast$ \hyperlink{interface_game_a282a10964839757856349b7a4eabbb34}{Ball}
+\item 
+I\+B\+Outlet U\+I\+Image\+View $\ast$ \hyperlink{interface_game_a582f50e63c4d479a078f5f62177a2ecd}{long\+Obstacle1}
+\item 
+I\+B\+Outlet U\+I\+Image\+View $\ast$ \hyperlink{interface_game_a2c059f04ead15fccf161df8195e7ff19}{long\+Obstacle2}
+\item 
+I\+B\+Outlet U\+I\+Image\+View $\ast$ \hyperlink{interface_game_a866b9db5bc7955323e159a18bca2be12}{long\+Obstacle3}
+\item 
+I\+B\+Outlet U\+I\+Image\+View $\ast$ \hyperlink{interface_game_a2c33a254eedcc63d59745221cf2afbf4}{long\+Obstacle4}
+\item 
+I\+B\+Outlet U\+I\+Label $\ast$ \hyperlink{interface_game_a4f64d94a9c2c7d4647b08f4829b8e76f}{Welcome\+Label}
+\item 
+I\+B\+Outlet U\+I\+Label $\ast$ \hyperlink{interface_game_a59bd4bbbc65dae70048c54c2a88b38cc}{Score\+Label}
+\item 
+N\+S\+Timer $\ast$ \hyperlink{interface_game_a50db6bb0df163dfb0778bcf0336324fe}{Obstacle\+Movement}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User interface elements 
+
+Definition at line 22 of file Game.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_game_aa65335ef3b380bf84588f6ad43c60892}{}\index{Game@{Game}!ball\+Not\+Touching\+Obstacle@{ball\+Not\+Touching\+Obstacle}}
+\index{ball\+Not\+Touching\+Obstacle@{ball\+Not\+Touching\+Obstacle}!Game@{Game}}
+\subsubsection[{ball\+Not\+Touching\+Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) ball\+Not\+Touching\+Obstacle 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_game_aa65335ef3b380bf84588f6ad43c60892}
+
+
+Definition at line 178 of file Game.\+m.
+
+\hypertarget{interface_game_ad4cd848fd51d1fdca936695d886a182a}{}\index{Game@{Game}!ball\+Touching\+Obstacle@{ball\+Touching\+Obstacle}}
+\index{ball\+Touching\+Obstacle@{ball\+Touching\+Obstacle}!Game@{Game}}
+\subsubsection[{ball\+Touching\+Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) ball\+Touching\+Obstacle 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_game_ad4cd848fd51d1fdca936695d886a182a}
+Move ball down if touching obstacles, otherwise move up towards default 
+
+Definition at line 175 of file Game.\+m.
+
+\hypertarget{interface_game_a5282ada4b519d6f40b0336f01f9763b9}{}\index{Game@{Game}!Easy\+Difficulty\+:@{Easy\+Difficulty\+:}}
+\index{Easy\+Difficulty\+:@{Easy\+Difficulty\+:}!Game@{Game}}
+\subsubsection[{Easy\+Difficulty\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Easy\+Difficulty\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_a5282ada4b519d6f40b0336f01f9763b9}
+
+
+Action that sets difficulty to easy. 
+
+
+
+Definition at line 39 of file Game.\+m.
+
+\hypertarget{interface_game_aeef0f3e9e8d8f2efeb75c10e1dda4ef2}{}\index{Game@{Game}!Game\+Over@{Game\+Over}}
+\index{Game\+Over@{Game\+Over}!Game@{Game}}
+\subsubsection[{Game\+Over}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) Game\+Over 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_game_aeef0f3e9e8d8f2efeb75c10e1dda4ef2}
+Executed once ball touches bottom of screen 
+
+Definition at line 210 of file Game.\+m.
+
+\hypertarget{interface_game_afb1de927fac817db6ee4690f95f1e190}{}\index{Game@{Game}!Hard\+Difficulty\+:@{Hard\+Difficulty\+:}}
+\index{Hard\+Difficulty\+:@{Hard\+Difficulty\+:}!Game@{Game}}
+\subsubsection[{Hard\+Difficulty\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Hard\+Difficulty\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_afb1de927fac817db6ee4690f95f1e190}
+
+
+Action that sets difficulty to hard. 
+
+
+
+Definition at line 53 of file Game.\+m.
+
+\hypertarget{interface_game_ae686b4c3b5604a934e5f2e61cb780aa8}{}\index{Game@{Game}!Left\+Lift\+Inside\+:@{Left\+Lift\+Inside\+:}}
+\index{Left\+Lift\+Inside\+:@{Left\+Lift\+Inside\+:}!Game@{Game}}
+\subsubsection[{Left\+Lift\+Inside\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Left\+Lift\+Inside\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_ae686b4c3b5604a934e5f2e61cb780aa8}
+
+
+Action that deactivates ball left movement Triggered by releasing inside of the left movement button. 
+
+
+
+Definition at line 111 of file Game.\+m.
+
+\hypertarget{interface_game_af37af92cb4313502176bd9e7104be070}{}\index{Game@{Game}!Left\+Lift\+Outside\+:@{Left\+Lift\+Outside\+:}}
+\index{Left\+Lift\+Outside\+:@{Left\+Lift\+Outside\+:}!Game@{Game}}
+\subsubsection[{Left\+Lift\+Outside\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Left\+Lift\+Outside\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_af37af92cb4313502176bd9e7104be070}
+
+
+Action that deactivates ball left movement Triggered by releasing outside of the left movement button. 
+
+
+
+Definition at line 116 of file Game.\+m.
+
+\hypertarget{interface_game_a56b5dd5d335d7abe76c8e679ccd008ee}{}\index{Game@{Game}!Left\+Press\+:@{Left\+Press\+:}}
+\index{Left\+Press\+:@{Left\+Press\+:}!Game@{Game}}
+\subsubsection[{Left\+Press\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Left\+Press\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_a56b5dd5d335d7abe76c8e679ccd008ee}
+
+
+Action that deactivates left ball movement Triggered by pressing the left movement button. 
+
+
+
+Definition at line 106 of file Game.\+m.
+
+\hypertarget{interface_game_a5e4cedf99a9de2a204e9bc79dcfd3ce7}{}\index{Game@{Game}!Medium\+Difficulty\+:@{Medium\+Difficulty\+:}}
+\index{Medium\+Difficulty\+:@{Medium\+Difficulty\+:}!Game@{Game}}
+\subsubsection[{Medium\+Difficulty\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Medium\+Difficulty\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_a5e4cedf99a9de2a204e9bc79dcfd3ce7}
+
+
+Action that sets difficulty to medium. 
+
+
+
+Definition at line 46 of file Game.\+m.
+
+\hypertarget{interface_game_a732ad799223c4080df44772ea2d47275}{}\index{Game@{Game}!Obstacles\+Moving@{Obstacles\+Moving}}
+\index{Obstacles\+Moving@{Obstacles\+Moving}!Game@{Game}}
+\subsubsection[{Obstacles\+Moving}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) Obstacles\+Moving 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_game_a732ad799223c4080df44772ea2d47275}
+
+
+Method triggered by the Obstacle\+Movement timer Executes methods involved with motion. 
+
+Move ball if movement buttons are pressed
+
+Move obstacles towards bottom of screen
+
+Place obstacles based on postion of other obstacles
+
+Highly variable depending on number of obstacles and obtacle types
+
+Move ball towards bottom of screen if touching non-\/hidden obstacles, otherwise move ball up
+
+Increase score when obstacles pass the ball\textquotesingle{}s center
+
+\hyperlink{interface_game}{Game} over if ball touches bottom of screen 
+
+Definition at line 123 of file Game.\+m.
+
+\hypertarget{interface_game_a859b5fe67834eaeaac3b758d0a6a6498}{}\index{Game@{Game}!Place\+Obstacles1@{Place\+Obstacles1}}
+\index{Place\+Obstacles1@{Place\+Obstacles1}!Game@{Game}}
+\subsubsection[{Place\+Obstacles1}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) Place\+Obstacles1 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_game_a859b5fe67834eaeaac3b758d0a6a6498}
+Method for the random placement of obstacles 
+
+Definition at line 186 of file Game.\+m.
+
+\hypertarget{interface_game_af458978203f59ae5fb36b598c770f93c}{}\index{Game@{Game}!Place\+Obstacles2@{Place\+Obstacles2}}
+\index{Place\+Obstacles2@{Place\+Obstacles2}!Game@{Game}}
+\subsubsection[{Place\+Obstacles2}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) Place\+Obstacles2 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_game_af458978203f59ae5fb36b598c770f93c}
+
+
+Definition at line 197 of file Game.\+m.
+
+\hypertarget{interface_game_ae7f6c4d2f13a755392735378117bd86a}{}\index{Game@{Game}!Right\+Lift\+Inside\+:@{Right\+Lift\+Inside\+:}}
+\index{Right\+Lift\+Inside\+:@{Right\+Lift\+Inside\+:}!Game@{Game}}
+\subsubsection[{Right\+Lift\+Inside\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Right\+Lift\+Inside\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_ae7f6c4d2f13a755392735378117bd86a}
+
+
+Action that deactivates ball right movement Triggered by releasing inside of the right movement button. 
+
+
+
+Definition at line 95 of file Game.\+m.
+
+\hypertarget{interface_game_a10b8c73398f7fc7955092ec555f7ae61}{}\index{Game@{Game}!Right\+Lift\+Outside\+:@{Right\+Lift\+Outside\+:}}
+\index{Right\+Lift\+Outside\+:@{Right\+Lift\+Outside\+:}!Game@{Game}}
+\subsubsection[{Right\+Lift\+Outside\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Right\+Lift\+Outside\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_a10b8c73398f7fc7955092ec555f7ae61}
+
+
+Action that deactivates ball right movement Triggered by releasing outside of the right movement button. 
+
+
+
+Definition at line 100 of file Game.\+m.
+
+\hypertarget{interface_game_a6541a38a55ee81db37b38797431efc6d}{}\index{Game@{Game}!Right\+Press\+:@{Right\+Press\+:}}
+\index{Right\+Press\+:@{Right\+Press\+:}!Game@{Game}}
+\subsubsection[{Right\+Press\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Right\+Press\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_a6541a38a55ee81db37b38797431efc6d}
+
+
+Action that initializes ball right movement Triggered by rpressing the right movement button. 
+
+
+
+Definition at line 90 of file Game.\+m.
+
+\hypertarget{interface_game_a5cb9a08f94edfd2c5cf9e265b0ff04e4}{}\index{Game@{Game}!Score@{Score}}
+\index{Score@{Score}!Game@{Game}}
+\subsubsection[{Score}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) Score 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_game_a5cb9a08f94edfd2c5cf9e265b0ff04e4}
+
+
+Method to increase the score by 1, also logs the score number. 
+
+
+
+Definition at line 82 of file Game.\+m.
+
+\hypertarget{interface_game_a76f9ded0ae00bb71a0d4537b63e0a037}{}\index{Game@{Game}!Start\+Game\+:@{Start\+Game\+:}}
+\index{Start\+Game\+:@{Start\+Game\+:}!Game@{Game}}
+\subsubsection[{Start\+Game\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Action) Start\+Game\+: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}\label{interface_game_a76f9ded0ae00bb71a0d4537b63e0a037}
+
+
+Action that begins the game. 
+
+Actions and methods 
+
+Definition at line 61 of file Game.\+m.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interface_game_a282a10964839757856349b7a4eabbb34}{}\index{Game@{Game}!Ball@{Ball}}
+\index{Ball@{Ball}!Game@{Game}}
+\subsubsection[{Ball}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Image\+View$\ast$) Ball\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a282a10964839757856349b7a4eabbb34}
+
+
+Definition at line 31 of file Game.\+h.
+
+\hypertarget{interface_game_a26ba198ea2f0a414b0b95360d1400d36}{}\index{Game@{Game}!Easy\+Difficulty\+Button@{Easy\+Difficulty\+Button}}
+\index{Easy\+Difficulty\+Button@{Easy\+Difficulty\+Button}!Game@{Game}}
+\subsubsection[{Easy\+Difficulty\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Button$\ast$) Easy\+Difficulty\+Button\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a26ba198ea2f0a414b0b95360d1400d36}
+
+
+Definition at line 27 of file Game.\+h.
+
+\hypertarget{interface_game_a78210082a1410aee42773e4fb591be43}{}\index{Game@{Game}!Game\+Over@{Game\+Over}}
+\index{Game\+Over@{Game\+Over}!Game@{Game}}
+\subsubsection[{Game\+Over}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Button$\ast$) Game\+Over\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a78210082a1410aee42773e4fb591be43}
+
+
+Definition at line 26 of file Game.\+h.
+
+\hypertarget{interface_game_add112e180082fe43d77188c8ce3d5218}{}\index{Game@{Game}!Hard\+Difficulty\+Button@{Hard\+Difficulty\+Button}}
+\index{Hard\+Difficulty\+Button@{Hard\+Difficulty\+Button}!Game@{Game}}
+\subsubsection[{Hard\+Difficulty\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Button$\ast$) Hard\+Difficulty\+Button\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_add112e180082fe43d77188c8ce3d5218}
+
+
+Definition at line 29 of file Game.\+h.
+
+\hypertarget{interface_game_a582f50e63c4d479a078f5f62177a2ecd}{}\index{Game@{Game}!long\+Obstacle1@{long\+Obstacle1}}
+\index{long\+Obstacle1@{long\+Obstacle1}!Game@{Game}}
+\subsubsection[{long\+Obstacle1}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Image\+View$\ast$) long\+Obstacle1\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a582f50e63c4d479a078f5f62177a2ecd}
+
+
+Definition at line 32 of file Game.\+h.
+
+\hypertarget{interface_game_a2c059f04ead15fccf161df8195e7ff19}{}\index{Game@{Game}!long\+Obstacle2@{long\+Obstacle2}}
+\index{long\+Obstacle2@{long\+Obstacle2}!Game@{Game}}
+\subsubsection[{long\+Obstacle2}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Image\+View$\ast$) long\+Obstacle2\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a2c059f04ead15fccf161df8195e7ff19}
+
+
+Definition at line 33 of file Game.\+h.
+
+\hypertarget{interface_game_a866b9db5bc7955323e159a18bca2be12}{}\index{Game@{Game}!long\+Obstacle3@{long\+Obstacle3}}
+\index{long\+Obstacle3@{long\+Obstacle3}!Game@{Game}}
+\subsubsection[{long\+Obstacle3}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Image\+View$\ast$) long\+Obstacle3\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a866b9db5bc7955323e159a18bca2be12}
+
+
+Definition at line 34 of file Game.\+h.
+
+\hypertarget{interface_game_a2c33a254eedcc63d59745221cf2afbf4}{}\index{Game@{Game}!long\+Obstacle4@{long\+Obstacle4}}
+\index{long\+Obstacle4@{long\+Obstacle4}!Game@{Game}}
+\subsubsection[{long\+Obstacle4}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Image\+View$\ast$) long\+Obstacle4\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a2c33a254eedcc63d59745221cf2afbf4}
+
+
+Definition at line 35 of file Game.\+h.
+
+\hypertarget{interface_game_a531920162f2cb866f3aa0af3ac5b292a}{}\index{Game@{Game}!Medium\+Difficulty\+Button@{Medium\+Difficulty\+Button}}
+\index{Medium\+Difficulty\+Button@{Medium\+Difficulty\+Button}!Game@{Game}}
+\subsubsection[{Medium\+Difficulty\+Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Button$\ast$) Medium\+Difficulty\+Button\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a531920162f2cb866f3aa0af3ac5b292a}
+
+
+Definition at line 28 of file Game.\+h.
+
+\hypertarget{interface_game_a50db6bb0df163dfb0778bcf0336324fe}{}\index{Game@{Game}!Obstacle\+Movement@{Obstacle\+Movement}}
+\index{Obstacle\+Movement@{Obstacle\+Movement}!Game@{Game}}
+\subsubsection[{Obstacle\+Movement}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+Timer$\ast$) Obstacle\+Movement\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a50db6bb0df163dfb0778bcf0336324fe}
+
+
+Definition at line 40 of file Game.\+h.
+
+\hypertarget{interface_game_a59bd4bbbc65dae70048c54c2a88b38cc}{}\index{Game@{Game}!Score\+Label@{Score\+Label}}
+\index{Score\+Label@{Score\+Label}!Game@{Game}}
+\subsubsection[{Score\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Label$\ast$) Score\+Label\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a59bd4bbbc65dae70048c54c2a88b38cc}
+
+
+Definition at line 38 of file Game.\+h.
+
+\hypertarget{interface_game_a7f62328175e8d51677326d5790543944}{}\index{Game@{Game}!Tap\+Left@{Tap\+Left}}
+\index{Tap\+Left@{Tap\+Left}!Game@{Game}}
+\subsubsection[{Tap\+Left}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Button$\ast$) Tap\+Left\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a7f62328175e8d51677326d5790543944}
+
+
+Definition at line 25 of file Game.\+h.
+
+\hypertarget{interface_game_abf35f63e020058662153b0ae30bbd0ee}{}\index{Game@{Game}!Tap\+Right@{Tap\+Right}}
+\index{Tap\+Right@{Tap\+Right}!Game@{Game}}
+\subsubsection[{Tap\+Right}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Button$\ast$) Tap\+Right\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_abf35f63e020058662153b0ae30bbd0ee}
+
+
+Definition at line 24 of file Game.\+h.
+
+\hypertarget{interface_game_a4f64d94a9c2c7d4647b08f4829b8e76f}{}\index{Game@{Game}!Welcome\+Label@{Welcome\+Label}}
+\index{Welcome\+Label@{Welcome\+Label}!Game@{Game}}
+\subsubsection[{Welcome\+Label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\+B\+Outlet U\+I\+Label$\ast$) Welcome\+Label\hspace{0.3cm}{\ttfamily [protected]}}\label{interface_game_a4f64d94a9c2c7d4647b08f4829b8e76f}
+
+
+Definition at line 37 of file Game.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Bound Breaker/\hyperlink{_game_8h}{Game.\+h}\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Bound Breaker/\hyperlink{_game_8m}{Game.\+m}\end{DoxyCompactItemize}

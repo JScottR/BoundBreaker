@@ -1,0 +1,471 @@
+\hypertarget{_p_f_constants_8h}{}\section{/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.framework/\+Headers/\+P\+F\+Constants.h File Reference}
+\label{_p_f_constants_8h}\index{/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\+P\+F\+Constants.\+h@{/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\+P\+F\+Constants.\+h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\\*
+{\ttfamily \#import $<$Parse\+O\+S\+X/\+P\+F\+Nullability.\+h$>$}\\*
+{\ttfamily \#import $<$Cocoa/\+Cocoa.\+h$>$}\\*
+\subsection*{Macros}
+\begin{Indent}{\bf Deprecated Macros}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_p_f_constants_8h_ab2ebfadeaf8d9e5c647d255c53bf60a9}{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}(\+\_\+\+M\+S\+G)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Typedefs}
+\begin{Indent}{\bf Blocks}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a307a57e19034d4674cb22cae425bb260}{P\+F\+Boolean\+Result\+Block}) (B\+O\+O\+L succeeded, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a764b613479345c858e917d632f9fb750}{P\+F\+Integer\+Result\+Block}) (int number, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a2f457bc63b5d9df9396293ed973a8996}{P\+F\+Array\+Result\+Block}) (N\+S\+Array $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} objects, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a88501189af0f3d83de9b0509a2c8a606}{P\+F\+Object\+Result\+Block}) (\hyperlink{interface_p_f_object}{P\+F\+Object} $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} object, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_ade2b6efbb1c866fdbdef3a4e91ca9971}{P\+F\+Set\+Result\+Block}) (N\+S\+Set $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} channels, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a1278933185043d674df5c92c54dd8b68}{P\+F\+User\+Result\+Block}) (\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} user, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a49a2b8657a7a7ac703071fe01e76585d}{P\+F\+Data\+Result\+Block}) (N\+S\+Data $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} data, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a152144fa320e056da9da1748dee3ee3f}{P\+F\+Data\+Stream\+Result\+Block}) (N\+S\+Input\+Stream $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} stream, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_aeb777713b4e0585f2b569c748df7e11c}{P\+F\+String\+Result\+Block}) (N\+S\+String $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} string, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a25cf88c82af2d24bdca3fd7e757053e4}{P\+F\+Id\+Result\+Block}) (\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id object, N\+S\+Error $\ast$\hyperlink{_p_f_nullability_8h_ada31c80e56a25740ae808dccdacc9f1a}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)
+\item 
+typedef void($^\wedge$ \hyperlink{_p_f_constants_8h_a42d587bed28e1994383f89a51acc24ac}{P\+F\+Progress\+Block}) (int percent\+Done)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Functions}
+\begin{Indent}{\bf Cache Policies}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_p_f_constants_8h_a282f85d6faffb4b5d6f6a9327aed31b8}{N\+S\+\_\+\+E\+N\+U\+M} (uint8\+\_\+t, P\+F\+Cache\+Policy)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Logging Levels}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{_p_f_constants_8h_ab4f34ebe6829431cfc3269d130b29ce9}{N\+S\+\_\+\+E\+N\+U\+M} (uint8\+\_\+t, P\+F\+Log\+Level)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+\begin{Indent}{\bf Server}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$const \hyperlink{_p_f_nullability_8h_ab15c728f4c08cda81fcd7611ebec3e50}{P\+F\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+S} \hyperlink{_p_f_constants_8h_ae806f704cbebb5ca150f67cc316159b8}{k\+P\+F\+Parse\+Server}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Version}
+\label{_amgrp34b6cd75171affba6957e308dcbd92be}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_p_f_constants_8h_a004eae6a1f951f4ca6c5edfc484a63fc}{P\+A\+R\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N}~@\char`\"{}1.\+7.\+1\char`\"{}
+\item 
+N\+S\+Integer const \hyperlink{_p_f_constants_8h_ab129c976c8d51ad32f719ba3337b4522}{P\+A\+R\+S\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}
+\end{DoxyCompactItemize}
+\subsection*{Platform}
+\label{_amgrp419f3742e6de8e0ec4b22cce005e7630}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_p_f_constants_8h_a8e315be6b560bbf3d0ebca09ba9decad}{P\+A\+R\+S\+E\+\_\+\+I\+O\+S\+\_\+\+O\+N\+L\+Y}~(T\+A\+R\+G\+E\+T\+\_\+\+O\+S\+\_\+\+I\+P\+H\+O\+N\+E)
+\item 
+\#define \hyperlink{_p_f_constants_8h_adf1ebc6220feea4805c2dd4a84069605}{P\+A\+R\+S\+E\+\_\+\+O\+S\+X\+\_\+\+O\+N\+L\+Y}~(T\+A\+R\+G\+E\+T\+\_\+\+O\+S\+\_\+\+M\+A\+C \&\& !(T\+A\+R\+G\+E\+T\+\_\+\+O\+S\+\_\+\+I\+P\+H\+O\+N\+E))
+\item 
+N\+S\+String $\ast$const \hyperlink{_p_f_nullability_8h_ab15c728f4c08cda81fcd7611ebec3e50}{P\+F\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+S} \hyperlink{_p_f_constants_8h_a362336a0eba085ab9f433dc302d2dd83}{k\+P\+F\+Device\+Type}
+\item 
+compatibility\+\_\+alias U\+I\+Image \hyperlink{_p_f_constants_8h_a0291430567c0c1e5c93b21e146e17e02}{N\+S\+Image}
+\item 
+compatibility\+\_\+alias U\+I\+Color \hyperlink{_p_f_constants_8h_a2727e2afb180afc261ebc90308d71495}{N\+S\+Color}
+\item 
+compatibility\+\_\+alias U\+I\+View \hyperlink{_p_f_constants_8h_acb08f6c0ea2b4f8dd09f7348df6f1b71}{N\+S\+View}
+\end{DoxyCompactItemize}
+\subsection*{Errors}
+\label{_amgrp5ef0c737746fae2ca90e66c39333f8f6}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$const \hyperlink{_p_f_nullability_8h_ab15c728f4c08cda81fcd7611ebec3e50}{P\+F\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+S} \hyperlink{_p_f_constants_8h_a6a33653cd3f2f53c2372666dac43eab0}{P\+F\+Parse\+Error\+Domain}
+\item 
+typedef \hyperlink{_p_f_constants_8h_a7a81e8c2fb749e4b70f8357a09fa0aef}{N\+S\+\_\+\+E\+N\+U\+M} (N\+S\+Integer, P\+F\+Error\+Code)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_p_f_constants_8h_ab2ebfadeaf8d9e5c647d255c53bf60a9}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}}
+\index{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D@{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+R\+S\+E\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+M\+S\+G}
+\end{DoxyParamCaption}
+)}\label{_p_f_constants_8h_ab2ebfadeaf8d9e5c647d255c53bf60a9}
+
+
+Definition at line 400 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a8e315be6b560bbf3d0ebca09ba9decad}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+A\+R\+S\+E\+\_\+\+I\+O\+S\+\_\+\+O\+N\+L\+Y@{P\+A\+R\+S\+E\+\_\+\+I\+O\+S\+\_\+\+O\+N\+L\+Y}}
+\index{P\+A\+R\+S\+E\+\_\+\+I\+O\+S\+\_\+\+O\+N\+L\+Y@{P\+A\+R\+S\+E\+\_\+\+I\+O\+S\+\_\+\+O\+N\+L\+Y}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+A\+R\+S\+E\+\_\+\+I\+O\+S\+\_\+\+O\+N\+L\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+R\+S\+E\+\_\+\+I\+O\+S\+\_\+\+O\+N\+L\+Y~(T\+A\+R\+G\+E\+T\+\_\+\+O\+S\+\_\+\+I\+P\+H\+O\+N\+E)}\label{_p_f_constants_8h_a8e315be6b560bbf3d0ebca09ba9decad}
+
+
+Definition at line 27 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_adf1ebc6220feea4805c2dd4a84069605}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+A\+R\+S\+E\+\_\+\+O\+S\+X\+\_\+\+O\+N\+L\+Y@{P\+A\+R\+S\+E\+\_\+\+O\+S\+X\+\_\+\+O\+N\+L\+Y}}
+\index{P\+A\+R\+S\+E\+\_\+\+O\+S\+X\+\_\+\+O\+N\+L\+Y@{P\+A\+R\+S\+E\+\_\+\+O\+S\+X\+\_\+\+O\+N\+L\+Y}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+A\+R\+S\+E\+\_\+\+O\+S\+X\+\_\+\+O\+N\+L\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+R\+S\+E\+\_\+\+O\+S\+X\+\_\+\+O\+N\+L\+Y~(T\+A\+R\+G\+E\+T\+\_\+\+O\+S\+\_\+\+M\+A\+C \&\& !(T\+A\+R\+G\+E\+T\+\_\+\+O\+S\+\_\+\+I\+P\+H\+O\+N\+E))}\label{_p_f_constants_8h_adf1ebc6220feea4805c2dd4a84069605}
+
+
+Definition at line 28 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a004eae6a1f951f4ca6c5edfc484a63fc}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+A\+R\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N@{P\+A\+R\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N}}
+\index{P\+A\+R\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N@{P\+A\+R\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+A\+R\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+A\+R\+S\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N~@\char`\"{}1.\+7.\+1\char`\"{}}\label{_p_f_constants_8h_a004eae6a1f951f4ca6c5edfc484a63fc}
+
+
+Definition at line 19 of file P\+F\+Constants.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_p_f_constants_8h_a2f457bc63b5d9df9396293ed973a8996}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Array\+Result\+Block@{P\+F\+Array\+Result\+Block}}
+\index{P\+F\+Array\+Result\+Block@{P\+F\+Array\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Array\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Array\+Result\+Block) (N\+S\+Array $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} objects, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a2f457bc63b5d9df9396293ed973a8996}
+
+
+Definition at line 379 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a307a57e19034d4674cb22cae425bb260}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Boolean\+Result\+Block@{P\+F\+Boolean\+Result\+Block}}
+\index{P\+F\+Boolean\+Result\+Block@{P\+F\+Boolean\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Boolean\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Boolean\+Result\+Block) (B\+O\+O\+L succeeded, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a307a57e19034d4674cb22cae425bb260}
+
+
+Definition at line 377 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a49a2b8657a7a7ac703071fe01e76585d}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Data\+Result\+Block@{P\+F\+Data\+Result\+Block}}
+\index{P\+F\+Data\+Result\+Block@{P\+F\+Data\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Data\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Data\+Result\+Block) (N\+S\+Data $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} data, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a49a2b8657a7a7ac703071fe01e76585d}
+
+
+Definition at line 383 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a152144fa320e056da9da1748dee3ee3f}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Data\+Stream\+Result\+Block@{P\+F\+Data\+Stream\+Result\+Block}}
+\index{P\+F\+Data\+Stream\+Result\+Block@{P\+F\+Data\+Stream\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Data\+Stream\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Data\+Stream\+Result\+Block) (N\+S\+Input\+Stream $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} stream, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a152144fa320e056da9da1748dee3ee3f}
+
+
+Definition at line 384 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a25cf88c82af2d24bdca3fd7e757053e4}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Id\+Result\+Block@{P\+F\+Id\+Result\+Block}}
+\index{P\+F\+Id\+Result\+Block@{P\+F\+Id\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Id\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Id\+Result\+Block) ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id object, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a25cf88c82af2d24bdca3fd7e757053e4}
+
+
+Definition at line 386 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a764b613479345c858e917d632f9fb750}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Integer\+Result\+Block@{P\+F\+Integer\+Result\+Block}}
+\index{P\+F\+Integer\+Result\+Block@{P\+F\+Integer\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Integer\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Integer\+Result\+Block) (int number, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a764b613479345c858e917d632f9fb750}
+
+
+Definition at line 378 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a88501189af0f3d83de9b0509a2c8a606}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Object\+Result\+Block@{P\+F\+Object\+Result\+Block}}
+\index{P\+F\+Object\+Result\+Block@{P\+F\+Object\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Object\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Object\+Result\+Block) ({\bf P\+F\+Object} $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} object, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a88501189af0f3d83de9b0509a2c8a606}
+
+
+Definition at line 380 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a42d587bed28e1994383f89a51acc24ac}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Progress\+Block@{P\+F\+Progress\+Block}}
+\index{P\+F\+Progress\+Block@{P\+F\+Progress\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Progress\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Progress\+Block) (int percent\+Done)}\label{_p_f_constants_8h_a42d587bed28e1994383f89a51acc24ac}
+
+
+Definition at line 387 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_ade2b6efbb1c866fdbdef3a4e91ca9971}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Set\+Result\+Block@{P\+F\+Set\+Result\+Block}}
+\index{P\+F\+Set\+Result\+Block@{P\+F\+Set\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Set\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+Set\+Result\+Block) (N\+S\+Set $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} channels, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_ade2b6efbb1c866fdbdef3a4e91ca9971}
+
+
+Definition at line 381 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_aeb777713b4e0585f2b569c748df7e11c}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+String\+Result\+Block@{P\+F\+String\+Result\+Block}}
+\index{P\+F\+String\+Result\+Block@{P\+F\+String\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+String\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+String\+Result\+Block) (N\+S\+String $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} string, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_aeb777713b4e0585f2b569c748df7e11c}
+
+
+Definition at line 385 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a1278933185043d674df5c92c54dd8b68}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+User\+Result\+Block@{P\+F\+User\+Result\+Block}}
+\index{P\+F\+User\+Result\+Block@{P\+F\+User\+Result\+Block}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+User\+Result\+Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($^\wedge$ P\+F\+User\+Result\+Block) ({\bf P\+F\+User} $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} user, N\+S\+Error $\ast${\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} error)}\label{_p_f_constants_8h_a1278933185043d674df5c92c54dd8b68}
+
+
+Definition at line 382 of file P\+F\+Constants.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_f_constants_8h_a282f85d6faffb4b5d6f6a9327aed31b8}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}}
+\index{N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{N\+S\+\_\+\+E\+N\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}typedef N\+S\+\_\+\+E\+N\+U\+M (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{, }
+\item[{P\+F\+Cache\+Policy}]{}
+\end{DoxyParamCaption}
+)}\label{_p_f_constants_8h_a282f85d6faffb4b5d6f6a9327aed31b8}
+{\ttfamily P\+F\+Cache\+Policy} specifies different caching policies that could be used with $<$\+P\+F\+Query$>$.
+
+This lets you show data when the user\textquotesingle{}s device is offline, or when the app has just started and network requests have not yet had time to complete. \hyperlink{interface_parse}{Parse} takes care of automatically flushing the cache when it takes up too much space.
+
+\begin{DoxyWarning}{Warning}
+Cache policy could only be set when Local Datastore is not enabled.
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_query}{P\+F\+Query} 
+\end{DoxySeeAlso}
+The query does not load from the cache or save results to the cache. This is the default cache policy.
+
+The query only loads from the cache, ignoring the network. If there are no cached results, this causes a {\ttfamily N\+S\+Error} with {\ttfamily k\+P\+F\+Error\+Cache\+Miss} code.
+
+The query does not load from the cache, but it will save results to the cache.
+
+The query first tries to load from the cache, but if that fails, it loads results from the network. If there are no cached results, this causes a {\ttfamily N\+S\+Error} with {\ttfamily k\+P\+F\+Error\+Cache\+Miss} code.
+
+The query first tries to load from the network, but if that fails, it loads results from the cache. If there are no cached results, this causes a {\ttfamily N\+S\+Error} with {\ttfamily k\+P\+F\+Error\+Cache\+Miss} code.
+
+The query first loads from the cache, then loads from the network. The callback will be called twice -\/ first with the cached results, then with the network results. Since it returns two results at different times, this cache policy cannot be used with synchronous or task methods.
+
+Definition at line 62 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_ab4f34ebe6829431cfc3269d130b29ce9}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}}
+\index{N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{N\+S\+\_\+\+E\+N\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}typedef N\+S\+\_\+\+E\+N\+U\+M (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{, }
+\item[{P\+F\+Log\+Level}]{}
+\end{DoxyParamCaption}
+)}\label{_p_f_constants_8h_ab4f34ebe6829431cfc3269d130b29ce9}
+{\ttfamily P\+F\+Log\+Level} enum specifies different levels of logging that could be used to limit or display more messages in logs.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{[}\hyperlink{interface_parse}{Parse} set\+Log\+Level\+:\mbox{]} 
+
+\mbox{[}\hyperlink{interface_parse}{Parse} log\+Level\mbox{]} 
+\end{DoxySeeAlso}
+Log level that disables all logging.
+
+Log level that if set is going to output error messages to the log.
+
+Log level that if set is going to output the following messages to log\+:
+\begin{DoxyItemize}
+\item Errors
+\item Warnings
+\end{DoxyItemize}
+
+Log level that if set is going to output the following messages to log\+:
+\begin{DoxyItemize}
+\item Errors
+\item Warnings
+\item Informational messages
+\end{DoxyItemize}
+
+Log level that if set is going to output the following messages to log\+:
+\begin{DoxyItemize}
+\item Errors
+\item Warnings
+\item Informational messages
+\item Debug messages
+\end{DoxyItemize}
+
+Definition at line 105 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a7a81e8c2fb749e4b70f8357a09fa0aef}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}}
+\index{N\+S\+\_\+\+E\+N\+U\+M@{N\+S\+\_\+\+E\+N\+U\+M}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{N\+S\+\_\+\+E\+N\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}typedef N\+S\+\_\+\+E\+N\+U\+M (
+\begin{DoxyParamCaption}
+\item[{N\+S\+Integer}]{, }
+\item[{P\+F\+Error\+Code}]{}
+\end{DoxyParamCaption}
+)}\label{_p_f_constants_8h_a7a81e8c2fb749e4b70f8357a09fa0aef}
+{\ttfamily P\+F\+Error\+Code} enum contains all custom error codes that are used as {\ttfamily code} for {\ttfamily N\+S\+Error} for callbacks on all classes.
+
+These codes are used when {\ttfamily domain} of {\ttfamily N\+S\+Error} that you receive is set to {\ttfamily P\+F\+Parse\+Error\+Domain}. Internal server error. No information available.
+
+The connection to the \hyperlink{interface_parse}{Parse} servers failed.
+
+Object doesn\textquotesingle{}t exist, or has an incorrect password.
+
+You tried to find values matching a datatype that doesn\textquotesingle{}t support exact database matching, like an array or a dictionary.
+
+Missing or invalid classname. Classnames are case-\/sensitive. They must start with a letter, and {\ttfamily a-\/z\+A-\/\+Z0-\/9\+\_\+} are the only valid characters.
+
+Missing object id.
+
+Invalid key name. Keys are case-\/sensitive. They must start with a letter, and {\ttfamily a-\/z\+A-\/\+Z0-\/9\+\_\+} are the only valid characters.
+
+Malformed pointer. Pointers must be arrays of a classname and an object id.
+
+Malformed json object. A json dictionary is expected.
+
+Tried to access a feature only available internally.
+
+Field set to incorrect type.
+
+Invalid channel name. A channel name is either an empty string (the broadcast channel) or contains only {\ttfamily a-\/z\+A-\/\+Z0-\/9\+\_\+} characters and starts with a letter.
+
+Invalid device token.
+
+Push is misconfigured. See details to find out how.
+
+The object is too large.
+
+That operation isn\textquotesingle{}t allowed for clients.
+
+The results were not found in the cache.
+
+Keys in {\ttfamily N\+S\+Dictionary} values may not include {\ttfamily \$} or {\ttfamily .}.
+
+Invalid file name. A file name can contain only {\ttfamily a-\/z\+A-\/\+Z0-\/9\+\_\+.} characters and should be between 1 and 36 characters.
+
+Invalid A\+C\+L. An A\+C\+L with an invalid format was saved. This should not happen if you use $<$\+P\+F\+A\+C\+L$>$.
+
+The request timed out on the server. Typically this indicates the request is too expensive.
+
+The email address was invalid.
+
+A unique field was given a value that is already taken.
+
+Role\textquotesingle{}s name is invalid.
+
+Exceeded an application quota. Upgrade to resolve.
+
+Cloud Code script had an error.
+
+Cloud Code validation failed.
+
+Product purchase receipt is missing.
+
+Product purchase receipt is invalid.
+
+Payment is disabled on this device.
+
+The product identifier is invalid.
+
+The product is not found in the App Store.
+
+The Apple server response is not valid.
+
+Product fails to download due to file system error.
+
+Fail to convert data to image.
+
+Unsaved file.
+
+Fail to delete file.
+
+Application has exceeded its request limit.
+
+Invalid event name.
+
+Username is missing or empty.
+
+Password is missing or empty.
+
+Username has already been taken.
+
+Email has already been taken.
+
+The email is missing, and must be specified.
+
+A user with the specified email was not found.
+
+The user cannot be altered by a client without the session.
+
+Users can only be created through sign up.
+
+An existing Facebook account already linked to another user.
+
+An existing account already linked to another user.
+
+Error code indicating that the current session token is invalid.
+
+Facebook id missing from request.
+
+Linked id missing from request.
+
+Invalid Facebook session.
+
+Invalid linked session.
+
+Definition at line 148 of file P\+F\+Constants.\+h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_p_f_constants_8h_a362336a0eba085ab9f433dc302d2dd83}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!k\+P\+F\+Device\+Type@{k\+P\+F\+Device\+Type}}
+\index{k\+P\+F\+Device\+Type@{k\+P\+F\+Device\+Type}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{k\+P\+F\+Device\+Type}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+String$\ast$ const {\bf P\+F\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+S} k\+P\+F\+Device\+Type}\label{_p_f_constants_8h_a362336a0eba085ab9f433dc302d2dd83}
+\hypertarget{_p_f_constants_8h_ae806f704cbebb5ca150f67cc316159b8}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!k\+P\+F\+Parse\+Server@{k\+P\+F\+Parse\+Server}}
+\index{k\+P\+F\+Parse\+Server@{k\+P\+F\+Parse\+Server}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{k\+P\+F\+Parse\+Server}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+String$\ast$ const {\bf P\+F\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+S} k\+P\+F\+Parse\+Server}\label{_p_f_constants_8h_ae806f704cbebb5ca150f67cc316159b8}
+\hypertarget{_p_f_constants_8h_a2727e2afb180afc261ebc90308d71495}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!N\+S\+Color@{N\+S\+Color}}
+\index{N\+S\+Color@{N\+S\+Color}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{N\+S\+Color}]{\setlength{\rightskip}{0pt plus 5cm}compatibility\+\_\+alias U\+I\+Color N\+S\+Color}\label{_p_f_constants_8h_a2727e2afb180afc261ebc90308d71495}
+
+
+Definition at line 37 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_a0291430567c0c1e5c93b21e146e17e02}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!N\+S\+Image@{N\+S\+Image}}
+\index{N\+S\+Image@{N\+S\+Image}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{N\+S\+Image}]{\setlength{\rightskip}{0pt plus 5cm}compatibility\+\_\+alias U\+I\+Image N\+S\+Image}\label{_p_f_constants_8h_a0291430567c0c1e5c93b21e146e17e02}
+
+
+Definition at line 36 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_acb08f6c0ea2b4f8dd09f7348df6f1b71}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!N\+S\+View@{N\+S\+View}}
+\index{N\+S\+View@{N\+S\+View}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{N\+S\+View}]{\setlength{\rightskip}{0pt plus 5cm}compatibility\+\_\+alias U\+I\+View N\+S\+View}\label{_p_f_constants_8h_acb08f6c0ea2b4f8dd09f7348df6f1b71}
+
+
+Definition at line 38 of file P\+F\+Constants.\+h.
+
+\hypertarget{_p_f_constants_8h_ab129c976c8d51ad32f719ba3337b4522}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+A\+R\+S\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N@{P\+A\+R\+S\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}}
+\index{P\+A\+R\+S\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N@{P\+A\+R\+S\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+A\+R\+S\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+Integer const P\+A\+R\+S\+E\+\_\+\+A\+P\+I\+\_\+\+V\+E\+R\+S\+I\+O\+N}\label{_p_f_constants_8h_ab129c976c8d51ad32f719ba3337b4522}
+\hypertarget{_p_f_constants_8h_a6a33653cd3f2f53c2372666dac43eab0}{}\index{P\+F\+Constants.\+h@{P\+F\+Constants.\+h}!P\+F\+Parse\+Error\+Domain@{P\+F\+Parse\+Error\+Domain}}
+\index{P\+F\+Parse\+Error\+Domain@{P\+F\+Parse\+Error\+Domain}!P\+F\+Constants.\+h@{P\+F\+Constants.\+h}}
+\subsubsection[{P\+F\+Parse\+Error\+Domain}]{\setlength{\rightskip}{0pt plus 5cm}N\+S\+String$\ast$ const {\bf P\+F\+\_\+\+N\+O\+N\+N\+U\+L\+L\+\_\+\+S} P\+F\+Parse\+Error\+Domain}\label{_p_f_constants_8h_a6a33653cd3f2f53c2372666dac43eab0}

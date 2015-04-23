@@ -1,0 +1,674 @@
+\hypertarget{interface_p_f_user}{}\section{P\+F\+User Class Reference}
+\label{interface_p_f_user}\index{P\+F\+User@{P\+F\+User}}
+
+
+{\ttfamily \#import $<$P\+F\+User.\+h$>$}
+
+Inheritance diagram for P\+F\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_p_f_user}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Logging In}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) + \hyperlink{interface_p_f_user_afe5679630a84b1303f8b13bb0582eb93}{log\+In\+With\+Username\+:password\+:}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) + \hyperlink{interface_p_f_user_a53541c9d7306ba65e6737aa78981dc62}{log\+In\+With\+Username\+:password\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_user_a3459ba1d8751da2c937ac95293ceac1f}{log\+In\+With\+Username\+In\+Background\+:password\+:}
+\item 
+(void) + \hyperlink{interface_p_f_user_a1b5d12f5d0229308da387929da5f7091}{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}
+\item 
+(void) + \hyperlink{interface_p_f_user_ad1c0cf2be24deeca2e2a3b71c0ee1e39}{log\+In\+With\+Username\+In\+Background\+:password\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Becoming a User}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) + \hyperlink{interface_p_f_user_afe2ccc3b14ab2a97c87ac87c31f1ec8c}{become\+:}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) + \hyperlink{interface_p_f_user_a92e7f395b3e70083c36947677078e463}{become\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_user_a90dee806562c7afb60298e191b92fe1b}{become\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_user_a18bcb89943d13fd5e23e9530fe766995}{become\+In\+Background\+:target\+:selector\+:}
+\item 
+(void) + \hyperlink{interface_p_f_user_ac3781f75375d93f9e642a4fd3fced336}{become\+In\+Background\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Revocable Session}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_user_a231bae82068e0f554f5ac366bce8254c}{enable\+Revocable\+Session\+In\+Background}
+\item 
+(void) + \hyperlink{interface_p_f_user_a8163f28f8a1658c49e7530ab491ce0fb}{enable\+Revocable\+Session\+In\+Background\+With\+Block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Logging Out}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \hyperlink{interface_p_f_user_a7ffecb9e2df4f9ccaa353c88e7c280da}{log\+Out}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_user_aca199554d1011f4fad8016225f6e1e80}{log\+Out\+In\+Background}
+\item 
+(void) + \hyperlink{interface_p_f_user_a1badbc4dac94437b400ab6080a75c4f8}{log\+Out\+In\+Background\+With\+Block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Requesting a Password Reset}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_user_ae33ea54b2e63b9e6c746e3a9b2b8efe7}{request\+Password\+Reset\+For\+Email\+:}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_user_a7d829d9ec1c63e219e635899ce065a87}{request\+Password\+Reset\+For\+Email\+:error\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_user_add34cb785c49c79c4e60b8f8c05348b8}{request\+Password\+Reset\+For\+Email\+In\+Background\+:}
+\item 
+(void) + \hyperlink{interface_p_f_user_af94600d1c796e8e0a9bc9e8286e12ff5}{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}
+\item 
+(void) + \hyperlink{interface_p_f_user_a72f4bbe5f95199fda91283ec1682ed25}{request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Accessing the Current User}
+\label{_amgrpc0d47885c7774ff5029d0b4cc742ebbe}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_user_a1a33bcf3fb85e522f17cca78a800ee71}{session\+Token}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_user_a0397fa3ef6f97f93ad84e6e3a5471fdf}{is\+New}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) + \hyperlink{interface_p_f_user_a911666b43df61c07ee5c3c3bdd9c7f96}{current\+User}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_user_af0ccbe228f394d78e88338f7fff555a7}{is\+Authenticated}
+\end{DoxyCompactItemize}
+\subsection*{Creating a New User}
+\label{_amgrp07a25702824e8059019e7a758dc57206}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_user_ac17cdae0f1b4c54a3603e035de9a163e}{username}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_user_a58d5692efe283916b59aedd2944f92b8}{password}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_user_aefd63b5a86507b8d70a90aefe00e1bd7}{email}
+\item 
+(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$) + \hyperlink{interface_p_f_user_ac6cac6c3fd6fe1d8169b45027ea6ff71}{user}
+\item 
+(void) + \hyperlink{interface_p_f_user_ad6d2ba2fd12a026f8f8e2a70ed476f57}{enable\+Automatic\+User}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_user_ad3fc4a8b061ecb0ee63bbc2218aceb9e}{sign\+Up}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_user_aa7f131b017ab1443d8ef90c3f3f24dd4}{sign\+Up\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_user_ae6570c7b06cbe8489d882bdf19d502b4}{sign\+Up\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_user_af5f6a76a95793ee17912568794e3172e}{sign\+Up\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_user_ad2d1e680ef46d0038a863af3591cd5f7}{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} class is a local representation of a user persisted to the \hyperlink{interface_parse}{Parse} Data. This class is a subclass of a $<$\+P\+F\+Object$>$, and retains the same functionality of a $<$\+P\+F\+Object$>$, but also extends it with various user specific methods, like authentication, signing up, and validation uniqueness.
+
+Many A\+P\+Is responsible for linking a {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} with Facebook or Twitter have been deprecated in favor of dedicated utilities for each social network. See $<$\+P\+F\+Facebook\+Utils$>$, $<$\+P\+F\+Twitter\+Utils$>$ and $<$\+P\+F\+Anonymous\+Utils$>$ for more information. 
+
+Definition at line 36 of file P\+F\+User.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_user_afe2ccc3b14ab2a97c87ac87c31f1ec8c}{}\index{P\+F\+User@{P\+F\+User}!become\+:@{become\+:}}
+\index{become\+:@{become\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{become\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) become\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{session\+Token}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_afe2ccc3b14ab2a97c87ac87c31f1ec8c}
+Makes a {\itshape synchronous} request to become a user with the given session token.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This also caches the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Token} & The session token for the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} on success. If becoming a user fails due to incorrect token, it returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a92e7f395b3e70083c36947677078e463}{}\index{P\+F\+User@{P\+F\+User}!become\+:error\+:@{become\+:error\+:}}
+\index{become\+:error\+:@{become\+:error\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{become\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) {\bf become\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{session\+Token}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a92e7f395b3e70083c36947677078e463}
+Makes a {\itshape synchronous} request to become a user with the given session token.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This will also cache the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Token} & The session token for the user. \\
+\hline
+{\em error} & The error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} on success. If becoming a user fails due to incorrect token, it returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a90dee806562c7afb60298e191b92fe1b}{}\index{P\+F\+User@{P\+F\+User}!become\+In\+Background\+:@{become\+In\+Background\+:}}
+\index{become\+In\+Background\+:@{become\+In\+Background\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{become\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) become\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{session\+Token}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a90dee806562c7afb60298e191b92fe1b}
+Makes an {\itshape asynchronous} request to become a user with the given session token.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This also caches the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Token} & The session token for the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_ac3781f75375d93f9e642a4fd3fced336}{}\index{P\+F\+User@{P\+F\+User}!become\+In\+Background\+:block\+:@{become\+In\+Background\+:block\+:}}
+\index{become\+In\+Background\+:block\+:@{become\+In\+Background\+:block\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{become\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf become\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{session\+Token}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ac3781f75375d93f9e642a4fd3fced336}
+Makes an {\itshape asynchronous} request to become a user with the given session token.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This also caches the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Token} & The session token for the user. \\
+\hline
+{\em block} & The block to execute. The block should have the following argument signature\+: (\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error) \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_user_a18bcb89943d13fd5e23e9530fe766995}{}\index{P\+F\+User@{P\+F\+User}!become\+In\+Background\+:target\+:selector\+:@{become\+In\+Background\+:target\+:selector\+:}}
+\index{become\+In\+Background\+:target\+:selector\+:@{become\+In\+Background\+:target\+:selector\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{become\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf become\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{session\+Token}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a18bcb89943d13fd5e23e9530fe766995}
+\hypertarget{interface_p_f_user_a911666b43df61c07ee5c3c3bdd9c7f96}{}\index{P\+F\+User@{P\+F\+User}!current\+User@{current\+User}}
+\index{current\+User@{current\+User}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{current\+User}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) current\+User 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a911666b43df61c07ee5c3c3bdd9c7f96}
+Gets the currently logged in user from disk and returns an instance of it.
+
+\begin{DoxyReturn}{Returns}
+Returns a {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} that is the currently logged in user. If there is none, returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_ad6d2ba2fd12a026f8f8e2a70ed476f57}{}\index{P\+F\+User@{P\+F\+User}!enable\+Automatic\+User@{enable\+Automatic\+User}}
+\index{enable\+Automatic\+User@{enable\+Automatic\+User}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{enable\+Automatic\+User}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) enable\+Automatic\+User 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ad6d2ba2fd12a026f8f8e2a70ed476f57}
+Enables automatic creation of anonymous users.
+
+After calling this method, $<$current\+User$>$ will always have a value. The user will only be created on the server once the user has been saved, or once an object with a relation to that user or an A\+C\+L that refers to the user has been saved.
+
+\begin{DoxyWarning}{Warning}
+$<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} save\+Eventually\mbox{]}$>$ will not work on if an item being saved has a relation to an automatic user that has never been saved. 
+\end{DoxyWarning}
+\hypertarget{interface_p_f_user_a231bae82068e0f554f5ac366bce8254c}{}\index{P\+F\+User@{P\+F\+User}!enable\+Revocable\+Session\+In\+Background@{enable\+Revocable\+Session\+In\+Background}}
+\index{enable\+Revocable\+Session\+In\+Background@{enable\+Revocable\+Session\+In\+Background}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{enable\+Revocable\+Session\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) enable\+Revocable\+Session\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a231bae82068e0f554f5ac366bce8254c}
+Enables revocable sessions and migrates the current\+User session token to use revocable session if needed.
+
+This method is required if you want to use $<$\+P\+F\+Session$>$ A\+P\+Is and you application\textquotesingle{}s \textquotesingle{}Require Revocable Session\textquotesingle{} setting is turned off on {\ttfamily \href{http://parse.com}{\tt http\+://parse.\+com}} app settings. After returned {\ttfamily \hyperlink{interface_b_f_task}{B\+F\+Task}} completes -\/ $<$\+P\+F\+Session$>$ class and A\+P\+Is will be available for use.
+
+\begin{DoxyReturn}{Returns}
+An instance of {\ttfamily \hyperlink{interface_b_f_task}{B\+F\+Task}} that is completed when revocable sessions are enabled and current\+User token is migrated. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a8163f28f8a1658c49e7530ab491ce0fb}{}\index{P\+F\+User@{P\+F\+User}!enable\+Revocable\+Session\+In\+Background\+With\+Block\+:@{enable\+Revocable\+Session\+In\+Background\+With\+Block\+:}}
+\index{enable\+Revocable\+Session\+In\+Background\+With\+Block\+:@{enable\+Revocable\+Session\+In\+Background\+With\+Block\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{enable\+Revocable\+Session\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) enable\+Revocable\+Session\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Session\+Upgrade\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a8163f28f8a1658c49e7530ab491ce0fb}
+Enables revocable sessions and upgrades the current\+User session token to use revocable session if needed.
+
+This method is required if you want to use $<$\+P\+F\+Session$>$ A\+P\+Is and legacy sessions are enabled in your application settings on {\ttfamily \href{http://parse.com/}{\tt http\+://parse.\+com/}}. After returned {\ttfamily \hyperlink{interface_b_f_task}{B\+F\+Task}} completes -\/ $<$\+P\+F\+Session$>$ class and A\+P\+Is will be available for use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & Block that will be called when revocable sessions are enabled and current\+User token is migrated. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_user_af0ccbe228f394d78e88338f7fff555a7}{}\index{P\+F\+User@{P\+F\+User}!is\+Authenticated@{is\+Authenticated}}
+\index{is\+Authenticated@{is\+Authenticated}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{is\+Authenticated}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Authenticated 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_af0ccbe228f394d78e88338f7fff555a7}
+Whether the user is an authenticated object for the device.
+
+An authenticated {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} is one that is obtained via a $<$sign\+Up$>$ or $<$log\+In$>$ method. An authenticated object is required in order to save (with altered values) or delete it.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the user is authenticated. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_afe5679630a84b1303f8b13bb0582eb93}{}\index{P\+F\+User@{P\+F\+User}!log\+In\+With\+Username\+:password\+:@{log\+In\+With\+Username\+:password\+:}}
+\index{log\+In\+With\+Username\+:password\+:@{log\+In\+With\+Username\+:password\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+In\+With\+Username\+:password\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) log\+In\+With\+Username\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_afe5679630a84b1303f8b13bb0582eb93}
+Makes a {\itshape synchronous} request to login a user with specified credentials.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This also caches the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password of the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} on success. If login failed for either wrong password or wrong username, returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a53541c9d7306ba65e6737aa78981dc62}{}\index{P\+F\+User@{P\+F\+User}!log\+In\+With\+Username\+:password\+:error\+:@{log\+In\+With\+Username\+:password\+:error\+:}}
+\index{log\+In\+With\+Username\+:password\+:error\+:@{log\+In\+With\+Username\+:password\+:error\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+In\+With\+Username\+:password\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} instancetype) log\+In\+With\+Username\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a53541c9d7306ba65e6737aa78981dc62}
+Makes a {\itshape synchronous} request to login a user with specified credentials.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This also caches the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password of the user. \\
+\hline
+{\em error} & The error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an instance of the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} on success. If login failed for either wrong password or wrong username, returns {\ttfamily nil}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a3459ba1d8751da2c937ac95293ceac1f}{}\index{P\+F\+User@{P\+F\+User}!log\+In\+With\+Username\+In\+Background\+:password\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:}}
+\index{log\+In\+With\+Username\+In\+Background\+:password\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+In\+With\+Username\+In\+Background\+:password\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+With\+Username\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a3459ba1d8751da2c937ac95293ceac1f}
+Makes an {\itshape asynchronous} request to login a user with specified credentials.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This also caches the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password of the user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_ad1c0cf2be24deeca2e2a3b71c0ee1e39}{}\index{P\+F\+User@{P\+F\+User}!log\+In\+With\+Username\+In\+Background\+:password\+:block\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:block\+:}}
+\index{log\+In\+With\+Username\+In\+Background\+:password\+:block\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:block\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+In\+With\+Username\+In\+Background\+:password\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Username\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ad1c0cf2be24deeca2e2a3b71c0ee1e39}
+Makes an {\itshape asynchronous} request to log in a user with specified credentials.
+
+Returns an instance of the successfully logged in {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. This also caches the user locally so that calls to $<$current\+User$>$ will use the latest logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password of the user. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_user_a1b5d12f5d0229308da387929da5f7091}{}\index{P\+F\+User@{P\+F\+User}!log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}}
+\index{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:@{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+In\+With\+Username\+In\+Background\+:password\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Username\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{username}
+\item[{password:(N\+S\+String $\ast$)}]{password}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a1b5d12f5d0229308da387929da5f7091}
+\hypertarget{interface_p_f_user_a7ffecb9e2df4f9ccaa353c88e7c280da}{}\index{P\+F\+User@{P\+F\+User}!log\+Out@{log\+Out}}
+\index{log\+Out@{log\+Out}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+Out}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+Out 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a7ffecb9e2df4f9ccaa353c88e7c280da}
+{\itshape Synchronously} logs out the currently logged in user on disk. \hypertarget{interface_p_f_user_aca199554d1011f4fad8016225f6e1e80}{}\index{P\+F\+User@{P\+F\+User}!log\+Out\+In\+Background@{log\+Out\+In\+Background}}
+\index{log\+Out\+In\+Background@{log\+Out\+In\+Background}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+Out\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+Out\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_aca199554d1011f4fad8016225f6e1e80}
+{\itshape Asynchronously} logs out the currenlt logged in user.
+
+This will also remove the session from disk, log out of linked services and all future calls to $<$current\+User$>$ will return {\ttfamily nil}. This is preferrable to using $<$log\+Out$>$, unless your code is already running from a background thread.
+
+\begin{DoxyReturn}{Returns}
+An instance of {\ttfamily \hyperlink{interface_b_f_task}{B\+F\+Task}}, that is resolved with {\ttfamily nil} result when logging out completes. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a1badbc4dac94437b400ab6080a75c4f8}{}\index{P\+F\+User@{P\+F\+User}!log\+Out\+In\+Background\+With\+Block\+:@{log\+Out\+In\+Background\+With\+Block\+:}}
+\index{log\+Out\+In\+Background\+With\+Block\+:@{log\+Out\+In\+Background\+With\+Block\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{log\+Out\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+Out\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Logout\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a1badbc4dac94437b400ab6080a75c4f8}
+{\itshape Asynchronously} logs out the currenlt logged in user.
+
+This will also remove the session from disk, log out of linked services and all future calls to $<$current\+User$>$ will return {\ttfamily nil}. This is preferrable to using $<$log\+Out$>$, unless your code is already running from a background thread.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A block that will be called when logging out completes or fails. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_user_ae33ea54b2e63b9e6c746e3a9b2b8efe7}{}\index{P\+F\+User@{P\+F\+User}!request\+Password\+Reset\+For\+Email\+:@{request\+Password\+Reset\+For\+Email\+:}}
+\index{request\+Password\+Reset\+For\+Email\+:@{request\+Password\+Reset\+For\+Email\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) request\+Password\+Reset\+For\+Email\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ae33ea54b2e63b9e6c746e3a9b2b8efe7}
+{\itshape Synchronously} Send a password reset request for a specified email.
+
+If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the account to send a reset password request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the reset email request is successful. {\ttfamily N\+O} -\/ if no account was found for the email address. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a7d829d9ec1c63e219e635899ce065a87}{}\index{P\+F\+User@{P\+F\+User}!request\+Password\+Reset\+For\+Email\+:error\+:@{request\+Password\+Reset\+For\+Email\+:error\+:}}
+\index{request\+Password\+Reset\+For\+Email\+:error\+:@{request\+Password\+Reset\+For\+Email\+:error\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+:error\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) {\bf request\+Password\+Reset\+For\+Email\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a7d829d9ec1c63e219e635899ce065a87}
+{\itshape Synchronously} send a password reset request for a specified email and sets an error object.
+
+If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the account to send a reset password request. \\
+\hline
+{\em error} & Error object to set on error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the reset email request is successful. {\ttfamily N\+O} -\/ if no account was found for the email address. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_add34cb785c49c79c4e60b8f8c05348b8}{}\index{P\+F\+User@{P\+F\+User}!request\+Password\+Reset\+For\+Email\+In\+Background\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:}}
+\index{request\+Password\+Reset\+For\+Email\+In\+Background\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+In\+Background\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) request\+Password\+Reset\+For\+Email\+In\+Background\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_add34cb785c49c79c4e60b8f8c05348b8}
+Send a password reset request asynchronously for a specified email and sets an error object. If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password. 
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the account to send a reset password request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_a72f4bbe5f95199fda91283ec1682ed25}{}\index{P\+F\+User@{P\+F\+User}!request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:}}
+\index{request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+In\+Background\+:block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf request\+Password\+Reset\+For\+Email\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{block:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_a72f4bbe5f95199fda91283ec1682ed25}
+Send a password reset request {\itshape asynchronously} for a specified email.
+
+If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email of the account to send a reset password request. \\
+\hline
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_user_af94600d1c796e8e0a9bc9e8286e12ff5}{}\index{P\+F\+User@{P\+F\+User}!request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}}
+\index{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:@{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{request\+Password\+Reset\+For\+Email\+In\+Background\+:target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) {\bf request\+Password\+Reset\+For\+Email\+In\+Background\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+String $\ast$)}]{email}
+\item[{target:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_af94600d1c796e8e0a9bc9e8286e12ff5}
+\hypertarget{interface_p_f_user_ad3fc4a8b061ecb0ee63bbc2218aceb9e}{}\index{P\+F\+User@{P\+F\+User}!sign\+Up@{sign\+Up}}
+\index{sign\+Up@{sign\+Up}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{sign\+Up}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) sign\+Up 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ad3fc4a8b061ecb0ee63bbc2218aceb9e}
+Signs up the user {\itshape synchronously}.
+
+This will also enforce that the username isn\textquotesingle{}t already taken.
+
+\begin{DoxyWarning}{Warning}
+Make sure that password and username are set before calling this method.
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily Y\+E\+S} if the sign up was successful, otherwise {\ttfamily N\+O}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_aa7f131b017ab1443d8ef90c3f3f24dd4}{}\index{P\+F\+User@{P\+F\+User}!sign\+Up\+:@{sign\+Up\+:}}
+\index{sign\+Up\+:@{sign\+Up\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{sign\+Up\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) sign\+Up\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_aa7f131b017ab1443d8ef90c3f3f24dd4}
+Signs up the user {\itshape synchronously}.
+
+This will also enforce that the username isn\textquotesingle{}t already taken.
+
+\begin{DoxyWarning}{Warning}
+Make sure that password and username are set before calling this method.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Error object to set on error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the sign up was successful. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_ae6570c7b06cbe8489d882bdf19d502b4}{}\index{P\+F\+User@{P\+F\+User}!sign\+Up\+In\+Background@{sign\+Up\+In\+Background}}
+\index{sign\+Up\+In\+Background@{sign\+Up\+In\+Background}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{sign\+Up\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) sign\+Up\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ae6570c7b06cbe8489d882bdf19d502b4}
+Signs up the user {\itshape asynchronously}.
+
+This will also enforce that the username isn\textquotesingle{}t already taken.
+
+\begin{DoxyWarning}{Warning}
+Make sure that password and username are set before calling this method.
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_user_af5f6a76a95793ee17912568794e3172e}{}\index{P\+F\+User@{P\+F\+User}!sign\+Up\+In\+Background\+With\+Block\+:@{sign\+Up\+In\+Background\+With\+Block\+:}}
+\index{sign\+Up\+In\+Background\+With\+Block\+:@{sign\+Up\+In\+Background\+With\+Block\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{sign\+Up\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sign\+Up\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_af5f6a76a95793ee17912568794e3172e}
+Signs up the user {\itshape asynchronously}.
+
+This will also enforce that the username isn\textquotesingle{}t already taken.
+
+\begin{DoxyWarning}{Warning}
+Make sure that password and username are set before calling this method.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute. It should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_user_ad2d1e680ef46d0038a863af3591cd5f7}{}\index{P\+F\+User@{P\+F\+User}!sign\+Up\+In\+Background\+With\+Target\+:selector\+:@{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}}
+\index{sign\+Up\+In\+Background\+With\+Target\+:selector\+:@{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{sign\+Up\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sign\+Up\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ad2d1e680ef46d0038a863af3591cd5f7}
+\hypertarget{interface_p_f_user_ac6cac6c3fd6fe1d8169b45027ea6ff71}{}\index{P\+F\+User@{P\+F\+User}!user@{user}}
+\index{user@{user}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+User} $\ast$) user 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_user_ac6cac6c3fd6fe1d8169b45027ea6ff71}
+Creates a new {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} object.
+
+\begin{DoxyReturn}{Returns}
+Returns a new {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} object. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_user_aefd63b5a86507b8d70a90aefe00e1bd7}{}\index{P\+F\+User@{P\+F\+User}!email@{email}}
+\index{email@{email}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{email}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) email\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_user_aefd63b5a86507b8d70a90aefe00e1bd7}
+The email for the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. 
+
+Definition at line 112 of file P\+F\+User.\+h.
+
+\hypertarget{interface_p_f_user_a0397fa3ef6f97f93ad84e6e3a5471fdf}{}\index{P\+F\+User@{P\+F\+User}!is\+New@{is\+New}}
+\index{is\+New@{is\+New}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{is\+New}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+New\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_p_f_user_a0397fa3ef6f97f93ad84e6e3a5471fdf}
+Whether the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}} was just created from a request.
+
+This is only set after a Facebook or Twitter login. 
+
+Definition at line 61 of file P\+F\+User.\+h.
+
+\hypertarget{interface_p_f_user_a58d5692efe283916b59aedd2944f92b8}{}\index{P\+F\+User@{P\+F\+User}!password@{password}}
+\index{password@{password}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{password}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) password\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_user_a58d5692efe283916b59aedd2944f92b8}
+!  The password for the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}.
+
+This will not be filled in from the server with the password. It is only meant to be set. 
+
+Definition at line 107 of file P\+F\+User.\+h.
+
+\hypertarget{interface_p_f_user_a1a33bcf3fb85e522f17cca78a800ee71}{}\index{P\+F\+User@{P\+F\+User}!session\+Token@{session\+Token}}
+\index{session\+Token@{session\+Token}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{session\+Token}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) session\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_user_a1a33bcf3fb85e522f17cca78a800ee71}
+The session token for the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}.
+
+This is set by the server upon successful authentication. 
+
+Definition at line 54 of file P\+F\+User.\+h.
+
+\hypertarget{interface_p_f_user_ac17cdae0f1b4c54a3603e035de9a163e}{}\index{P\+F\+User@{P\+F\+User}!username@{username}}
+\index{username@{username}!P\+F\+User@{P\+F\+User}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) username\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_user_ac17cdae0f1b4c54a3603e035de9a163e}
+The username for the {\ttfamily \hyperlink{interface_p_f_user}{P\+F\+User}}. 
+
+Definition at line 99 of file P\+F\+User.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_user_8h}{P\+F\+User.\+h}\end{DoxyCompactItemize}

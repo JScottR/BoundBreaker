@@ -1,0 +1,131 @@
+\hypertarget{protocol_p_f_subclassing-p}{}\section{$<$P\+F\+Subclassing$>$ Protocol Reference}
+\label{protocol_p_f_subclassing-p}\index{$<$\+P\+F\+Subclassing$>$@{$<$\+P\+F\+Subclassing$>$}}
+
+
+{\ttfamily \#import $<$P\+F\+Subclassing.\+h$>$}
+
+Inheritance diagram for $<$P\+F\+Subclassing$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.898305cm]{protocol_p_f_subclassing-p}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \hyperlink{protocol_p_f_subclassing-p_a7f17fb9d35539e057890ce6b66b22293}{object}
+\item 
+(instancetype) + \hyperlink{protocol_p_f_subclassing-p_af3992a1edcf12e055227eca7850e57b9}{object\+Without\+Data\+With\+Object\+Id\+:}
+\item 
+(N\+S\+String $\ast$) + \hyperlink{protocol_p_f_subclassing-p_ac668f618e2de4306a129ca75d2585222}{parse\+Class\+Name}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) + \hyperlink{protocol_p_f_subclassing-p_ac663a8e544652a5303b8e0a7d704c3d9}{query}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) + \hyperlink{protocol_p_f_subclassing-p_a58ff17c2706d2926c0158d196cd418a3}{query\+With\+Predicate\+:}
+\item 
+(void) + \hyperlink{protocol_p_f_subclassing-p_a7bcbfc4efd502aa831aee7dee48eabb1}{register\+Subclass}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+If a subclass of $<$\+P\+F\+Object$>$ conforms to {\ttfamily \hyperlink{protocol_p_f_subclassing-p}{P\+F\+Subclassing}} and calls $<$register\+Subclass$>$, \hyperlink{interface_parse}{Parse} framework will be able to use that class as the native class for a \hyperlink{interface_parse}{Parse} cloud object.
+
+Classes conforming to this protocol should subclass $<$\+P\+F\+Object$>$ and include {\ttfamily P\+F\+Object+\+Subclass.h} in their implementation file. This ensures the methods in the Subclass category of $<$\+P\+F\+Object$>$ are exposed in its subclasses only. 
+
+Definition at line 27 of file P\+F\+Subclassing.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_p_f_subclassing-p_a7f17fb9d35539e057890ce6b66b22293}{}\index{P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}!object@{object}}
+\index{object@{object}!P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_subclassing-p_a7f17fb9d35539e057890ce6b66b22293}
+Constructs an object of the most specific class known to implement $<$parse\+Class\+Name$>$.
+
+This method takes care to help $<$\+P\+F\+Object$>$ subclasses be subclassed themselves. For example, {\ttfamily \mbox{[}\hyperlink{interface_p_f_user}{P\+F\+User} object\mbox{]}} returns a $<$\+P\+F\+User$>$ by default but will return an object of a registered subclass instead if one is known. A default implementation is provided by $<$\+P\+F\+Object$>$ which should always be sufficient.
+
+\begin{DoxyReturn}{Returns}
+Returns the object that is instantiated. 
+\end{DoxyReturn}
+\hypertarget{protocol_p_f_subclassing-p_af3992a1edcf12e055227eca7850e57b9}{}\index{P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}!object\+Without\+Data\+With\+Object\+Id\+:@{object\+Without\+Data\+With\+Object\+Id\+:}}
+\index{object\+Without\+Data\+With\+Object\+Id\+:@{object\+Without\+Data\+With\+Object\+Id\+:}!P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}}
+\subsubsection[{object\+Without\+Data\+With\+Object\+Id\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) object\+Without\+Data\+With\+Object\+Id\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{object\+Id}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_subclassing-p_af3992a1edcf12e055227eca7850e57b9}
+Creates a reference to an existing \hyperlink{interface_p_f_object}{P\+F\+Object} for use in creating associations between P\+F\+Objects.
+
+Calling $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} is\+Data\+Available\mbox{]}$>$ on this object will return {\ttfamily N\+O} until $<$\mbox{[}\hyperlink{interface_p_f_object}{P\+F\+Object} fetch\+If\+Needed\mbox{]}$>$ has been called. No network request will be made. A default implementation is provided by \hyperlink{interface_p_f_object}{P\+F\+Object} which should always be sufficient.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Id} & The object id for the referenced object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new $<$\+P\+F\+Object$>$ without data. 
+\end{DoxyReturn}
+\hypertarget{protocol_p_f_subclassing-p_ac668f618e2de4306a129ca75d2585222}{}\index{P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}!parse\+Class\+Name@{parse\+Class\+Name}}
+\index{parse\+Class\+Name@{parse\+Class\+Name}!P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}}
+\subsubsection[{parse\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\+S\+String $\ast$) parse\+Class\+Name 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_subclassing-p_ac668f618e2de4306a129ca75d2585222}
+The name of the class as seen in the R\+E\+S\+T A\+P\+I. \hypertarget{protocol_p_f_subclassing-p_ac663a8e544652a5303b8e0a7d704c3d9}{}\index{P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}!query@{query}}
+\index{query@{query}!P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Query} $\ast$) query 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_subclassing-p_ac663a8e544652a5303b8e0a7d704c3d9}
+Create a query which returns objects of this type.
+
+A default implementation is provided by $<$\+P\+F\+Object$>$ which should always be sufficient. 
+
+Reimplemented in \hyperlink{interface_p_f_installation_a6746d978e58db0413ed4be993810de32}{P\+F\+Installation}.
+
+\hypertarget{protocol_p_f_subclassing-p_a58ff17c2706d2926c0158d196cd418a3}{}\index{P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}!query\+With\+Predicate\+:@{query\+With\+Predicate\+:}}
+\index{query\+With\+Predicate\+:@{query\+With\+Predicate\+:}!P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}}
+\subsubsection[{query\+With\+Predicate\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Query} $\ast$) query\+With\+Predicate\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Predicate $\ast$)}]{predicate}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_subclassing-p_a58ff17c2706d2926c0158d196cd418a3}
+Returns a query for objects of this type with a given predicate.
+
+A default implementation is provided by $<$\+P\+F\+Object$>$ which should always be sufficient.
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The predicate to create conditions from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of $<$\+P\+F\+Query$>$.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{[}\hyperlink{interface_p_f_query}{P\+F\+Query} query\+With\+Class\+Name\+:predicate\+:\mbox{]} 
+\end{DoxySeeAlso}
+\hypertarget{protocol_p_f_subclassing-p_a7bcbfc4efd502aa831aee7dee48eabb1}{}\index{P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}!register\+Subclass@{register\+Subclass}}
+\index{register\+Subclass@{register\+Subclass}!P\+F\+Subclassing-\/p@{P\+F\+Subclassing-\/p}}
+\subsubsection[{register\+Subclass}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) register\+Subclass 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{protocol_p_f_subclassing-p_a7bcbfc4efd502aa831aee7dee48eabb1}
+Lets \hyperlink{interface_parse}{Parse} know this class should be used to instantiate all objects with class type $<$parse\+Class\+Name$>$.
+
+\begin{DoxyWarning}{Warning}
+This method must be called before $<$\mbox{[}\hyperlink{interface_parse}{Parse} set\+Application\+Id\+:client\+Key\+:\mbox{]}$>$ 
+\end{DoxyWarning}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_subclassing_8h}{P\+F\+Subclassing.\+h}\end{DoxyCompactItemize}

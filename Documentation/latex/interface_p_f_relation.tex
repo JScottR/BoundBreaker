@@ -1,0 +1,100 @@
+\hypertarget{interface_p_f_relation}{}\section{P\+F\+Relation Class Reference}
+\label{interface_p_f_relation}\index{P\+F\+Relation@{P\+F\+Relation}}
+
+
+{\ttfamily \#import $<$P\+F\+Relation.\+h$>$}
+
+Inheritance diagram for P\+F\+Relation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_relation}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Accessing Objects}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} \hyperlink{interface_p_f_query}{P\+F\+Query} $\ast$) -\/ \hyperlink{interface_p_f_relation_a0decdb1a7c7f408c352a92e77b741556}{query}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Modifying Relations}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_relation_a4af2f7f8c43502175ab80a8ef174ca7b}{add\+Object\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_relation_a41f3f149b3c8e7d179c74215fcfbfcda}{remove\+Object\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_relation_afc9c6cd9b377c4278ed64bcf1091323e}{target\+Class}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{interface_p_f_relation}{P\+F\+Relation}} class that is used to access all of the children of a many-\/to-\/many relationship. Each instance of {\ttfamily \hyperlink{interface_p_f_relation}{P\+F\+Relation}} is associated with a particular parent object and key. 
+
+Definition at line 25 of file P\+F\+Relation.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_relation_a4af2f7f8c43502175ab80a8ef174ca7b}{}\index{P\+F\+Relation@{P\+F\+Relation}!add\+Object\+:@{add\+Object\+:}}
+\index{add\+Object\+:@{add\+Object\+:}!P\+F\+Relation@{P\+F\+Relation}}
+\subsubsection[{add\+Object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Object} $\ast$)}]{object}
+\end{DoxyParamCaption}
+}\label{interface_p_f_relation_a4af2f7f8c43502175ab80a8ef174ca7b}
+Adds a relation to the passed in object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & A $<$\+P\+F\+Object$>$ object to add relation to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_relation_a0decdb1a7c7f408c352a92e77b741556}{}\index{P\+F\+Relation@{P\+F\+Relation}!query@{query}}
+\index{query@{query}!P\+F\+Relation@{P\+F\+Relation}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Query} $\ast$) query 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_relation_a0decdb1a7c7f408c352a92e77b741556}
+Returns a $<$\+P\+F\+Query$>$ object that can be used to get objects in this relation. \hypertarget{interface_p_f_relation_a41f3f149b3c8e7d179c74215fcfbfcda}{}\index{P\+F\+Relation@{P\+F\+Relation}!remove\+Object\+:@{remove\+Object\+:}}
+\index{remove\+Object\+:@{remove\+Object\+:}!P\+F\+Relation@{P\+F\+Relation}}
+\subsubsection[{remove\+Object\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\+Object\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+Object} $\ast$)}]{object}
+\end{DoxyParamCaption}
+}\label{interface_p_f_relation_a41f3f149b3c8e7d179c74215fcfbfcda}
+Removes a relation to the passed in object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & A $<$\+P\+F\+Object$>$ object to add relation to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_relation_afc9c6cd9b377c4278ed64bcf1091323e}{}\index{P\+F\+Relation@{P\+F\+Relation}!target\+Class@{target\+Class}}
+\index{target\+Class@{target\+Class}!P\+F\+Relation@{P\+F\+Relation}}
+\subsubsection[{target\+Class}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) target\+Class\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}\label{interface_p_f_relation_afc9c6cd9b377c4278ed64bcf1091323e}
+The name of the class of the target child objects. 
+
+Definition at line 30 of file P\+F\+Relation.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_relation_8h}{P\+F\+Relation.\+h}\end{DoxyCompactItemize}

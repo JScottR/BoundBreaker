@@ -1,0 +1,500 @@
+\hypertarget{interface_p_f_file}{}\section{P\+F\+File Class Reference}
+\label{interface_p_f_file}\index{P\+F\+File@{P\+F\+File}}
+
+
+{\ttfamily \#import $<$P\+F\+File.\+h$>$}
+
+Inheritance diagram for P\+F\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_file}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}{\bf Interrupting a Transfer}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a4bfb537da098271602f871f111e8b7d7}{cancel}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Creating a P\+F\+File}
+\label{_amgrp292407309c3e24225c1a037cdff8d731}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_file_a7602815ca9a5e7628b2727ba7dd93b22}{name}
+\item 
+N\+S\+String $\ast$ \hyperlink{interface_p_f_file_ada906196949937fe800cc0cab2bc10e4}{url}
+\item 
+(instancetype) + \hyperlink{interface_p_f_file_a274b191dc89c3d4f59bfaf3bfd542adb}{file\+With\+Data\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_file_acee1e5d9d9afc069c42dbc7f74f0a4b1}{file\+With\+Name\+:data\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_file_a42e218fd948ec52c2568525095e97d00}{file\+With\+Name\+:contents\+At\+Path\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_file_a7d63bb561115989271df08ec0c888ff4}{file\+With\+Name\+:data\+:content\+Type\+:}
+\item 
+(instancetype) + \hyperlink{interface_p_f_file_af4fdde536785b0c60ff6fe5ae63c273f}{file\+With\+Data\+:content\+Type\+:}
+\end{DoxyCompactItemize}
+\subsection*{Storing Data with Parse}
+\label{_amgrpd3949ae48a80e9fe812460f63702600e}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_file_a7c5c90890ac086b6acead25cb4777e2c}{is\+Dirty}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_file_ac9426d716ea9b57546ac40237051df53}{save}
+\item 
+(B\+O\+O\+L) -\/ \hyperlink{interface_p_f_file_ac5465c3823e73dd5e17eab67b629b6dc}{save\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_file_a93f883e430848b83e7ecd53811b00829}{save\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a8b38454eb589a3a64e48bf3ea327091a}{save\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a815a3e0ccf23f0e1c9c573ec38649258}{save\+In\+Background\+With\+Block\+:progress\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a962b01cfccc90ac5ffe6d009c31ff0af}{save\+In\+Background\+With\+Target\+:selector\+:}
+\end{DoxyCompactItemize}
+\subsection*{Getting Data from Parse}
+\label{_amgrp9145cb8d0764228031272533e3c2f601}%
+
+
+ 
+
+ \begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{interface_p_f_file_a097e8a889aaafc477ace9ba9fa607c54}{is\+Data\+Available}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Data $\ast$) -\/ \hyperlink{interface_p_f_file_a3ebfa05ef8b5f465313cdf5b5f0a305c}{get\+Data}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Input\+Stream $\ast$) -\/ \hyperlink{interface_p_f_file_ab7a062ad25457387959c2ac5bb7838af}{get\+Data\+Stream}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Data $\ast$) -\/ \hyperlink{interface_p_f_file_a6b6292c101b4bb5646713db0c795cfe5}{get\+Data\+:}
+\item 
+(\hyperlink{_p_f_nullability_8h_a528d97a96c5fb279a45c378f5657fca2}{P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Input\+Stream $\ast$) -\/ \hyperlink{interface_p_f_file_a8f0c2a44cb9bf11cc8a1a72091724b0e}{get\+Data\+Stream\+:}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_file_afa838c8cd04d76127d2fd089a1ab5def}{get\+Data\+In\+Background}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) -\/ \hyperlink{interface_p_f_file_ada0c56887e39c7c2a4dec3cb85e3dcde}{get\+Data\+Stream\+In\+Background}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a9cc27e24f952c4f1e589442fee9e0d01}{get\+Data\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a4bfc494366b2c7a8cb56f50d3c7cc37b}{get\+Data\+Stream\+In\+Background\+With\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_ab8e4ad2fe46274a6205a08e0e34bc2fb}{get\+Data\+In\+Background\+With\+Block\+:progress\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a30c2bad5ec70a9b274513f9fb933306f}{get\+Data\+Stream\+In\+Background\+With\+Block\+:progress\+Block\+:}
+\item 
+(void) -\/ \hyperlink{interface_p_f_file_a0aaf2e5e01ef1b72ad0a4c1f4b5b0189}{get\+Data\+In\+Background\+With\+Target\+:selector\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} representes a file of binary data stored on the \hyperlink{interface_parse}{Parse} servers. This can be a image, video, or anything else that an application needs to reference in a non-\/relational way. 
+
+Definition at line 23 of file P\+F\+File.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_file_a4bfb537da098271602f871f111e8b7d7}{}\index{P\+F\+File@{P\+F\+File}!cancel@{cancel}}
+\index{cancel@{cancel}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{cancel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) cancel 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a4bfb537da098271602f871f111e8b7d7}
+Cancels the current request (upload or download of file). \hypertarget{interface_p_f_file_a274b191dc89c3d4f59bfaf3bfd542adb}{}\index{P\+F\+File@{P\+F\+File}!file\+With\+Data\+:@{file\+With\+Data\+:}}
+\index{file\+With\+Data\+:@{file\+With\+Data\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{file\+With\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) file\+With\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Data $\ast$)}]{data}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a274b191dc89c3d4f59bfaf3bfd542adb}
+Creates a file with given data. A name will be assigned to it by the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The contents of the new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}}. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_af4fdde536785b0c60ff6fe5ae63c273f}{}\index{P\+F\+File@{P\+F\+File}!file\+With\+Data\+:content\+Type\+:@{file\+With\+Data\+:content\+Type\+:}}
+\index{file\+With\+Data\+:content\+Type\+:@{file\+With\+Data\+:content\+Type\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{file\+With\+Data\+:content\+Type\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) {\bf file\+With\+Data\+:} 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Data $\ast$)}]{data}
+\item[{contentType:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{content\+Type}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_af4fdde536785b0c60ff6fe5ae63c273f}
+Creates a file with given data and content type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The contents of the new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}}. \\
+\hline
+{\em content\+Type} & Represents M\+I\+M\+E type of the data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} object. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a42e218fd948ec52c2568525095e97d00}{}\index{P\+F\+File@{P\+F\+File}!file\+With\+Name\+:contents\+At\+Path\+:@{file\+With\+Name\+:contents\+At\+Path\+:}}
+\index{file\+With\+Name\+:contents\+At\+Path\+:@{file\+With\+Name\+:contents\+At\+Path\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{file\+With\+Name\+:contents\+At\+Path\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) file\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{name}
+\item[{contentsAtPath:(N\+S\+String $\ast$)}]{path}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a42e218fd948ec52c2568525095e97d00}
+Creates a file with the contents of another file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}}. The file name must begin with and alphanumeric character, and consist of alphanumeric characters, periods, spaces, underscores, or dashes. \\
+\hline
+{\em path} & The path to the file that will be uploaded to \hyperlink{interface_parse}{Parse}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_file_acee1e5d9d9afc069c42dbc7f74f0a4b1}{}\index{P\+F\+File@{P\+F\+File}!file\+With\+Name\+:data\+:@{file\+With\+Name\+:data\+:}}
+\index{file\+With\+Name\+:data\+:@{file\+With\+Name\+:data\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{file\+With\+Name\+:data\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) file\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{name}
+\item[{data:(N\+S\+Data $\ast$)}]{data}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_acee1e5d9d9afc069c42dbc7f74f0a4b1}
+Creates a file with given data and name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the new \hyperlink{interface_p_f_file}{P\+F\+File}. The file name must begin with and alphanumeric character, and consist of alphanumeric characters, periods, spaces, underscores, or dashes. \\
+\hline
+{\em data} & The contents of the new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} object. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a7d63bb561115989271df08ec0c888ff4}{}\index{P\+F\+File@{P\+F\+File}!file\+With\+Name\+:data\+:content\+Type\+:@{file\+With\+Name\+:data\+:content\+Type\+:}}
+\index{file\+With\+Name\+:data\+:content\+Type\+:@{file\+With\+Name\+:data\+:content\+Type\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{file\+With\+Name\+:data\+:content\+Type\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (instancetype) file\+With\+Name\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{name}
+\item[{data:(N\+S\+Data $\ast$)}]{data}
+\item[{contentType:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+String $\ast$)}]{content\+Type}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a7d63bb561115989271df08ec0c888ff4}
+Creates a file with given data, name and content type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}}. The file name must begin with and alphanumeric character, and consist of alphanumeric characters, periods, spaces, underscores, or dashes. \\
+\hline
+{\em data} & The contents of the new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}}. \\
+\hline
+{\em content\+Type} & Represents M\+I\+M\+E type of the data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} object. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a3ebfa05ef8b5f465313cdf5b5f0a305c}{}\index{P\+F\+File@{P\+F\+File}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Data $\ast$) get\+Data 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a3ebfa05ef8b5f465313cdf5b5f0a305c}
+{\itshape Synchronously} gets the data from cache if available or fetches its contents from the network.
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily N\+S\+Data} object containing file data. Returns {\ttfamily nil} if there was an error in fetching. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a6b6292c101b4bb5646713db0c795cfe5}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+:@{get\+Data\+:}}
+\index{get\+Data\+:@{get\+Data\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Data $\ast$) get\+Data\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a6b6292c101b4bb5646713db0c795cfe5}
+{\itshape Synchronously} gets the data from cache if available or fetches its contents from the network. Sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The {\ttfamily N\+S\+Data} object containing file data. Returns {\ttfamily nil} if there was an error in fetching. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_afa838c8cd04d76127d2fd089a1ab5def}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+In\+Background@{get\+Data\+In\+Background}}
+\index{get\+Data\+In\+Background@{get\+Data\+In\+Background}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) get\+Data\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_afa838c8cd04d76127d2fd089a1ab5def}
+This method is like $<$get\+Data$>$ but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+This can help applications with many large files avoid memory warnings.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interface_p_f_file_a3ebfa05ef8b5f465313cdf5b5f0a305c}{-\/ get\+Data}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+A stream containing the data. Returns {\ttfamily nil} if there was an error in fetching. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a9cc27e24f952c4f1e589442fee9e0d01}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+In\+Background\+With\+Block\+:@{get\+Data\+In\+Background\+With\+Block\+:}}
+\index{get\+Data\+In\+Background\+With\+Block\+:@{get\+Data\+In\+Background\+With\+Block\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Data\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Data\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a9cc27e24f952c4f1e589442fee9e0d01}
+{\itshape Asynchronously} gets the data from cache if available or fetches its contents from the network.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block should have the following argument signature\+: {\ttfamily $^\wedge$(N\+S\+Data $\ast$result, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_file_ab8e4ad2fe46274a6205a08e0e34bc2fb}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+In\+Background\+With\+Block\+:progress\+Block\+:@{get\+Data\+In\+Background\+With\+Block\+:progress\+Block\+:}}
+\index{get\+Data\+In\+Background\+With\+Block\+:progress\+Block\+:@{get\+Data\+In\+Background\+With\+Block\+:progress\+Block\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+In\+Background\+With\+Block\+:progress\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf get\+Data\+In\+Background\+With\+Block\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Data\+Result\+Block})}]{result\+Block}
+\item[{progressBlock:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Progress\+Block})}]{progress\+Block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_ab8e4ad2fe46274a6205a08e0e34bc2fb}
+{\itshape Asynchronously} gets the data from cache if available or fetches its contents from the network.
+
+This method will execute the progress\+Block periodically with the percent progress. {\ttfamily progress\+Block} will get called with {\ttfamily 100} before {\ttfamily result\+Block} is called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Block} & The block should have the following argument signature\+: (N\+S\+Data $\ast$result, N\+S\+Error $\ast$error) \\
+\hline
+{\em progress\+Block} & The block should have the following argument signature\+: (int percent\+Done) \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_file_a0aaf2e5e01ef1b72ad0a4c1f4b5b0189}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+In\+Background\+With\+Target\+:selector\+:@{get\+Data\+In\+Background\+With\+Target\+:selector\+:}}
+\index{get\+Data\+In\+Background\+With\+Target\+:selector\+:@{get\+Data\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Data\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a0aaf2e5e01ef1b72ad0a4c1f4b5b0189}
+\hypertarget{interface_p_f_file_ab7a062ad25457387959c2ac5bb7838af}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+Stream@{get\+Data\+Stream}}
+\index{get\+Data\+Stream@{get\+Data\+Stream}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Input\+Stream $\ast$) get\+Data\+Stream 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_ab7a062ad25457387959c2ac5bb7838af}
+This method is like $<$get\+Data$>$ but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+This can help applications with many large files avoid memory warnings.
+
+\begin{DoxyReturn}{Returns}
+A stream containing the data. Returns {\ttfamily nil} if there was an error in fetching. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a8f0c2a44cb9bf11cc8a1a72091724b0e}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+Stream\+:@{get\+Data\+Stream\+:}}
+\index{get\+Data\+Stream\+:@{get\+Data\+Stream\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+Stream\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} N\+S\+Input\+Stream $\ast$) get\+Data\+Stream\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a8f0c2a44cb9bf11cc8a1a72091724b0e}
+This method is like $<$get\+Data$>$ but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A stream containing the data. Returns nil if there was an error in fetching. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_ada0c56887e39c7c2a4dec3cb85e3dcde}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+Stream\+In\+Background@{get\+Data\+Stream\+In\+Background}}
+\index{get\+Data\+Stream\+In\+Background@{get\+Data\+Stream\+In\+Background}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+Stream\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) get\+Data\+Stream\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_ada0c56887e39c7c2a4dec3cb85e3dcde}
+This method is like $<$get\+Data\+In\+Background$>$ but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+This can help applications with many large files avoid memory warnings.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a4bfc494366b2c7a8cb56f50d3c7cc37b}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+Stream\+In\+Background\+With\+Block\+:@{get\+Data\+Stream\+In\+Background\+With\+Block\+:}}
+\index{get\+Data\+Stream\+In\+Background\+With\+Block\+:@{get\+Data\+Stream\+In\+Background\+With\+Block\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+Stream\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) get\+Data\+Stream\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Data\+Stream\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a4bfc494366b2c7a8cb56f50d3c7cc37b}
+This method is like $<$get\+Data\+In\+Background\+With\+Block\+:$>$ but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+This can help applications with many large files avoid memory warnings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block should have the following argument signature\+: {\ttfamily (N\+S\+Input\+Stream $\ast$result, N\+S\+Error $\ast$error)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_file_a30c2bad5ec70a9b274513f9fb933306f}{}\index{P\+F\+File@{P\+F\+File}!get\+Data\+Stream\+In\+Background\+With\+Block\+:progress\+Block\+:@{get\+Data\+Stream\+In\+Background\+With\+Block\+:progress\+Block\+:}}
+\index{get\+Data\+Stream\+In\+Background\+With\+Block\+:progress\+Block\+:@{get\+Data\+Stream\+In\+Background\+With\+Block\+:progress\+Block\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{get\+Data\+Stream\+In\+Background\+With\+Block\+:progress\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf get\+Data\+Stream\+In\+Background\+With\+Block\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Data\+Stream\+Result\+Block})}]{result\+Block}
+\item[{progressBlock:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Progress\+Block})}]{progress\+Block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a30c2bad5ec70a9b274513f9fb933306f}
+This method is like $<$get\+Data\+In\+Background\+With\+Block\+:progress\+Block\+:$>$ but avoids ever holding the entire {\ttfamily \hyperlink{interface_p_f_file}{P\+F\+File}} contents in memory at once.
+
+This can help applications with many large files avoid memory warnings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Block} & The block should have the following argument signature\+: {\ttfamily $^\wedge$(N\+S\+Input\+Stream $\ast$result, N\+S\+Error $\ast$error)}. \\
+\hline
+{\em progress\+Block} & The block should have the following argument signature\+: {\ttfamily $^\wedge$(int percent\+Done)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_file_ac9426d716ea9b57546ac40237051df53}{}\index{P\+F\+File@{P\+F\+File}!save@{save}}
+\index{save@{save}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) save 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_ac9426d716ea9b57546ac40237051df53}
+Saves the file {\itshape synchronously}.
+
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_ac5465c3823e73dd5e17eab67b629b6dc}{}\index{P\+F\+File@{P\+F\+File}!save\+:@{save\+:}}
+\index{save\+:@{save\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{save\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) save\+: 
+\begin{DoxyParamCaption}
+\item[{(N\+S\+Error $\ast$$\ast$)}]{error}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_ac5465c3823e73dd5e17eab67b629b6dc}
+Saves the file {\itshape synchronously} and sets an error if it occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & Pointer to an {\ttfamily N\+S\+Error} that will be set if necessary.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns whether the save succeeded. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a93f883e430848b83e7ecd53811b00829}{}\index{P\+F\+File@{P\+F\+File}!save\+In\+Background@{save\+In\+Background}}
+\index{save\+In\+Background@{save\+In\+Background}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{save\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf B\+F\+Task} $\ast$) save\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a93f883e430848b83e7ecd53811b00829}
+Saves the file {\itshape asynchronously}.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_file_a8b38454eb589a3a64e48bf3ea327091a}{}\index{P\+F\+File@{P\+F\+File}!save\+In\+Background\+With\+Block\+:@{save\+In\+Background\+With\+Block\+:}}
+\index{save\+In\+Background\+With\+Block\+:@{save\+In\+Background\+With\+Block\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{save\+In\+Background\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) save\+In\+Background\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a8b38454eb589a3a64e48bf3ea327091a}
+Saves the file {\itshape asynchronously} and executes the given block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_file_a815a3e0ccf23f0e1c9c573ec38649258}{}\index{P\+F\+File@{P\+F\+File}!save\+In\+Background\+With\+Block\+:progress\+Block\+:@{save\+In\+Background\+With\+Block\+:progress\+Block\+:}}
+\index{save\+In\+Background\+With\+Block\+:progress\+Block\+:@{save\+In\+Background\+With\+Block\+:progress\+Block\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{save\+In\+Background\+With\+Block\+:progress\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf save\+In\+Background\+With\+Block\+:} 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Boolean\+Result\+Block})}]{block}
+\item[{progressBlock:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+Progress\+Block})}]{progress\+Block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a815a3e0ccf23f0e1c9c573ec38649258}
+Saves the file {\itshape asynchronously} and executes the given block.
+
+This method will execute the progress\+Block periodically with the percent progress. {\ttfamily progress\+Block} will get called with {\ttfamily 100} before {\ttfamily result\+Block} is called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block should have the following argument signature\+: {\ttfamily $^\wedge$(B\+O\+O\+L succeeded, N\+S\+Error $\ast$error)} \\
+\hline
+{\em progress\+Block} & The block should have the following argument signature\+: {\ttfamily $^\wedge$(int percent\+Done)} \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_file_a962b01cfccc90ac5ffe6d009c31ff0af}{}\index{P\+F\+File@{P\+F\+File}!save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}}
+\index{save\+In\+Background\+With\+Target\+:selector\+:@{save\+In\+Background\+With\+Target\+:selector\+:}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{save\+In\+Background\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) save\+In\+Background\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_file_a962b01cfccc90ac5ffe6d009c31ff0af}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_p_f_file_a097e8a889aaafc477ace9ba9fa607c54}{}\index{P\+F\+File@{P\+F\+File}!is\+Data\+Available@{is\+Data\+Available}}
+\index{is\+Data\+Available@{is\+Data\+Available}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{is\+Data\+Available}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Data\+Available\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}\label{interface_p_f_file_a097e8a889aaafc477ace9ba9fa607c54}
+Whether the data is available in memory or needs to be downloaded. 
+
+Definition at line 169 of file P\+F\+File.\+h.
+
+\hypertarget{interface_p_f_file_a7c5c90890ac086b6acead25cb4777e2c}{}\index{P\+F\+File@{P\+F\+File}!is\+Dirty@{is\+Dirty}}
+\index{is\+Dirty@{is\+Dirty}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{is\+Dirty}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\+O\+O\+L) is\+Dirty\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}\label{interface_p_f_file_a7c5c90890ac086b6acead25cb4777e2c}
+Whether the file has been uploaded for the first time. 
+
+Definition at line 107 of file P\+F\+File.\+h.
+
+\hypertarget{interface_p_f_file_a7602815ca9a5e7628b2727ba7dd93b22}{}\index{P\+F\+File@{P\+F\+File}!name@{name}}
+\index{name@{name}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_file_a7602815ca9a5e7628b2727ba7dd93b22}
+The name of the file.
+
+Before the file is saved, this is the filename given by the user. After the file is saved, that name gets prefixed with a unique identifier. 
+
+Definition at line 93 of file P\+F\+File.\+h.
+
+\hypertarget{interface_p_f_file_ada906196949937fe800cc0cab2bc10e4}{}\index{P\+F\+File@{P\+F\+File}!url@{url}}
+\index{url@{url}!P\+F\+File@{P\+F\+File}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\+S\+String$\ast$) url\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}\label{interface_p_f_file_ada906196949937fe800cc0cab2bc10e4}
+The url of the file. 
+
+Definition at line 98 of file P\+F\+File.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_file_8h}{P\+F\+File.\+h}\end{DoxyCompactItemize}

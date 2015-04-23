@@ -1,0 +1,114 @@
+\hypertarget{interface_p_f_anonymous_utils}{}\section{P\+F\+Anonymous\+Utils Class Reference}
+\label{interface_p_f_anonymous_utils}\index{P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}}
+
+
+{\ttfamily \#import $<$P\+F\+Anonymous\+Utils.\+h$>$}
+
+Inheritance diagram for P\+F\+Anonymous\+Utils\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_f_anonymous_utils}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{Indent}{\bf Creating an Anonymous User}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_b_f_task}{B\+F\+Task} $\ast$) + \hyperlink{interface_p_f_anonymous_utils_a45b63477e2ff44a1ec2e3ea4438253c8}{log\+In\+In\+Background}
+\item 
+(void) + \hyperlink{interface_p_f_anonymous_utils_abafd88ec76cac16323cfae10eebd391e}{log\+In\+With\+Block\+:}
+\item 
+(void) + \hyperlink{interface_p_f_anonymous_utils_a5e5b5bbca5fb7403410c5eaa06a04a10}{log\+In\+With\+Target\+:selector\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Determining Whether a User is Anonymous}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+O\+L) + \hyperlink{interface_p_f_anonymous_utils_af0d0bc5278f9633dd22d648f8c0a5c76}{is\+Linked\+With\+User\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Provides utility functions for working with Anonymously logged-\/in users. Anonymous users have some unique characteristics\+:
+
+
+\begin{DoxyItemize}
+\item Anonymous users don\textquotesingle{}t need a user name or password.
+\item Once logged out, an anonymous user cannot be recovered.
+\item When the current user is anonymous, the following methods can be used to switch to a different user or convert the anonymous user into a regular one\+:
+\item sign\+Up converts an anonymous user to a standard user with the given username and password. Data associated with the anonymous user is retained.
+\item log\+In switches users without converting the anonymous user. Data associated with the anonymous user will be lost.
+\item Service log\+In (e.\+g. Facebook, Twitter) will attempt to convert the anonymous user into a standard user by linking it to the service. If a user already exists that is linked to the service, it will instead switch to the existing user.
+\item Service linking (e.\+g. Facebook, Twitter) will convert the anonymous user into a standard user by linking it to the service. 
+\end{DoxyItemize}
+
+Definition at line 37 of file P\+F\+Anonymous\+Utils.\+h.
+
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_p_f_anonymous_utils_af0d0bc5278f9633dd22d648f8c0a5c76}{}\index{P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}!is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}}
+\index{is\+Linked\+With\+User\+:@{is\+Linked\+With\+User\+:}!P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}}
+\subsubsection[{is\+Linked\+With\+User\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (B\+O\+O\+L) is\+Linked\+With\+User\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User} $\ast$)}]{user}
+\end{DoxyParamCaption}
+}\label{interface_p_f_anonymous_utils_af0d0bc5278f9633dd22d648f8c0a5c76}
+Whether the $<$\+P\+F\+User$>$ object is logged in anonymously.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & $<$\+P\+F\+User$>$ object to check for anonymity. The user must be logged in on this device.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+E\+S} if the user is anonymous. {\ttfamily N\+O} if the user is not the current user or is not anonymous. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_anonymous_utils_a45b63477e2ff44a1ec2e3ea4438253c8}{}\index{P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}!log\+In\+In\+Background@{log\+In\+In\+Background}}
+\index{log\+In\+In\+Background@{log\+In\+In\+Background}!P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}}
+\subsubsection[{log\+In\+In\+Background}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf B\+F\+Task} $\ast$) log\+In\+In\+Background 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}\label{interface_p_f_anonymous_utils_a45b63477e2ff44a1ec2e3ea4438253c8}
+Creates an anonymous user asynchronously and sets as a result to {\ttfamily \hyperlink{interface_b_f_task}{B\+F\+Task}}.
+
+\begin{DoxyReturn}{Returns}
+The task, that encapsulates the work being done. 
+\end{DoxyReturn}
+\hypertarget{interface_p_f_anonymous_utils_abafd88ec76cac16323cfae10eebd391e}{}\index{P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}!log\+In\+With\+Block\+:@{log\+In\+With\+Block\+:}}
+\index{log\+In\+With\+Block\+:@{log\+In\+With\+Block\+:}!P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}}
+\subsubsection[{log\+In\+With\+Block\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Block\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E} {\bf P\+F\+User\+Result\+Block})}]{block}
+\end{DoxyParamCaption}
+}\label{interface_p_f_anonymous_utils_abafd88ec76cac16323cfae10eebd391e}
+Creates an anonymous user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to execute when anonymous user creation is complete. It should have the following argument signature\+: {\ttfamily $^\wedge$(\hyperlink{interface_p_f_user}{P\+F\+User} $\ast$user, N\+S\+Error $\ast$error)}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_p_f_anonymous_utils_a5e5b5bbca5fb7403410c5eaa06a04a10}{}\index{P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}!log\+In\+With\+Target\+:selector\+:@{log\+In\+With\+Target\+:selector\+:}}
+\index{log\+In\+With\+Target\+:selector\+:@{log\+In\+With\+Target\+:selector\+:}!P\+F\+Anonymous\+Utils@{P\+F\+Anonymous\+Utils}}
+\subsubsection[{log\+In\+With\+Target\+:selector\+:}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) log\+In\+With\+Target\+: 
+\begin{DoxyParamCaption}
+\item[{({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} id)}]{target}
+\item[{selector:({\bf P\+F\+\_\+\+N\+U\+L\+L\+A\+B\+L\+E\+\_\+\+S} S\+E\+L)}]{selector}
+\end{DoxyParamCaption}
+}\label{interface_p_f_anonymous_utils_a5e5b5bbca5fb7403410c5eaa06a04a10}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jscottrichards/\+Documents/\+Git\+Hub/\+Bound\+Breaker/\+Project/\+Bound Breaker/\+Parse.\+framework/\+Headers/\hyperlink{_p_f_anonymous_utils_8h}{P\+F\+Anonymous\+Utils.\+h}\end{DoxyCompactItemize}
