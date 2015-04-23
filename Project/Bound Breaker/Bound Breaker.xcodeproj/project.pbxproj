@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29348F1B1AE891CD000945A0 /* leaderBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29348F1A1AE891CD000945A0 /* leaderBoardViewController.m */; };
 		2973F91B1ACB8B4C00170CAA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2973F9151ACB8B4C00170CAA /* Bolts.framework */; };
 		2973F91C1ACB8B4C00170CAA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2973F9161ACB8B4C00170CAA /* Parse.framework */; };
 		2973F91D1ACB8B4C00170CAA /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2973F9171ACB8B4C00170CAA /* ParseCrashReporting.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29348F191AE891CD000945A0 /* leaderBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leaderBoardViewController.h; sourceTree = "<group>"; };
+		29348F1A1AE891CD000945A0 /* leaderBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leaderBoardViewController.m; sourceTree = "<group>"; };
 		2973F9151ACB8B4C00170CAA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		2973F9161ACB8B4C00170CAA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		2973F9171ACB8B4C00170CAA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				29E9D5721ACC981D00161D91 /* LoginViewController.h */,
 				29E9D5731ACC981D00161D91 /* LoginViewController.m */,
 				29CBC4EB1AA149DF0067E2E3 /* Main.storyboard */,
+				29348F191AE891CD000945A0 /* leaderBoardViewController.h */,
+				29348F1A1AE891CD000945A0 /* leaderBoardViewController.m */,
 				29E9D5751ACCA71100161D91 /* ProfileViewController.h */,
 				29E9D5761ACCA71100161D91 /* ProfileViewController.m */,
 				29CBC4EE1AA149DF0067E2E3 /* Images.xcassets */,
@@ -339,6 +344,7 @@
 				A20B7F141AE0629F00FE1250 /* Game.m in Sources */,
 				29CBC4E41AA149DF0067E2E3 /* main.m in Sources */,
 				29E9D5771ACCA71100161D91 /* ProfileViewController.m in Sources */,
+				29348F1B1AE891CD000945A0 /* leaderBoardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
