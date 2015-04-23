@@ -1,10 +1,12 @@
-//
-//  LoginViewController.m
-//  Bound Breaker
-//
-//  Created by JScott Richards on 4/1/15.
-//
-//
+
+/*!
+ @header LoginViewController.m
+ 
+ @brief This is the method file for LoginViewController.m. implement code for loging in and creating an account
+ 
+ @author JScott Richards
+ @copyright 2015 JScott Richards
+ */
 
 #import "LoginViewController.h"
 
@@ -20,6 +22,7 @@
     
 }
 -(void)viewDidAppear:(BOOL)animated{
+    /*! @brief If user is already sign in skip page and go to main menu */
     PFUser *user = [PFUser currentUser];
     if (user.username != nil) {
         [self performSegueWithIdentifier:@"login" sender:self];
@@ -49,8 +52,7 @@
     
 }
 
-
-
+/*! @brief Make sure fields aren't empty for registration */
 -(void) checkFieldsComplete {
     if ([_emailField.text isEqualToString:@""] || [_userNameField.text isEqualToString:@""] || [_passwordField.text isEqualToString:@""] || [_reEnterPasswordField.text isEqualToString:@""]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ooopss!" message:@"You need to complate all fields" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
@@ -60,6 +62,7 @@
         [self checkPasswordsMatch];
     }
 }
+/*! @brief Passords must be equal to finish registration */
 -(void) checkPasswordsMatch {
     if (![_passwordField.text isEqualToString:_reEnterPasswordField.text]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ooopss!" message:@"Passwords don't match" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
@@ -69,6 +72,7 @@
         [self registerNewUser];
     }
 }
+/*! @brief Create new account and set highscore to zero */
 -(void) registerNewUser {
     PFUser *newUser = [PFUser user];
     newUser.username = _userNameField.text;
@@ -85,7 +89,7 @@
         }
     }];
 }
-
+/*! @brief login and log in memory */
 - (IBAction)loginButton:(id)sender {
     [PFUser logInWithUsernameInBackground:_loginUsernameField.text password:_loginPasswordField.text block:^(PFUser *user, NSError *error) {
         if (!error) {
