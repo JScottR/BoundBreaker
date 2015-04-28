@@ -1,5 +1,4 @@
 #Bound Breaker
-========
 An addiciting iPhone Application 
 
 Contributors
@@ -10,7 +9,7 @@ Contributors
 * John Richards
 
 Repository Layout 
-========
+---------
 - Project/Bound Breaker
   - Main XCode Project
   - Framework files are for App Features
