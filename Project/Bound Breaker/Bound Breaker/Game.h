@@ -9,53 +9,59 @@
 
 #import <UIKit/UIKit.h>
 /*! Variables */
-bool Right;
-bool Left;
+bool right;
+bool left;
 int randomLongObstacle1Placement;
 int randomLongObstacle2Placement;
 int randomLongObstacle3Placement;
 int randomLongObstacle4Placement;
-int ScoreNumber;
-NSInteger HighScoreNumber;
+int scoreNumber;
+NSInteger highScoreNumber;
 
 /*! User interface elements */
 @interface Game : UIViewController
 {
-    IBOutlet UIButton *TapRight;
-    IBOutlet UIButton *TapLeft;
-    IBOutlet UIButton *GameOver;
-    IBOutlet UIButton *EasyDifficultyButton;
-    IBOutlet UIButton *MediumDifficultyButton;
-    IBOutlet UIButton *HardDifficultyButton;
+    IBOutlet UIButton *tapRight;
+    IBOutlet UIButton *tapLeft;
+    IBOutlet UIButton *gameOver;
+    IBOutlet UIButton *easyDifficultyButton;
+    IBOutlet UIButton *mediumDifficultyButton;
+    IBOutlet UIButton *hardDifficultyButton;
     
-    IBOutlet UIImageView *Ball;
-    IBOutlet UIImageView *longObstacle1;
-    IBOutlet UIImageView *longObstacle2;
-    IBOutlet UIImageView *longObstacle3;
-    IBOutlet UIImageView *longObstacle4;
+    IBOutlet UIImageView *ball;
+    IBOutlet UIImageView *longObstacle1_1;
+    IBOutlet UIImageView *longObstacle1_2;
+    IBOutlet UIImageView *longObstacle2_1;
+    IBOutlet UIImageView *longObstacle2_2;
+    IBOutlet UIImageView *singleObstacle1_1;
+    IBOutlet UIImageView *singleObstacle1_2;
+    IBOutlet UIImageView *singleObstacle1_3;
+    IBOutlet UIImageView *singleObstacle2_1;
+    IBOutlet UIImageView *singleObstacle2_2;
+    IBOutlet UIImageView *singleObstacle2_3;
     
-    IBOutlet UILabel *WelcomeLabel;
+    IBOutlet UILabel *welcomeLabel;
     
-    NSTimer *ObstacleMovement;
+    NSTimer *obstacleMovement;
 }
 
 /*! Actions and methods */
--(IBAction)StartGame:(id)sender;
--(IBAction)EasyDifficulty:(id)sender;
--(IBAction)MediumDifficulty:(id)sender;
--(IBAction)HardDifficulty:(id)sender;
--(IBAction)RightPress:(id)sender;
--(IBAction)RightLiftInside:(id)sender;
--(IBAction)RightLiftOutside:(id)sender;
--(IBAction)LeftPress:(id)sender;
--(IBAction)LeftLiftInside:(id)sender;
--(IBAction)LeftLiftOutside:(id)sender;
--(void)ObstaclesMoving;
+-(IBAction)startGame:(id)sender;
+-(IBAction)easyDifficulty:(id)sender;
+-(IBAction)mediumDifficulty:(id)sender;
+-(IBAction)hardDifficulty:(id)sender;
+-(IBAction)rightPress:(id)sender;
+-(IBAction)rightLiftInside:(id)sender;
+-(IBAction)rightLiftOutside:(id)sender;
+-(IBAction)leftPress:(id)sender;
+-(IBAction)leftLiftInside:(id)sender;
+-(IBAction)leftLiftOutside:(id)sender;
+-(void)obstaclesMoving;
 -(void)ballTouchingObstacle;
 -(void)ballNotTouchingObstacle;
--(void)PlaceObstacles1;
--(void)PlaceObstacles2;
--(void)Score;
--(void)GameOver;
+-(void)placeObstacles1;
+-(void)placeObstacles2;
+-(void)score;
+-(void)gameOver;
 
 @end

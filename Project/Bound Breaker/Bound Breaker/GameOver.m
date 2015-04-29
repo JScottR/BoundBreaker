@@ -12,8 +12,8 @@
 
 /*! @brief Method that executes immediately upon loading */
 - (void)viewDidLoad {
-    scoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber];
-    highscoreLabel.text = [NSString stringWithFormat:@"%li", (long)HighScoreNumber];
+    scoreLabel.text = [NSString stringWithFormat:@"%i", scoreNumber];
+    highScoreLabel.text = [NSString stringWithFormat:@"%li", (long)highScoreNumber];
 }
 
 @end

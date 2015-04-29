@@ -19,8 +19,8 @@
 /*! Screen top declared as negative to have obstacles regenerate offscreen */
 int screenTop = -30;
 int screenBottom = 645;
-int screenRight = 346;
-int screenLeft = 20;
+int screenright = 346;
+int screenleft = 20;
 /*! Variables that deal with the ball/player */
 int ballSpeed = 3;
 int defaultBallYCoord = 525;
@@ -37,135 +37,141 @@ int longObstacleWidth = 290;
 int obstacleGeneratorBuffer = 10;
 
 /*! @brief Action that sets difficulty to easy */
--(IBAction)EasyDifficulty:(id)sender{
+-(IBAction)easyDifficulty:(id)sender{
     obstacleSpeed = 1;
-    EasyDifficultyButton.hidden = TRUE;
-    MediumDifficultyButton.hidden = TRUE;
-    HardDifficultyButton.hidden = TRUE;
+    easyDifficultyButton.hidden = TRUE;
+    mediumDifficultyButton.hidden = TRUE;
+    hardDifficultyButton.hidden = TRUE;
 }
 /*! @brief Action that sets difficulty to medium */
--(IBAction)MediumDifficulty:(id)sender{
+-(IBAction)mediumDifficulty:(id)sender{
     obstacleSpeed = 2;
-    EasyDifficultyButton.hidden = TRUE;
-    MediumDifficultyButton.hidden = TRUE;
-    HardDifficultyButton.hidden = TRUE;
+    easyDifficultyButton.hidden = TRUE;
+    mediumDifficultyButton.hidden = TRUE;
+    hardDifficultyButton.hidden = TRUE;
 }
 /*! @brief Action that sets difficulty to hard */
--(IBAction)HardDifficulty:(id)sender{
+-(IBAction)hardDifficulty:(id)sender{
     obstacleSpeed = 3;
-    EasyDifficultyButton.hidden = TRUE;
-    MediumDifficultyButton.hidden = TRUE;
-    HardDifficultyButton.hidden = TRUE;
+    easyDifficultyButton.hidden = TRUE;
+    mediumDifficultyButton.hidden = TRUE;
+    hardDifficultyButton.hidden = TRUE;
 }
 
 /*! @brief Action that begins the game */
--(IBAction)StartGame:(id)sender{
+-(IBAction)startGame:(id)sender{
     /*! Hide/show elements */
-    TapRight.hidden = FALSE;
-    TapLeft.hidden = FALSE;
-    Right = FALSE;
-    Left = FALSE;
-    longObstacle1.hidden = FALSE;
-    longObstacle2.hidden = FALSE;
-    longObstacle3.hidden = TRUE;
-    longObstacle4.hidden = TRUE;
-    WelcomeLabel.hidden = TRUE;
+    tapRight.hidden = FALSE;
+    tapLeft.hidden = FALSE;
+    right = FALSE;
+    left = FALSE;
+    longObstacle1_1.hidden = FALSE;
+    longObstacle1_2.hidden = FALSE;
+    longObstacle2_1.hidden = TRUE;
+    longObstacle2_2.hidden = TRUE;
+    singleObstacle1_1.hidden = TRUE;
+    singleObstacle1_2.hidden = TRUE;
+    singleObstacle1_3.hidden = TRUE;
+    singleObstacle2_1.hidden = TRUE;
+    singleObstacle2_2.hidden = TRUE;
+    singleObstacle2_3.hidden = TRUE;
+    welcomeLabel.hidden = TRUE;
     /*! Deal with user information */
-    ScoreNumber = 0;
+    scoreNumber = 0;
     PFUser *user = [PFUser currentUser];
     NSNumber *currentHighScore = user[@"highScore"];
-    HighScoreNumber = [currentHighScore intValue];
+    highScoreNumber = [currentHighScore intValue];
    
     /*! Start game by placing first obstacle */
-    [self PlaceObstacles1];
-    ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstaclesMoving) userInfo:nil repeats:TRUE];
+    [self placeObstacles1];
+    obstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(obstaclesMoving) userInfo:nil repeats:TRUE];
 }
 
 /*! @brief Method that increases score and logs it */
--(void)Score{
-    ScoreNumber++;
-    /*! ScoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber]; */
-    NSLog(@"%d", ScoreNumber);
+-(void)score{
+    scoreNumber++;
+    /*! scoreLabel.text = [NSString stringWithFormat:@"%i", ScoreNumber]; */
+    NSLog(@"%d", scoreNumber);
 }
 
 /*! @brief Action that initializes ball right movement
  Triggered by pressing the right movement button */
--(IBAction)RightPress:(id)sender{
-    Right = TRUE;
+-(IBAction)rightPress:(id)sender{
+    right = TRUE;
 }
 /*! @brief Action that deactivates ball right movement
  Triggered by releasing inside of the right movement button */
--(IBAction)RightLiftInside:(id)sender{
-    Right = FALSE;
+-(IBAction)rightLiftInside:(id)sender{
+    right = FALSE;
 }
 /*! @brief Action that deactivates ball right movement
  Triggered by releasing outside of the right movement button */
--(IBAction)RightLiftOutside:(id)sender{
-    Right = FALSE;
+-(IBAction)rightLiftOutside:(id)sender{
+    right = FALSE;
 }
 
 /*! @brief Action that deactivates left ball movement
  Triggered by pressing the left movement button */
--(IBAction)LeftPress:(id)sender{
-    Left = TRUE;
+-(IBAction)leftPress:(id)sender{
+    left = TRUE;
 }
 /*! @brief Action that deactivates ball left movement
  Triggered by releasing inside of the left movement button */
--(IBAction)LeftLiftInside:(id)sender{
-    Left = FALSE;
+-(IBAction)leftLiftInside:(id)sender{
+    left = FALSE;
 }
 /*! @brief Action that deactivates ball left movement
  Triggered by releasing outside of the left movement button */
--(IBAction)LeftLiftOutside:(id)sender{
-    Left = FALSE;
+-(IBAction)leftLiftOutside:(id)sender{
+    left = FALSE;
 }
 
 
-/*! @brief Method triggered by the ObstacleMovement timer
+/*! @brief Method triggered by the obstacleMovement timer
  Executes methods involved with motion */
--(void)ObstaclesMoving{
+-(void)obstaclesMoving{
     /*! Move ball if movement buttons are pressed, checking that not at edge or touching obstacles
         Must be modified with each new obstacle to prevent overlap */
-    if(Right == TRUE){
-        if((Ball.center.x < screenRight)
-           & !CGRectIntersectsRect(Ball.frame, longObstacle1.frame)
-           & !CGRectIntersectsRect(Ball.frame, longObstacle2.frame)
-           & !CGRectIntersectsRect(Ball.frame, longObstacle3.frame)
-           & !CGRectIntersectsRect(Ball.frame, longObstacle4.frame)){
-            Ball.center = CGPointMake(Ball.center.x + ballSpeed, Ball.center.y);
+    if(right == TRUE){
+        if((ball.center.x < screenright)
+           & !CGRectIntersectsRect(ball.frame, longObstacle1_1.frame)
+           & !CGRectIntersectsRect(ball.frame, longObstacle1_2.frame)
+           & !CGRectIntersectsRect(ball.frame, longObstacle2_1.frame)
+           & !CGRectIntersectsRect(ball.frame, longObstacle2_2.frame)){
+            ball.center = CGPointMake(ball.center.x + ballSpeed, ball.center.y);
         }
     }
-    if(Left == TRUE){
-        if((Ball.center.x > screenLeft)
-            & !CGRectIntersectsRect(Ball.frame, longObstacle1.frame)
-            & !CGRectIntersectsRect(Ball.frame, longObstacle2.frame)
-            & !CGRectIntersectsRect(Ball.frame, longObstacle3.frame)
-            & !CGRectIntersectsRect(Ball.frame, longObstacle4.frame)){
-            Ball.center = CGPointMake(Ball.center.x - ballSpeed, Ball.center.y);
+    if(left == TRUE){
+        if((ball.center.x > screenleft)
+            & !CGRectIntersectsRect(ball.frame, longObstacle1_1.frame)
+            & !CGRectIntersectsRect(ball.frame, longObstacle1_2.frame)
+            & !CGRectIntersectsRect(ball.frame, longObstacle2_1.frame)
+            & !CGRectIntersectsRect(ball.frame, longObstacle2_2.frame)){
+            ball.center = CGPointMake(ball.center.x - ballSpeed, ball.center.y);
         }
     }
     
     /*! Move obstacles towards bottom of screen */
-    longObstacle1.center = CGPointMake(longObstacle1.center.x, longObstacle1.center.y + obstacleSpeed);
-    longObstacle2.center = CGPointMake(longObstacle2.center.x, longObstacle2.center.y + obstacleSpeed);
-    longObstacle3.center = CGPointMake(longObstacle3.center.x, longObstacle3.center.y + obstacleSpeed);
-    longObstacle4.center = CGPointMake(longObstacle4.center.x, longObstacle4.center.y + obstacleSpeed);
+    longObstacle1_1.center = CGPointMake(longObstacle1_1.center.x, longObstacle1_1.center.y + obstacleSpeed);
+    longObstacle1_2.center = CGPointMake(longObstacle1_2.center.x, longObstacle1_2.center.y + obstacleSpeed);
+    longObstacle2_1.center = CGPointMake(longObstacle2_1.center.x, longObstacle2_1.center.y + obstacleSpeed);
+    longObstacle2_2.center = CGPointMake(longObstacle2_2.center.x, longObstacle2_2.center.y + obstacleSpeed);
     
     /*! Place obstacles based on postion of other obstacles */
     /*! Highly variable depending on number of obstacles and obtacle types */
-    if(longObstacle1.center.y > abs(obstacleDistance-screenTop) & longObstacle1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
-        [self PlaceObstacles2];
+    if(longObstacle1_1.center.y > abs(obstacleDistance-screenTop) & longObstacle1_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
+        [self placeObstacles2];
     }
     
-    if(longObstacle3.center.y > abs(obstacleDistance-screenTop) & longObstacle3.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
-        [self PlaceObstacles1];
+    if(longObstacle2_1.center.y > abs(obstacleDistance-screenTop) & longObstacle2_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
+        [self placeObstacles1];
     }
     
     /*! Move ball towards bottom of screen if touching non-hidden obstacles, otherwise move ball up */
-    if(((longObstacle1.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle1.frame))
-       | ((longObstacle2.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle2.frame))
-       | ((longObstacle3.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle3.frame))
-       | ((longObstacle4.hidden == FALSE) & CGRectIntersectsRect(Ball.frame, longObstacle4.frame))) {
+    if(((longObstacle1_1.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle1_1.frame))
+       | ((longObstacle1_2.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle1_2.frame))
+       | ((longObstacle2_1.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle2_1.frame))
+       | ((longObstacle2_2.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle2_2.frame))) {
         [self ballTouchingObstacle];
     }
     else{
@@ -174,61 +180,61 @@ int obstacleGeneratorBuffer = 10;
     
     /*! Increase score when non-hidden obstacles pass the ball
      Must be modified with each new obstacle added */
-    if((longObstacle1.hidden == FALSE & longObstacle1.center.y >= scoreYCoord & longObstacle1.center.y < (scoreYCoord+obstacleSpeed)) | (longObstacle3.hidden == FALSE & longObstacle3.center.y >= scoreYCoord & longObstacle3.center.y < (scoreYCoord+obstacleSpeed))){
-        [self Score];
+    if((longObstacle1_1.hidden == FALSE & longObstacle1_1.center.y >= scoreYCoord & longObstacle1_1.center.y < (scoreYCoord+obstacleSpeed)) | (longObstacle2_1.hidden == FALSE & longObstacle2_1.center.y >= scoreYCoord & longObstacle2_1.center.y < (scoreYCoord+obstacleSpeed))){
+        [self score];
     }
     
     /*! Game over if ball touches bottom of screen */
-    if(Ball.center.y > screenBottom) {
-        [self GameOver];
+    if(ball.center.y > screenBottom) {
+        [self gameOver];
     }
 }
 
 /*! @brief Method that moves ball down if touching obstacles */
 -(void)ballTouchingObstacle{
-    Ball.center = CGPointMake(Ball.center.x, Ball.center.y + obstacleSpeed);
+    ball.center = CGPointMake(ball.center.x, ball.center.y + obstacleSpeed);
 }
 /*! @brief Method that moves ball up towards default y coordinate */
 -(void)ballNotTouchingObstacle{
-    if(Ball.center.y > defaultBallYCoord){
-        Ball.center = CGPointMake(Ball.center.x, Ball.center.y - recoverySpeed);
+    if(ball.center.y > defaultBallYCoord){
+        ball.center = CGPointMake(ball.center.x, ball.center.y - recoverySpeed);
     }
 }
 
-/*! @brief Method that regenerates longObstacle1 at the top with random x coordinate */
--(void)PlaceObstacles1{
-    randomLongObstacle1Placement = arc4random() %abs(screenRight-screenLeft);
+/*! @brief Method that regenerates longObstacle1_1 at the top with random x coordinate */
+-(void)placeObstacles1{
+    randomLongObstacle1Placement = arc4random() %abs(screenright-screenleft);
     randomLongObstacle2Placement = randomLongObstacle1Placement + longObstacleWidth + obstacleGap;
 
-    longObstacle1.center = CGPointMake(randomLongObstacle1Placement, screenTop);
-    longObstacle2.center = CGPointMake(randomLongObstacle2Placement, screenTop);
+    longObstacle1_1.center = CGPointMake(randomLongObstacle1Placement, screenTop);
+    longObstacle1_2.center = CGPointMake(randomLongObstacle2Placement, screenTop);
         
-    longObstacle1.hidden = FALSE;
-    longObstacle2.hidden = FALSE;
+    longObstacle1_1.hidden = FALSE;
+    longObstacle1_2.hidden = FALSE;
 }
-/*! @brief Method that regenerates longObstacle2 at the top with random x coordinate */
--(void)PlaceObstacles2{
-    randomLongObstacle3Placement = arc4random() %abs(screenRight-screenLeft);
+/*! @brief Method that regenerates longObstacle1_2 at the top with random x coordinate */
+-(void)placeObstacles2{
+    randomLongObstacle3Placement = arc4random() %abs(screenright-screenleft);
     randomLongObstacle4Placement = randomLongObstacle3Placement + longObstacleWidth + obstacleGap;
     
-    longObstacle3.center = CGPointMake(randomLongObstacle3Placement, screenTop);
-    longObstacle4.center = CGPointMake(randomLongObstacle4Placement, screenTop);
+    longObstacle2_1.center = CGPointMake(randomLongObstacle3Placement, screenTop);
+    longObstacle2_2.center = CGPointMake(randomLongObstacle4Placement, screenTop);
         
-    longObstacle3.hidden = FALSE;
-    longObstacle4.hidden = FALSE;
+    longObstacle2_1.hidden = FALSE;
+    longObstacle2_2.hidden = FALSE;
 }
 
 
 /*! @brief Method that executes once ball touches bottom of screen */
--(void)GameOver{
+-(void)gameOver{
     /*! Stop timers */
-    [ObstacleMovement invalidate];
+    [obstacleMovement invalidate];
     /*! Update highest score if needed */
-    if(ScoreNumber > HighScoreNumber) {
-        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
+    if(scoreNumber > highScoreNumber) {
+        [[NSUserDefaults standardUserDefaults] setInteger:scoreNumber forKey:@"HighScoreSaved"];
         PFUser *user = [PFUser currentUser];
-        NSNumber *newHighScore = [NSNumber numberWithInt:ScoreNumber];
-        user[@"highScore"] = newHighScore;
+        NSNumber *newHighScore = [NSNumber numberWithInt:scoreNumber];
+        user[@"highscore"] = newHighScore;
         NSLog(@"%@",newHighScore);
         [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
             if (!error) {
@@ -237,35 +243,48 @@ int obstacleGeneratorBuffer = 10;
         }];
     }
     /*! Hide/show elements */
-    GameOver.hidden = FALSE;
-    TapRight.hidden = TRUE;
-    TapLeft.hidden = TRUE;
-    Ball.hidden = TRUE;
-    longObstacle1.hidden = TRUE;
-    longObstacle2.hidden = TRUE;
-    longObstacle3.hidden = TRUE;
-    longObstacle4.hidden = TRUE;
+    gameOver.hidden = FALSE;
+    tapRight.hidden = TRUE;
+    tapLeft.hidden = TRUE;
+    ball.hidden = TRUE;
+    longObstacle1_1.hidden = TRUE;
+    longObstacle1_2.hidden = TRUE;
+    longObstacle2_1.hidden = TRUE;
+    longObstacle2_2.hidden = TRUE;
+    singleObstacle1_1.hidden = TRUE;
+    singleObstacle1_2.hidden = TRUE;
+    singleObstacle1_3.hidden = TRUE;
+    singleObstacle2_1.hidden = TRUE;
+    singleObstacle2_2.hidden = TRUE;
+    singleObstacle2_3.hidden = TRUE;
 }
 
 
 /*! @brief Method that executes immediately upon loading */
 - (void)viewDidLoad {
     /*! Hide/show elements */
-    EasyDifficultyButton.hidden = FALSE;
-    MediumDifficultyButton.hidden = FALSE;
-    HardDifficultyButton.hidden = FALSE;
-    GameOver.hidden = TRUE;
-    TapRight.hidden = TRUE;
-    TapLeft.hidden = TRUE;
-    Right = FALSE;
-    Left = FALSE;
-    longObstacle1.hidden = TRUE;
-    longObstacle2.hidden = TRUE;
-    longObstacle3.hidden = TRUE;
-    longObstacle4.hidden = TRUE;
-    WelcomeLabel.hidden = FALSE;
+    easyDifficultyButton.hidden = FALSE;
+    mediumDifficultyButton.hidden = FALSE;
+    hardDifficultyButton.hidden = FALSE;
+    gameOver.hidden = TRUE;
+    tapRight.hidden = TRUE;
+    tapLeft.hidden = TRUE;
+    right = FALSE;
+    left = FALSE;
+    longObstacle1_1.hidden = TRUE;
+    longObstacle1_2.hidden = TRUE;
+    longObstacle2_1.hidden = TRUE;
+    longObstacle2_2.hidden = TRUE;
+    singleObstacle1_1.hidden = TRUE;
+    singleObstacle1_2.hidden = TRUE;
+    singleObstacle1_3.hidden = TRUE;
+    singleObstacle2_1.hidden = TRUE;
+    singleObstacle2_2.hidden = TRUE;
+    singleObstacle2_3.hidden = TRUE;
+    welcomeLabel.hidden = FALSE;
+    
     /*! Fetch highest score */
-    HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    highScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     
     [super viewDidLoad];
 }

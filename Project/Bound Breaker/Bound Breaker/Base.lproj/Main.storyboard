@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="72B-dd-QSE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="72B-dd-QSE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Main Menu-->
@@ -397,17 +397,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="RightLiftInside:" destination="dnN-of-sJq" eventType="touchUpInside" id="hYj-1D-4xQ"/>
-                                    <action selector="RightLiftOutside:" destination="dnN-of-sJq" eventType="touchUpOutside" id="tHk-ko-KZB"/>
-                                    <action selector="RightPress:" destination="dnN-of-sJq" eventType="touchDown" id="dQu-F7-wVB"/>
+                                    <action selector="rightLiftInside:" destination="dnN-of-sJq" eventType="touchUpInside" id="ban-be-VZA"/>
+                                    <action selector="rightLiftOutside:" destination="dnN-of-sJq" eventType="touchUpOutside" id="KDw-xk-HyA"/>
+                                    <action selector="rightPress:" destination="dnN-of-sJq" eventType="touchDown" id="N7x-P4-xH2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBg-b9-X59">
                                 <rect key="frame" x="0.0" y="516" width="136" height="151"/>
                                 <connections>
-                                    <action selector="LeftLiftInside:" destination="dnN-of-sJq" eventType="touchUpInside" id="hVj-kS-4i8"/>
-                                    <action selector="LeftLiftOutside:" destination="dnN-of-sJq" eventType="touchUpOutside" id="JDn-Qy-bUb"/>
-                                    <action selector="LeftPress:" destination="dnN-of-sJq" eventType="touchDown" id="bCw-ug-oqq"/>
+                                    <action selector="leftLiftInside:" destination="dnN-of-sJq" eventType="touchUpInside" id="IYj-an-ssQ"/>
+                                    <action selector="leftLiftOutside:" destination="dnN-of-sJq" eventType="touchUpOutside" id="x4R-du-FeX"/>
+                                    <action selector="leftPress:" destination="dnN-of-sJq" eventType="touchDown" id="z2i-0F-Diz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOJ-Wp-fCq">
@@ -417,8 +417,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="MediumDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="bMF-lG-LVi"/>
-                                    <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="uaA-xR-QEU"/>
+                                    <action selector="mediumDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="Nwz-Lj-ar5"/>
+                                    <action selector="startGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="TKv-Jl-x2S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-WY-MX5">
@@ -428,8 +428,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="EasyDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="xsz-nt-9fJ"/>
-                                    <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="EWa-WO-ugX"/>
+                                    <action selector="easyDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="pS4-ew-jaI"/>
+                                    <action selector="startGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="NNP-fI-Tkv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4E-gk-07F">
@@ -439,8 +439,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="HardDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="cac-YE-NWO"/>
-                                    <action selector="StartGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="tTr-GR-WoY"/>
+                                    <action selector="hardDifficulty:" destination="dnN-of-sJq" eventType="touchUpInside" id="rbd-pZ-aCK"/>
+                                    <action selector="startGame:" destination="dnN-of-sJq" eventType="touchUpInside" id="nCa-MR-LUz"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy_long.png" translatesAutoresizingMaskIntoConstraints="NO" id="1cy-Ig-CKj">
@@ -458,24 +458,48 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="47h-On-P41">
                                 <rect key="frame" x="162" y="500" width="50" height="50"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="gJn-Xf-A4p">
+                                <rect key="frame" x="193" y="402" width="49" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="PUc-fl-63m">
+                                <rect key="frame" x="193" y="444" width="49" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="3eR-Ne-nvO">
+                                <rect key="frame" x="267" y="402" width="49" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-8M-qJb">
+                                <rect key="frame" x="136" y="444" width="49" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="QlI-sU-Orl">
+                                <rect key="frame" x="310" y="444" width="49" height="28"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy1_07.png" translatesAutoresizingMaskIntoConstraints="NO" id="BsO-DO-G2J">
+                                <rect key="frame" x="70" y="402" width="49" height="28"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
-                        <outlet property="Ball" destination="47h-On-P41" id="Xvg-GY-64T"/>
-                        <outlet property="EasyDifficultyButton" destination="Ryk-WY-MX5" id="Qm5-vq-fLS"/>
-                        <outlet property="GameOver" destination="014-hJ-34K" id="LfY-9F-sBk"/>
-                        <outlet property="HardDifficultyButton" destination="v4E-gk-07F" id="4qU-nB-oqd"/>
-                        <outlet property="MediumDifficultyButton" destination="nOJ-Wp-fCq" id="Z1w-0j-Y69"/>
-                        <outlet property="TapLeft" destination="HBg-b9-X59" id="md7-35-P1M"/>
-                        <outlet property="TapRight" destination="Lj5-yi-JRP" id="Rgd-ou-3Mf"/>
-                        <outlet property="WelcomeLabel" destination="GEF-yZ-TZ4" id="iA9-7x-t2Y"/>
-                        <outlet property="longObstacle1" destination="1cy-Ig-CKj" id="WyK-68-iD5"/>
-                        <outlet property="longObstacle2" destination="Dwm-WD-jAu" id="un5-at-6kX"/>
-                        <outlet property="longObstacle3" destination="PAx-Hf-Q8B" id="WCb-MO-gFw"/>
-                        <outlet property="longObstacle4" destination="Is3-kg-hza" id="1qh-SR-Spx"/>
+                        <outlet property="ball" destination="47h-On-P41" id="maK-zV-eWT"/>
+                        <outlet property="easyDifficultyButton" destination="Ryk-WY-MX5" id="OLY-B6-91s"/>
+                        <outlet property="gameOver" destination="014-hJ-34K" id="5mO-hL-YYq"/>
+                        <outlet property="hardDifficultyButton" destination="v4E-gk-07F" id="7Fl-LD-eeR"/>
+                        <outlet property="longObstacle1_1" destination="PAx-Hf-Q8B" id="PEu-nU-tja"/>
+                        <outlet property="longObstacle1_2" destination="Is3-kg-hza" id="rhm-x8-5x1"/>
+                        <outlet property="longObstacle2_1" destination="1cy-Ig-CKj" id="bWb-fh-AGL"/>
+                        <outlet property="longObstacle2_2" destination="Dwm-WD-jAu" id="Nqd-X8-gLf"/>
+                        <outlet property="mediumDifficultyButton" destination="nOJ-Wp-fCq" id="6Vx-Rd-npJ"/>
+                        <outlet property="singleObstacle1_1" destination="BsO-DO-G2J" id="qmT-mL-eAu"/>
+                        <outlet property="singleObstacle1_2" destination="gJn-Xf-A4p" id="Hic-KJ-xIh"/>
+                        <outlet property="singleObstacle1_3" destination="3eR-Ne-nvO" id="HQC-fa-h3S"/>
+                        <outlet property="singleObstacle2_1" destination="Aoh-8M-qJb" id="eal-wk-SAc"/>
+                        <outlet property="singleObstacle2_2" destination="PUc-fl-63m" id="yor-CS-ggx"/>
+                        <outlet property="singleObstacle2_3" destination="QlI-sU-Orl" id="wSR-7M-t4u"/>
+                        <outlet property="tapLeft" destination="HBg-b9-X59" id="ifU-yB-jVa"/>
+                        <outlet property="tapRight" destination="Lj5-yi-JRP" id="qZs-P1-8Zk"/>
+                        <outlet property="welcomeLabel" destination="GEF-yZ-TZ4" id="8u1-Gl-zgu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT9-Rz-WRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -566,8 +590,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
-                        <outlet property="highscoreLabel" destination="iOx-MG-qCH" id="38p-s6-rCT"/>
-                        <outlet property="scoreLabel" destination="mjW-9n-p2j" id="a6l-A8-tVc"/>
+                        <outlet property="highScoreLabel" destination="iOx-MG-qCH" id="yt1-fa-ifU"/>
+                        <outlet property="scoreLabel" destination="mjW-9n-p2j" id="DQT-hN-VyQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEy-Xd-UrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -710,13 +734,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="enemy1_07.png" width="173" height="75"/>
         <image name="enemy_long.png" width="298" height="23"/>
         <image name="player_03.png" width="114" height="106"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="x9U-kD-QZp"/>
-        <segue reference="4Sy-f6-FW5"/>
-        <segue reference="J4W-Zx-wdB"/>
-        <segue reference="Do2-WQ-9pp"/>
+        <segue reference="EQ6-9s-rbL"/>
+        <segue reference="WiT-m3-STO"/>
+        <segue reference="27k-9Z-9XM"/>
+        <segue reference="n9M-tb-ToV"/>
     </inferredMetricsTieBreakers>
 </document>

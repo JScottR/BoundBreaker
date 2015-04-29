@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-extern int ScoreNumber;
-extern NSInteger HighScoreNumber;
+extern int scoreNumber;
+extern NSInteger highScoreNumber;
 
 
 @interface GameOver : UIViewController
 {
     IBOutlet UILabel *scoreLabel;
-    IBOutlet UILabel *highscoreLabel;
+    IBOutlet UILabel *highScoreLabel;
 }
 - (void)viewDidLoad;
 
