@@ -26,6 +26,7 @@ int ballSpeed = 3;
 int defaultBallYCoord = 525;
 int recoverySpeed = 1;
 /*! Variables that deal with the obstacles */
+int scoreYCoord = 500;
 int obstacleSpeed = 1;
 int numberOfObstaclesOnScreen = 2;
 int obstacleDistance = 300;
@@ -123,14 +124,23 @@ int obstacleGeneratorBuffer = 10;
 /*! @brief Method triggered by the ObstacleMovement timer
  Executes methods involved with motion */
 -(void)ObstaclesMoving{
-    /*! Move ball if movement buttons are pressed */
+    /*! Move ball if movement buttons are pressed, checking that not at edge or touching obstacles
+        Must be modified with each new obstacle to prevent overlap */
     if(Right == TRUE){
-        if(Ball.center.x < screenRight){
+        if((Ball.center.x < screenRight)
+           & !CGRectIntersectsRect(Ball.frame, longObstacle1.frame)
+           & !CGRectIntersectsRect(Ball.frame, longObstacle2.frame)
+           & !CGRectIntersectsRect(Ball.frame, longObstacle3.frame)
+           & !CGRectIntersectsRect(Ball.frame, longObstacle4.frame)){
             Ball.center = CGPointMake(Ball.center.x + ballSpeed, Ball.center.y);
         }
     }
     if(Left == TRUE){
-        if(Ball.center.x > screenLeft){
+        if((Ball.center.x > screenLeft)
+            & !CGRectIntersectsRect(Ball.frame, longObstacle1.frame)
+            & !CGRectIntersectsRect(Ball.frame, longObstacle2.frame)
+            & !CGRectIntersectsRect(Ball.frame, longObstacle3.frame)
+            & !CGRectIntersectsRect(Ball.frame, longObstacle4.frame)){
             Ball.center = CGPointMake(Ball.center.x - ballSpeed, Ball.center.y);
         }
     }
@@ -162,9 +172,9 @@ int obstacleGeneratorBuffer = 10;
         [self ballNotTouchingObstacle];
     }
     
-    /*! Increase score when obstacles pass the ball
+    /*! Increase score when non-hidden obstacles pass the ball
      Must be modified with each new obstacle added */
-    if((longObstacle1.center.y >= Ball.center.y & longObstacle1.center.y < (Ball.center.y+obstacleSpeed)) | (longObstacle3.center.y >= Ball.center.y & longObstacle3.center.y < (Ball.center.y+obstacleSpeed))){
+    if((longObstacle1.hidden == FALSE & longObstacle1.center.y >= scoreYCoord & longObstacle1.center.y < (scoreYCoord+obstacleSpeed)) | (longObstacle3.hidden == FALSE & longObstacle3.center.y >= scoreYCoord & longObstacle3.center.y < (scoreYCoord+obstacleSpeed))){
         [self Score];
     }
     
