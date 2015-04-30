@@ -48,7 +48,7 @@ NSInteger highScoreNumber;
     
     IBOutlet UILabel *welcomeLabel;
     
-    NSTimer *obstacleMovement;
+    NSTimer *movementTimer;
     NSTimer *scoreTimer;
 }
 
@@ -63,7 +63,7 @@ NSInteger highScoreNumber;
 -(IBAction)leftPress:(id)sender;
 -(IBAction)leftLiftInside:(id)sender;
 -(IBAction)leftLiftOutside:(id)sender;
--(void)obstaclesMoving;
+-(void)obstaclesAndPlayerMoving;
 -(void)ballTouchingObstacle;
 -(void)ballNotTouchingObstacle;
 -(void)placeLongObstacles1;

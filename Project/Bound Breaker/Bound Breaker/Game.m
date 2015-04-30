@@ -85,7 +85,7 @@ int obstacleGeneratorBuffer = 10;
     /*! Start game by placing first obstacle */
     [self placeLongObstacles1];
     /*! Initiate timers */
-    obstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(obstaclesMoving) userInfo:nil repeats:TRUE];
+    movementTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(obstaclesAndPlayerMoving) userInfo:nil repeats:TRUE];
     scoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(score) userInfo:nil repeats:TRUE];
 }
 
@@ -131,7 +131,7 @@ int obstacleGeneratorBuffer = 10;
 
 /*! @brief Method triggered by the obstacleMovement timer
  Executes methods involved with motion */
--(void)obstaclesMoving{
+-(void)obstaclesAndPlayerMoving{
     /*! Move ball if movement buttons are pressed, checking that not at edge or touching obstacles
         Must be modified with each new obstacle to prevent overlap */
     if(right == TRUE){
@@ -235,6 +235,7 @@ int obstacleGeneratorBuffer = 10;
 /*! @brief Method that regenerates longObstacle1_1 and longObstacle1_2 at the top with random x coordinate */
 -(void)placeLongObstacles1{
     randomLongObstacle1_1Placement = arc4random() %abs(screenRight-screenLeft);
+    randomLongObstacle1_1Placement = randomLongObstacle1_1Placement - abs(screenRight-screenLeft)/2;
     randomLongObstacle1_2Placement = randomLongObstacle1_1Placement + longObstacleWidth + obstacleGap;
 
     longObstacle1_1.center = CGPointMake(randomLongObstacle1_1Placement, screenTop);
@@ -246,6 +247,7 @@ int obstacleGeneratorBuffer = 10;
 /*! @brief Method that regenerates longObstacle2_1 and longObstacle2_2 at the top with random x coordinate */
 -(void)placeLongObstacles2{
     randomLongObstacle2_1Placement = arc4random() %abs(screenRight-screenLeft);
+    randomLongObstacle2_1Placement = randomLongObstacle2_1Placement - abs(screenRight-screenLeft)/2;
     randomLongObstacle2_2Placement = randomLongObstacle2_1Placement + longObstacleWidth + obstacleGap;
     
     longObstacle2_1.center = CGPointMake(randomLongObstacle2_1Placement, screenTop);
@@ -298,7 +300,7 @@ int obstacleGeneratorBuffer = 10;
 /*! @brief Method that executes once ball touches bottom of screen */
 -(void)gameOver{
     /*! Stop timers */
-    [obstacleMovement invalidate];
+    [movementTimer invalidate];
     [scoreTimer invalidate];
     /*! Update highest score if needed */
     if(scoreNumber > highScoreNumber) {
