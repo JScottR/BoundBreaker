@@ -19,14 +19,13 @@
 /*! Screen top declared as negative to have obstacles regenerate offscreen */
 int screenTop = -30;
 int screenBottom = 645;
-int screenright = 346;
-int screenleft = 20;
+int screenRight = 346;
+int screenLeft = 20;
 /*! Variables that deal with the ball/player */
 int ballSpeed = 3;
 int defaultBallYCoord = 525;
 int recoverySpeed = 1;
 /*! Variables that deal with the obstacles */
-int scoreYCoord = 500;
 int obstacleSpeed = 1;
 int numberOfObstaclesOnScreen = 2;
 int obstacleDistance = 300;
@@ -85,7 +84,9 @@ int obstacleGeneratorBuffer = 10;
    
     /*! Start game by placing first obstacle */
     [self placeLongObstacles1];
+    /*! Initiate timers */
     obstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(obstaclesMoving) userInfo:nil repeats:TRUE];
+    scoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(score) userInfo:nil repeats:TRUE];
 }
 
 /*! @brief Method that increases score and logs it */
@@ -134,25 +135,38 @@ int obstacleGeneratorBuffer = 10;
     /*! Move ball if movement buttons are pressed, checking that not at edge or touching obstacles
         Must be modified with each new obstacle to prevent overlap */
     if(right == TRUE){
-        if((ball.center.x < screenright)
+        if((ball.center.x < screenRight)
            & !CGRectIntersectsRect(ball.frame, longObstacle1_1.frame)
            & !CGRectIntersectsRect(ball.frame, longObstacle1_2.frame)
            & !CGRectIntersectsRect(ball.frame, longObstacle2_1.frame)
-           & !CGRectIntersectsRect(ball.frame, longObstacle2_2.frame)){
+           & !CGRectIntersectsRect(ball.frame, longObstacle2_2.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle1_1.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle1_2.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle1_3.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle2_1.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle2_2.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle2_3.frame)){
             ball.center = CGPointMake(ball.center.x + ballSpeed, ball.center.y);
         }
     }
     if(left == TRUE){
-        if((ball.center.x > screenleft)
-            & !CGRectIntersectsRect(ball.frame, longObstacle1_1.frame)
-            & !CGRectIntersectsRect(ball.frame, longObstacle1_2.frame)
-            & !CGRectIntersectsRect(ball.frame, longObstacle2_1.frame)
-            & !CGRectIntersectsRect(ball.frame, longObstacle2_2.frame)){
+        if((ball.center.x > screenLeft)
+           & !CGRectIntersectsRect(ball.frame, longObstacle1_1.frame)
+           & !CGRectIntersectsRect(ball.frame, longObstacle1_2.frame)
+           & !CGRectIntersectsRect(ball.frame, longObstacle2_1.frame)
+           & !CGRectIntersectsRect(ball.frame, longObstacle2_2.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle1_1.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle1_2.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle1_3.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle2_1.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle2_2.frame)
+           & !CGRectIntersectsRect(ball.frame, singleObstacle2_3.frame)){
             ball.center = CGPointMake(ball.center.x - ballSpeed, ball.center.y);
         }
     }
     
     /*! Move obstacles towards bottom of screen */
+    /*! Modify with each new obstacle */
     longObstacle1_1.center = CGPointMake(longObstacle1_1.center.x, longObstacle1_1.center.y + obstacleSpeed);
     longObstacle1_2.center = CGPointMake(longObstacle1_2.center.x, longObstacle1_2.center.y + obstacleSpeed);
     longObstacle2_1.center = CGPointMake(longObstacle2_1.center.x, longObstacle2_1.center.y + obstacleSpeed);
@@ -160,6 +174,9 @@ int obstacleGeneratorBuffer = 10;
     singleObstacle1_1.center = CGPointMake(singleObstacle1_1.center.x, singleObstacle1_1.center.y + obstacleSpeed);
     singleObstacle1_2.center = CGPointMake(singleObstacle1_2.center.x, singleObstacle1_2.center.y + obstacleSpeed);
     singleObstacle1_3.center = CGPointMake(singleObstacle1_3.center.x, singleObstacle1_3.center.y + obstacleSpeed);
+    singleObstacle2_1.center = CGPointMake(singleObstacle2_1.center.x, singleObstacle2_1.center.y + obstacleSpeed);
+    singleObstacle2_2.center = CGPointMake(singleObstacle2_2.center.x, singleObstacle2_2.center.y + obstacleSpeed);
+    singleObstacle2_3.center = CGPointMake(singleObstacle2_3.center.x, singleObstacle2_3.center.y + obstacleSpeed);
     
     /*! Place obstacles based on postion of other obstacles */
     /*! Highly variable depending on number of obstacles and obtacle types */
@@ -175,22 +192,27 @@ int obstacleGeneratorBuffer = 10;
        & longObstacle1_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)/2){
         [self placeSingleObstacles1];
     }
+    if(longObstacle2_1.center.y > abs(obstacleDistance-screenTop)/2
+       & longObstacle2_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)/2){
+        [self placeSingleObstacles2];
+    }
     
     /*! Move ball towards bottom of screen if touching non-hidden obstacles, otherwise move ball up */
+    /*! Modify with each new obstacle */
     if(((longObstacle1_1.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle1_1.frame))
        | ((longObstacle1_2.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle1_2.frame))
        | ((longObstacle2_1.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle2_1.frame))
-       | ((longObstacle2_2.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle2_2.frame))) {
+       | ((longObstacle2_2.hidden == FALSE) & CGRectIntersectsRect(ball.frame, longObstacle2_2.frame))
+       | ((singleObstacle1_1.hidden == FALSE) & CGRectIntersectsRect(ball.frame, singleObstacle1_1.frame))
+       | ((singleObstacle1_2.hidden == FALSE) & CGRectIntersectsRect(ball.frame, singleObstacle1_2.frame))
+       | ((singleObstacle1_3.hidden == FALSE) & CGRectIntersectsRect(ball.frame, singleObstacle1_3.frame))
+       | ((singleObstacle2_1.hidden == FALSE) & CGRectIntersectsRect(ball.frame, singleObstacle2_1.frame))
+       | ((singleObstacle2_2.hidden == FALSE) & CGRectIntersectsRect(ball.frame, singleObstacle2_2.frame))
+       | ((singleObstacle2_3.hidden == FALSE) & CGRectIntersectsRect(ball.frame, singleObstacle2_3.frame))){
         [self ballTouchingObstacle];
     }
     else{
         [self ballNotTouchingObstacle];
-    }
-    
-    /*! Increase score when non-hidden obstacles pass the ball
-     Must be modified with each new obstacle added */
-    if((longObstacle1_1.hidden == FALSE & longObstacle1_1.center.y >= scoreYCoord & longObstacle1_1.center.y < (scoreYCoord+obstacleSpeed)) | (longObstacle2_1.hidden == FALSE & longObstacle2_1.center.y >= scoreYCoord & longObstacle2_1.center.y < (scoreYCoord+obstacleSpeed))){
-        [self score];
     }
     
     /*! Game over if ball touches bottom of screen */
@@ -212,7 +234,7 @@ int obstacleGeneratorBuffer = 10;
 
 /*! @brief Method that regenerates longObstacle1_1 and longObstacle1_2 at the top with random x coordinate */
 -(void)placeLongObstacles1{
-    randomLongObstacle1_1Placement = arc4random() %abs(screenright-screenleft);
+    randomLongObstacle1_1Placement = arc4random() %abs(screenRight-screenLeft);
     randomLongObstacle1_2Placement = randomLongObstacle1_1Placement + longObstacleWidth + obstacleGap;
 
     longObstacle1_1.center = CGPointMake(randomLongObstacle1_1Placement, screenTop);
@@ -223,7 +245,7 @@ int obstacleGeneratorBuffer = 10;
 }
 /*! @brief Method that regenerates longObstacle2_1 and longObstacle2_2 at the top with random x coordinate */
 -(void)placeLongObstacles2{
-    randomLongObstacle2_1Placement = arc4random() %abs(screenright-screenleft);
+    randomLongObstacle2_1Placement = arc4random() %abs(screenRight-screenLeft);
     randomLongObstacle2_2Placement = randomLongObstacle2_1Placement + longObstacleWidth + obstacleGap;
     
     longObstacle2_1.center = CGPointMake(randomLongObstacle2_1Placement, screenTop);
@@ -234,9 +256,9 @@ int obstacleGeneratorBuffer = 10;
 }
 /*! @brief Method that regenerates singleObstacle1_1, singleObstacle1_2, and singleObstacle1_3 at the top with random x coordinate */
 -(void)placeSingleObstacles1{
-    randomSingleObstacle1_1Placement = arc4random() %abs(screenright-screenleft);
-    randomSingleObstacle1_2Placement = randomSingleObstacle1_1Placement + singleObstacleWidth + obstacleGap;
-    randomSingleObstacle1_3Placement = randomSingleObstacle1_2Placement + singleObstacleWidth + obstacleGap;
+    randomSingleObstacle1_1Placement = arc4random() %abs(screenRight-screenLeft);
+    randomSingleObstacle1_2Placement = arc4random() %abs(screenRight-screenLeft);
+    randomSingleObstacle1_3Placement = arc4random() %abs(screenRight-screenLeft);
     
     singleObstacle1_1.center = CGPointMake(randomSingleObstacle1_1Placement, screenTop);
     singleObstacle1_2.center = CGPointMake(randomSingleObstacle1_2Placement, screenTop);
@@ -245,12 +267,39 @@ int obstacleGeneratorBuffer = 10;
     singleObstacle1_1.hidden = FALSE;
     singleObstacle1_2.hidden = FALSE;
     singleObstacle1_3.hidden = FALSE;
+    /*! Regenerate again if obstacles overlap */
+    while(CGRectIntersectsRect(singleObstacle1_1.frame, singleObstacle1_2.frame)
+          | CGRectIntersectsRect(singleObstacle1_1.frame, singleObstacle1_3.frame)
+          | CGRectIntersectsRect(singleObstacle1_2.frame, singleObstacle1_3.frame)){
+        [self placeSingleObstacles1];
+    }
+}
+/*! @brief Method that regenerates singleObstacle2_1, singleObstacle2_2, and singleObstacle2_3 at the top with random x coordinate */
+-(void)placeSingleObstacles2{
+    randomSingleObstacle2_1Placement = arc4random() %abs(screenRight-screenLeft);
+    randomSingleObstacle2_2Placement = arc4random() %abs(screenRight-screenLeft);
+    randomSingleObstacle2_3Placement = arc4random() %abs(screenRight-screenLeft);
+    
+    singleObstacle2_1.center = CGPointMake(randomSingleObstacle2_1Placement, screenTop);
+    singleObstacle2_2.center = CGPointMake(randomSingleObstacle2_2Placement, screenTop);
+    singleObstacle2_3.center = CGPointMake(randomSingleObstacle2_3Placement, screenTop);
+    
+    singleObstacle2_1.hidden = FALSE;
+    singleObstacle2_2.hidden = FALSE;
+    singleObstacle2_3.hidden = FALSE;
+    /*! Regenerate again if obstacles overlap */
+    while(CGRectIntersectsRect(singleObstacle2_1.frame, singleObstacle2_2.frame)
+          | CGRectIntersectsRect(singleObstacle2_1.frame, singleObstacle2_3.frame)
+          | CGRectIntersectsRect(singleObstacle2_2.frame, singleObstacle2_3.frame)){
+        [self placeSingleObstacles2];
+    }
 }
 
 /*! @brief Method that executes once ball touches bottom of screen */
 -(void)gameOver{
     /*! Stop timers */
     [obstacleMovement invalidate];
+    [scoreTimer invalidate];
     /*! Update highest score if needed */
     if(scoreNumber > highScoreNumber) {
         [[NSUserDefaults standardUserDefaults] setInteger:scoreNumber forKey:@"HighScoreSaved"];

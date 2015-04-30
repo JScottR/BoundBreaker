@@ -18,6 +18,9 @@ int randomLongObstacle2_2Placement;
 int randomSingleObstacle1_1Placement;
 int randomSingleObstacle1_2Placement;
 int randomSingleObstacle1_3Placement;
+int randomSingleObstacle2_1Placement;
+int randomSingleObstacle2_2Placement;
+int randomSingleObstacle2_3Placement;
 int scoreNumber;
 NSInteger highScoreNumber;
 
@@ -46,6 +49,7 @@ NSInteger highScoreNumber;
     IBOutlet UILabel *welcomeLabel;
     
     NSTimer *obstacleMovement;
+    NSTimer *scoreTimer;
 }
 
 /*! Actions and methods */
@@ -65,6 +69,7 @@ NSInteger highScoreNumber;
 -(void)placeLongObstacles1;
 -(void)placeLongObstacles2;
 -(void)placeSingleObstacles1;
+-(void)placeSingleObstacles2;
 -(void)score;
 -(void)gameOver;
 
