@@ -11,10 +11,13 @@
 /*! Variables */
 bool right;
 bool left;
-int randomLongObstacle1Placement;
-int randomLongObstacle2Placement;
-int randomLongObstacle3Placement;
-int randomLongObstacle4Placement;
+int randomLongObstacle1_1Placement;
+int randomLongObstacle1_2Placement;
+int randomLongObstacle2_1Placement;
+int randomLongObstacle2_2Placement;
+int randomSingleObstacle1_1Placement;
+int randomSingleObstacle1_2Placement;
+int randomSingleObstacle1_3Placement;
 int scoreNumber;
 NSInteger highScoreNumber;
 
@@ -59,8 +62,9 @@ NSInteger highScoreNumber;
 -(void)obstaclesMoving;
 -(void)ballTouchingObstacle;
 -(void)ballNotTouchingObstacle;
--(void)placeObstacles1;
--(void)placeObstacles2;
+-(void)placeLongObstacles1;
+-(void)placeLongObstacles2;
+-(void)placeSingleObstacles1;
 -(void)score;
 -(void)gameOver;
 

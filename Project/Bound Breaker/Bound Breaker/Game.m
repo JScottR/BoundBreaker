@@ -32,6 +32,7 @@ int numberOfObstaclesOnScreen = 2;
 int obstacleDistance = 300;
 int obstacleGap = 100;
 int longObstacleWidth = 290;
+int singleObstacleWidth = 49;
 /*! Variable needed for proper obstacle placement mechanism,
  used to narrow the obstacle regeneration area to a small portion of the screen */
 int obstacleGeneratorBuffer = 10;
@@ -83,7 +84,7 @@ int obstacleGeneratorBuffer = 10;
     highScoreNumber = [currentHighScore intValue];
    
     /*! Start game by placing first obstacle */
-    [self placeObstacles1];
+    [self placeLongObstacles1];
     obstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(obstaclesMoving) userInfo:nil repeats:TRUE];
 }
 
@@ -156,15 +157,23 @@ int obstacleGeneratorBuffer = 10;
     longObstacle1_2.center = CGPointMake(longObstacle1_2.center.x, longObstacle1_2.center.y + obstacleSpeed);
     longObstacle2_1.center = CGPointMake(longObstacle2_1.center.x, longObstacle2_1.center.y + obstacleSpeed);
     longObstacle2_2.center = CGPointMake(longObstacle2_2.center.x, longObstacle2_2.center.y + obstacleSpeed);
+    singleObstacle1_1.center = CGPointMake(singleObstacle1_1.center.x, singleObstacle1_1.center.y + obstacleSpeed);
+    singleObstacle1_2.center = CGPointMake(singleObstacle1_2.center.x, singleObstacle1_2.center.y + obstacleSpeed);
+    singleObstacle1_3.center = CGPointMake(singleObstacle1_3.center.x, singleObstacle1_3.center.y + obstacleSpeed);
     
     /*! Place obstacles based on postion of other obstacles */
     /*! Highly variable depending on number of obstacles and obtacle types */
-    if(longObstacle1_1.center.y > abs(obstacleDistance-screenTop) & longObstacle1_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
-        [self placeObstacles2];
+    if(longObstacle1_1.center.y > abs(obstacleDistance-screenTop)
+       & longObstacle1_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
+        [self placeLongObstacles2];
     }
-    
-    if(longObstacle2_1.center.y > abs(obstacleDistance-screenTop) & longObstacle2_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
-        [self placeObstacles1];
+    if(longObstacle2_1.center.y > abs(obstacleDistance-screenTop)
+       & longObstacle2_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)){
+        [self placeLongObstacles1];
+    }
+    if(longObstacle1_1.center.y > abs(obstacleDistance-screenTop)/2
+       & longObstacle1_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)/2){
+        [self placeSingleObstacles1];
     }
     
     /*! Move ball towards bottom of screen if touching non-hidden obstacles, otherwise move ball up */
@@ -201,29 +210,42 @@ int obstacleGeneratorBuffer = 10;
     }
 }
 
-/*! @brief Method that regenerates longObstacle1_1 at the top with random x coordinate */
--(void)placeObstacles1{
-    randomLongObstacle1Placement = arc4random() %abs(screenright-screenleft);
-    randomLongObstacle2Placement = randomLongObstacle1Placement + longObstacleWidth + obstacleGap;
+/*! @brief Method that regenerates longObstacle1_1 and longObstacle1_2 at the top with random x coordinate */
+-(void)placeLongObstacles1{
+    randomLongObstacle1_1Placement = arc4random() %abs(screenright-screenleft);
+    randomLongObstacle1_2Placement = randomLongObstacle1_1Placement + longObstacleWidth + obstacleGap;
 
-    longObstacle1_1.center = CGPointMake(randomLongObstacle1Placement, screenTop);
-    longObstacle1_2.center = CGPointMake(randomLongObstacle2Placement, screenTop);
+    longObstacle1_1.center = CGPointMake(randomLongObstacle1_1Placement, screenTop);
+    longObstacle1_2.center = CGPointMake(randomLongObstacle1_2Placement, screenTop);
         
     longObstacle1_1.hidden = FALSE;
     longObstacle1_2.hidden = FALSE;
 }
-/*! @brief Method that regenerates longObstacle1_2 at the top with random x coordinate */
--(void)placeObstacles2{
-    randomLongObstacle3Placement = arc4random() %abs(screenright-screenleft);
-    randomLongObstacle4Placement = randomLongObstacle3Placement + longObstacleWidth + obstacleGap;
+/*! @brief Method that regenerates longObstacle2_1 and longObstacle2_2 at the top with random x coordinate */
+-(void)placeLongObstacles2{
+    randomLongObstacle2_1Placement = arc4random() %abs(screenright-screenleft);
+    randomLongObstacle2_2Placement = randomLongObstacle2_1Placement + longObstacleWidth + obstacleGap;
     
-    longObstacle2_1.center = CGPointMake(randomLongObstacle3Placement, screenTop);
-    longObstacle2_2.center = CGPointMake(randomLongObstacle4Placement, screenTop);
+    longObstacle2_1.center = CGPointMake(randomLongObstacle2_1Placement, screenTop);
+    longObstacle2_2.center = CGPointMake(randomLongObstacle2_2Placement, screenTop);
         
     longObstacle2_1.hidden = FALSE;
     longObstacle2_2.hidden = FALSE;
 }
-
+/*! @brief Method that regenerates singleObstacle1_1, singleObstacle1_2, and singleObstacle1_3 at the top with random x coordinate */
+-(void)placeSingleObstacles1{
+    randomSingleObstacle1_1Placement = arc4random() %abs(screenright-screenleft);
+    randomSingleObstacle1_2Placement = randomSingleObstacle1_1Placement + singleObstacleWidth + obstacleGap;
+    randomSingleObstacle1_3Placement = randomSingleObstacle1_2Placement + singleObstacleWidth + obstacleGap;
+    
+    singleObstacle1_1.center = CGPointMake(randomSingleObstacle1_1Placement, screenTop);
+    singleObstacle1_2.center = CGPointMake(randomSingleObstacle1_2Placement, screenTop);
+    singleObstacle1_3.center = CGPointMake(randomSingleObstacle1_3Placement, screenTop);
+    
+    singleObstacle1_1.hidden = FALSE;
+    singleObstacle1_2.hidden = FALSE;
+    singleObstacle1_3.hidden = FALSE;
+}
 
 /*! @brief Method that executes once ball touches bottom of screen */
 -(void)gameOver{
