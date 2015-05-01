@@ -195,10 +195,10 @@ int obstacleGeneratorBuffer = 10;
        & longObstacle1_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)/2){
         [self placeSingleObstacles1X];
     }
-    /*!if(longObstacle2_1.center.y > abs(obstacleDistance-screenTop)/2
+    if(longObstacle2_1.center.y > abs(obstacleDistance-screenTop)/2
        & longObstacle2_1.center.y < abs(obstacleDistance-screenTop+obstacleGeneratorBuffer)/2){
         [self placeSingleObstacles2X];
-    }*/
+    }
     
     /*! Move ball towards bottom of screen if touching non-hidden obstacles, otherwise move ball up */
     /*! Modify with each new obstacle */
@@ -313,6 +313,51 @@ int obstacleGeneratorBuffer = 10;
           | (abs(singleObstacle1_1.center.y - singleObstacle1_3.center.y) <= collisionDistanceBuffer)
           | (abs(singleObstacle1_2.center.y - singleObstacle1_3.center.y) <= collisionDistanceBuffer)){
         [self placeSingleObstacles1Y];
+    }
+}
+/*! @brief Method that regenerates singleObstacle2_1, singleObstacle2_2, and singleObstacle2_3 at the top with random x coordinate */
+-(void)placeSingleObstacles2X{
+    randomSingleObstacle2_1PlacementX = arc4random() %abs(screenRight-screenLeft);
+    randomSingleObstacle2_2PlacementX = arc4random() %abs(screenRight-screenLeft);
+    randomSingleObstacle2_3PlacementX = arc4random() %abs(screenRight-screenLeft);
+    
+    singleObstacle2_1.center = CGPointMake(randomSingleObstacle2_1PlacementX, screenTop);
+    singleObstacle2_2.center = CGPointMake(randomSingleObstacle2_2PlacementX, screenTop);
+    singleObstacle2_3.center = CGPointMake(randomSingleObstacle2_3PlacementX, screenTop);
+    
+    singleObstacle2_1.hidden = FALSE;
+    singleObstacle2_2.hidden = FALSE;
+    singleObstacle2_3.hidden = FALSE;
+    
+    /*! Regenerate again if obstacles overlap */
+    while(CGRectIntersectsRect(singleObstacle1_1.frame, singleObstacle1_2.frame)
+          | CGRectIntersectsRect(singleObstacle1_1.frame, singleObstacle1_3.frame)
+          | CGRectIntersectsRect(singleObstacle1_2.frame, singleObstacle1_3.frame)){
+        [self placeSingleObstacles2X];
+    }
+    [self placeSingleObstacles2Y];
+}
+/*! @brief Method that regenerates singleObstacle2_1, singleObstacle2_2, and singleObstacle2_3 at the top with random y coordinate */
+-(void)placeSingleObstacles2Y{
+    randomSingleObstacle2_1PlacementY = arc4random() %abs(obstacleDistance/2);
+    randomSingleObstacle2_1PlacementY = randomSingleObstacle2_1PlacementY - singleObstacleRegenerationYBuffer;
+    randomSingleObstacle2_2PlacementY = arc4random() %abs(obstacleDistance/2);
+    randomSingleObstacle2_2PlacementY = randomSingleObstacle2_2PlacementY - singleObstacleRegenerationYBuffer;
+    randomSingleObstacle2_3PlacementY = arc4random() %abs(obstacleDistance/2);
+    randomSingleObstacle2_3PlacementY = randomSingleObstacle2_3PlacementY - singleObstacleRegenerationYBuffer;
+    
+    singleObstacle2_1.center = CGPointMake(singleObstacle2_1.center.x, randomSingleObstacle2_1PlacementY);
+    singleObstacle2_2.center = CGPointMake(singleObstacle2_2.center.x, randomSingleObstacle2_2PlacementY);
+    singleObstacle2_3.center = CGPointMake(singleObstacle2_3.center.x, randomSingleObstacle2_3PlacementY);
+    
+    /*! Regenerate again if obstacles overlap or not enough collision buffer */
+    while(CGRectIntersectsRect(singleObstacle2_1.frame, singleObstacle2_2.frame)
+          | CGRectIntersectsRect(singleObstacle2_1.frame, singleObstacle2_3.frame)
+          | CGRectIntersectsRect(singleObstacle2_2.frame, singleObstacle2_3.frame)
+          | (abs(singleObstacle2_1.center.y - singleObstacle2_2.center.y) <= collisionDistanceBuffer)
+          | (abs(singleObstacle2_1.center.y - singleObstacle2_3.center.y) <= collisionDistanceBuffer)
+          | (abs(singleObstacle2_2.center.y - singleObstacle2_3.center.y) <= collisionDistanceBuffer)){
+        [self placeSingleObstacles2Y];
     }
 }
 

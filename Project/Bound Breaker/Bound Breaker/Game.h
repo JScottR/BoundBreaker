@@ -76,6 +76,8 @@ NSInteger highScoreNumber;
 -(void)placeLongObstacles2;
 -(void)placeSingleObstacles1X;
 -(void)placeSingleObstacles1Y;
+-(void)placeSingleObstacles2X;
+-(void)placeSingleObstacles2Y;
 -(void)score;
 -(void)gameOver;
 
